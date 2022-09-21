@@ -171,7 +171,7 @@ function App() {
             <LineChart idx="0" appID={appID} series={totalDaily} />
           )}
           <h4>{`${totalShips} vessels`}</h4>
-          <div>{Object.entries(totalDestination).slice(0, 3).map(el => <span>{`${el[0]}` }</span>)}</div>
+          <div>{Object.entries(totalDestination).slice(0, 2).map(el => <span>{`${el[0]} ${formatNr(el[1])}` }</span>)}</div>
         </div>
 
         <div className="commodities_container">
@@ -182,7 +182,7 @@ function App() {
               <LineChart idx="1" appID={appID} series={Object.values(totalCornDaily)} />
             )}
             <h4>{`${totalCornShips} vessels`}</h4>
-            <div>{Object.entries(totalCornDestination).slice(0, 3).map(el => <span>{`${el[0]}` }</span>)}</div>
+            <div>{Object.entries(totalCornDestination).slice(0, 2).map(el => <span>{`${el[0]} ${formatNr(el[1])}` }</span>)}</div>
           </div>
           <div>
             <h4>Wheat</h4>
@@ -191,7 +191,7 @@ function App() {
               <LineChart idx="2" appID={appID} series={Object.values(totalWheatDaily)} />
             )}
             <h4>{`${totalWheatShips} vessels`}</h4>
-            <div>{Object.entries(totalWheatDestination).slice(0, 3).map(el => <span>{`${el[0]}` }</span>)}</div>
+            <div>{Object.entries(totalWheatDestination).slice(0, 2).map(el => <span>{`${el[0]} ${formatNr(el[1])}` }</span>)}</div>
           </div>
           <div>
             <h4>Other</h4>
@@ -200,7 +200,7 @@ function App() {
               <LineChart idx="3" appID={appID} series={Object.values(totalOtherDaily)} />
             )}
             <h4>{`${totalOtherShips} vessels`}</h4>
-            <div>{Object.entries(totalOtherDestination).slice(0, 3).map(el => <span>{`${el[0]}` }</span>)}</div>
+            <div>{Object.entries(totalOtherDestination).slice(0, 2).map(el => <span>{`${el[0]} ${formatNr(el[1])}` }</span>)}</div>
           </div>
         </div>
       </div>

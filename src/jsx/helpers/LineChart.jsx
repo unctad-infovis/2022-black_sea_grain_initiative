@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import * as d3 from 'd3';
 
 function LineChart({ appID, idx, series }) {
-  console.log(series);
   const chartRef = useRef(null);
   const xScale = d3.scaleLinear()
     .range([0, 160])

@@ -13,7 +13,7 @@ function LineBarChart({
   const [g, setG] = useState(false);
 
   const margin = {
-    top: 40, right: 60, bottom: 30, left: 50
+    top: 40, right: 50, bottom: 30, left: 40
   };
   const height = 300 - margin.top - margin.bottom;
 
@@ -45,9 +45,9 @@ function LineBarChart({
   const xAxis = d3.axisBottom().scale(x).tickValues(['2022-08-01', '2022-08-10', '2022-08-20', '2022-09-01', '2022-09-10', '2022-09-20']);
 
   const yLeft = d3.scaleLinear().range([height, 0]);
-  const yAxisLeft = d3.axisLeft().scale(yLeft).ticks(5);
+  const yAxisLeft = d3.axisLeft().scale(yLeft).ticks(5).tickFormat(val => ((val !== 0) ? `${(val / 1000).toLocaleString()}k` : ''));
   const yRight = d3.scaleLinear().range([height, 0]);
-  const yAxisRight = d3.axisRight().scale(yRight).ticks(5);
+  const yAxisRight = d3.axisRight().scale(yRight).ticks(5).tickFormat(val => ((val !== 0) ? `${(val / 1000).toLocaleString()}k` : ''));
 
   const updateData = (selected_series, duration) => {
     if (g) {

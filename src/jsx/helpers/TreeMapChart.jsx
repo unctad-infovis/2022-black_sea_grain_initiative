@@ -14,13 +14,13 @@ function TreeMapChart({
   const max = (Math.max(...series.map(d => ((d.name === 'Other') ? 0 : d.value))));
   const colors = ['#009edb', '#72bf44', '#f58220', '#a05fb4', '#ffc800', '#aea29a'];
   const margin = {
-    top: 0, right: -10, bottom: 0, left: -10
+    top: 0, right: 0, bottom: 0, left: -6
   };
 
   const createChart = (svg) => {
     // set the dimensions and margins of the graph
     const width = chartRef.current.offsetWidth - margin.left - margin.right;
-    svg.attr('width', width + margin.left + margin.right);
+    svg.attr('width', width + margin.left - margin.right);
     const height = 300 - margin.top - margin.bottom;
     svg.attr('height', height + margin.top + margin.bottom);
 
@@ -71,13 +71,11 @@ function TreeMapChart({
 
   useEffect(() => {
     const svg = d3.select(chartRef.current)
-      .append('svg');
-
-    svg.append('g')
-      .attr(
+      .append('svg').attr(
         'transform',
         `translate(${margin.left}, ${margin.top})`
       );
+
     createChart(svg);
 
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -4,90 +4,246 @@
 
 #app-root-2022-black_sea_grain_initiative .app {
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  max-width: 1000px;
   margin: auto auto;
-  h1 {
+  padding-top: 20px;
+  background-color: #e9e9e9;
+  h2 {
     text-align: center;
+    font-size: 36px;
+    margin: 0 0 20px 0;
   }
-  .total_container {
-    background-color: #f1f1f1;
-    border-radius: 50%;
-    border: 10px solid #009edb;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    height: 250px;
-    justify-content: center;
-    margin: auto auto 20px auto;
-    padding: 20px;
-    text-align: center;
-    width: 250px;
-    h4 {
-      font-size: 20px;
-      font-weight: 400;
-      margin: 0 0 5px 0;
-    }
-    h3 {
-      font-size: 30px;
-      margin: 0 0 5px 0;
-    }
-    span {
-      display: inline-block;
-      font-size: 14px;
-      margin: 0 2px 0 2px;
+  h2,
+  h3,
+  h4 {
+    font-weight: 400;
+    .highlight {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #009edb;
     }
   }
-  .commodities_container {
+  .header_container_outer {
+    background-color: #009edb;
     margin-bottom: 20px;
-    display: flex;
-    > div {
-      background-color: #f1f1f1;
-      border-radius: 50%;
-      border: 10px solid #009edb;
-      display: flex;
-      flex-direction: column;
-      height: 180px;
-      justify-content: center;
-      margin: auto auto 20px auto;
-      padding: 5px;
+    .header_container {
+      background-image: url("/assets/img/banner.png");
+      background-size: 100% 100%;
+      height: 500px;
+      position: relative;
+      max-width: 900px;
+      margin: auto auto;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
       text-align: center;
-      width: 180px;
-      h4 {
-        font-size: 16px;
-        font-weight: 400;
-        margin: 0 0 5px 0;
-      }
+      padding-top: 40px;
       h3 {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 700;
+        margin: 0 0 0 0;
+      }
+      h4 {
+        color: #fff;
         font-size: 20px;
         margin: 0 0 5px 0;
       }
-      span {
-        display: block;
-        font-size: 14px;
-        margin: 0 2px 0 2px;
-      }
-    }
-  }
-  .dashboard_chart {
-    margin-bottom: 5px;
-    svg {
-      height: 30px;
-      width: 160px;
-      .line_container {
-        height: 30px;
-        .line {
+      .dashboard_chart {
+        margin: auto auto;
+        width: 200px;
+        svg {
+          width: 160px;
+          height: 30px;
+        }
+        .line_container {
+
           fill: none;
-          stroke-width: 2.5;
-          stroke: #ED1847;
+          stroke-width: 3;
+          stroke: #fff;
         }
       }
     }
   }
-  iframe {
-    border: none;
-    margin-bottom: 20px;
-    min-width: 100% !important;
-    width: 0;
+  .visualisations_container {
+    .vis_row {
+      margin: auto auto 20px auto;
+      max-width: 900px;
+      &.vis_row_1 {
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 20px;
+        position: relative;
+        h3 {
+          text-align: center;
+          font-size: 30px;
+          margin: 0;
+        }
+        .legend_container {
+          font-size: 12px;
+          font-weight: 700;
+          left: 100px;
+          position: absolute;
+          text-transform: uppercase;
+          top: 100px;
+          .line_legend_container {
+            margin-bottom: 5px;
+            color: #72bf44;
+            .legend_icon {
+              background-color: #72bf44; 
+              border-radius: 2px;
+              display: inline-block;
+              height: 5px;
+              margin-bottom: 2px;
+              margin-right: 5px;
+              width: 20px;
+            }
+          }
+          .bar_legend_container {
+            color: #009edb;
+            .legend_icon {
+              background-color: #009edb; 
+              border-radius: 2px;
+              display: inline-block;
+              height: 20px;
+              margin-bottom: -5px;
+              margin-right: 5px;
+              width: 20px;
+            }
+          }
+        }
+      }
+      &.vis_row_2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .column {
+          background-color: #fff;
+          box-sizing: border-box;
+          flex: 50%;
+          padding: 20px;
+          width: 100%;
+          &.column_1 {
+            margin-right: 10px;
+          }
+          &.column_2 {
+            margin-left: 10px;
+          }
+          h4 {
+            text-align: left;
+            font-size: 24px;
+            margin: 0 0 10px 0;
+          }
+        }
+      }
+      .dashboard_chart {
+        text-align: center;
+        svg {
+          .axis_y_left {
+            text {
+              color: #009edb;
+            }
+          }
+          .axis_y_right {
+            text {
+              color: #72bf44;
+            }
+          }
+          .bar {
+            cursor: pointer;
+            transition: 0.5s opacity;
+            &:hover {
+              opacity: 0.8;
+              transition: 0s opacity;
+            }
+          }
+          .line {
+            fill: none;
+            stroke-width: 3;
+            stroke: #72bf44;
+          }
+          .dot {
+            cursor: pointer;
+            fill: #72bf44;
+            stroke: #72bf44;
+          }
+          .bar_value,
+          .line_value {
+            fill: #000;
+            font-size: 18px;
+            font-weight: bold;
+            opacity: 0;
+            text-anchor: middle;
+            transition: 0s opacity;
+            visibility: hidden;
+            &.visible {
+              visibility: visible;
+              transition: 0.5s opacity;
+              opacity: 1;
+            }
+          }
+          .treemap rect {
+            cursor: pointer;
+            stroke: #eee;
+            stroke-width: 1.5px;
+            transition: 0.5s opacity;
+            &:hover {
+              opacity: 0.8;
+              transition: 0s opacity;
+            }
+          }
+          .treemap_text {
+            fill: #fff;
+            font-weight: 700;
+            pointer-events: none;
+          }
+          .treemap_val {
+            fill: #fff;
+            pointer-events: none;
+          }
+        }
+      }
+      .selection_container {
+        .selection_label {
+          display: inline-block;
+          margin: 0 2px;
+        }
+        button {
+          background-color: #009edb;
+          border: 0;
+          color: #fff;
+          cursor: pointer;
+          font-weight: bold;
+          margin: 0 2px;
+          padding: 5px 7px;
+          &:hover {
+            color: #ccc;
+          }
+        }
+      }
+    }
+  }
+  .instruction {
+    color: #333;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .table_container {
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: auto auto;
+    max-width: 900px;
+    padding: 20px;
+    h3 {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 0 0 20px 0;
+    }
+    iframe {
+      border: none;
+      margin-bottom: 20px;
+      min-width: 100% !important;
+      width: 0;
+    }
   }
 }
 

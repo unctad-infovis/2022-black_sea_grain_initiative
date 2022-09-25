@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import * as d3 from 'd3';
 
 function LineChart({ appID, idx, series }) {
+  console.log(series);
   const chartRef = useRef(null);
   const xScale = d3.scaleLinear()
     .range([0, 160])
@@ -14,7 +15,7 @@ function LineChart({ appID, idx, series }) {
     .domain([Math.min(...series), Math.max(...series)]);
 
   let current_idx = 0;
-  const updateLineChart = () => {
+  const updateChart = () => {
     current_idx++;
     const line = d3.line()
       .x((d, i) => xScale(i))
@@ -37,8 +38,8 @@ function LineChart({ appID, idx, series }) {
       if (current_idx > series.length) {
         clearInterval(interval);
       }
-      updateLineChart();
-    }, 3000 / series.length);
+      updateChart();
+    }, 3500 / series.length);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

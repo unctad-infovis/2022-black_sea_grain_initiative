@@ -12,16 +12,22 @@ function LineBarChart({
   const chartRef = useRef(null);
   const [g, setG] = useState(false);
 
-  const width = 750;
-  const height = 300;
   const margin = {
     top: 40, right: 60, bottom: 30, left: 50
   };
-  useEffect(() => {
-    const svg = d3.select(chartRef.current)
-      .append('svg')
-      .attr('width', width + margin.left + margin.right)
+  const height = 300 - margin.top - margin.bottom;
+
+  const x = d3.scaleBand();
+  const createChart = (svg) => {
+    const width = chartRef.current.offsetWidth - margin.left - margin.right;
+    svg.attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom);
+    x.rangeRound([0, chartRef.current.offsetWidth - margin.left - margin.right]).padding(0.1);
+    svg.selectAll('.axis_y_right').attr('transform', `translate(${width}, 0)`);
+  };
+
+  useEffect(() => {
+    const svg = d3.select(chartRef.current).append('svg');
     const container_g = svg.append('g')
       .attr('transform', `translate(${margin.left},${margin.top})`);
     container_g.append('g')
@@ -30,15 +36,12 @@ function LineBarChart({
     container_g.append('g')
       .attr('class', 'axis_y axis_y_left');
     container_g.append('g')
-      .attr('transform', `translate(${width}, 0)`)
       .attr('class', 'axis_y axis_y_right');
     setG(container_g);
-
+    createChart(svg);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const x = d3.scaleBand().rangeRound([0, width])
-    .padding(0.1);
   const xAxis = d3.axisBottom().scale(x).tickValues(['2022-08-01', '2022-08-10', '2022-08-20', '2022-09-01', '2022-09-10', '2022-09-20']);
 
   const yLeft = d3.scaleLinear().range([height, 0]);
@@ -49,6 +52,7 @@ function LineBarChart({
   const updateData = (selected_series, duration) => {
     if (g) {
       x.domain(selected_series.map((d) => d[0]));
+      x.rangeRound([0, chartRef.current.offsetWidth - margin.left - margin.right]).padding(0.1);
       g.selectAll('.axis_x')
         .call(xAxis);
 
@@ -130,7 +134,7 @@ function LineBarChart({
         .text((d) => d[2].toLocaleString());
 
       // Bar values
-      const bar_values = g.selectAll('.line_value')
+      const bar_values = g.selectAll('.bar_value')
         .data(selected_series);
       bar_values.join('text')
         .transition()
@@ -144,6 +148,11 @@ function LineBarChart({
   };
 
   updateData(defineData(type, value), durationExt);
+
+  window.addEventListener('resize', () => {
+    createChart(d3.select(chartRef.current).selectAll('svg'));
+    updateData(defineData(type, value), durationExt);
+  });
 
   return (
     <div>

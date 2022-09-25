@@ -119,19 +119,31 @@
       }
       &.vis_row_2 {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-evenly;
+        @media all and (max-width: 919px) {
+          max-width: 600px;
+        }
+        @media all and (min-width: 920px) {
+          flex-direction: row;
+        }
         .column {
           background-color: #fff;
           box-sizing: border-box;
-          flex: 50%;
           padding: 20px;
           width: 100%;
           &.column_1 {
-            margin-right: 10px;
+            @media all and (min-width: 920px) {
+              margin-right: 10px;
+            }
+            @media all and (max-width: 919px) {
+              margin-bottom: 20px;
+            }
           }
           &.column_2 {
-            margin-left: 10px;
+            @media all and (min-width: 920px) {
+              margin-left: 10px;
+            }
           }
           h4 {
             text-align: left;
@@ -143,6 +155,7 @@
       .dashboard_chart {
         text-align: center;
         svg {
+          width: 100%;
           .axis_y_left {
             text {
               color: #009edb;

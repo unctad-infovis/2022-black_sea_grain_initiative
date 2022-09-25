@@ -10,7 +10,7 @@ function LineChart({ appID, idx, series }) {
     .range([0, 160])
     .domain([0, series.length]);
   const yScale = d3.scaleLinear()
-    .range([28, 2])
+    .range([40, 2])
     .domain([Math.min(...series), Math.max(...series)]);
 
   let current_idx = 0;

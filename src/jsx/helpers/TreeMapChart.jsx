@@ -38,7 +38,7 @@ function TreeMapChart({
     svg.join('g').attr('class', 'treemap').selectAll('rect')
       .data(root.leaves())
       .join('rect')
-      .attr('class', 'rect')
+      .attr('class', 'treemap_rect')
       .attr('x', (d) => d.x0)
       .attr('y', (d) => d.y0)
       .attr('width', (d) => d.x1 - d.x0)

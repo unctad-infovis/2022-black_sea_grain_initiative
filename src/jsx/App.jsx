@@ -21,6 +21,7 @@ function App() {
   const [durationExt, setDurationExt] = useState(0);
   const [topCountries, setTopCountries] = useState([]);
   const [topCommodities, setTopCommodities] = useState([]);
+  const [updated, setUpdated] = useState(false);
 
   const [totalTonnage, setTotalTonnage] = useState(0);
   const [totalShips, setTotalShips] = useState(0);
@@ -80,6 +81,7 @@ function App() {
           const json_data = CSVtoJSON(body);
           setData(json_data);
           setDates(dateRange(new Date(json_data[0].Departure), daysBetween(new Date(json_data[json_data.length - 1].Departure), new Date(json_data[0].Departure))).reduce((a, v) => ({ ...a, [v]: [v, 0] }), {}));
+          setUpdated(new Date(json_data[json_data.length - 1].Departure));
         });
     } catch (error) {
       console.error(error);
@@ -148,6 +150,7 @@ function App() {
           {(data) && (<LineChart appID={appID} idx="0" series={defineData(false, false).map(el => el[2])} />)}
           <h3><CountUp separator="," end={totalShips} duration={4} useEasing easingFn={easingFn} /></h3>
           <h4>Vessels departed</h4>
+          <h5>{(updated) && `As of ${updated.getDate()}  ${updated.toLocaleString('default', { month: 'long' })} ${updated.getFullYear()} ` }</h5>
         </div>
       </div>
       { /* Visualisations container */ }

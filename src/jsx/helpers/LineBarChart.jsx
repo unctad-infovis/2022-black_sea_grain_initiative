@@ -187,7 +187,7 @@ function LineBarChart({
             <span className="legend_text">In total</span>
           </div>
           <div className="selected">
-            <span className="type_legend">{(type === 'Country') ? 'Destionation' : type}</span>
+            <span className="type_legend">{(type === 'Country') ? 'Destination' : type}</span>
             <span className="value_legend">{value}</span>
           </div>
         </div>

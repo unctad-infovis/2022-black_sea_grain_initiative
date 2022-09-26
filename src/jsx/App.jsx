@@ -9,7 +9,7 @@ import CSVtoJSON from './helpers/CSVtoJSON.js';
 import LineChart from './helpers/LineChart.jsx';
 import TreeMapChart from './helpers/TreeMapChart.jsx';
 import LineBarChart from './helpers/LineBarChart.jsx';
-// import roundNr from './helpers/RoundNr.js';
+import slideToggle from './helpers/slideToggle.js';
 
 const appID = '#app-root-2022-black_sea_grain_initiative';
 
@@ -143,26 +143,6 @@ function App() {
   // eslint-disable-next-line
   const easingFn = (t, b, c, d) => c * ((t = t / d - 1) * t * t + 1) + b;
 
-  const slideToggle = (target) => {
-    const container = target;
-    if (!container.classList.contains('active')) {
-      container.classList.add('active');
-      container.style.height = 'auto';
-      const height = `${container.clientHeight}px`;
-      container.style.height = '0px';
-      setTimeout(() => {
-        container.style.height = height;
-      }, 0);
-    } else {
-      container.style.height = '0px';
-      container.addEventListener('transitionend', () => {
-        container.classList.remove('active');
-      }, {
-        once: true
-      });
-    }
-  };
-
   return (
     <div className="app">
       { /* Banner container */ }
@@ -204,16 +184,20 @@ function App() {
             <div className="list_container_toggle"><button type="button" onClick={() => slideToggle(document.querySelectorAll('.list_container_commodity')[0])}>Show other products</button></div>
             <div className="list_container list_container_commodity">
               <table>
-                <tr>
-                  <th>Commodity</th>
-                  <th>Metric tons</th>
-                </tr>
-                {topCommoditiesFull && topCommoditiesFull.map(el => (
-                  <tr key={el.name} className="">
-                    <td>{el.name}</td>
-                    <td>{el.value.toLocaleString()}</td>
+                <thead>
+                  <tr>
+                    <th>Commodity</th>
+                    <th>Metric tons</th>
                   </tr>
-                ))}
+                </thead>
+                <tbody>
+                  {topCommoditiesFull && topCommoditiesFull.map(el => (
+                    <tr key={el.name} className="">
+                      <td>{el.name}</td>
+                      <td>{el.value.toLocaleString()}</td>
+                    </tr>
+                  ))}
+                </tbody>
               </table>
             </div>
           </div>
@@ -228,16 +212,20 @@ function App() {
             <div className="list_container_toggle"><button type="button" onClick={() => slideToggle(document.querySelectorAll('.list_container_country')[0])}>Show other destinations</button></div>
             <div className="list_container list_container_country">
               <table>
-                <tr>
-                  <th>Country</th>
-                  <th>Metric tons</th>
-                </tr>
-                {topCountriesFull && topCountriesFull.map(el => (
-                  <tr key={el.name} className="">
-                    <td>{el.name}</td>
-                    <td>{el.value.toLocaleString()}</td>
+                <thead>
+                  <tr>
+                    <th>Country</th>
+                    <th>Metric tons</th>
                   </tr>
-                ))}
+                </thead>
+                <tbody>
+                  {topCountriesFull && topCountriesFull.map(el => (
+                    <tr key={el.name} className="">
+                      <td>{el.name}</td>
+                      <td>{el.value.toLocaleString()}</td>
+                    </tr>
+                  ))}
+                </tbody>
               </table>
             </div>
           </div>

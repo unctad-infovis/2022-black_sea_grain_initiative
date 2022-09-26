@@ -227,10 +227,12 @@ function LineBarChart({
             <option value={false}>Select commodity</option>
             <option disabled>– – – </option>
             {
-          commodities && commodities.map(el => (
-            <option key={el} value={el}>{el}</option>
-          ))
-        }
+              commodities && commodities.map(el => (
+                <option key={el} value={el}>{el}</option>
+              ))
+            }
+            <option disabled>– – – </option>
+            <option value="Other">Other than top three</option>
           </select>
           <button type="button" className={`remove ${commodityValue && 'enabled'}`} value={false} onClick={(event) => selectionChange(event, 'Commodity')}>⨯</button>
         </span>
@@ -240,10 +242,12 @@ function LineBarChart({
             <option value={false}>Select destination</option>
             <option disabled>– – – </option>
             {
-          countries && countries.map(el => (
-            <option key={el} value={el}>{el}</option>
-          ))
-        }
+              countries && countries.map(el => (
+                <option key={el} value={el}>{el}</option>
+              ))
+            }
+            <option disabled>– – – </option>
+            <option value="Other">Other than top six</option>
           </select>
           <button type="button" className={`remove ${countryValue && 'enabled'}`} value={false} onClick={(event) => selectionChange(event, 'Country')}>⨯</button>
         </span>

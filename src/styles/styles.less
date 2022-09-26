@@ -81,45 +81,76 @@
       &.vis_row_1 {
         background-color: #fff;
         box-sizing: border-box;
-        padding: 20px;
+        padding: 20px 20px 20px 20px;
         position: relative;
         h3 {
           text-align: center;
           font-size: 30px;
           margin: 0;
         }
-
         .legend_container {
-          font-size: 12px;
-          font-weight: 700;
-          left: 100px;
-          position: absolute;
-          text-transform: uppercase;
-          top: 100px;
-          .line_legend_container {
-            margin-bottom: 5px;
-            color: #72bf44;
-            .legend_icon {
-              background-color: #72bf44; 
-              border-radius: 2px;
-              display: inline-block;
-              height: 5px;
-              margin-bottom: 2px;
-              margin-right: 5px;
-              width: 20px;
+          .left {
+            left: 25px;
+            position: absolute;
+            top: 70px;
+            .selected {
+              margin: 5px 0 0 50px;
+              .type_legend {
+                font-size: 14px;
+                margin-right: 5px;
+                text-transform: uppercase;
+              }
+              .value_legend {
+                font-size: 16px;
+                font-weight: 700;
+              }
+            }
+            .line_legend_container {
+              color: #72bf44;
+              display: inline;
+              font-size: 12px;
+              font-weight: 700;
+              text-transform: uppercase;
+              .legend_icon {
+                background-color: #72bf44; 
+                border-radius: 2px;
+                display: inline-block;
+                height: 5px;
+                margin-bottom: 2px;
+                margin-right: 5px;
+                width: 20px;
+              }
+            }
+            .bar_legend_container {
+              display: inline;
+              margin-right: 10px;
+              color: #009edb;
+              font-size: 12px;
+              font-weight: 700;
+              text-transform: uppercase;
+              .legend_icon {
+                background-color: #009edb; 
+                border-radius: 2px;
+                display: inline-block;
+                height: 20px;
+                margin-bottom: -5px;
+                margin-right: 5px;
+                width: 20px;
+              }
             }
           }
-          .bar_legend_container {
-            color: #009edb;
-            .legend_icon {
-              background-color: #009edb; 
-              border-radius: 2px;
-              display: inline-block;
-              height: 20px;
-              margin-bottom: -5px;
-              margin-right: 5px;
-              width: 20px;
-            }
+        }
+        .right {
+          font-size: 13px;
+          line-height: 11px;
+          position: absolute;
+          right: 20px;
+          top: 65px;
+          vertical-align: top;
+          input[type=checkbox] {
+             height: 15px; 
+             vertical-align: -15%;
+             line-height: 12px;
           }
         }
       }
@@ -202,6 +233,17 @@
                 &:nth-child(2) {
                   text-align: right;
                 }
+                button {
+                  background-color: #fff;
+                  border: 0;
+                  color: #000;
+                  cursor: pointer;
+                  margin: 0;
+                  padding: 0;
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
               }
             }
           }
@@ -215,10 +257,16 @@
             text {
               color: #009edb;
             }
+            g:nth-child(2) {
+              display: none;
+            }
           }
           .axis_y_right {
             text {
               color: #72bf44;
+            }
+            g:nth-child(2) {
+              display: none;
             }
           }
           .axis_y_left,

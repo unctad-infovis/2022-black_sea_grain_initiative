@@ -1,4 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, {
+  useState, useEffect, useRef, useCallback, useMemo
+} from 'react';
 import PropTypes from 'prop-types';
 
 // @See https://bl.ocks.org/htakeuchi/a60c0ecb55713c06c054c26c6dbed57a
@@ -7,57 +9,56 @@ import PropTypes from 'prop-types';
 import * as d3 from 'd3';
 
 function LineBarChart({
-  appID, idx, defineData, durationExt, type, value
+  // eslint-disable-next-line
+  appID, idx, defineData, duration, type, value, setType, setValue, setDuration
 }) {
   const chartRef = useRef(null);
   const [g, setG] = useState(false);
 
-  const margin = {
+  const [axisStatic, setAxisStatic] = useState(true);
+  const maxAxisLeft = useRef();
+  const maxAxisRight = useRef();
+
+  const margin = useMemo(() => ({
     top: 40, right: 50, bottom: 30, left: 40
-  };
+  }), []);
   const height = 300 - margin.top - margin.bottom;
 
   const x = d3.scaleBand();
-  const createChart = (svg) => {
+  const createChart = useCallback((svg) => {
     const width = chartRef.current.offsetWidth - margin.left - margin.right;
     svg.attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom);
-    x.rangeRound([0, chartRef.current.offsetWidth - margin.left - margin.right]).padding(0.1);
     svg.selectAll('.axis_y_right').attr('transform', `translate(${width}, 0)`);
-  };
+  }, [margin, height]);
 
-  useEffect(() => {
-    const svg = d3.select(chartRef.current).append('svg');
-    const container_g = svg.append('g')
-      .attr('transform', `translate(${margin.left},${margin.top})`);
-    container_g.append('g')
-      .attr('transform', `translate(0, ${height})`)
-      .attr('class', 'axis_x');
-    container_g.append('g')
-      .attr('class', 'axis_y axis_y_left');
-    container_g.append('g')
-      .attr('class', 'axis_y axis_y_right');
-    setG(container_g);
-    createChart(svg);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const xAxis = d3.axisBottom().scale(x).tickValues(['2022-08-01', '2022-08-10', '2022-08-20', '2022-09-01', '2022-09-10', '2022-09-20']);
+  const xAxis = d3.axisBottom().scale(x).tickSizeOuter([0]).tickValues(['2022-08-01', '2022-08-10', '2022-08-20', '2022-09-01', '2022-09-10', '2022-09-20']);
 
   const yLeft = d3.scaleLinear().range([height, 0]);
-  const yAxisLeft = d3.axisLeft().scale(yLeft).ticks(5).tickFormat(val => ((val !== 0) ? `${(val / 1000).toLocaleString()}k` : ''));
+  const yAxisLeft = d3.axisLeft().scale(yLeft).tickSizeOuter([0]).ticks(5)
+    .tickFormat(val => ((val !== 0) ? `${(val / 1000).toLocaleString()}k` : ''));
   const yRight = d3.scaleLinear().range([height, 0]);
-  const yAxisRight = d3.axisRight().scale(yRight).ticks(5).tickFormat(val => ((val !== 0) ? `${(val / 1000).toLocaleString()}k` : ''));
-
-  const updateData = (selected_series, duration) => {
-    if (g) {
+  const yAxisRight = d3.axisRight().scale(yRight).tickSizeOuter([0]).ticks(5)
+    .tickFormat(val => ((val !== 0) ? `${(val / 1000).toLocaleString()}k` : ''));
+  // eslint-disable-next-line
+  const updateData = useCallback((selected_series, update) => {
+    if (g && (duration > 0 || (update === true))) {
       x.domain(selected_series.map((d) => d[0]));
       x.rangeRound([0, chartRef.current.offsetWidth - margin.left - margin.right]).padding(0.1);
       g.selectAll('.axis_x')
         .call(xAxis);
 
-      yLeft.domain([0, d3.max(selected_series, ((d) => d[1]))]);
-      yRight.domain([0, d3.max(selected_series, ((d) => d[2]))]);
+      if (maxAxisLeft.current === undefined) {
+        maxAxisLeft.current = [0, d3.max(selected_series, ((d) => d[1]))];
+        maxAxisRight.current = [0, d3.max(selected_series, ((d) => d[2]))];
+      }
+      if (axisStatic !== false) {
+        yLeft.domain([0, d3.max(selected_series, ((d) => d[1]))]);
+        yRight.domain([0, d3.max(selected_series, ((d) => d[2]))]);
+      } else {
+        yLeft.domain(maxAxisLeft.current);
+        yRight.domain(maxAxisRight.current);
+      }
 
       // Axis-y-left
       g.selectAll('.axis_y_left')
@@ -145,37 +146,68 @@ function LineBarChart({
         .attr('class', (d, i) => `bar_value bar_value_${i}`)
         .text((d) => d[1].toLocaleString());
     }
-  };
+  }, [appID, g, height, margin, x, xAxis, yAxisRight, yLeft, yRight, yAxisLeft, duration, axisStatic]);
 
-  updateData(defineData(type, value), durationExt);
+  useEffect(() => {
+    const svg = d3.select(chartRef.current).append('svg');
+    const container_g = svg.append('g')
+      .attr('transform', `translate(${margin.left},${margin.top})`);
+    container_g.append('g')
+      .attr('transform', `translate(0, ${height})`)
+      .attr('class', 'axis_x');
+    container_g.append('g')
+      .attr('class', 'axis_y axis_y_left');
+    container_g.append('g')
+      .attr('class', 'axis_y axis_y_right');
+    setG(container_g);
+    createChart(svg);
+  }, [createChart, margin, height]);
+
+  useEffect(() => {
+    if (g) {
+      updateData(defineData(type, value), true);
+    }
+  }, [g, updateData, defineData, duration, type, value]);
 
   window.addEventListener('resize', () => {
     createChart(d3.select(chartRef.current).selectAll('svg'));
-    updateData(defineData(type, value), durationExt);
+    updateData(defineData(type, value), 0);
   });
 
   return (
     <div>
       <div className="legend_container">
-        <div className="line_legend_container">
-          <span className="legend_icon" />
-          <span className="legend_text">In total</span>
+        <div className="left">
+          <div className="bar_legend_container">
+            <span className="legend_icon" />
+            <span className="legend_text">Per day</span>
+          </div>
+          <div className="line_legend_container">
+            <span className="legend_icon" />
+            <span className="legend_text">In total</span>
+          </div>
+          <div className="selected">
+            <span className="type_legend">{(type === 'Country') ? 'Destionation' : type}</span>
+            <span className="value_legend">{value}</span>
+          </div>
         </div>
-        <div className="bar_legend_container">
-          <span className="legend_icon" />
-          <span className="legend_text">Per day</span>
+        <div className="right">
+          <label htmlFor={`${appID}Checkbox`}>
+            <input type="checkbox" onClick={() => ((axisStatic === true) ? setAxisStatic(false) : setAxisStatic(true))} id={`${appID}Checkbox`} />
+            <span className="axis_toggle_label">Keep axis</span>
+          </label>
         </div>
       </div>
       <div className={`dashboard_chart chart_${idx}`} ref={chartRef} />
       <div className="selection_container">
-        <div className="instruction">Choose a commodity or country of interest</div>
-        <button type="button" onClick={() => updateData(defineData(), 1000)}>Total</button>
+        <div className="instruction">Choose a commodity or destination of interest</div>
+        <button type="button" onClick={() => { setDuration(1000); setType(false); setValue(false); updateData(defineData(false, false), 1000, false, false); }}>Total</button>
         <span className="selection_label">Commodity</span>
-        <button type="button" onClick={() => updateData(defineData('Commodity', 'Wheat'), 1000)}>Wheat</button>
-        <button type="button" onClick={() => updateData(defineData('Commodity', 'Corn'), 1000)}>Corn</button>
-        <span className="selection_label">Country</span>
-        <button type="button" onClick={() => updateData(defineData('Country', 'Spain'), 1000)}>Spain</button>
-        <button type="button" onClick={() => updateData(defineData('Country', 'Türkiye'), 1000)}>Türkiye</button>
+        <button type="button" onClick={() => { setDuration(1000); setType('Commodity'); setValue('Wheat'); updateData(defineData('Commodity', 'Wheat'), 1000, 'Commodity', 'Wheat'); }}>Wheat</button>
+        <button type="button" onClick={() => { setDuration(1000); setType('Commodity'); setValue('Corn'); updateData(defineData('Commodity', 'Corn'), 1000, 'Commodity', 'Wheat'); }}>Corn</button>
+        <span className="selection_label">Destination</span>
+        <button type="button" onClick={() => { setDuration(1000); setType('Country'); setValue('Spain'); updateData(defineData('Country', 'Spain'), 1000); }}>Spain</button>
+        <button type="button" onClick={() => { setDuration(1000); setType('Country'); setValue('Türkiye'); updateData(defineData('Country', 'Türkiye'), 1000); }}>Türkiye</button>
       </div>
     </div>
   );
@@ -184,8 +216,11 @@ function LineBarChart({
 LineBarChart.propTypes = {
   appID: PropTypes.string.isRequired,
   defineData: PropTypes.instanceOf(Function).isRequired,
+  duration: PropTypes.number.isRequired,
   idx: PropTypes.string.isRequired,
-  durationExt: PropTypes.number.isRequired,
+  setDuration: PropTypes.instanceOf(Function).isRequired,
+  setType: PropTypes.instanceOf(Function).isRequired,
+  setValue: PropTypes.instanceOf(Function).isRequired,
   type: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
   value: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired
 };

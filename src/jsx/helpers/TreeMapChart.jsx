@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import * as d3 from 'd3';
 
 function TreeMapChart({
-  category, idx, series, setType, setDurationExt, setValue
+  category, idx, series, setType, setDuration, setValue
 }) {
   series.columns = ['name', 'parent', 'value'];
   const chartRef = useRef(null);
@@ -47,7 +47,7 @@ function TreeMapChart({
       .on('click', (event, d) => {
         setType(category);
         setValue(d.data.name);
-        setDurationExt(1000);
+        setDuration(1000);
       });
 
     svg.join('g').selectAll('.treemap_text')
@@ -94,7 +94,7 @@ TreeMapChart.propTypes = {
   category: PropTypes.string.isRequired,
   idx: PropTypes.string.isRequired,
   series: PropTypes.instanceOf(Array).isRequired,
-  setDurationExt: PropTypes.instanceOf(Function).isRequired,
+  setDuration: PropTypes.instanceOf(Function).isRequired,
   setType: PropTypes.instanceOf(Function).isRequired,
   setValue: PropTypes.instanceOf(Function).isRequired
 };

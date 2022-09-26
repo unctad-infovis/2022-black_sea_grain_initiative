@@ -18,7 +18,7 @@ function App() {
   const [data, setData] = useState(false);
   const [type, setType] = useState(false);
   const [value, setValue] = useState(false);
-  const [durationExt, setDurationExt] = useState(0);
+  const [duration, setDuration] = useState(0);
   const [topCountries, setTopCountries] = useState([]);
   const [topCountriesFull, setTopCountriesFull] = useState([]);
   const [topCommodities, setTopCommodities] = useState([]);
@@ -39,7 +39,11 @@ function App() {
     return [...Array(num_of_days).keys()].map(i => new Date(start_dateInMs + i * (24 * 60 * 60 * 1000)).toISOString().slice(0, 10));
   };
 
-  const defineData = (selected_type = false, selected_value = false) => {
+  const defineData = (selected_type = false, selected_value = false, set = false) => {
+    if (set === true) {
+      setType(selected_type);
+      setValue(selected_value);
+    }
     const output = [];
     if (selected_type === false) {
       Object.values({
@@ -71,9 +75,13 @@ function App() {
         return [b[0], b[1], b[1] + (a[2] || 0), i];
       }, []);
     }
+
     return output;
   };
 
+  useEffect(() => {
+
+  }, [type, value]);
   useEffect(() => {
     const data_file = (window.location.href.includes('unctad.org')) ? '/sites/default/files/data-file/2022-black_sea_grain_initiative.csv' : './assets/data/data - data.csv';
     try {
@@ -170,7 +178,7 @@ function App() {
             {' '}
             has been shipped daily and in total?
           </h3>
-          {(data) && (<LineBarChart appID={appID} idx="1" defineData={defineData} durationExt={durationExt} type={type} value={value} />)}
+          {(data) && (<LineBarChart appID={appID} idx="1" defineData={defineData} duration={duration} setDuration={setDuration} type={type} value={value} setType={setType} setValue={setValue} />)}
         </div>
         <div className="vis_row vis_row_2">
           <div className="column column_1">
@@ -180,7 +188,7 @@ function App() {
               are the main products carried?
             </h4>
             <div className="instruction">Choose a commodity of interest</div>
-            {totalPerProduct && (<TreeMapChart category="Commodity" idx="2" series={totalPerProduct} setValue={setValue} setType={setType} setDurationExt={setDurationExt} />)}
+            {totalPerProduct && (<TreeMapChart category="Commodity" idx="2" series={totalPerProduct} setValue={setValue} setType={setType} setDuration={setDuration} />)}
             <div className="list_container_toggle"><button type="button" onClick={() => slideToggle(document.querySelectorAll('.list_container_commodity')[0])}>Show other products</button></div>
             <div className="list_container list_container_commodity">
               <table>
@@ -193,7 +201,7 @@ function App() {
                 <tbody>
                   {topCommoditiesFull && topCommoditiesFull.map(el => (
                     <tr key={el.name} className="">
-                      <td>{el.name}</td>
+                      <td><button type="button" onClick={() => { setDuration(1000); setType('Commodity'); setValue(el.name); }}>{el.name}</button></td>
                       <td>{el.value.toLocaleString()}</td>
                     </tr>
                   ))}
@@ -207,8 +215,8 @@ function App() {
               {' '}
               has the cargo gone to?
             </h4>
-            <div className="instruction">Choose a country of interest</div>
-            {totalPerCountry && (<TreeMapChart category="Country" idx="3" series={totalPerCountry} setValue={setValue} setType={setType} setDurationExt={setDurationExt} />)}
+            <div className="instruction">Choose a destination of interest</div>
+            {totalPerCountry && (<TreeMapChart category="Country" idx="3" series={totalPerCountry} setValue={setValue} setType={setType} setDuration={setDuration} />)}
             <div className="list_container_toggle"><button type="button" onClick={() => slideToggle(document.querySelectorAll('.list_container_country')[0])}>Show other destinations</button></div>
             <div className="list_container list_container_country">
               <table>
@@ -221,7 +229,7 @@ function App() {
                 <tbody>
                   {topCountriesFull && topCountriesFull.map(el => (
                     <tr key={el.name} className="">
-                      <td>{el.name}</td>
+                      <td><button type="button" onClick={() => { setDuration(1000); setType('Country'); setValue(el.name); }}>{el.name}</button></td>
                       <td>{el.value.toLocaleString()}</td>
                     </tr>
                   ))}

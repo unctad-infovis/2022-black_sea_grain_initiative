@@ -10,7 +10,7 @@ import * as d3 from 'd3';
 
 function LineBarChart({
   // eslint-disable-next-line
-  appID, idx, defineData, duration, type, value, setType, setValue, setDuration
+  appID, commodities, countries, commodityValue, countryValue, defineData, duration, idx, setCommodityValue, setCountryValue, setDuration
 }) {
   const chartRef = useRef(null);
   const [g, setG] = useState(false);
@@ -36,10 +36,10 @@ function LineBarChart({
 
   const yLeft = d3.scaleLinear().range([height, 0]);
   const yAxisLeft = d3.axisLeft().scale(yLeft).tickSizeOuter([0]).ticks(5)
-    .tickFormat(val => ((val !== 0) ? `${(val / 1000).toLocaleString()}k` : ''));
+    .tickFormat(val => ((val !== 0 && val > 1000) ? `${(val / 1000).toLocaleString()}k` : ''));
   const yRight = d3.scaleLinear().range([height, 0]);
   const yAxisRight = d3.axisRight().scale(yRight).tickSizeOuter([0]).ticks(5)
-    .tickFormat(val => ((val !== 0) ? `${(val / 1000).toLocaleString()}k` : ''));
+    .tickFormat(val => ((val !== 0 && val > 1000) ? `${(val / 1000).toLocaleString()}k` : ''));
   // eslint-disable-next-line
   const updateData = useCallback((selected_series, update) => {
     if (g && (duration > 0 || (update === true))) {
@@ -53,8 +53,8 @@ function LineBarChart({
         maxAxisRight.current = [0, d3.max(selected_series, ((d) => d[2]))];
       }
       if (axisStatic !== false) {
-        yLeft.domain([0, d3.max(selected_series, ((d) => d[1]))]);
-        yRight.domain([0, d3.max(selected_series, ((d) => d[2]))]);
+        yLeft.domain([0, Math.max(d3.max(selected_series, ((d) => d[1])), 1)]);
+        yRight.domain([0, Math.max(d3.max(selected_series, ((d) => d[2])), 1)]);
       } else {
         yLeft.domain(maxAxisLeft.current);
         yRight.domain(maxAxisRight.current);
@@ -146,7 +146,7 @@ function LineBarChart({
         .attr('class', (d, i) => `bar_value bar_value_${i}`)
         .text((d) => d[1].toLocaleString());
     }
-  }, [appID, g, height, margin, x, xAxis, yAxisRight, yLeft, yRight, yAxisLeft, duration, axisStatic]);
+  }, [appID, axisStatic, duration, g, height, margin, x, xAxis, yAxisLeft, yAxisRight, yLeft, yRight]);
 
   useEffect(() => {
     const svg = d3.select(chartRef.current).append('svg');
@@ -165,14 +165,24 @@ function LineBarChart({
 
   useEffect(() => {
     if (g) {
-      updateData(defineData(type, value), true);
+      updateData(defineData(), true);
+      setDuration(1000);
     }
-  }, [g, updateData, defineData, duration, type, value]);
+  }, [commodityValue, countryValue, defineData, duration, g, setDuration, updateData]);
 
   window.addEventListener('resize', () => {
     createChart(d3.select(chartRef.current).selectAll('svg'));
-    updateData(defineData(type, value), 0);
+    updateData(defineData(commodityValue, countryValue), 0);
   });
+
+  const selectionChange = (event, type) => {
+    if (type === 'Commodity') {
+      setCommodityValue((event.target.value === 'false') ? false : event.target.value);
+    } else if (type === 'Country') {
+      setCountryValue((event.target.value === 'false') ? false : event.target.value);
+    }
+    updateData(defineData());
+  };
 
   return (
     <div>
@@ -187,8 +197,18 @@ function LineBarChart({
             <span className="legend_text">In total</span>
           </div>
           <div className="selected">
-            <span className="type_legend">{(type === 'Country') ? 'Destination' : type}</span>
-            <span className="value_legend">{value}</span>
+            {commodityValue && (
+            <div>
+              <span className="type_legend">Commodity</span>
+              <span className="value_legend">{commodityValue}</span>
+            </div>
+            )}
+            {countryValue && (
+            <div>
+              <span className="type_legend">Destination</span>
+              <span className="value_legend">{countryValue}</span>
+            </div>
+            )}
           </div>
         </div>
         <div className="right">
@@ -201,13 +221,32 @@ function LineBarChart({
       <div className={`dashboard_chart chart_${idx}`} ref={chartRef} />
       <div className="selection_container">
         <div className="instruction">Choose a commodity or destination of interest</div>
-        <button type="button" onClick={() => { setDuration(1000); setType(false); setValue(false); updateData(defineData(false, false), 1000, false, false); }}>Total</button>
-        <span className="selection_label">Commodity</span>
-        <button type="button" onClick={() => { setDuration(1000); setType('Commodity'); setValue('Wheat'); updateData(defineData('Commodity', 'Wheat'), 1000, 'Commodity', 'Wheat'); }}>Wheat</button>
-        <button type="button" onClick={() => { setDuration(1000); setType('Commodity'); setValue('Corn'); updateData(defineData('Commodity', 'Corn'), 1000, 'Commodity', 'Wheat'); }}>Corn</button>
-        <span className="selection_label">Destination</span>
-        <button type="button" onClick={() => { setDuration(1000); setType('Country'); setValue('Spain'); updateData(defineData('Country', 'Spain'), 1000); }}>Spain</button>
-        <button type="button" onClick={() => { setDuration(1000); setType('Country'); setValue('Türkiye'); updateData(defineData('Country', 'Türkiye'), 1000); }}>Türkiye</button>
+        <span className="selection_commodity">
+          <span className="selection_label">Commodity</span>
+          <select onChange={(event) => selectionChange(event, 'Commodity')} value={commodityValue}>
+            <option value={false}>Select commodity</option>
+            <option disabled>– – – </option>
+            {
+          commodities && commodities.map(el => (
+            <option key={el} value={el}>{el}</option>
+          ))
+        }
+          </select>
+          <button type="button" className={`remove ${commodityValue && 'enabled'}`} value={false} onClick={(event) => selectionChange(event, 'Commodity')}>⨯</button>
+        </span>
+        <span className="selection_destination">
+          <span className="selection_label">Destination</span>
+          <select onChange={(event) => selectionChange(event, 'Country')} value={countryValue}>
+            <option value={false}>Select destination</option>
+            <option disabled>– – – </option>
+            {
+          countries && countries.map(el => (
+            <option key={el} value={el}>{el}</option>
+          ))
+        }
+          </select>
+          <button type="button" className={`remove ${countryValue && 'enabled'}`} value={false} onClick={(event) => selectionChange(event, 'Country')}>⨯</button>
+        </span>
       </div>
     </div>
   );
@@ -215,14 +254,16 @@ function LineBarChart({
 
 LineBarChart.propTypes = {
   appID: PropTypes.string.isRequired,
+  commodities: PropTypes.instanceOf(Array).isRequired,
+  commodityValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
+  countries: PropTypes.instanceOf(Array).isRequired,
+  countryValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
   defineData: PropTypes.instanceOf(Function).isRequired,
   duration: PropTypes.number.isRequired,
   idx: PropTypes.string.isRequired,
-  setDuration: PropTypes.instanceOf(Function).isRequired,
-  setType: PropTypes.instanceOf(Function).isRequired,
-  setValue: PropTypes.instanceOf(Function).isRequired,
-  type: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
-  value: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired
+  setCommodityValue: PropTypes.instanceOf(Function).isRequired,
+  setCountryValue: PropTypes.instanceOf(Function).isRequired,
+  setDuration: PropTypes.instanceOf(Function).isRequired
 };
 
 LineBarChart.defaultProps = {

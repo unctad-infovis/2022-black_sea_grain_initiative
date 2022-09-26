@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import * as d3 from 'd3';
 
 function TreeMapChart({
-  category, idx, series, setType, setDuration, setValue
+  category, commodityValue, countryValue, idx, setCommodityValue, setCountryValue, setDuration, series
 }) {
   series.columns = ['name', 'parent', 'value'];
   const chartRef = useRef(null);
@@ -16,6 +16,20 @@ function TreeMapChart({
   const margin = {
     top: 0, right: 0, bottom: 0, left: -6
   };
+
+  useEffect(() => {
+    document.querySelectorAll('.treemap_rect_Commodity').forEach(el => el.classList.remove('selected'));
+    if (commodityValue !== false) {
+      document.querySelectorAll(`.treemap_rect_Commodity_${commodityValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
+    }
+  }, [commodityValue]);
+
+  useEffect(() => {
+    document.querySelectorAll('.treemap_rect_Country').forEach(el => el.classList.remove('selected'));
+    if (countryValue !== false) {
+      document.querySelectorAll(`.treemap_rect_Country_${countryValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
+    }
+  }, [countryValue]);
 
   const createChart = (svg) => {
     // set the dimensions and margins of the graph
@@ -38,15 +52,18 @@ function TreeMapChart({
     svg.join('g').attr('class', 'treemap').selectAll('rect')
       .data(root.leaves())
       .join('rect')
-      .attr('class', 'treemap_rect')
+      .attr('class', (d) => `treemap_rect treemap_rect_${category} treemap_rect_${category}_${d.data.name.replaceAll(' ', '_')}`)
       .attr('x', (d) => d.x0)
       .attr('y', (d) => d.y0)
       .attr('width', (d) => d.x1 - d.x0)
       .attr('height', (d) => d.y1 - d.y0)
       .style('fill', (d, i) => ((d.data.name === 'Other') ? colors[colors.length - 1] : colors[i]))
       .on('click', (event, d) => {
-        setType(category);
-        setValue(d.data.name);
+        if (category === 'Commodity') {
+          setCommodityValue(([...event.target.classList].includes('selected')) ? false : d.data.name);
+        } else {
+          setCountryValue(([...event.target.classList].includes('selected')) ? false : d.data.name);
+        }
         setDuration(1000);
       });
 
@@ -92,11 +109,13 @@ function TreeMapChart({
 
 TreeMapChart.propTypes = {
   category: PropTypes.string.isRequired,
+  commodityValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
+  countryValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
   idx: PropTypes.string.isRequired,
   series: PropTypes.instanceOf(Array).isRequired,
-  setDuration: PropTypes.instanceOf(Function).isRequired,
-  setType: PropTypes.instanceOf(Function).isRequired,
-  setValue: PropTypes.instanceOf(Function).isRequired
+  setCommodityValue: PropTypes.instanceOf(Function).isRequired,
+  setCountryValue: PropTypes.instanceOf(Function).isRequired,
+  setDuration: PropTypes.instanceOf(Function).isRequired
 };
 
 TreeMapChart.defaultProps = {

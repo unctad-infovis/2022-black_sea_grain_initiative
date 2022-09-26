@@ -16,11 +16,13 @@ const appID = '#app-root-2022-black_sea_grain_initiative';
 function App() {
   // Data states.
   const [data, setData] = useState(false);
-  const [type, setType] = useState(false);
-  const [value, setValue] = useState(false);
+  const [commodityValue, setCommodityValue] = useState(false);
+  const [countryValue, setCountryValue] = useState(false);
   const [duration, setDuration] = useState(0);
   const [topCountries, setTopCountries] = useState([]);
   const [topCountriesFull, setTopCountriesFull] = useState([]);
+  const [commodities, setCommodities] = useState([]);
+  const [countries, setCountries] = useState([]);
   const [topCommodities, setTopCommodities] = useState([]);
   const [topCommoditiesFull, setTopCommoditiesFull] = useState([]);
   const [updated, setUpdated] = useState(false);
@@ -39,13 +41,9 @@ function App() {
     return [...Array(num_of_days).keys()].map(i => new Date(start_dateInMs + i * (24 * 60 * 60 * 1000)).toISOString().slice(0, 10));
   };
 
-  const defineData = (selected_type = false, selected_value = false, set = false) => {
-    if (set === true) {
-      setType(selected_type);
-      setValue(selected_value);
-    }
+  const defineData = () => {
     const output = [];
-    if (selected_type === false) {
+    if (commodityValue === false && countryValue === false) {
       Object.values({
         ...structuredClone(dates),
         ...data.reduce((acc, it) => {
@@ -57,14 +55,33 @@ function App() {
         output[i] = [b[0], b[1], b[1] + (a[2] || 0), i];
         return [b[0], b[1], b[1] + (a[2] || 0), i];
       }, []);
-    } else if (selected_value !== false) {
+    } else {
       Object.values({
         ...structuredClone(dates),
         ...data.filter(a => {
-          if (selected_value === 'Other') {
-            return (selected_type === 'Country') ? !topCountries.includes(a[selected_type]) : !topCommodities.includes(a[selected_type]);
+          if (commodityValue !== false && countryValue !== false) {
+            if (commodityValue === 'Other' && countryValue === 'Other') {
+              return !topCommodities.includes(a.Commodity) && !topCountries.includes(a.Country);
+            }
+            if (commodityValue === 'Other') {
+              return !topCommodities.includes(a.Commodity) && a.Country === countryValue;
+            }
+            if (countryValue === 'Other') {
+              return !topCommodities.includes(a.Country) && a.Commodity === commodityValue;
+            }
+            return a.Commodity === commodityValue && a.Country === countryValue;
           }
-          return a[selected_type] === selected_value;
+          if (commodityValue !== false) {
+            if (commodityValue === 'Other') {
+              return !topCommodities.includes(a.Commodity);
+            }
+            return a.Commodity === commodityValue;
+          }
+
+          if (countryValue === 'Other') {
+            return !topCountries.includes(a.Country);
+          }
+          return a.Country === countryValue;
         }).reduce((acc, it) => {
           const date = (new Date(`${it.Departure} 12:00:00 GMT`)).toISOString().slice(0, 10);
           acc[date] = [date, (acc[date]?.[1] || 0) + parseFloat(it.Tonnage)];
@@ -75,13 +92,9 @@ function App() {
         return [b[0], b[1], b[1] + (a[2] || 0), i];
       }, []);
     }
-
     return output;
   };
 
-  useEffect(() => {
-
-  }, [type, value]);
   useEffect(() => {
     const data_file = (window.location.href.includes('unctad.org')) ? '/sites/default/files/data-file/2022-black_sea_grain_initiative.csv' : './assets/data/data - data.csv';
     try {
@@ -90,6 +103,8 @@ function App() {
         .then(body => {
           const json_data = CSVtoJSON(body);
           setData(json_data);
+          setCommodities([...new Set(json_data.map(el => el.Commodity))].sort());
+          setCountries([...new Set(json_data.map(el => el.Country))].sort());
           setDates(dateRange(new Date(json_data[0].Departure), daysBetween(new Date(json_data[json_data.length - 1].Departure), new Date(json_data[0].Departure))).reduce((a, v) => ({ ...a, [v]: [v, 0] }), {}));
           setUpdated(new Date(json_data[json_data.length - 1].Departure));
         });
@@ -178,7 +193,7 @@ function App() {
             {' '}
             has been shipped daily and in total?
           </h3>
-          {(data) && (<LineBarChart appID={appID} idx="1" defineData={defineData} duration={duration} setDuration={setDuration} type={type} value={value} setType={setType} setValue={setValue} />)}
+          {(data) && (<LineBarChart appID={appID} idx="1" defineData={defineData} duration={duration} setDuration={setDuration} commodityValue={commodityValue} countryValue={countryValue} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} commodities={commodities} countries={countries} />)}
         </div>
         <div className="vis_row vis_row_2">
           <div className="column column_1">
@@ -188,7 +203,7 @@ function App() {
               are the main products carried?
             </h4>
             <div className="instruction">Choose a commodity of interest</div>
-            {totalPerProduct && (<TreeMapChart category="Commodity" idx="2" series={totalPerProduct} setValue={setValue} setType={setType} setDuration={setDuration} />)}
+            {totalPerProduct && (<TreeMapChart category="Commodity" idx="2" series={totalPerProduct} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} commodityValue={commodityValue} countryValue={countryValue} setDuration={setDuration} />)}
             <div className="list_container_toggle"><button type="button" onClick={() => slideToggle(document.querySelectorAll('.list_container_commodity')[0])}>Show other products</button></div>
             <div className="list_container list_container_commodity">
               <table>
@@ -200,8 +215,8 @@ function App() {
                 </thead>
                 <tbody>
                   {topCommoditiesFull && topCommoditiesFull.map(el => (
-                    <tr key={el.name} className="">
-                      <td><button type="button" onClick={() => { setDuration(1000); setType('Commodity'); setValue(el.name); }}>{el.name}</button></td>
+                    <tr key={el.name} className={(el.name === commodityValue) ? 'selected' : ''}>
+                      <td><button type="button" onClick={() => { setDuration(1000); setCommodityValue((el.name === commodityValue) ? false : el.name); }}>{el.name}</button></td>
                       <td>{el.value.toLocaleString()}</td>
                     </tr>
                   ))}
@@ -216,20 +231,20 @@ function App() {
               has the cargo gone to?
             </h4>
             <div className="instruction">Choose a destination of interest</div>
-            {totalPerCountry && (<TreeMapChart category="Country" idx="3" series={totalPerCountry} setValue={setValue} setType={setType} setDuration={setDuration} />)}
+            {totalPerCountry && (<TreeMapChart category="Country" idx="3" series={totalPerCountry} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} commodityValue={commodityValue} countryValue={countryValue} setDuration={setDuration} />)}
             <div className="list_container_toggle"><button type="button" onClick={() => slideToggle(document.querySelectorAll('.list_container_country')[0])}>Show other destinations</button></div>
             <div className="list_container list_container_country">
               <table>
                 <thead>
                   <tr>
-                    <th>Country</th>
+                    <th>Destination</th>
                     <th>Metric tons</th>
                   </tr>
                 </thead>
                 <tbody>
                   {topCountriesFull && topCountriesFull.map(el => (
-                    <tr key={el.name} className="">
-                      <td><button type="button" onClick={() => { setDuration(1000); setType('Country'); setValue(el.name); }}>{el.name}</button></td>
+                    <tr key={el.name} className={(el.name === countryValue) ? 'selected' : ''}>
+                      <td><button type="button" onClick={() => { setDuration(1000); setCountryValue((el.name === countryValue) ? false : el.name); }}>{el.name}</button></td>
                       <td>{el.value.toLocaleString()}</td>
                     </tr>
                   ))}

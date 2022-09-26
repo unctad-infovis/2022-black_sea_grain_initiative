@@ -90,11 +90,11 @@
         }
         .legend_container {
           .left {
-            left: 25px;
+            left: 80px;
             position: absolute;
             top: 70px;
             .selected {
-              margin: 5px 0 0 50px;
+              margin: 5px 0 0 0px;
               .type_legend {
                 font-size: 14px;
                 margin-right: 5px;
@@ -217,6 +217,9 @@
             width: 100%;
             tr {
               width: 100%;
+              &.selected {
+                font-weight: 700;
+              }
               th {
                 border-bottom: 1px solid #000;
                 font-size: 15px;
@@ -237,6 +240,7 @@
                   background-color: #fff;
                   border: 0;
                   color: #000;
+                  font-weight: inherit;
                   cursor: pointer;
                   margin: 0;
                   padding: 0;
@@ -252,7 +256,6 @@
       .dashboard_chart {
         text-align: center;
         svg {
-          width: 100%;
           .axis_y_left {
             text {
               color: #009edb;
@@ -294,6 +297,8 @@
           }
           .bar_value,
           .line_value {
+            position: relative;
+            z-index: 3;
             fill: #000;
             font-size: 18px;
             font-weight: bold;
@@ -312,6 +317,9 @@
             stroke: #eee;
             stroke-width: 1.5px;
             transition: 0.5s opacity;
+            &.selected {
+              stroke: #000;
+            }
             &:hover {
               opacity: 0.8;
               transition: 0s opacity;
@@ -329,22 +337,32 @@
         }
       }
       .selection_container {
-        .selection_label {
-          display: inline-block;
-          margin: 0 2px;
-        }
-        button {
-          background-color: #009edb;
-          border: 0;
-          color: #fff;
-          cursor: pointer;
-          font-weight: bold;
-          margin: 0 2px;
-          padding: 5px 7px;
-          &:hover {
-            color: #ccc;
+        .selection_commodity,
+        .selection_destination {
+          &.selection_commodity {
+            margin-right: 10px;
+          }
+          .selection_label {
+            display: inline-block;
+            margin: 0 5px 0 0;
+          }
+          button.remove {
+            background-color: #fff;
+            border: 0;
+            color: #000;
+            cursor: pointer;
+            font-size: 26px;
+            margin: 0 0 0 4px;
+            display: inline-block;
+            opacity: 0;
+            padding: 0;
+            &.enabled {
+              opacity: 1;
+              transition: 0.5s opacity;
+            }
           }
         }
+
       }
     }
   }

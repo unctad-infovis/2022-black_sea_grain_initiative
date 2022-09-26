@@ -20,7 +20,9 @@ function App() {
   const [value, setValue] = useState(false);
   const [durationExt, setDurationExt] = useState(0);
   const [topCountries, setTopCountries] = useState([]);
+  const [topCountriesFull, setTopCountriesFull] = useState([]);
   const [topCommodities, setTopCommodities] = useState([]);
+  const [topCommoditiesFull, setTopCommoditiesFull] = useState([]);
   const [updated, setUpdated] = useState(false);
 
   const [totalTonnage, setTotalTonnage] = useState(0);
@@ -100,12 +102,14 @@ function App() {
       setTotalShips(new Set(data.map(el => el['#'])).size);
 
       // Total daily per country.
+      const top_countries_full = [];
       const top_countries = [];
       setTotalPerCountry(Object.values(Object.values(data.reduce((acc, it) => {
         acc[it.Country] = [it.Country, (acc[it.Country]?.[1] || 0) + parseFloat(it.Tonnage)];
         return acc;
       }, {})).sort((a, b) => b[1] - a[1]).reduce((acc, it, i) => {
         if (i >= 5) {
+          top_countries_full.push({ name: it[0], parent: 'Origin', value: (acc[0]?.value || 0) + parseFloat(it[1]) });
           acc.Other = { name: 'Other', parent: 'Origin', value: (acc.Other?.value || 0) + parseFloat(it[1]) };
         } else {
           top_countries.push(it[0]);
@@ -114,14 +118,17 @@ function App() {
         return acc;
       }, [{ name: 'Origin', parent: '', value: 0 }])));
       setTopCountries(top_countries);
+      setTopCountriesFull(top_countries_full);
 
       // Total daily per commodity.
+      const top_commodities_full = [];
       const top_commodities = [];
       setTotalPerProduct(Object.values(Object.values(data.reduce((acc, it) => {
         acc[it.Commodity] = [it.Commodity, (acc[it.Commodity]?.[1] || 0) + parseFloat(it.Tonnage)];
         return acc;
       }, {})).sort((a, b) => b[1] - a[1]).reduce((acc, it, i) => {
         if (i >= 3) {
+          top_commodities_full.push({ name: it[0], parent: 'Origin', value: (acc[0]?.value || 0) + parseFloat(it[1]) });
           acc.Other = { name: 'Other', parent: 'Origin', value: (acc.Other?.value || 0) + parseFloat(it[1]) };
         } else {
           top_commodities.push(it[0]);
@@ -130,10 +137,32 @@ function App() {
         return acc;
       }, [{ name: 'Origin', parent: '', value: 0 }])));
       setTopCommodities(top_commodities);
+      setTopCommoditiesFull(top_commodities_full);
     }
-  }, [data, dates, setTopCountries, setTopCommodities]);
+  }, [data, dates]);
   // eslint-disable-next-line
   const easingFn = (t, b, c, d) => c * ((t = t / d - 1) * t * t + 1) + b;
+
+  const slideToggle = (target) => {
+    const container = target;
+    if (!container.classList.contains('active')) {
+      container.classList.add('active');
+      container.style.height = 'auto';
+      const height = `${container.clientHeight}px`;
+      container.style.height = '0px';
+      setTimeout(() => {
+        container.style.height = height;
+      }, 0);
+    } else {
+      container.style.height = '0px';
+      container.addEventListener('transitionend', () => {
+        container.classList.remove('active');
+      }, {
+        once: true
+      });
+    }
+  };
+
   return (
     <div className="app">
       { /* Banner container */ }
@@ -159,7 +188,7 @@ function App() {
           <h3>
             <span className="highlight">How much</span>
             {' '}
-            has been shipped daily?
+            has been shipped daily and in total?
           </h3>
           {(data) && (<LineBarChart appID={appID} idx="1" defineData={defineData} durationExt={durationExt} type={type} value={value} />)}
         </div>
@@ -172,6 +201,21 @@ function App() {
             </h4>
             <div className="instruction">Choose a commodity of interest</div>
             {totalPerProduct && (<TreeMapChart category="Commodity" idx="2" series={totalPerProduct} setValue={setValue} setType={setType} setDurationExt={setDurationExt} />)}
+            <div className="list_container_toggle"><button type="button" onClick={() => slideToggle(document.querySelectorAll('.list_container_commodity')[0])}>Show other products</button></div>
+            <div className="list_container list_container_commodity">
+              <table>
+                <tr>
+                  <th>Commodity</th>
+                  <th>Metric tons</th>
+                </tr>
+                {topCommoditiesFull && topCommoditiesFull.map(el => (
+                  <tr key={el.name} className="">
+                    <td>{el.name}</td>
+                    <td>{el.value.toLocaleString()}</td>
+                  </tr>
+                ))}
+              </table>
+            </div>
           </div>
           <div className="column column_2">
             <h4>
@@ -181,6 +225,21 @@ function App() {
             </h4>
             <div className="instruction">Choose a country of interest</div>
             {totalPerCountry && (<TreeMapChart category="Country" idx="3" series={totalPerCountry} setValue={setValue} setType={setType} setDurationExt={setDurationExt} />)}
+            <div className="list_container_toggle"><button type="button" onClick={() => slideToggle(document.querySelectorAll('.list_container_country')[0])}>Show other destinations</button></div>
+            <div className="list_container list_container_country">
+              <table>
+                <tr>
+                  <th>Country</th>
+                  <th>Metric tons</th>
+                </tr>
+                {topCountriesFull && topCountriesFull.map(el => (
+                  <tr key={el.name} className="">
+                    <td>{el.name}</td>
+                    <td>{el.value.toLocaleString()}</td>
+                  </tr>
+                ))}
+              </table>
+            </div>
           </div>
         </div>
       </div>

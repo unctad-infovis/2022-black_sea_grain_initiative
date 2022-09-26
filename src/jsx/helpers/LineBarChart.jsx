@@ -240,7 +240,7 @@ function LineBarChart({
         <span className="selection_commodity">
           <span className="selection_label">Commodity</span>
           <select onChange={(event) => selectionChange(event, 'Commodity')} value={commodityValue}>
-            <option value={false}>Select commodity</option>
+            <option value={false}>All commodities</option>
             <option disabled>– – – </option>
             {
               commodities && commodities.map(el => (
@@ -255,7 +255,7 @@ function LineBarChart({
         <span className="selection_destination">
           <span className="selection_label">Destination</span>
           <select onChange={(event) => selectionChange(event, 'Country')} value={countryValue}>
-            <option value={false}>Select destination</option>
+            <option value={false}>All destinations</option>
             <option disabled>– – – </option>
             {
               countries && countries.map(el => (

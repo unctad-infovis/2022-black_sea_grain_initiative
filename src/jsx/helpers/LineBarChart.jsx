@@ -3,6 +3,9 @@ import React, {
 } from 'react';
 import PropTypes from 'prop-types';
 
+// https://www.npmjs.com/package/react-countup
+import CountUp from 'react-countup';
+
 // @See https://bl.ocks.org/htakeuchi/a60c0ecb55713c06c054c26c6dbed57a
 
 // https://d3js.org/
@@ -14,6 +17,12 @@ function LineBarChart({
 }) {
   const chartRef = useRef(null);
   const [g, setG] = useState(false);
+  const [total, setTotal] = useState(0);
+  const prevCountRef = useRef();
+
+  useEffect(() => {
+    prevCountRef.current = total;
+  }, [total]);
 
   const [axisStatic, setAxisStatic] = useState(true);
   const maxAxisLeft = useRef();
@@ -42,6 +51,7 @@ function LineBarChart({
     .tickFormat(val => ((val !== 0 && val > 1000) ? `${(val / 1000).toLocaleString()}k` : ''));
   // eslint-disable-next-line
   const updateData = useCallback((selected_series, update) => {
+    setTotal(selected_series[selected_series.length - 1][2]);
     if (g && (duration > 0 || (update === true))) {
       x.domain(selected_series.map((d) => d[0]));
       x.rangeRound([0, chartRef.current.offsetWidth - margin.left - margin.right]).padding(0.1);
@@ -172,7 +182,7 @@ function LineBarChart({
 
   window.addEventListener('resize', () => {
     createChart(d3.select(chartRef.current).selectAll('svg'));
-    updateData(defineData(commodityValue, countryValue), 0);
+    updateData(defineData());
   });
 
   const selectionChange = (event, type) => {
@@ -183,6 +193,8 @@ function LineBarChart({
     }
     updateData(defineData());
   };
+  // eslint-disable-next-line
+  const easingFn = (t, b, c, d) => c * ((t = t / d - 1) * t * t + 1) + b;
 
   return (
     <div>
@@ -194,7 +206,11 @@ function LineBarChart({
           </div>
           <div className="line_legend_container">
             <span className="legend_icon" />
-            <span className="legend_text">In total</span>
+            <span className="legend_text">
+              In total
+              {' '}
+              {total && <CountUp separator="," end={total} duration={(prevCountRef.current === 0) ? 0 : 1} start={prevCountRef.current} useEasing easingFn={easingFn} />}
+            </span>
           </div>
           <div className="selected">
             {commodityValue && (

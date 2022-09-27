@@ -83,7 +83,7 @@ function DonutChart({
       .join('text')
       .attr('class', 'pie_text')
       .text((d) => d.data.name)
-      .attr('transform', (d) => `translate(${d3.arc().innerRadius(30).outerRadius(radius).centroid(d)})`)
+      .attr('transform', (d) => `translate(${d3.arc().innerRadius(65).outerRadius(radius).centroid(d)})`)
       .attr('font-size', (d) => `${Math.min(((Math.log2(d.data.value) / Math.log2(max)) ** 4) * 20, 20)}px`)
       .attr('font-size', '20px');
   }, [category, colors, max, series, setCommodityValue, setCountryValue, setCountryStatusValue, setDuration]);

@@ -49,7 +49,7 @@ function DonutChart({
     const height = width_container - margin;
     svg.attr('height', height + margin);
 
-    const g = svg.append('g').attr('transform', `translate(${width / 2}, ${height / 2})`);
+    const g = svg.select('g').attr('transform', `translate(${width / 2}, ${height / 2})`);
     const radius = Math.min(width, height) / 2 - margin;
 
     const data = [...series];
@@ -94,6 +94,7 @@ function DonutChart({
         'transform',
         `translate(${margin}, ${margin})`
       );
+    svg.append('g');
     createChart(svg, chartRef.current.offsetWidth);
   }, [createChart]);
 

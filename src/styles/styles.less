@@ -177,32 +177,37 @@
       &.vis_row_2 {
         display: flex;
         justify-content: space-evenly;
-        @media all and (max-width: 919px) {
+        @media all and (max-width: 699px) {
           flex-direction: column;
-          max-width: 600px;
+          .column {
+            .dashboard_chart {
+              margin: auto auto;
+              max-width: 400px;
+              text-align: center;
+            }
+          }
         }
-        @media all and (min-width: 920px) {
+        @media all and (min-width: 700px) {
           flex-direction: row;
           .column {
-            max-width: 440px;
+            width: calc(50% - 10px);
           }
         }
         .column {
           background-color: #fff;
           box-sizing: border-box;
           padding: 20px 20px 40px 20px;
-          width: 100%;
           &.column_1 {
-            @media all and (min-width: 920px) {
+            @media all and (min-width: 700px) {
               margin-right: 10px;
             }
-            @media all and (max-width: 919px) {
+            @media all and (max-width: 699px) {
               margin-bottom: 20px;
             }
           }
           &.column_2 {
             position: relative;
-            @media all and (min-width: 920px) {
+            @media all and (min-width: 700px) {
               margin-left: 10px;
             }
             .toggle_features_container {
@@ -228,6 +233,9 @@
             font-size: 24px;
             margin: 0 0 10px 0;
             text-align: left;
+            @media all and (max-width: 699px) {
+              text-align: center;
+            }
           }
         }
         .country_status_wrapper,

@@ -1,6 +1,6 @@
 // https://stackoverflow.com/questions/59016562/parse-csv-records-in-to-an-array-of-objects-in-javascript
 const CSVtoJSON = (csv) => {
-  const lines = csv.split('\n');
+  const lines = csv.split(/\r\n|\r|\n/g);
   const result = [];
   const headers = lines[0].split(',');
 

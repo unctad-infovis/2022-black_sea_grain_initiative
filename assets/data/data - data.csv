@@ -1,250 +1,250 @@
-#,Vessel name,IMO,Departure port,Country,Commodity,Tonnage,Departure,Inspection cleared
-1,RAZONI,9086526,Odesa,TBD and Türkiye,Corn,26527,01-Aug-22,03-Aug-22
-2,NAVI STAR,9590979,Odesa,Ireland,Corn,33000,05-Aug-22,06-Aug-22
-3,ROJEN,9754927,Chornomorsk,Italy,Corn,13041,05-Aug-22,07-Aug-22
-4,POLARNET,9758961,Chornomorsk,Türkiye,Corn,12000,05-Aug-22,07-Aug-22
-5,GLORY,9288473,Chornomorsk,Iran,Corn,66084,07-Aug-22,09-Aug-22
-6,STAR HELENA,9361213,Chornomorsk,China,Sunflower meal,45000,07-Aug-22,09-Aug-22
-7,RIVA WIND,9301196,Odesa,Türkiye,Corn,44000,07-Aug-22,09-Aug-22
-8,MUSTAFA NECATI,9736690,Chornomorsk,Italy,Sunflower oil,6000,07-Aug-22,10-Aug-22
-9,ARIZONA,9592733,Chornomorsk,Türkiye,Corn,48459,08-Aug-22,10-Aug-22
-10,SACURA,9497000,Yuzhny/Pivdennyi,Italy,Soya beans,11000,08-Aug-22,10-Aug-22
-11,OCEAN LION,9296248,Chornomorsk,Republic of Korea,Corn,64720,09-Aug-22,11-Aug-22
-12,RAHMI YAGCI,9550852,Chornomorsk,Türkiye,Sunflower meal,5300,09-Aug-22,13-Aug-22
-13,STAR LAURA,9328936,Yuzhny/Pivdennyi,Iran,Corn,60150,12-Aug-22,14-Aug-22
-14,SORMOVSKIY 121,8133578,Chornomorsk,Türkiye,Wheat,3050,12-Aug-22,15-Aug-22
-15,FULMAR S,9370082,Chornomorsk,Türkiye,Corn,12000,13-Aug-22,15-Aug-22
-16,THOE,9400588,Chornomorsk,Türkiye,Sunflower seed,2914,13-Aug-22,16-Aug-22
-17,OSPREY S,9300843,Chornomorsk,Türkiye,Corn,11500,16-Aug-22,18-Aug-22
-18,BONITA,9231286,Yuzhny/Pivdennyi,Republic of Korea,Corn,60000,16-Aug-22,18-Aug-22
-19,RAMUS,9318400,Chornomorsk,Türkiye,Wheat,6161,16-Aug-22,19-Aug-22
-20,BRAVE COMMANDER,9136931,Yuzhny/Pivdennyi,Djibouti,Wheat,23300,16-Aug-22,21-Aug-22
-21,PETREL S,9363883,Chornomorsk,The Netherlands,Sunflower meal,18500,17-Aug-22,19-Aug-22
-22,SARA,9259020,Odesa,Türkiye,Corn,8000,17-Aug-22,19-Aug-22
-23,EFE,9558763,Odesa,Türkiye,Sunflower oil,7250,17-Aug-22,19-Aug-22
-24,PROPUS,9133757,Chornomorsk,Romania,Wheat,9111,18-Aug-22,19-Aug-22
-25,I MARIA,8914697,Chornomorsk,Romania,Corn,27982,18-Aug-22,22-Aug-22
-26,ZUMRUT ANA,9633549,Chornomorsk,Italy,Sunflower oil,6300,20-Aug-22,22-Aug-22
-27,OCEAN S,9086320,Chornomorsk,Türkiye,Wheat,25000,20-Aug-22,22-Aug-22
-28,FILYOZ,9407213,Chornomorsk,Türkiye,Sunflower oil,5000,21-Aug-22,23-Aug-22
-29,DA LIANG,9608415,Chornomorsk,Republic of Korea,Sugar beet pellet,14000,21-Aug-22,23-Aug-22
-30,FOYLE,9317676,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,4300,21-Aug-22,23-Aug-22
-31,KUBROSLI Y,8000836,Odesa,Türkiye,Wheat,11000,21-Aug-22,24-Aug-22
-32,MARANTA,9206669,Chornomorsk,Greece,Corn,5300,22-Aug-22,24-Aug-22
-33,GREAT ARSENAL,9159062,Chornomorsk,Egypt,Wheat,25500,22-Aug-22,24-Aug-22
-34,KAFKAM ETLER,9001112,Chornomorsk,Türkiye,Corn,2437,23-Aug-22,25-Aug-22
-35,GANOSAYA,9151400,Odesa,Lebanon,Corn,16500,24-Aug-22,26-Aug-22
-36,ZHE HAI 505,9567477,Odesa,The Netherlands,Rapeseed,29600,24-Aug-22,26-Aug-22
-37,BELLIS,9381952,Odesa,Israel,Soya beans,6000,25-Aug-22,27-Aug-22
-38,ASCANIOS,9276169,Yuzhny/Pivdennyi,Germany,Corn,58510,25-Aug-22,27-Aug-22
-39,MOHAMAD Y,8107000,Odesa,Türkiye,Wheat,11000,25-Aug-22,27-Aug-22
-40,AVIVA,9410131,Chornomorsk,India,Sunflower oil,19100,26-Aug-22,28-Aug-22
-41,SEAEAGLE,9153056,Chornomorsk,Sudan,Wheat,65340,26-Aug-22,28-Aug-22
-42,ZELEK STAR,9379117,Chornomorsk,Türkiye,Peas,3700,26-Aug-22,29-Aug-22
-43,PRETTY LADY,9223174,Chornomorsk,Egypt,Corn,45000,26-Aug-22,29-Aug-22
-44,ADNAN TORLAK,9243253,Chornomorsk,France,Rapeseed,14750,27-Aug-22,29-Aug-22
-45,ORIS SOFI,8920282,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,5900,27-Aug-22,29-Aug-22
-46,S BREEZE,9317145,Chornomorsk,Egypt,Corn,44000,27-Aug-22,01-Sep-22
-47,SSI INVINCIBLE II,9434747,Chornomorsk,China,Barley,49500,28-Aug-22,31-Aug-22
-48,DS SOFIE BULKER,9310604,Odesa,Spain,Barley,27000,28-Aug-22,31-Aug-22
-49,SILVER LADY,9279367,Yuzhny/Pivdennyi,Italy,Corn,39494,28-Aug-22,31-Aug-22
-50,MELINA,9550424,Yuzhny/Pivdennyi,Romania,Corn,27500,28-Aug-22,31-Aug-22
-51,FPMC B 201,9468229,Odesa,Egypt,Wheat,33000,28-Aug-22,01-Sep-22
-52,AEOLOS,9228382,Odesa,The Netherlands,Corn,30000,28-Aug-22,02-Sep-22
-53,ASH BALTIC,9606493,Odesa,Egypt,Corn,11000,29-Aug-22,01-Sep-22
-54,PEACE M,9086318,Odesa,Romania,Corn,24485,29-Aug-22,01-Sep-22
-55,ANASTASIA,8926121,Chornomorsk,Türkiye,Wheat,3800,29-Aug-22,04-Sep-22
-56,SEAJOY,9213820,Chornomorsk,Spain,Corn,64215,30-Aug-22,01-Sep-22
-57,SAFFET AGA,9376282,Chornomorsk,Türkiye,Corn,3236,30-Aug-22,01-Sep-22
-58,MICHALIS,9545510,Odesa,Spain,Corn,33000,30-Aug-22,01-Sep-22
-59,LADY ZEHMA,9303431,Chornomorsk,Italy,Corn,30274,30-Aug-22,03-Sep-22
-60,KARTERIA,9236092,Yuzhny/Pivdennyi,Yemen,Wheat,37500,30-Aug-22,03-Sep-22
-61,SIMAS,9000314,Odesa,Italy,Wheat,15000,30-Aug-22,04-Sep-22
-62,LADY AILLAR,9550278,Yuzhny/Pivdennyi,Spain,Corn,27000,31-Aug-22,05-Sep-22
-63,MARAN ASTRONOMER,9581239,Yuzhny/Pivdennyi,The Netherlands,Corn,74500,31-Aug-22,05-Sep-22
-64,DAYTONA DYNAMIC,8914726,Odesa,Türkiye,Corn,25850,01-Sep-22,04-Sep-22
-65,HAZAR S,9545467,Chornomorsk,Türkiye,Corn,5500,01-Sep-22,04-Sep-22
-66,HELGA,9444912,Odesa,Türkiye,Corn,27000,01-Sep-22,05-Sep-22
-67,ENEIDA,9198381,Chornomorsk,Türkiye,Corn,8560,01-Sep-22,05-Sep-22
-67,ENEIDA,9198381,Chornomorsk,Türkiye,Wheat,35470,01-Sep-22,05-Sep-22
-68,MASSA J,9224867,Yuzhny/Pivdennyi,Somalia,Wheat,28500,01-Sep-22,07-Sep-22
-69,CANGA STAR,9540039,Chornomorsk,France,Rapeseed,7000,02-Sep-22,07-Sep-22
-70,MAVKA,9284647,Chornomorsk,Romania,Sunflower oil,12500,02-Sep-22,05-Sep-22
-71,SPRING,8408650,Chornomorsk,Türkiye,Wheat,8500,02-Sep-22,05-Sep-22
-72,KATSUYAMA,9274678,Chornomorsk,India,Sunflower oil,21000,02-Sep-22,05-Sep-22
-73,STELLA GS,9363285,Odesa,Israel,Corn,30300,02-Sep-22,06-Sep-22
-74,FULMAR S,9370082,Yuzhny/Pivdennyi,Bulgaria,Sunflower meal,9835,02-Sep-22,05-Sep-22
-75,SARA,9259020,Odesa,Türkiye,Wheat,6600,03-Sep-22,07-Sep-22
-76,LADY EVA,9008110,Chornomorsk,Greece,Wheat,6117,04-Sep-22,07-Sep-22
-77,CANOPUS,9401025,Yuzhny/Pivdennyi,India,Sunflower oil,42000,04-Sep-22,06-Sep-22
-78,SEA DOLPHIN C,9486427,Yuzhny/Pivdennyi,The Netherlands,Rapeseed,31098,04-Sep-22,06-Sep-22
-79,SEALOCK,8218380,Chornomorsk,Türkiye,Peas,2070,04-Sep-22,09-Sep-22
-80,MUBARIZ IBRAHIMOV,9575292,Odesa,Türkiye,Sunflower oil,6600,04-Sep-22,09-Sep-22
-81,MAINA,9699892,Yuzhny/Pivdennyi,Spain,Corn,56500,04-Sep-22,07-Sep-22
-82,GEN. POLAD HASHIMOV,9575307,Chornomorsk,Türkiye,Sunflower oil,6450,04-Sep-22,07-Sep-22
-83,BC CALLISTO,9400916,Chornomorsk,Egypt,Wheat,31400,04-Sep-22,09-Sep-22
-84,MRC LINA,9462299,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,7800,04-Sep-22,07-Sep-22
-85,LADY PERLA,9149732,Yuzhny/Pivdennyi,Italy,Corn,20500,04-Sep-22,07-Sep-22
-86,AFANASIY MATYSHENKO,8227783,Chornomorsk,Türkiye,Wheat,3000,04-Sep-22,TBD
-87,NORD VIRGO,9711937,Yuzhny/Pivdennyi,China,Corn,62340,04-Sep-22,09-Sep-22
-88,GOLDEN YARA,8915299,Yuzhny/Pivdennyi,Türkiye,Wheat,13500,05-Sep-22,10-Sep-22
-89,MY MERAY,9000302,Chornomorsk,Egypt,Corn,30000,05-Sep-22,10-Sep-22
-90,BARON,7352476,Odesa,Türkiye,Corn,5750,05-Sep-22,10-Sep-22
-91,IRMGARD,9590967,Odesa,Türkiye,Wheat,27500,06-Sep-22,11-Sep-22
-91,IRMGARD,9590967,Odesa,Türkiye,Corn,7179,06-Sep-22,11-Sep-22
-92,QUEEN SARA,9132507,Chornomorsk,Egypt,Corn,11091,06-Sep-22,11-Sep-22
-93,ORIS PRINCESS,9119907,Chornomorsk,Israel,Sunflower meal,4510,06-Sep-22,12-Sep-22
-94,NEW LEVANT,9111371,Odesa,Türkiye,Wheat,26500,06-Sep-22,10-Sep-22
-95,VITIS,9000613,Yuzhny/Pivdennyi,Italy,Sunflower oil,5800,06-Sep-22,10-Sep-22
-96,OCMIS ADVENTURE,8919831,Yuzhny/Pivdennyi,Greece,Corn,4862,06-Sep-22,10-Sep-22
-97,SEAGUARDIAN,9174268,Yuzhny/Pivdennyi,Spain,Sunflower meal,8640,07-Sep-22,12-Sep-22
-97,SEAGUARDIAN,9174268,Yuzhny/Pivdennyi,Spain,Barley,34071,07-Sep-22,12-Sep-22
-97,SEAGUARDIAN,9174268,Yuzhny/Pivdennyi,Spain,Wheat,20095,07-Sep-22,12-Sep-22
-98,SUPER HENRY,9407483,Odesa,Kenya,Wheat,51400,07-Sep-22,22-Sep-22
-99,ELIANA,9327310,Chornomorsk,Türkiye,Sunflower oil,5200,07-Sep-22,11-Sep-22
-100,KAPTAN CEVDET,9005895,Chornomorsk,Türkiye,Soya beans,2472,07-Sep-22,12-Sep-22
-101,JASMIN QUEEN,9109861,Odesa,Türkiye,Corn,9531,08-Sep-22,12-Sep-22
-102,CAPTAIN ADAM 1,8914087,Chornomorsk,Türkiye,Wheat,9300,08-Sep-22,12-Sep-22
-103,DIGNITY,9118238,Chornomorsk,Türkiye,Sunflower seed,8200,08-Sep-22,12-Sep-22
-104,FILYOZ,9407213,Odesa,Türkiye,Sunflower oil,4410,08-Sep-22,12-Sep-22
-105,SANTANA,9449388,Odesa,Italy,Wheat,10000,08-Sep-22,12-Sep-22
-106,KIRAN AMERICA,9491264,Chornomorsk,China,Barley,30000,09-Sep-22,14-Sep-22
-106,KIRAN AMERICA,9491264,Chornomorsk,China,Corn,20000,09-Sep-22,14-Sep-22
-107,SUPER BAYERN,9278911,Yuzhny/Pivdennyi,Egypt,Corn,33000,09-Sep-22,13-Sep-22
-108,SEVIL,9148518,Chornomorsk,Romania,Rapeseed,4700,09-Sep-22,13-Sep-22
-109,EAUBONNE,9663104,Odesa,Spain,Corn,32794,10-Sep-22,16-Sep-22
-109,EAUBONNE,9663104,Odesa,Spain,Wheat,13853,10-Sep-22,16-Sep-22
-109,EAUBONNE,9663104,Odesa,Spain,Barley,10853,10-Sep-22,16-Sep-22
-110,LUCKY,9037305,Yuzhny/Pivdennyi,Greece,Corn,6000,10-Sep-22,14-Sep-22
-110,LUCKY,9037305,Yuzhny/Pivdennyi,Greece,Barley,4400,10-Sep-22,14-Sep-22
-111,PRINCESS AMNAH,9008067,Chornomorsk,Italy,Wheat,6000,10-Sep-22,13-Sep-22
-112,A-LINE,9246920,Chornomorsk,Egypt,Corn,10700,10-Sep-22,13-Sep-22
-113,LADY SHAM,9171383,Odesa,Italy,Sunflower seed,5600,10-Sep-22,14-Sep-22
-114,BRIZA,9286815,Chornomorsk,Greece,Corn,6500,11-Sep-22,15-Sep-22
-115,MAGNOLIA,9575333,Chornomorsk,Türkiye,Sunflower oil,6600,11-Sep-22,16-Sep-22
-116,S-BRILLIANT,9275323,Chornomorsk,The Netherlands,Rapeseed,40220,11-Sep-22,15-Sep-22
-117,AHMET CAN,9368182,Chornomorsk,Türkiye,Wheat bran pellets,2800,12-Sep-22,16-Sep-22
-118,SALLY M,9152844,Chornomorsk,Lebanon,Corn,6857,12-Sep-22,17-Sep-22
-119,NORD STARK,9691591,Chornomorsk,Spain,Wheat,27500,12-Sep-22,17-Sep-22
-120,ORIS SOFI,8920282,Odesa,Türkiye,Sunflower oil,3026,12-Sep-22,15-Sep-22
-120,ORIS SOFI,8920282,Odesa,Lebanon,Sunflower oil,2973,12-Sep-22,15-Sep-22
-121,HADAR,9615028,Yuzhny/Pivdennyi,Italy,Wheat,23500,12-Sep-22,16-Sep-22
-121,HADAR,9615028,Yuzhny/Pivdennyi,Italy,Corn,3500,12-Sep-22,16-Sep-22
-122,WIN SINO,9278519,Yuzhny/Pivdennyi,India,Sunflower oil,43500,12-Sep-22,17-Sep-22
-123,SUPER SAKA,9456551,Odesa,Spain,Wheat,29000,13-Sep-22,18-Sep-22
-123,SUPER SAKA,9456551,Odesa,Spain,Corn,21000,13-Sep-22,18-Sep-22
-124,YASA TEAM,9296250,Yuzhny/Pivdennyi,Israel,Corn,64951,13-Sep-22,18-Sep-22
-125,PROPUS,9133757,Odesa,Türkiye,Corn,8500,13-Sep-22,18-Sep-22
-126,FANARIA,9228241,Odesa,Spain,Wheat,18000,13-Sep-22,17-Sep-22
-127,SAFFET AGA,9376282,Odesa,Türkiye,Soya beans,3300,13-Sep-22,18-Sep-22
-128,ATA OCEAN,9519614,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,6300,13-Sep-22,18-Sep-22
-129,GREIFSWALD,8311912,Chornomorsk,Türkiye,Corn,492,13-Sep-22,18-Sep-22
-130,TAMREY S,9171541,Odesa,Italy,Corn,18100,14-Sep-22,22-Sep-22
-130,TAMREY S,9171541,Odesa,Italy,Soya beans,5500,14-Sep-22,22-Sep-22
-130,TAMREY S,9171541,Odesa,Italy,Wheat,5400,14-Sep-22,22-Sep-22
-131,MARANTA,9206669,Odesa,Italy,Soya beans,5300,14-Sep-22,18-Sep-22
-132,CPT DIMITRIOS S,9221592,Yuzhny/Pivdennyi,Spain,Corn,56800,14-Sep-22,19-Sep-22
-132,CPT DIMITRIOS S,9221592,Yuzhny/Pivdennyi,Spain,Barley,8543,14-Sep-22,19-Sep-22
-133,T-MED,9163142,Yuzhny/Pivdennyi,Türkiye,Wheat,5500,14-Sep-22,19-Sep-22
-134,INCE AKDENIZ,9456460,Yuzhny/Pivdennyi,Bangladesh,Wheat,55000,14-Sep-22,22-Sep-22
-135,GLORY DINA,9464522,Chornomorsk,Türkiye,Wheat,27000,14-Sep-22,18-Sep-22
-136,CENK CAR,8611984,Chornomorsk,Türkiye,Mixed,257,14-Sep-22,18-Sep-22
-137,ASTRA CENTAURUS,9611802,Chornomorsk,Spain,Wheat,55000,15-Sep-22,20-Sep-22
-138,DERG,9393060,Chornomorsk,The Netherlands,Sunflower oil,9600,15-Sep-22,20-Sep-22
-139,EIDER S,9364784,Yuzhny/Pivdennyi,Spain,Corn,50855,15-Sep-22,TBD
-140,KAN 2,9154268,Odesa,Libya,Corn,11000,15-Sep-22,20-Sep-22
-140,KAN 2,9154268,Odesa,Libya,Barley,2981,15-Sep-22,20-Sep-22
-141,LARA S,9334301,Odesa,Italy,Sunflower oil,5750,15-Sep-22,20-Sep-22
-142,MAHER,8806905,Chornomorsk,Tunisia,Wheat,7800,15-Sep-22,22-Sep-22
-143,NORAH,9460289,Chornomorsk,Belgium,Rapeseed,30000,15-Sep-22,20-Sep-22
-144,VALERIO,9244037,Odesa,Türkiye,Corn,26000,15-Sep-22,22-Sep-22
-145,ANNABELLA,8919788,Chornomorsk,Romania,Rapeseed,8500,16-Sep-22,TBD
-146,BREEZE,9455650,Odesa,Germany,Rapeseed,47200,16-Sep-22,24-Sep-22
-147,CS CIHAN,9045704,Odesa,Egypt,Soya beans,6400,16-Sep-22,23-Sep-22
-148,NAVIN VULTURE,9543328,Yuzhny/Pivdennyi,Greece,Barley,4258,16-Sep-22,24-Sep-22
-148,NAVIN VULTURE,9543328,Yuzhny/Pivdennyi,Greece,Corn,2026,16-Sep-22,24-Sep-22
-149,OCTOPUS,9518634,Yuzhny/Pivdennyi,Romania,Corn,6500,16-Sep-22,TBD
-150,BARONESS,9588407,Chornomorsk,Italy,Wheat,30900,17-Sep-22,TBD
-151,GOZO,9109964,Odesa,Spain,Wheat,26000,17-Sep-22,TBD
-152,HORUS,9635690,Chornomorsk,China,Sunflower meal,53012,17-Sep-22,TBD
-152,HORUS,9635690,Chornomorsk,China,Barley,9694,17-Sep-22,TBD
-153,IKARIA ANGEL,9194397,Chornomorsk,Djibouti,Wheat,30000,17-Sep-22,21-Sep-22
-154,PACIFIC ROSE,9299460,Yuzhny/Pivdennyi,Italy,Soya beans,20000,17-Sep-22,TBD
-154,PACIFIC ROSE,9299460,Yuzhny/Pivdennyi,Italy,Corn,5105,17-Sep-22,TBD
-155,VELVET ROSE,9281968,Chornomorsk,China,Sunflower meal,29350,17-Sep-22,TBD
-156,ADELHEID BR,9387621,Odesa,Türkiye,Barley,8750,18-Sep-22,TBD
-157,BELLA JUDI,9595371,Chornomorsk,Romania,Corn,32900,18-Sep-22,25-Sep-22
-158,CPT.AHMAD II,9031430,Chornomorsk,Türkiye,Wheat,4030,18-Sep-22,TBD
-159,GENOA,9805659,Chornomorsk,Portugal,Canola,22000,18-Sep-22,23-Sep-22
-159,GENOA,9805659,Chornomorsk,France,Canola,29256,18-Sep-22,23-Sep-22
-160,KAFKAM ETLER,9001112,Chornomorsk,Türkiye,Corn,2413,18-Sep-22,TBD
-161,KAUNAS,8311924,Chornomorsk,Türkiye,Corn,525,18-Sep-22,24-Sep-22
-162,RUBYMAR,9138898,Odesa,Egypt,Corn,29600,18-Sep-22,TBD
-163,SK FRIENDSHIP,8909446,Chornomorsk,Türkiye,Wheat,6900,18-Sep-22,TBD
-164,AKSON SARA,9475739,Yuzhny/Pivdennyi,Italy,Corn,30700,19-Sep-22,TBD
-165,ARCTURUS,9221334,Yuzhny/Pivdennyi,Spain,Wheat,69080,19-Sep-22,TBD
-166,ESENCE,7827342,Chornomorsk,Türkiye,Wheat,3000,19-Sep-22,TBD
-167,FULMAR S,9370082,Odesa,Italy,Sunflower meal,4400,19-Sep-22,TBD
-167,FULMAR S,9370082,Odesa,Italy,Rapeseed meal,3400,19-Sep-22,TBD
-168,GULMAR,9146962,Odesa,Spain,Wheat,16300,19-Sep-22,TBD
-168,GULMAR,9146962,Odesa,Spain,Corn,17350,19-Sep-22,TBD
-168,GULMAR,9146962,Odesa,Spain,Barley,8350,19-Sep-22,TBD
-169,TOMAHAWK,9737591,Yuzhny/Pivdennyi,China,Sunflower meal,60000,19-Sep-22,TBD
-170,APHRODITE M,9450832,Chornomorsk,Spain,Sunflower seed,18150,20-Sep-22,TBD
-171,NIZAR,8324751,Odesa,Türkiye,Soya beans,4950,20-Sep-22,TBD
-172,NORAN,9175822,Chornomorsk,Türkiye,Wheat,8100,20-Sep-22,TBD
-173,NYMPHI,9615030,Chornomorsk,The Netherlands,Corn,27100,20-Sep-22,TBD
-174,PAULINE,9325350,Chornomorsk,Germany,Corn,48750,20-Sep-22,TBD
-175,PGE RAIN,9005857,Odesa,Türkiye,Soya beans,4400,20-Sep-22,TBD
-176,RIDER,9017628,Odesa,Italy,Wheat,9751,20-Sep-22,TBD
-177,SSI PRIDE,9250579,Odesa,Bangladesh,Wheat,46500,20-Sep-22,TBD
-178,TINA S,9498432,Odesa,Italy,Corn,33000,20-Sep-22,TBD
-179,BRIGHT STAR,9481960,Yuzhny/Pivdennyi,The Netherlands,Rapeseed,32493,21-Sep-22,TBD
-180,CENK M,7382366,Chornomorsk,Türkiye,Sunflower seed,90,21-Sep-22,TBD
-181,DS MANATEE,9255189,Odesa,Italy,Corn,26250,21-Sep-22,TBD
-182,LEONORA VICTORY,9283784,Yuzhny/Pivdennyi,China,Sunflower oil,40000,21-Sep-22,TBD
-182,LEONORA VICTORY,9283784,Yuzhny/Pivdennyi,Malaysia,Sunflower oil,4000,21-Sep-22,TBD
-183,MED ISLAND,9322748,Yuzhny/Pivdennyi,Spain,Wheat,27500,21-Sep-22,TBD
-184,SEA INSPIRATION,9604782,Odesa,Spain,Wheat,6000,21-Sep-22,TBD
-184,SEA INSPIRATION,9604782,Odesa,Spain,Barley,11000,21-Sep-22,TBD
-184,SEA INSPIRATION,9604782,Odesa,Spain,Corn,10100,21-Sep-22,TBD
-185,SWIMMER,9033713,Chornomorsk,Türkiye,Sunflower meal,2950,21-Sep-22,TBD
-186,ALSU,9808742,Yuzhny/Pivdennyi,Egypt,Sunflower oil,3100,22-Sep-22,TBD
-187,ANT,9412311,Odesa,Türkiye,Barley,4500,22-Sep-22,TBD
-188,BC VANESSA,9426855,Odesa,Afghanistan,Wheat,30000,22-Sep-22,TBD
-189,ELLIE M,9235854,Chornomorsk,Spain,Corn,50220,22-Sep-22,TBD
-190,MOHAMAD Y,8107000,Odesa,Türkiye,Wheat,11000,22-Sep-22,TBD
-191,ORIS MARINE,9179488,Odesa,Türkiye,Sunflower oil,3500,22-Sep-22,TBD
-192,FORTUNA,9118252,Yuzhny/Pivdennyi,France,Sunflower meal,10252,23-Sep-22,TBD
-193,GEM STAR,9496173,Yuzhny/Pivdennyi,The Netherlands,Corn,31039,23-Sep-22,TBD
-194,GUDENA,9280196,Chornomorsk,Türkiye,Sunflower oil,3860,23-Sep-22,TBD
-195,LADY AYANA,7818377,Chornomorsk,Italy,Corn,27000,23-Sep-22,TBD
-196,MAVKA,9284647,Yuzhny/Pivdennyi,Romania,Sunflower oil,11950,23-Sep-22,TBD
-197,MERRY M,8418265,Chornomorsk,Türkiye,Sunflower meal,4450,23-Sep-22,TBD
-198,MO GAN SHAN,9663099,Chornomorsk,Bangladesh,Wheat,57311,23-Sep-22,TBD
-199,NIL DEMIR,8003814,Chornomorsk,Türkiye,Peas,3700,23-Sep-22,TBD
-200,OLMA,8004806,Chornomorsk,Türkiye,Soya beans,5150,23-Sep-22,TBD
-201,SEA DOVE,8202525,Chornomorsk,Italy,Corn,33000,23-Sep-22,TBD
-202,TZAREVICH,9145229,Chornomorsk,Bulgaria,Sunflower meal,10000,23-Sep-22,TBD
-203,ZEKO Y,8027573,Odesa,Türkiye,Wheat,8200,23-Sep-22,TBD
-204,BAHAR K,8884555,Chornomorsk,Türkiye,Soya beans,7700,24-Sep-22,TBD
-205,DANO,8609175,Odesa,Türkiye,Wheat,6600,24-Sep-22,TBD
-206,DS SOFIE BULKER,9310604,Odesa,Spain,Barley,10650,24-Sep-22,TBD
-206,DS SOFIE BULKER,9310604,Odesa,Spain,Corn,6200,24-Sep-22,TBD
-206,DS SOFIE BULKER,9310604,Odesa,Spain,Wheat,10950,24-Sep-22,TBD
-207,GANOSAYA,9151400,Odesa,Libya,Barley,15000,24-Sep-22,TBD
-208,MUBARIZ IBRAHIMOV,9575292,Odesa,Italy,Sunflower oil,6000,24-Sep-22,TBD
-209,SAXONA,9371024,Chornomorsk,Greece,Corn,5000,24-Sep-22,TBD
-210,ASPASIA LUCK,9223485,Yuzhny/Pivdennyi,Spain,Corn,63029,25-Sep-22,TBD
-211,ATA-2,9387669,Yuzhny/Pivdennyi,Italy,Corn,5960,25-Sep-22,TBD
-212,BLUE STAR,8421705,Chornomorsk,Türkiye,Mixed,2000,25-Sep-22,TBD
-213,CHIOS FREEDOM,9680255,Odesa,The Netherlands,Rapeseed,32700,25-Sep-22,TBD
-214,CORNELIA,9216597,Chornomorsk,Tunisia,Wheat,23500,25-Sep-22,TBD
-215,HERMES,9071052,Chornomorsk,Greece,Wheat,5029,25-Sep-22,TBD
-216,MOONLIGHT,9536301,Odesa,Georgia,Soya beans,6000,25-Sep-22,TBD
-217,STELLAR LADY,9574004,Chornomorsk,Belgium,Rapeseed,39763,25-Sep-22,TBD
-218,SUPER MARTINELLI,9542831,Chornomorsk,Algeria,Wheat,31500,25-Sep-22,TBD
-219,KARTERIA,9236092,Yuzhny/Pivdennyi,The Netherlands,Corn,30000,26-Sep-22,TBD
-220,MAINLAND,9431056,Odesa,Türkiye,Sunflower oil,7250,26-Sep-22,TBD
-221,NEW FAITH,9191034,Odesa,Türkiye,Corn,28193,26-Sep-22,TBD
-222,USICHEM,9344344,Odesa,Spain,Sunflower oil,6600,26-Sep-22,TBD
+#,Vessel name,IMO,Departure port,Country,Commodity,Tonnage,Departure,Inspection cleared,Country status
+1,RAZONI,9086526,Odesa,TBD and Türkiye,Corn,26527,01-Aug-22,03-Aug-22,Developed countries
+2,NAVI STAR,9590979,Odesa,Ireland,Corn,33000,05-Aug-22,06-Aug-22,Developed countries
+3,ROJEN,9754927,Chornomorsk,Italy,Corn,13041,05-Aug-22,07-Aug-22,Developed countries
+4,POLARNET,9758961,Chornomorsk,Türkiye,Corn,12000,05-Aug-22,07-Aug-22,Developed countries
+5,GLORY,9288473,Chornomorsk,Iran,Corn,66084,07-Aug-22,09-Aug-22,Developing countries
+6,STAR HELENA,9361213,Chornomorsk,China,Sunflower meal,45000,07-Aug-22,09-Aug-22,Developing countries
+7,RIVA WIND,9301196,Odesa,Türkiye,Corn,44000,07-Aug-22,09-Aug-22,Developed countries
+8,MUSTAFA NECATI,9736690,Chornomorsk,Italy,Sunflower oil,6000,07-Aug-22,10-Aug-22,Developed countries
+9,ARIZONA,9592733,Chornomorsk,Türkiye,Corn,48459,08-Aug-22,10-Aug-22,Developed countries
+10,SACURA,9497000,Yuzhny/Pivdennyi,Italy,Soya beans,11000,08-Aug-22,10-Aug-22,Developed countries
+11,OCEAN LION,9296248,Chornomorsk,Republic of Korea,Corn,64720,09-Aug-22,11-Aug-22,Developed countries
+12,RAHMI YAGCI,9550852,Chornomorsk,Türkiye,Sunflower meal,5300,09-Aug-22,13-Aug-22,Developed countries
+13,STAR LAURA,9328936,Yuzhny/Pivdennyi,Iran,Corn,60150,12-Aug-22,14-Aug-22,Developing countries
+14,SORMOVSKIY 121,8133578,Chornomorsk,Türkiye,Wheat,3050,12-Aug-22,15-Aug-22,Developed countries
+15,FULMAR S,9370082,Chornomorsk,Türkiye,Corn,12000,13-Aug-22,15-Aug-22,Developed countries
+16,THOE,9400588,Chornomorsk,Türkiye,Sunflower seed,2914,13-Aug-22,16-Aug-22,Developed countries
+17,OSPREY S,9300843,Chornomorsk,Türkiye,Corn,11500,16-Aug-22,18-Aug-22,Developed countries
+18,BONITA,9231286,Yuzhny/Pivdennyi,Republic of Korea,Corn,60000,16-Aug-22,18-Aug-22,Developed countries
+19,RAMUS,9318400,Chornomorsk,Türkiye,Wheat,6161,16-Aug-22,19-Aug-22,Developed countries
+20,BRAVE COMMANDER,9136931,Yuzhny/Pivdennyi,Djibouti,Wheat,23300,16-Aug-22,21-Aug-22,Developing countries
+21,PETREL S,9363883,Chornomorsk,The Netherlands,Sunflower meal,18500,17-Aug-22,19-Aug-22,Developed countries
+22,SARA,9259020,Odesa,Türkiye,Corn,8000,17-Aug-22,19-Aug-22,Developed countries
+23,EFE,9558763,Odesa,Türkiye,Sunflower oil,7250,17-Aug-22,19-Aug-22,Developed countries
+24,PROPUS,9133757,Chornomorsk,Romania,Wheat,9111,18-Aug-22,19-Aug-22,Developed countries
+25,I MARIA,8914697,Chornomorsk,Romania,Corn,27982,18-Aug-22,22-Aug-22,Developed countries
+26,ZUMRUT ANA,9633549,Chornomorsk,Italy,Sunflower oil,6300,20-Aug-22,22-Aug-22,Developed countries
+27,OCEAN S,9086320,Chornomorsk,Türkiye,Wheat,25000,20-Aug-22,22-Aug-22,Developed countries
+28,FILYOZ,9407213,Chornomorsk,Türkiye,Sunflower oil,5000,21-Aug-22,23-Aug-22,Developed countries
+29,DA LIANG,9608415,Chornomorsk,Republic of Korea,Sugar beet pellet,14000,21-Aug-22,23-Aug-22,Developed countries
+30,FOYLE,9317676,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,4300,21-Aug-22,23-Aug-22,Developed countries
+31,KUBROSLI Y,8000836,Odesa,Türkiye,Wheat,11000,21-Aug-22,24-Aug-22,Developed countries
+32,MARANTA,9206669,Chornomorsk,Greece,Corn,5300,22-Aug-22,24-Aug-22,Developed countries
+33,GREAT ARSENAL,9159062,Chornomorsk,Egypt,Wheat,25500,22-Aug-22,24-Aug-22,Developing countries
+34,KAFKAM ETLER,9001112,Chornomorsk,Türkiye,Corn,2437,23-Aug-22,25-Aug-22,Developed countries
+35,GANOSAYA,9151400,Odesa,Lebanon,Corn,16500,24-Aug-22,26-Aug-22,Developing countries
+36,ZHE HAI 505,9567477,Odesa,The Netherlands,Rapeseed,29600,24-Aug-22,26-Aug-22,Developed countries
+37,BELLIS,9381952,Odesa,Israel,Soya beans,6000,25-Aug-22,27-Aug-22,Developed countries
+38,ASCANIOS,9276169,Yuzhny/Pivdennyi,Germany,Corn,58510,25-Aug-22,27-Aug-22,Developed countries
+39,MOHAMAD Y,8107000,Odesa,Türkiye,Wheat,11000,25-Aug-22,27-Aug-22,Developed countries
+40,AVIVA,9410131,Chornomorsk,India,Sunflower oil,19100,26-Aug-22,28-Aug-22,Developing countries
+41,SEAEAGLE,9153056,Chornomorsk,Sudan,Wheat,65340,26-Aug-22,28-Aug-22,Developing countries
+42,ZELEK STAR,9379117,Chornomorsk,Türkiye,Peas,3700,26-Aug-22,29-Aug-22,Developed countries
+43,PRETTY LADY,9223174,Chornomorsk,Egypt,Corn,45000,26-Aug-22,29-Aug-22,Developing countries
+44,ADNAN TORLAK,9243253,Chornomorsk,France,Rapeseed,14750,27-Aug-22,29-Aug-22,Developed countries
+45,ORIS SOFI,8920282,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,5900,27-Aug-22,29-Aug-22,Developed countries
+46,S BREEZE,9317145,Chornomorsk,Egypt,Corn,44000,27-Aug-22,01-Sep-22,Developing countries
+47,SSI INVINCIBLE II,9434747,Chornomorsk,China,Barley,49500,28-Aug-22,31-Aug-22,Developing countries
+48,DS SOFIE BULKER,9310604,Odesa,Spain,Barley,27000,28-Aug-22,31-Aug-22,Developed countries
+49,SILVER LADY,9279367,Yuzhny/Pivdennyi,Italy,Corn,39494,28-Aug-22,31-Aug-22,Developed countries
+50,MELINA,9550424,Yuzhny/Pivdennyi,Romania,Corn,27500,28-Aug-22,31-Aug-22,Developed countries
+51,FPMC B 201,9468229,Odesa,Egypt,Wheat,33000,28-Aug-22,01-Sep-22,Developing countries
+52,AEOLOS,9228382,Odesa,The Netherlands,Corn,30000,28-Aug-22,02-Sep-22,Developed countries
+53,ASH BALTIC,9606493,Odesa,Egypt,Corn,11000,29-Aug-22,01-Sep-22,Developing countries
+54,PEACE M,9086318,Odesa,Romania,Corn,24485,29-Aug-22,01-Sep-22,Developed countries
+55,ANASTASIA,8926121,Chornomorsk,Türkiye,Wheat,3800,29-Aug-22,04-Sep-22,Developed countries
+56,SEAJOY,9213820,Chornomorsk,Spain,Corn,64215,30-Aug-22,01-Sep-22,Developed countries
+57,SAFFET AGA,9376282,Chornomorsk,Türkiye,Corn,3236,30-Aug-22,01-Sep-22,Developed countries
+58,MICHALIS,9545510,Odesa,Spain,Corn,33000,30-Aug-22,01-Sep-22,Developed countries
+59,LADY ZEHMA,9303431,Chornomorsk,Italy,Corn,30274,30-Aug-22,03-Sep-22,Developed countries
+60,KARTERIA,9236092,Yuzhny/Pivdennyi,Yemen,Wheat,37500,30-Aug-22,03-Sep-22,Developing countries
+61,SIMAS,9000314,Odesa,Italy,Wheat,15000,30-Aug-22,04-Sep-22,Developed countries
+62,LADY AILLAR,9550278,Yuzhny/Pivdennyi,Spain,Corn,27000,31-Aug-22,05-Sep-22,Developed countries
+63,MARAN ASTRONOMER,9581239,Yuzhny/Pivdennyi,The Netherlands,Corn,74500,31-Aug-22,05-Sep-22,Developed countries
+64,DAYTONA DYNAMIC,8914726,Odesa,Türkiye,Corn,25850,01-Sep-22,04-Sep-22,Developed countries
+65,HAZAR S,9545467,Chornomorsk,Türkiye,Corn,5500,01-Sep-22,04-Sep-22,Developed countries
+66,HELGA,9444912,Odesa,Türkiye,Corn,27000,01-Sep-22,05-Sep-22,Developed countries
+67,ENEIDA,9198381,Chornomorsk,Türkiye,Corn,8560,01-Sep-22,05-Sep-22,Developed countries
+67,ENEIDA,9198381,Chornomorsk,Türkiye,Wheat,35470,01-Sep-22,05-Sep-22,Developed countries
+68,MASSA J,9224867,Yuzhny/Pivdennyi,Somalia,Wheat,28500,01-Sep-22,07-Sep-22,Developed countries
+69,CANGA STAR,9540039,Chornomorsk,France,Rapeseed,7000,02-Sep-22,07-Sep-22,Developed countries
+70,MAVKA,9284647,Chornomorsk,Romania,Sunflower oil,12500,02-Sep-22,05-Sep-22,Developed countries
+71,SPRING,8408650,Chornomorsk,Türkiye,Wheat,8500,02-Sep-22,05-Sep-22,Developed countries
+72,KATSUYAMA,9274678,Chornomorsk,India,Sunflower oil,21000,02-Sep-22,05-Sep-22,Developing countries
+73,STELLA GS,9363285,Odesa,Israel,Corn,30300,02-Sep-22,06-Sep-22,Developed countries
+74,FULMAR S,9370082,Yuzhny/Pivdennyi,Bulgaria,Sunflower meal,9835,02-Sep-22,05-Sep-22,Developed countries
+75,SARA,9259020,Odesa,Türkiye,Wheat,6600,03-Sep-22,07-Sep-22,Developed countries
+76,LADY EVA,9008110,Chornomorsk,Greece,Wheat,6117,04-Sep-22,07-Sep-22,Developed countries
+77,CANOPUS,9401025,Yuzhny/Pivdennyi,India,Sunflower oil,42000,04-Sep-22,06-Sep-22,Developing countries
+78,SEA DOLPHIN C,9486427,Yuzhny/Pivdennyi,The Netherlands,Rapeseed,31098,04-Sep-22,06-Sep-22,Developed countries
+79,SEALOCK,8218380,Chornomorsk,Türkiye,Peas,2070,04-Sep-22,09-Sep-22,Developed countries
+80,MUBARIZ IBRAHIMOV,9575292,Odesa,Türkiye,Sunflower oil,6600,04-Sep-22,09-Sep-22,Developed countries
+81,MAINA,9699892,Yuzhny/Pivdennyi,Spain,Corn,56500,04-Sep-22,07-Sep-22,Developed countries
+82,GEN. POLAD HASHIMOV,9575307,Chornomorsk,Türkiye,Sunflower oil,6450,04-Sep-22,07-Sep-22,Developed countries
+83,BC CALLISTO,9400916,Chornomorsk,Egypt,Wheat,31400,04-Sep-22,09-Sep-22,Developing countries
+84,MRC LINA,9462299,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,7800,04-Sep-22,07-Sep-22,Developed countries
+85,LADY PERLA,9149732,Yuzhny/Pivdennyi,Italy,Corn,20500,04-Sep-22,07-Sep-22,Developed countries
+86,AFANASIY MATYSHENKO,8227783,Chornomorsk,Türkiye,Wheat,3000,04-Sep-22,TBD,Developed countries
+87,NORD VIRGO,9711937,Yuzhny/Pivdennyi,China,Corn,62340,04-Sep-22,09-Sep-22,Developing countries
+88,GOLDEN YARA,8915299,Yuzhny/Pivdennyi,Türkiye,Wheat,13500,05-Sep-22,10-Sep-22,Developed countries
+89,MY MERAY,9000302,Chornomorsk,Egypt,Corn,30000,05-Sep-22,10-Sep-22,Developing countries
+90,BARON,7352476,Odesa,Türkiye,Corn,5750,05-Sep-22,10-Sep-22,Developed countries
+91,IRMGARD,9590967,Odesa,Türkiye,Wheat,27500,06-Sep-22,11-Sep-22,Developed countries
+91,IRMGARD,9590967,Odesa,Türkiye,Corn,7179,06-Sep-22,11-Sep-22,Developed countries
+92,QUEEN SARA,9132507,Chornomorsk,Egypt,Corn,11091,06-Sep-22,11-Sep-22,Developing countries
+93,ORIS PRINCESS,9119907,Chornomorsk,Israel,Sunflower meal,4510,06-Sep-22,12-Sep-22,Developed countries
+94,NEW LEVANT,9111371,Odesa,Türkiye,Wheat,26500,06-Sep-22,10-Sep-22,Developed countries
+95,VITIS,9000613,Yuzhny/Pivdennyi,Italy,Sunflower oil,5800,06-Sep-22,10-Sep-22,Developed countries
+96,OCMIS ADVENTURE,8919831,Yuzhny/Pivdennyi,Greece,Corn,4862,06-Sep-22,10-Sep-22,Developed countries
+97,SEAGUARDIAN,9174268,Yuzhny/Pivdennyi,Spain,Sunflower meal,8640,07-Sep-22,12-Sep-22,Developed countries
+97,SEAGUARDIAN,9174268,Yuzhny/Pivdennyi,Spain,Barley,34071,07-Sep-22,12-Sep-22,Developed countries
+97,SEAGUARDIAN,9174268,Yuzhny/Pivdennyi,Spain,Wheat,20095,07-Sep-22,12-Sep-22,Developed countries
+98,SUPER HENRY,9407483,Odesa,Kenya,Wheat,51400,07-Sep-22,22-Sep-22,Developing countries
+99,ELIANA,9327310,Chornomorsk,Türkiye,Sunflower oil,5200,07-Sep-22,11-Sep-22,Developed countries
+100,KAPTAN CEVDET,9005895,Chornomorsk,Türkiye,Soya beans,2472,07-Sep-22,12-Sep-22,Developed countries
+101,JASMIN QUEEN,9109861,Odesa,Türkiye,Corn,9531,08-Sep-22,12-Sep-22,Developed countries
+102,CAPTAIN ADAM 1,8914087,Chornomorsk,Türkiye,Wheat,9300,08-Sep-22,12-Sep-22,Developed countries
+103,DIGNITY,9118238,Chornomorsk,Türkiye,Sunflower seed,8200,08-Sep-22,12-Sep-22,Developed countries
+104,FILYOZ,9407213,Odesa,Türkiye,Sunflower oil,4410,08-Sep-22,12-Sep-22,Developed countries
+105,SANTANA,9449388,Odesa,Italy,Wheat,10000,08-Sep-22,12-Sep-22,Developed countries
+106,KIRAN AMERICA,9491264,Chornomorsk,China,Barley,30000,09-Sep-22,14-Sep-22,Developing countries
+106,KIRAN AMERICA,9491264,Chornomorsk,China,Corn,20000,09-Sep-22,14-Sep-22,Developing countries
+107,SUPER BAYERN,9278911,Yuzhny/Pivdennyi,Egypt,Corn,33000,09-Sep-22,13-Sep-22,Developing countries
+108,SEVIL,9148518,Chornomorsk,Romania,Rapeseed,4700,09-Sep-22,13-Sep-22,Developed countries
+109,EAUBONNE,9663104,Odesa,Spain,Corn,32794,10-Sep-22,16-Sep-22,Developed countries
+109,EAUBONNE,9663104,Odesa,Spain,Wheat,13853,10-Sep-22,16-Sep-22,Developed countries
+109,EAUBONNE,9663104,Odesa,Spain,Barley,10853,10-Sep-22,16-Sep-22,Developed countries
+110,LUCKY,9037305,Yuzhny/Pivdennyi,Greece,Corn,6000,10-Sep-22,14-Sep-22,Developed countries
+110,LUCKY,9037305,Yuzhny/Pivdennyi,Greece,Barley,4400,10-Sep-22,14-Sep-22,Developed countries
+111,PRINCESS AMNAH,9008067,Chornomorsk,Italy,Wheat,6000,10-Sep-22,13-Sep-22,Developed countries
+112,A-LINE,9246920,Chornomorsk,Egypt,Corn,10700,10-Sep-22,13-Sep-22,Developing countries
+113,LADY SHAM,9171383,Odesa,Italy,Sunflower seed,5600,10-Sep-22,14-Sep-22,Developed countries
+114,BRIZA,9286815,Chornomorsk,Greece,Corn,6500,11-Sep-22,15-Sep-22,Developed countries
+115,MAGNOLIA,9575333,Chornomorsk,Türkiye,Sunflower oil,6600,11-Sep-22,16-Sep-22,Developed countries
+116,S-BRILLIANT,9275323,Chornomorsk,The Netherlands,Rapeseed,40220,11-Sep-22,15-Sep-22,Developed countries
+117,AHMET CAN,9368182,Chornomorsk,Türkiye,Wheat bran pellets,2800,12-Sep-22,16-Sep-22,Developed countries
+118,SALLY M,9152844,Chornomorsk,Lebanon,Corn,6857,12-Sep-22,17-Sep-22,Developing countries
+119,NORD STARK,9691591,Chornomorsk,Spain,Wheat,27500,12-Sep-22,17-Sep-22,Developed countries
+120,ORIS SOFI,8920282,Odesa,Türkiye,Sunflower oil,3026,12-Sep-22,15-Sep-22,Developed countries
+120,ORIS SOFI,8920282,Odesa,Lebanon,Sunflower oil,2973,12-Sep-22,15-Sep-22,Developing countries
+121,HADAR,9615028,Yuzhny/Pivdennyi,Italy,Wheat,23500,12-Sep-22,16-Sep-22,Developed countries
+121,HADAR,9615028,Yuzhny/Pivdennyi,Italy,Corn,3500,12-Sep-22,16-Sep-22,Developed countries
+122,WIN SINO,9278519,Yuzhny/Pivdennyi,India,Sunflower oil,43500,12-Sep-22,17-Sep-22,Developing countries
+123,SUPER SAKA,9456551,Odesa,Spain,Wheat,29000,13-Sep-22,18-Sep-22,Developed countries
+123,SUPER SAKA,9456551,Odesa,Spain,Corn,21000,13-Sep-22,18-Sep-22,Developed countries
+124,YASA TEAM,9296250,Yuzhny/Pivdennyi,Israel,Corn,64951,13-Sep-22,18-Sep-22,Developed countries
+125,PROPUS,9133757,Odesa,Türkiye,Corn,8500,13-Sep-22,18-Sep-22,Developed countries
+126,FANARIA,9228241,Odesa,Spain,Wheat,18000,13-Sep-22,17-Sep-22,Developed countries
+127,SAFFET AGA,9376282,Odesa,Türkiye,Soya beans,3300,13-Sep-22,18-Sep-22,Developed countries
+128,ATA OCEAN,9519614,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,6300,13-Sep-22,18-Sep-22,Developed countries
+129,GREIFSWALD,8311912,Chornomorsk,Türkiye,Corn,492,13-Sep-22,18-Sep-22,Developed countries
+130,TAMREY S,9171541,Odesa,Italy,Corn,18100,14-Sep-22,22-Sep-22,Developed countries
+130,TAMREY S,9171541,Odesa,Italy,Soya beans,5500,14-Sep-22,22-Sep-22,Developed countries
+130,TAMREY S,9171541,Odesa,Italy,Wheat,5400,14-Sep-22,22-Sep-22,Developed countries
+131,MARANTA,9206669,Odesa,Italy,Soya beans,5300,14-Sep-22,18-Sep-22,Developed countries
+132,CPT DIMITRIOS S,9221592,Yuzhny/Pivdennyi,Spain,Corn,56800,14-Sep-22,19-Sep-22,Developed countries
+132,CPT DIMITRIOS S,9221592,Yuzhny/Pivdennyi,Spain,Barley,8543,14-Sep-22,19-Sep-22,Developed countries
+133,T-MED,9163142,Yuzhny/Pivdennyi,Türkiye,Wheat,5500,14-Sep-22,19-Sep-22,Developed countries
+134,INCE AKDENIZ,9456460,Yuzhny/Pivdennyi,Bangladesh,Wheat,55000,14-Sep-22,22-Sep-22,Developing countries
+135,GLORY DINA,9464522,Chornomorsk,Türkiye,Wheat,27000,14-Sep-22,18-Sep-22,Developed countries
+136,CENK CAR,8611984,Chornomorsk,Türkiye,Mixed,257,14-Sep-22,18-Sep-22,Developed countries
+137,ASTRA CENTAURUS,9611802,Chornomorsk,Spain,Wheat,55000,15-Sep-22,20-Sep-22,Developed countries
+138,DERG,9393060,Chornomorsk,The Netherlands,Sunflower oil,9600,15-Sep-22,20-Sep-22,Developed countries
+139,EIDER S,9364784,Yuzhny/Pivdennyi,Spain,Corn,50855,15-Sep-22,TBD,Developed countries
+140,KAN 2,9154268,Odesa,Libya,Corn,11000,15-Sep-22,20-Sep-22,Developing countries
+140,KAN 2,9154268,Odesa,Libya,Barley,2981,15-Sep-22,20-Sep-22,Developing countries
+141,LARA S,9334301,Odesa,Italy,Sunflower oil,5750,15-Sep-22,20-Sep-22,Developed countries
+142,MAHER,8806905,Chornomorsk,Tunisia,Wheat,7800,15-Sep-22,22-Sep-22,Developing countries
+143,NORAH,9460289,Chornomorsk,Belgium,Rapeseed,30000,15-Sep-22,20-Sep-22,Developed countries
+144,VALERIO,9244037,Odesa,Türkiye,Corn,26000,15-Sep-22,22-Sep-22,Developed countries
+145,ANNABELLA,8919788,Chornomorsk,Romania,Rapeseed,8500,16-Sep-22,TBD,Developed countries
+146,BREEZE,9455650,Odesa,Germany,Rapeseed,47200,16-Sep-22,24-Sep-22,Developed countries
+147,CS CIHAN,9045704,Odesa,Egypt,Soya beans,6400,16-Sep-22,23-Sep-22,Developing countries
+148,NAVIN VULTURE,9543328,Yuzhny/Pivdennyi,Greece,Barley,4258,16-Sep-22,24-Sep-22,Developed countries
+148,NAVIN VULTURE,9543328,Yuzhny/Pivdennyi,Greece,Corn,2026,16-Sep-22,24-Sep-22,Developed countries
+149,OCTOPUS,9518634,Yuzhny/Pivdennyi,Romania,Corn,6500,16-Sep-22,TBD,Developed countries
+150,BARONESS,9588407,Chornomorsk,Italy,Wheat,30900,17-Sep-22,TBD,Developed countries
+151,GOZO,9109964,Odesa,Spain,Wheat,26000,17-Sep-22,TBD,Developed countries
+152,HORUS,9635690,Chornomorsk,China,Sunflower meal,53012,17-Sep-22,TBD,Developing countries
+152,HORUS,9635690,Chornomorsk,China,Barley,9694,17-Sep-22,TBD,Developing countries
+153,IKARIA ANGEL,9194397,Chornomorsk,Djibouti,Wheat,30000,17-Sep-22,21-Sep-22,Developing countries
+154,PACIFIC ROSE,9299460,Yuzhny/Pivdennyi,Italy,Soya beans,20000,17-Sep-22,TBD,Developed countries
+154,PACIFIC ROSE,9299460,Yuzhny/Pivdennyi,Italy,Corn,5105,17-Sep-22,TBD,Developed countries
+155,VELVET ROSE,9281968,Chornomorsk,China,Sunflower meal,29350,17-Sep-22,TBD,Developing countries
+156,ADELHEID BR,9387621,Odesa,Türkiye,Barley,8750,18-Sep-22,TBD,Developed countries
+157,BELLA JUDI,9595371,Chornomorsk,Romania,Corn,32900,18-Sep-22,25-Sep-22,Developed countries
+158,CPT.AHMAD II,9031430,Chornomorsk,Türkiye,Wheat,4030,18-Sep-22,TBD,Developed countries
+159,GENOA,9805659,Chornomorsk,Portugal,Canola,22000,18-Sep-22,23-Sep-22,Developed countries
+159,GENOA,9805659,Chornomorsk,France,Canola,29256,18-Sep-22,23-Sep-22,Developed countries
+160,KAFKAM ETLER,9001112,Chornomorsk,Türkiye,Corn,2413,18-Sep-22,TBD,Developed countries
+161,KAUNAS,8311924,Chornomorsk,Türkiye,Corn,525,18-Sep-22,24-Sep-22,Developed countries
+162,RUBYMAR,9138898,Odesa,Egypt,Corn,29600,18-Sep-22,TBD,Developing countries
+163,SK FRIENDSHIP,8909446,Chornomorsk,Türkiye,Wheat,6900,18-Sep-22,TBD,Developed countries
+164,AKSON SARA,9475739,Yuzhny/Pivdennyi,Italy,Corn,30700,19-Sep-22,TBD,Developed countries
+165,ARCTURUS,9221334,Yuzhny/Pivdennyi,Spain,Wheat,69080,19-Sep-22,TBD,Developed countries
+166,ESENCE,7827342,Chornomorsk,Türkiye,Wheat,3000,19-Sep-22,TBD,Developed countries
+167,FULMAR S,9370082,Odesa,Italy,Sunflower meal,4400,19-Sep-22,TBD,Developed countries
+167,FULMAR S,9370082,Odesa,Italy,Rapeseed meal,3400,19-Sep-22,TBD,Developed countries
+168,GULMAR,9146962,Odesa,Spain,Wheat,16300,19-Sep-22,TBD,Developed countries
+168,GULMAR,9146962,Odesa,Spain,Corn,17350,19-Sep-22,TBD,Developed countries
+168,GULMAR,9146962,Odesa,Spain,Barley,8350,19-Sep-22,TBD,Developed countries
+169,TOMAHAWK,9737591,Yuzhny/Pivdennyi,China,Sunflower meal,60000,19-Sep-22,TBD,Developing countries
+170,APHRODITE M,9450832,Chornomorsk,Spain,Sunflower seed,18150,20-Sep-22,TBD,Developed countries
+171,NIZAR,8324751,Odesa,Türkiye,Soya beans,4950,20-Sep-22,TBD,Developed countries
+172,NORAN,9175822,Chornomorsk,Türkiye,Wheat,8100,20-Sep-22,TBD,Developed countries
+173,NYMPHI,9615030,Chornomorsk,The Netherlands,Corn,27100,20-Sep-22,TBD,Developed countries
+174,PAULINE,9325350,Chornomorsk,Germany,Corn,48750,20-Sep-22,TBD,Developed countries
+175,PGE RAIN,9005857,Odesa,Türkiye,Soya beans,4400,20-Sep-22,TBD,Developed countries
+176,RIDER,9017628,Odesa,Italy,Wheat,9751,20-Sep-22,TBD,Developed countries
+177,SSI PRIDE,9250579,Odesa,Bangladesh,Wheat,46500,20-Sep-22,TBD,Developing countries
+178,TINA S,9498432,Odesa,Italy,Corn,33000,20-Sep-22,TBD,Developed countries
+179,BRIGHT STAR,9481960,Yuzhny/Pivdennyi,The Netherlands,Rapeseed,32493,21-Sep-22,TBD,Developed countries
+180,CENK M,7382366,Chornomorsk,Türkiye,Sunflower seed,90,21-Sep-22,TBD,Developed countries
+181,DS MANATEE,9255189,Odesa,Italy,Corn,26250,21-Sep-22,TBD,Developed countries
+182,LEONORA VICTORY,9283784,Yuzhny/Pivdennyi,China,Sunflower oil,40000,21-Sep-22,TBD,Developing countries
+182,LEONORA VICTORY,9283784,Yuzhny/Pivdennyi,Malaysia,Sunflower oil,4000,21-Sep-22,TBD,Developed countries
+183,MED ISLAND,9322748,Yuzhny/Pivdennyi,Spain,Wheat,27500,21-Sep-22,TBD,Developed countries
+184,SEA INSPIRATION,9604782,Odesa,Spain,Wheat,6000,21-Sep-22,TBD,Developed countries
+184,SEA INSPIRATION,9604782,Odesa,Spain,Barley,11000,21-Sep-22,TBD,Developed countries
+184,SEA INSPIRATION,9604782,Odesa,Spain,Corn,10100,21-Sep-22,TBD,Developed countries
+185,SWIMMER,9033713,Chornomorsk,Türkiye,Sunflower meal,2950,21-Sep-22,TBD,Developed countries
+186,ALSU,9808742,Yuzhny/Pivdennyi,Egypt,Sunflower oil,3100,22-Sep-22,TBD,Developing countries
+187,ANT,9412311,Odesa,Türkiye,Barley,4500,22-Sep-22,TBD,Developed countries
+188,BC VANESSA,9426855,Odesa,Afghanistan,Wheat,30000,22-Sep-22,TBD,Developing countries
+189,ELLIE M,9235854,Chornomorsk,Spain,Corn,50220,22-Sep-22,TBD,Developed countries
+190,MOHAMAD Y,8107000,Odesa,Türkiye,Wheat,11000,22-Sep-22,TBD,Developed countries
+191,ORIS MARINE,9179488,Odesa,Türkiye,Sunflower oil,3500,22-Sep-22,TBD,Developed countries
+192,FORTUNA,9118252,Yuzhny/Pivdennyi,France,Sunflower meal,10252,23-Sep-22,TBD,Developed countries
+193,GEM STAR,9496173,Yuzhny/Pivdennyi,The Netherlands,Corn,31039,23-Sep-22,TBD,Developed countries
+194,GUDENA,9280196,Chornomorsk,Türkiye,Sunflower oil,3860,23-Sep-22,TBD,Developed countries
+195,LADY AYANA,7818377,Chornomorsk,Italy,Corn,27000,23-Sep-22,TBD,Developed countries
+196,MAVKA,9284647,Yuzhny/Pivdennyi,Romania,Sunflower oil,11950,23-Sep-22,TBD,Developed countries
+197,MERRY M,8418265,Chornomorsk,Türkiye,Sunflower meal,4450,23-Sep-22,TBD,Developed countries
+198,MO GAN SHAN,9663099,Chornomorsk,Bangladesh,Wheat,57311,23-Sep-22,TBD,Developing countries
+199,NIL DEMIR,8003814,Chornomorsk,Türkiye,Peas,3700,23-Sep-22,TBD,Developed countries
+200,OLMA,8004806,Chornomorsk,Türkiye,Soya beans,5150,23-Sep-22,TBD,Developed countries
+201,SEA DOVE,8202525,Chornomorsk,Italy,Corn,33000,23-Sep-22,TBD,Developed countries
+202,TZAREVICH,9145229,Chornomorsk,Bulgaria,Sunflower meal,10000,23-Sep-22,TBD,Developed countries
+203,ZEKO Y,8027573,Odesa,Türkiye,Wheat,8200,23-Sep-22,TBD,Developed countries
+204,BAHAR K,8884555,Chornomorsk,Türkiye,Soya beans,7700,24-Sep-22,TBD,Developed countries
+205,DANO,8609175,Odesa,Türkiye,Wheat,6600,24-Sep-22,TBD,Developed countries
+206,DS SOFIE BULKER,9310604,Odesa,Spain,Barley,10650,24-Sep-22,TBD,Developed countries
+206,DS SOFIE BULKER,9310604,Odesa,Spain,Corn,6200,24-Sep-22,TBD,Developed countries
+206,DS SOFIE BULKER,9310604,Odesa,Spain,Wheat,10950,24-Sep-22,TBD,Developed countries
+207,GANOSAYA,9151400,Odesa,Libya,Barley,15000,24-Sep-22,TBD,Developing countries
+208,MUBARIZ IBRAHIMOV,9575292,Odesa,Italy,Sunflower oil,6000,24-Sep-22,TBD,Developed countries
+209,SAXONA,9371024,Chornomorsk,Greece,Corn,5000,24-Sep-22,TBD,Developed countries
+210,ASPASIA LUCK,9223485,Yuzhny/Pivdennyi,Spain,Corn,63029,25-Sep-22,TBD,Developed countries
+211,ATA-2,9387669,Yuzhny/Pivdennyi,Italy,Corn,5960,25-Sep-22,TBD,Developed countries
+212,BLUE STAR,8421705,Chornomorsk,Türkiye,Mixed,2000,25-Sep-22,TBD,Developed countries
+213,CHIOS FREEDOM,9680255,Odesa,The Netherlands,Rapeseed,32700,25-Sep-22,TBD,Developed countries
+214,CORNELIA,9216597,Chornomorsk,Tunisia,Wheat,23500,25-Sep-22,TBD,Developing countries
+215,HERMES,9071052,Chornomorsk,Greece,Wheat,5029,25-Sep-22,TBD,Developed countries
+216,MOONLIGHT,9536301,Odesa,Georgia,Soya beans,6000,25-Sep-22,TBD,Developed countries
+217,STELLAR LADY,9574004,Chornomorsk,Belgium,Rapeseed,39763,25-Sep-22,TBD,Developed countries
+218,SUPER MARTINELLI,9542831,Chornomorsk,Algeria,Wheat,31500,25-Sep-22,TBD,Developing countries
+219,KARTERIA,9236092,Yuzhny/Pivdennyi,The Netherlands,Corn,30000,26-Sep-22,TBD,Developed countries
+220,MAINLAND,9431056,Odesa,Türkiye,Sunflower oil,7250,26-Sep-22,TBD,Developed countries
+221,NEW FAITH,9191034,Odesa,Türkiye,Corn,28193,26-Sep-22,TBD,Developed countries
+222,USICHEM,9344344,Odesa,Spain,Sunflower oil,6600,26-Sep-22,TBD,Developed countries

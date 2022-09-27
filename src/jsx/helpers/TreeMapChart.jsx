@@ -12,11 +12,13 @@ import debounce from './Debounce.js';
 function TreeMapChart({
   category, commodityValue, countryValue, idx, setCommodityValue, setCountryValue, setDuration, series
 }) {
-  series.columns = ['name', 'parent', 'value'];
+  const data = [...series];
+  data.columns = ['name', 'parent', 'value'];
+  data.unshift({ name: 'Origin', parent: '', value: 0 });
   const chartRef = useRef(null);
   const [chartRefWidth, setChartRefWidth] = useState(0);
   const prevWidth = useRef();
-  const max = (Math.max(...series.map(d => ((d.name === 'Other') ? 0 : d.value))));
+  const max = (Math.max(...data.map(d => ((d.name === 'Other') ? 0 : d.value))));
   const colors = ['#009edb', '#72bf44', '#f58220', '#a05fb4', '#ffc800', '#aea29a'];
   const margin = {
     bottom: 0, left: -6, right: 0, top: 0
@@ -39,12 +41,12 @@ function TreeMapChart({
   const createChart = (svg, width_container) => {
     const width = width_container - margin.left - margin.right;
     svg.attr('width', width + margin.left - margin.right);
-    const height = 300 - margin.top - margin.bottom;
+    const height = 400 - margin.top - margin.bottom;
     svg.attr('height', height + margin.top + margin.bottom);
 
     const root = d3.stratify()
       .id((d) => d.name)
-      .parentId((d) => d.parent)(series);
+      .parentId((d) => d.parent)(data);
     root.sum((d) => +d.value);
 
     d3.treemap()
@@ -59,7 +61,7 @@ function TreeMapChart({
       .attr('y', (d) => d.y0)
       .attr('width', (d) => d.x1 - d.x0)
       .attr('height', (d) => d.y1 - d.y0)
-      .style('fill', (d, i) => ((d.data.name === 'Other') ? colors[colors.length - 1] : colors[i]))
+      .attr('fill', (d, i) => ((d.data.name === 'Other') ? colors[colors.length - 1] : colors[i]))
       .on('click', (event, d) => {
         if (category === 'Commodity') {
           setCommodityValue(([...event.target.classList].includes('selected')) ? false : d.data.name);

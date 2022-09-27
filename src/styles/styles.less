@@ -82,21 +82,23 @@
       &.vis_row_1 {
         background-color: #fff;
         box-sizing: border-box;
-        padding: 20px 20px 20px 20px;
+        padding: 20px 20px 30px 20px;
         position: relative;
         .toggle_features_container {
           position: absolute;
-          top: 0;
           right: 0;
           text-align: right;
+          bottom: 0;
           button {
             background-color: #009edb;
             border: 0;
             color: #fff;
             cursor: pointer;
+            font-size: 14px;
             font-weight: bold;
             margin: 0 2px;
             padding: 5px 7px;
+            user-select: none;
             &:hover {aea29a
               color: #ccc;
             }
@@ -189,7 +191,7 @@
         .column {
           background-color: #fff;
           box-sizing: border-box;
-          padding: 20px;
+          padding: 20px 20px 40px 20px;
           width: 100%;
           &.column_1 {
             @media all and (min-width: 920px) {
@@ -200,8 +202,28 @@
             }
           }
           &.column_2 {
+            position: relative;
             @media all and (min-width: 920px) {
               margin-left: 10px;
+            }
+            .toggle_features_container {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              button {
+                background-color: #009edb;
+                border: 0;
+                color: #fff;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: bold;
+                margin: 0 2px;
+                padding: 5px 7px;
+                user-select: none;
+                &:hover {
+                  color: #ccc;
+                }
+              }
             }
           }
           h4 {
@@ -209,6 +231,10 @@
             font-size: 24px;
             margin: 0 0 10px 0;
           }
+        }
+        .country_status_wrapper,
+        .countries_wrapper {
+          transition: 0.5s opacity;
         }
         .list_container_toggle {
           text-align: right;
@@ -221,7 +247,8 @@
             font-weight: bold;
             margin: 0 2px;
             padding: 5px 7px;
-            &:hover {aea29a
+            user-select: none;
+            &:hover {
               color: #ccc;
             }
           }
@@ -266,6 +293,7 @@
                   cursor: pointer;
                   margin: 0;
                   padding: 0;
+                  user-select: none;
                   &:hover {
                     text-decoration: underline;
                   }
@@ -278,6 +306,7 @@
       .dashboard_chart {
         text-align: center;
         svg {
+          user-select: none;
           .axis_y_left {
             text {
               color: #009edb;
@@ -356,6 +385,22 @@
             fill: #fff;
             pointer-events: none;
           }
+          .pie_chart {
+            cursor: pointer;
+            &.selected {
+              stroke: #000;
+            }
+            &:hover {
+              opacity: 0.8;
+              transition: 0s opacity;
+            }
+          }
+          .pie_text {
+            fill: #fff;
+            text-anchor: middle;
+            font-weight: 700;
+            pointer-events: none;
+          }
         }
       }
       .selection_container {
@@ -378,6 +423,7 @@
             display: inline-block;
             opacity: 0;
             padding: 0;
+            user-select: none;
             &.enabled {
               opacity: 1;
               transition: 0.5s opacity;
@@ -391,7 +437,10 @@
     height: 0;
     opacity: 0;
     transition: 0.5s opacity;
-    visibility: hidden;
+    &.dot,
+    &.line {
+      transition: 0s opacity;
+    }
     &.enabled {
       height: auto;
       opacity: 1;

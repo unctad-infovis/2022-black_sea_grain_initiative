@@ -15,7 +15,7 @@ import debounce from './Debounce.js';
 
 function LineBarChart({
   // eslint-disable-next-line
-  appID, commodities, countries, commodityValue, countryValue, easingFn, defineData, duration, idx, setCommodityValue, setCountryValue, setDuration
+  appID, commodities, commodityValue, countries, countryValue, countryStatusValue, easingFn, features, defineData, duration, idx, setCommodityValue, setCountryValue, setDuration
 }) {
   const chartRef = useRef(null);
   const [g, setG] = useState(false);
@@ -23,7 +23,7 @@ function LineBarChart({
   const [chartRefWidth, setChartRefWidth] = useState(0);
   const prevCountRef = useRef();
   const prevWidth = useRef();
-  const [axisStatic, setAxisStatic] = useState(true);
+  const [axisStatic, setAxisStatic] = useState(false);
   const maxAxisLeft = useRef();
   const maxAxisRight = useRef();
 
@@ -95,12 +95,8 @@ function LineBarChart({
       const bars = g.selectAll('.bar')
         .data(selected_series);
       bars.join('rect')
-        .on('mouseover', (event, d) => {
-          document.querySelectorAll(`${appID} .bar_value_${d[3]}`).forEach(el => el.classList.add('visible'));
-        })
-        .on('mouseleave', () => {
-          document.querySelectorAll(`${appID} .bar_value`).forEach(el => el.classList.remove('visible'));
-        })
+        .on('mouseover', (event, d) => document.querySelectorAll(`${appID} .bar_value_${d[3]}`).forEach(el => el.classList.add('visible')))
+        .on('mouseleave', () => document.querySelectorAll(`${appID} .bar_value`).forEach(el => el.classList.remove('visible')))
         .transition()
         .duration(duration)
         .attr('class', 'bar')
@@ -121,21 +117,17 @@ function LineBarChart({
           .x((d) => x(d[0]) + x.bandwidth() / 2)
           .y((d) => yRight(d[2]))
           .curve(d3.curveMonotoneX))
-        .attr('class', 'line extra');
+        .attr('class', () => ((features === true) ? 'line extra enabled' : 'line extra'));
 
       // Line dots
       const dots = g.selectAll('circle')
         .data(selected_series);
       dots.join('circle')
-        .on('mouseover', (event, d) => {
-          document.querySelectorAll(`${appID} .line_value_${d[3]}`).forEach(el => el.classList.add('visible'));
-        })
-        .on('mouseleave', () => {
-          document.querySelectorAll(`${appID} .line_value`).forEach(el => el.classList.remove('visible'));
-        })
+        .on('mouseover', (event, d) => document.querySelectorAll(`${appID} .line_value_${d[3]}`).forEach(el => el.classList.add('visible')))
+        .on('mouseleave', () => document.querySelectorAll(`${appID} .line_value`).forEach(el => el.classList.remove('visible')))
         .transition()
         .duration(duration)
-        .attr('class', 'dot extra')
+        .attr('class', () => ((features === true) ? 'dot extra enabled' : 'dot extra'))
         .attr('cx', (d) => x(d[0]) + x.bandwidth() / 2)
         .attr('cy', (d) => yRight(d[2]))
         .attr('r', 4);
@@ -164,7 +156,7 @@ function LineBarChart({
         .attr('class', (d, i) => `bar_value bar_value_${i}`)
         .text((d) => d[1].toLocaleString());
     }
-  }, [appID, axisStatic, duration, g, height, margin, x, xAxis, yAxisLeft, yAxisRight, yLeft, yRight]);
+  }, [appID, axisStatic, features, duration, g, height, margin, x, xAxis, yAxisLeft, yAxisRight, yLeft, yRight]);
 
   useEffect(() => {
     const svg = d3.select(chartRef.current)
@@ -187,7 +179,7 @@ function LineBarChart({
       updateData(defineData(), true);
       setDuration(1000);
     }
-  }, [commodityValue, countryValue, defineData, duration, g, setDuration, updateData]);
+  }, [commodityValue, countryValue, countryStatusValue, defineData, duration, g, setDuration, updateData]);
 
   useEffect(() => {
     prevCountRef.current = total;
@@ -254,7 +246,7 @@ function LineBarChart({
         </div>
         <div className="right">
           <label htmlFor={`${appID}Checkbox`}>
-            <input type="checkbox" onClick={() => ((axisStatic === true) ? setAxisStatic(false) : setAxisStatic(true))} id={`${appID}Checkbox`} />
+            <input type="checkbox" checked onChange={() => ((axisStatic === true) ? setAxisStatic(false) : setAxisStatic(true))} id={`${appID}Checkbox`} />
             <span className="axis_toggle_label">Keep axis</span>
           </label>
         </div>
@@ -303,9 +295,11 @@ LineBarChart.propTypes = {
   commodityValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
   countries: PropTypes.instanceOf(Array).isRequired,
   countryValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
+  countryStatusValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
   defineData: PropTypes.instanceOf(Function).isRequired,
   duration: PropTypes.number.isRequired,
   easingFn: PropTypes.instanceOf(Function).isRequired,
+  features: PropTypes.bool.isRequired,
   idx: PropTypes.string.isRequired,
   setCommodityValue: PropTypes.instanceOf(Function).isRequired,
   setCountryValue: PropTypes.instanceOf(Function).isRequired,

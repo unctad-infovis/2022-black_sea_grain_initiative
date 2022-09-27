@@ -177,10 +177,10 @@ function App() {
       { /* Banner container */ }
       <div className="header_container_outer">
         <div className="header_container">
-          <h3><CountUp separator="," end={totalTonnage} duration={4} useEasing easingFn={easingFn} /></h3>
+          <h3><CountUp easingFn={easingFn} end={totalTonnage} duration={4} separator="," useEasing /></h3>
           <h4>Total metric tons carried</h4>
           {(data) && (<LineChart appID={appID} idx="0" series={defineData(false, false).map(el => el[2])} />)}
-          <h3><CountUp separator="," end={totalShips} duration={4} useEasing easingFn={easingFn} /></h3>
+          <h3><CountUp easingFn={easingFn} end={totalShips} duration={4} separator="," useEasing /></h3>
           <h4>Vessels departed</h4>
           <h5>{(updated) && `As of ${updated.getDate()}  ${updated.toLocaleString('default', { month: 'long' })} ${updated.getFullYear()} ` }</h5>
         </div>
@@ -193,7 +193,7 @@ function App() {
             {' '}
             has been shipped daily and in total?
           </h3>
-          {(data) && (<LineBarChart appID={appID} idx="1" defineData={defineData} duration={duration} setDuration={setDuration} commodityValue={commodityValue} countryValue={countryValue} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} commodities={commodities} countries={countries} />)}
+          {(data) && (<LineBarChart appID={appID} commodities={commodities} commodityValue={commodityValue} countries={countries} countryValue={countryValue} defineData={defineData} duration={duration} easingFn={easingFn} idx="1" setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setDuration={setDuration} />)}
         </div>
         <div className="vis_row vis_row_2">
           <div className="column column_1">
@@ -203,8 +203,8 @@ function App() {
               are the main products carried?
             </h4>
             <div className="instruction">Choose a commodity of interest</div>
-            {totalPerProduct && (<TreeMapChart category="Commodity" idx="2" series={totalPerProduct} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} commodityValue={commodityValue} countryValue={countryValue} setDuration={setDuration} />)}
-            <div className="list_container_toggle"><button type="button" onClick={() => slideToggle(document.querySelectorAll('.list_container_commodity')[0])}>Show other products</button></div>
+            {totalPerProduct && (<TreeMapChart category="Commodity" commodityValue={commodityValue} countryValue={countryValue} idx="2" series={totalPerProduct} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setDuration={setDuration} />)}
+            <div className="list_container_toggle"><button onClick={() => slideToggle(document.querySelectorAll('.list_container_commodity')[0])} type="button">Show other products</button></div>
             <div className="list_container list_container_commodity">
               <table>
                 <thead>
@@ -216,7 +216,7 @@ function App() {
                 <tbody>
                   {topCommoditiesFull && topCommoditiesFull.map(el => (
                     <tr key={el.name} className={(el.name === commodityValue) ? 'selected' : ''}>
-                      <td><button type="button" onClick={() => { setDuration(1000); setCommodityValue((el.name === commodityValue) ? false : el.name); }}>{el.name}</button></td>
+                      <td><button onClick={() => { setCommodityValue((el.name === commodityValue) ? false : el.name); setDuration(1000); }} type="button">{el.name}</button></td>
                       <td>{el.value.toLocaleString()}</td>
                     </tr>
                   ))}
@@ -231,8 +231,8 @@ function App() {
               has the cargo gone to?
             </h4>
             <div className="instruction">Choose a destination of interest</div>
-            {totalPerCountry && (<TreeMapChart category="Country" idx="3" series={totalPerCountry} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} commodityValue={commodityValue} countryValue={countryValue} setDuration={setDuration} />)}
-            <div className="list_container_toggle"><button type="button" onClick={() => slideToggle(document.querySelectorAll('.list_container_country')[0])}>Show other destinations</button></div>
+            {totalPerCountry && (<TreeMapChart category="Country" commodityValue={commodityValue} countryValue={countryValue} idx="3" series={totalPerCountry} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setDuration={setDuration} />)}
+            <div className="list_container_toggle"><button onClick={() => slideToggle(document.querySelectorAll('.list_container_country')[0])} type="button">Show other destinations</button></div>
             <div className="list_container list_container_country">
               <table>
                 <thead>
@@ -244,7 +244,7 @@ function App() {
                 <tbody>
                   {topCountriesFull && topCountriesFull.map(el => (
                     <tr key={el.name} className={(el.name === countryValue) ? 'selected' : ''}>
-                      <td><button type="button" onClick={() => { setDuration(1000); setCountryValue((el.name === countryValue) ? false : el.name); }}>{el.name}</button></td>
+                      <td><button onClick={() => { setCountryValue((el.name === countryValue) ? false : el.name); setDuration(1000); }} type="button">{el.name}</button></td>
                       <td>{el.value.toLocaleString()}</td>
                     </tr>
                   ))}
@@ -257,7 +257,7 @@ function App() {
       { /* Table container */ }
       <div className="table_container">
         <h3>Browse the data</h3>
-        <iframe loading="lazy" title="Outbound vessels" aria-label="Interactive table" src="https://datawrapper.dwcdn.net/z1IW9" scrolling="no" frameBorder="0" height="auto" />
+        <iframe aria-label="Interactive table" frameBorder="0" height="auto" loading="lazy" scrolling="no" src="https://datawrapper.dwcdn.net/z1IW9" title="Outbound vessels" />
       </div>
       <noscript>Your browser does not support JavaScript!</noscript>
     </div>

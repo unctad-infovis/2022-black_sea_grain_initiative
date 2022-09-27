@@ -13,17 +13,14 @@ import * as d3 from 'd3';
 
 function LineBarChart({
   // eslint-disable-next-line
-  appID, commodities, countries, commodityValue, countryValue, defineData, duration, idx, setCommodityValue, setCountryValue, setDuration
+  appID, commodities, countries, commodityValue, countryValue, easingFn, defineData, duration, idx, setCommodityValue, setCountryValue, setDuration
 }) {
   const chartRef = useRef(null);
   const [g, setG] = useState(false);
   const [total, setTotal] = useState(0);
+  const [chartRefWidth, setChartRefWidth] = useState(0);
   const prevCountRef = useRef();
-
-  useEffect(() => {
-    prevCountRef.current = total;
-  }, [total]);
-
+  const prevWidth = useRef();
   const [axisStatic, setAxisStatic] = useState(true);
   const maxAxisLeft = useRef();
   const maxAxisRight = useRef();
@@ -171,7 +168,7 @@ function LineBarChart({
       .attr('class', 'axis_y axis_y_right');
     setG(container_g);
     createChart(svg);
-  }, [createChart, margin, height]);
+  }, [createChart, height, margin]);
 
   useEffect(() => {
     if (g) {
@@ -180,9 +177,23 @@ function LineBarChart({
     }
   }, [commodityValue, countryValue, defineData, duration, g, setDuration, updateData]);
 
+  useEffect(() => {
+    prevCountRef.current = total;
+  }, [total]);
+
+  useEffect(() => {
+    prevWidth.current = chartRef.current.offsetWidth;
+  }, [chartRefWidth]);
+
+  useEffect(() => {
+    setChartRefWidth(chartRef.current.offsetWidth);
+  }, []);
+
   window.addEventListener('resize', () => {
-    createChart(d3.select(chartRef.current).selectAll('svg'));
-    updateData(defineData());
+    if (prevWidth.current !== chartRef.current.offsetWidth) {
+      createChart(d3.select(chartRef.current).selectAll('svg'));
+      updateData(defineData());
+    }
   });
 
   const selectionChange = (event, type) => {
@@ -193,8 +204,6 @@ function LineBarChart({
     }
     updateData(defineData());
   };
-  // eslint-disable-next-line
-  const easingFn = (t, b, c, d) => c * ((t = t / d - 1) * t * t + 1) + b;
 
   return (
     <div>
@@ -280,6 +289,7 @@ LineBarChart.propTypes = {
   countryValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
   defineData: PropTypes.instanceOf(Function).isRequired,
   duration: PropTypes.number.isRequired,
+  easingFn: PropTypes.instanceOf(Function).isRequired,
   idx: PropTypes.string.isRequired,
   setCommodityValue: PropTypes.instanceOf(Function).isRequired,
   setCountryValue: PropTypes.instanceOf(Function).isRequired,

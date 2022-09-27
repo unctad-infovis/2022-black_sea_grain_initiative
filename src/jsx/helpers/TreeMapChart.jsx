@@ -1,4 +1,4 @@
-import React, { /* useState, */useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
 // @See https://d3-graph-gallery.com/graph/stackedarea_template.html
@@ -11,10 +11,12 @@ function TreeMapChart({
 }) {
   series.columns = ['name', 'parent', 'value'];
   const chartRef = useRef(null);
+  const [chartRefWidth, setChartRefWidth] = useState(0);
+  const prevWidth = useRef();
   const max = (Math.max(...series.map(d => ((d.name === 'Other') ? 0 : d.value))));
   const colors = ['#009edb', '#72bf44', '#f58220', '#a05fb4', '#ffc800', '#aea29a'];
   const margin = {
-    top: 0, right: 0, bottom: 0, left: -6
+    bottom: 0, left: -6, right: 0, top: 0
   };
 
   useEffect(() => {
@@ -92,13 +94,23 @@ function TreeMapChart({
         'transform',
         `translate(${margin.left}, ${margin.top})`
       );
-
     createChart(svg);
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  window.addEventListener('resize', () => createChart(d3.select(chartRef.current).selectAll('svg')));
+  useEffect(() => {
+    prevWidth.current = chartRef.current.offsetWidth;
+  }, [chartRefWidth]);
+
+  useEffect(() => {
+    setChartRefWidth(chartRef.current.offsetWidth);
+  }, []);
+
+  window.addEventListener('resize', () => {
+    if (prevWidth.current !== chartRef.current.offsetWidth) {
+      createChart(d3.select(chartRef.current).selectAll('svg'));
+    }
+  });
 
   return (
     <div>

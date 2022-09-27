@@ -212,7 +212,7 @@ function App() {
       document.querySelectorAll('.country_status_wrapper')[0].style.height = 0;
       document.querySelectorAll('.country_status_wrapper')[0].style.opacity = 0;
       document.querySelectorAll('.country_status_wrapper')[0].style.visibility = 'hidden';
-      setCountryValue(false);
+      setCountryStatusValue(false);
     } else {
       document.querySelectorAll('.countries_wrapper')[0].style.height = 0;
       document.querySelectorAll('.countries_wrapper')[0].style.opacity = 0;
@@ -220,7 +220,7 @@ function App() {
       document.querySelectorAll('.country_status_wrapper')[0].style.height = 'auto';
       document.querySelectorAll('.country_status_wrapper')[0].style.opacity = 1;
       document.querySelectorAll('.country_status_wrapper')[0].style.visibility = 'visible';
-      setCountryStatusValue(false);
+      setCountryValue(false);
     }
     setCountryCountryStatus((countryCountryStatus === false));
   };
@@ -299,24 +299,24 @@ function App() {
               <div className="instruction extra">Choose a destination of interest</div>
               {totalPerCountry && (<TreeMapChart category="Country" commodityValue={commodityValue} countryValue={countryValue} idx="3" series={totalPerCountry} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setDuration={setDuration} />)}
               <div className="list_container_toggle"><button onClick={() => slideToggle(document.querySelectorAll('.list_container_country')[0])} type="button">Show other destinations</button></div>
-            </div>
-            <div className="list_container list_container_country">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Destination</th>
-                    <th>Metric tons</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {topCountriesFull && topCountriesFull.map(el => (
-                    <tr key={el.name} className={(el.name === countryValue) ? 'selected' : ''}>
-                      <td><button onClick={() => { setCountryValue((el.name === countryValue) ? false : el.name); setDuration(1000); }} type="button">{el.name}</button></td>
-                      <td>{el.value.toLocaleString()}</td>
+              <div className="list_container list_container_country">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Destination</th>
+                      <th>Metric tons</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {topCountriesFull && topCountriesFull.map(el => (
+                      <tr key={el.name} className={(el.name === countryValue) ? 'selected' : ''}>
+                        <td><button onClick={() => { setCountryValue((el.name === countryValue) ? false : el.name); setDuration(1000); }} type="button">{el.name}</button></td>
+                        <td>{el.value.toLocaleString()}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>

@@ -37,13 +37,10 @@ function TreeMapChart({
   }, [countryValue]);
 
   const createChart = (svg, width_container) => {
-    // set the dimensions and margins of the graph
     const width = width_container - margin.left - margin.right;
     svg.attr('width', width + margin.left - margin.right);
     const height = 300 - margin.top - margin.bottom;
     svg.attr('height', height + margin.top + margin.bottom);
-
-    // append the svg object to the body of the page
 
     const root = d3.stratify()
       .id((d) => d.name)

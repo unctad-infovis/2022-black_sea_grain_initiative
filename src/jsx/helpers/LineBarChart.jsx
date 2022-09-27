@@ -28,7 +28,7 @@ function LineBarChart({
   const maxAxisRight = useRef();
 
   const margin = useMemo(() => ({
-    top: 40, right: 50, bottom: 30, left: 40
+    bottom: 30, left: 40, right: 50, top: 40
   }), []);
   const height = 300 - margin.top - margin.bottom;
 

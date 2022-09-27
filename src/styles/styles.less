@@ -100,7 +100,7 @@
             padding: 5px 7px;
             user-select: none;
             &:hover {
-              color: #ccc;
+              opacity: 0.7;
             }
           }
         }
@@ -221,15 +221,15 @@
                 padding: 5px 7px;
                 user-select: none;
                 &:hover {
-                  color: #ccc;
+                  opacity: 0.7;
                 }
               }
             }
           }
           h4 {
-            text-align: left;
             font-size: 24px;
             margin: 0 0 10px 0;
+            text-align: left;
           }
         }
         .country_status_wrapper,
@@ -237,19 +237,19 @@
           transition: 0.5s opacity;
         }
         .list_container_toggle {
-          text-align: right;
           margin-right: 6px;
+          text-align: right;
           button {
-            background-color: #009edb;
+            background-color: #fff;
             border: 0;
-            color: #fff;
+            color: #000;
+            text-decoration: underline;
             cursor: pointer;
             font-weight: bold;
             margin: 0 2px;
             padding: 5px 7px;
-            user-select: none;
             &:hover {
-              color: #ccc;
+              text-decoration: none;
             }
           }
         }
@@ -289,8 +289,8 @@
                   background-color: #fff;
                   border: 0;
                   color: #000;
-                  font-weight: inherit;
                   cursor: pointer;
+                  font-weight: inherit;
                   margin: 0;
                   padding: 0;
                   user-select: none;
@@ -348,15 +348,15 @@
           }
           .bar_value,
           .line_value {
-            position: relative;
-            z-index: 3;
             fill: #000;
             font-size: 18px;
             font-weight: bold;
             opacity: 0;
+            position: relative;
             text-anchor: middle;
             transition: 0s opacity;
             visibility: hidden;
+            z-index: 3;
             &.visible {
               visibility: visible;
               transition: 0.5s opacity;
@@ -365,8 +365,8 @@
           }
           .treemap_rect {
             cursor: pointer;
-            stroke: #eee;
             stroke-width: 1.5px;
+            stroke: #eee;
             transition: 0.5s opacity;
             &.selected {
               stroke: #000;
@@ -377,12 +377,11 @@
             }
           }
           .treemap_text {
-            fill: #fff;
-            font-weight: 700;
+            fill: #333;
             pointer-events: none;
           }
           .treemap_val {
-            fill: #fff;
+            fill: #333;
             pointer-events: none;
           }
           .pie_chart {
@@ -396,10 +395,9 @@
             }
           }
           .pie_text {
-            fill: #fff;
-            text-anchor: middle;
-            font-weight: 700;
+            fill: #333;
             pointer-events: none;
+            text-anchor: middle;
           }
         }
       }
@@ -418,9 +416,9 @@
             border: 0;
             color: #000;
             cursor: pointer;
+            display: inline-block;
             font-size: 26px;
             margin: 0 0 0 4px;
-            display: inline-block;
             opacity: 0;
             padding: 0;
             user-select: none;

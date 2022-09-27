@@ -55,18 +55,18 @@ function DonutChart({
     const data = [...series];
 
     const pie = d3.pie()
-      .value((d) => d.value).padAngle(0.02);
+      .value((d) => d.value).padAngle(0.01);
 
     g.selectAll('path')
       .data(pie(data))
       .join('path')
       .attr('d', d3.arc()
-        .innerRadius(0)
+        .innerRadius(80)
         .outerRadius(radius))
       .attr('fill', (d, i) => ((d.data.name === 'Other') ? colors[colors.length - 1] : colors[i]))
       .attr('class', (d) => `pie_chart pie_chart_${category} pie_chart_${category}_${d.data.name.replaceAll(' ', '_')}`)
       .attr('stroke', '#fff')
-      .style('stroke-width', '2px')
+      .style('stroke-width', '1px')
       .on('click', (event, d) => {
         if (category === 'Commodity') {
           setCommodityValue(([...event.target.classList].includes('selected')) ? false : d.data.name);
@@ -83,7 +83,7 @@ function DonutChart({
       .join('text')
       .attr('class', 'pie_text')
       .text((d) => d.data.name)
-      .attr('transform', (d) => `translate(${d3.arc().innerRadius(0).outerRadius(radius).centroid(d)})`)
+      .attr('transform', (d) => `translate(${d3.arc().innerRadius(30).outerRadius(radius).centroid(d)})`)
       .attr('font-size', (d) => `${Math.min(((Math.log2(d.data.value) / Math.log2(max)) ** 4) * 20, 20)}px`)
       .attr('font-size', '20px');
   }, [category, colors, max, series, setCommodityValue, setCountryValue, setCountryStatusValue, setDuration]);

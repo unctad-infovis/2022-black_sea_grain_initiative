@@ -26,6 +26,7 @@ function App() {
   const [topCommodities, setTopCommodities] = useState([]);
   const [topCommoditiesFull, setTopCommoditiesFull] = useState([]);
   const [updated, setUpdated] = useState(false);
+  const [features, setFeatures] = useState(false);
 
   const [totalTonnage, setTotalTonnage] = useState(0);
   const [totalShips, setTotalShips] = useState(0);
@@ -166,6 +167,15 @@ function App() {
   // eslint-disable-next-line
   const easingFn = (t, b, c, d) => c * ((t = t / d - 1) * t * t + 1) + b;
 
+  const toggleFeatures = () => {
+    if (features === false) {
+      document.querySelectorAll('.extra').forEach(el => el.classList.add('enabled'));
+    } else {
+      document.querySelectorAll('.extra').forEach(el => el.classList.remove('enabled'));
+    }
+    setFeatures((features === false));
+  };
+
   return (
     <div className="app">
       { /* Banner container */ }
@@ -191,8 +201,9 @@ function App() {
           <h3>
             <span className="highlight">How much</span>
             {' '}
-            has been shipped daily and in total?
+            has been shipped daily?
           </h3>
+          <div className="toggle_features_container"><button type="button" onClick={(event) => toggleFeatures(event)}>{(features === false) ? 'Play with the data' : 'Hide features'}</button></div>
           {(data) && (<LineBarChart appID={appID} commodities={commodities} commodityValue={commodityValue} countries={countries} countryValue={countryValue} defineData={defineData} duration={duration} easingFn={easingFn} idx="1" setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setDuration={setDuration} />)}
         </div>
         <div className="vis_row vis_row_2">
@@ -202,7 +213,7 @@ function App() {
               {' '}
               are the main products carried?
             </h4>
-            <div className="instruction">Choose a commodity of interest</div>
+            <div className="instruction extra">Choose a commodity of interest</div>
             {totalPerProduct && (<TreeMapChart category="Commodity" commodityValue={commodityValue} countryValue={countryValue} idx="2" series={totalPerProduct} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setDuration={setDuration} />)}
             <div className="list_container_toggle"><button onClick={() => slideToggle(document.querySelectorAll('.list_container_commodity')[0])} type="button">Show other products</button></div>
             <div className="list_container list_container_commodity">
@@ -230,7 +241,7 @@ function App() {
               {' '}
               has the cargo gone to?
             </h4>
-            <div className="instruction">Choose a destination of interest</div>
+            <div className="instruction extra">Choose a destination of interest</div>
             {totalPerCountry && (<TreeMapChart category="Country" commodityValue={commodityValue} countryValue={countryValue} idx="3" series={totalPerCountry} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setDuration={setDuration} />)}
             <div className="list_container_toggle"><button onClick={() => slideToggle(document.querySelectorAll('.list_container_country')[0])} type="button">Show other destinations</button></div>
             <div className="list_container list_container_country">

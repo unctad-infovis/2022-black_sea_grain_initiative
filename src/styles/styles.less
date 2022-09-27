@@ -84,6 +84,24 @@
         box-sizing: border-box;
         padding: 20px 20px 20px 20px;
         position: relative;
+        .toggle_features_container {
+          position: absolute;
+          top: 0;
+          right: 0;
+          text-align: right;
+          button {
+            background-color: #009edb;
+            border: 0;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 0 2px;
+            padding: 5px 7px;
+            &:hover {aea29a
+              color: #ccc;
+            }
+          }
+        }
         h3 {
           text-align: center;
           font-size: 30px;
@@ -366,8 +384,19 @@
             }
           }
         }
-
       }
+    }
+  }
+  .extra {
+    height: 0;
+    opacity: 0;
+    transition: 0.5s opacity;
+    visibility: hidden;
+    &.enabled {
+      height: auto;
+      opacity: 1;
+      transition: 2s opacity;
+      visibility: visible;
     }
   }
   .table_container {

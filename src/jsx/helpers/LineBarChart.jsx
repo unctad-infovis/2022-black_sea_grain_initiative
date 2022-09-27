@@ -121,7 +121,7 @@ function LineBarChart({
           .x((d) => x(d[0]) + x.bandwidth() / 2)
           .y((d) => yRight(d[2]))
           .curve(d3.curveMonotoneX))
-        .attr('class', 'line');
+        .attr('class', 'line extra');
 
       // Line dots
       const dots = g.selectAll('circle')
@@ -135,7 +135,7 @@ function LineBarChart({
         })
         .transition()
         .duration(duration)
-        .attr('class', 'dot')
+        .attr('class', 'dot extra')
         .attr('cx', (d) => x(d[0]) + x.bandwidth() / 2)
         .attr('cy', (d) => yRight(d[2]))
         .attr('r', 4);
@@ -177,7 +177,7 @@ function LineBarChart({
     container_g.append('g')
       .attr('class', 'axis_y axis_y_left');
     container_g.append('g')
-      .attr('class', 'axis_y axis_y_right');
+      .attr('class', 'axis_y axis_y_right extra');
     setG(container_g);
     createChart(svg);
   }, [createChart, height, margin]);
@@ -223,7 +223,7 @@ function LineBarChart({
 
   return (
     <div>
-      <div className="legend_container">
+      <div className="legend_container extra">
         <div className="left">
           <div className="bar_legend_container">
             <span className="legend_icon" />
@@ -260,7 +260,7 @@ function LineBarChart({
         </div>
       </div>
       <div className={`dashboard_chart chart_${idx}`} ref={chartRef} />
-      <div className="selection_container">
+      <div className="selection_container extra">
         <div className="instruction">Choose a commodity or destination of interest</div>
         <span className="selection_commodity">
           <span className="selection_label">Commodity</span>

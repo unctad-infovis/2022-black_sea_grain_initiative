@@ -3,8 +3,11 @@ import PropTypes from 'prop-types';
 
 // @See https://d3-graph-gallery.com/graph/stackedarea_template.html
 
-// https://d3js.org/
+// Load helpers.
 import * as d3 from 'd3';
+import debounce from './Debounce.js';
+
+// https://d3js.org/
 
 function TreeMapChart({
   category, commodityValue, countryValue, idx, setCommodityValue, setCountryValue, setDuration, series
@@ -33,9 +36,9 @@ function TreeMapChart({
     }
   }, [countryValue]);
 
-  const createChart = (svg) => {
+  const createChart = (svg, width_container) => {
     // set the dimensions and margins of the graph
-    const width = chartRef.current.offsetWidth - margin.left - margin.right;
+    const width = width_container - margin.left - margin.right;
     svg.attr('width', width + margin.left - margin.right);
     const height = 300 - margin.top - margin.bottom;
     svg.attr('height', height + margin.top + margin.bottom);
@@ -94,7 +97,7 @@ function TreeMapChart({
         'transform',
         `translate(${margin.left}, ${margin.top})`
       );
-    createChart(svg);
+    createChart(svg, chartRef.current.offsetWidth);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -106,11 +109,15 @@ function TreeMapChart({
     setChartRefWidth(chartRef.current.offsetWidth);
   }, []);
 
-  window.addEventListener('resize', () => {
+  // Function with stuff to execute
+  const resizeContent = () => {
     if (prevWidth.current !== chartRef.current.offsetWidth) {
-      createChart(d3.select(chartRef.current).selectAll('svg'));
+      setChartRefWidth(chartRef.current.offsetWidth);
+      createChart(d3.select(chartRef.current).selectAll('svg'), chartRef.current.offsetWidth);
     }
-  });
+  };
+
+  window.addEventListener('resize', debounce(resizeContent, 150));
 
   return (
     <div>

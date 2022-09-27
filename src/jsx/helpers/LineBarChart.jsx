@@ -3,13 +3,15 @@ import React, {
 } from 'react';
 import PropTypes from 'prop-types';
 
-// https://www.npmjs.com/package/react-countup
-import CountUp from 'react-countup';
-
 // @See https://bl.ocks.org/htakeuchi/a60c0ecb55713c06c054c26c6dbed57a
 
+// https://www.npmjs.com/package/react-countup
+import CountUp from 'react-countup';
 // https://d3js.org/
 import * as d3 from 'd3';
+
+// Load helpers.
+import debounce from './Debounce.js';
 
 function LineBarChart({
   // eslint-disable-next-line
@@ -189,12 +191,16 @@ function LineBarChart({
     setChartRefWidth(chartRef.current.offsetWidth);
   }, []);
 
-  window.addEventListener('resize', () => {
+  // Function with stuff to execute
+  const resizeContent = () => {
     if (prevWidth.current !== chartRef.current.offsetWidth) {
+      setChartRefWidth(chartRef.current.offsetWidth);
       createChart(d3.select(chartRef.current).selectAll('svg'));
       updateData(defineData());
     }
-  });
+  };
+
+  window.addEventListener('resize', debounce(resizeContent, 150));
 
   const selectionChange = (event, type) => {
     if (type === 'Commodity') {

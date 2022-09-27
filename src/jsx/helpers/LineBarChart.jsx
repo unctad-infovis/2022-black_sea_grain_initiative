@@ -35,18 +35,27 @@ function LineBarChart({
   const x = d3.scaleBand();
   const createChart = useCallback((svg) => {
     const width = chartRef.current.offsetWidth - margin.left - margin.right;
-    svg.attr('width', width + margin.left + margin.right)
-      .attr('height', height + margin.top + margin.bottom);
-    svg.selectAll('.axis_y_right').attr('transform', `translate(${width}, 0)`);
+    svg.attr('height', height + margin.top + margin.bottom)
+      .attr('width', width + margin.left + margin.right);
+    svg.selectAll('.axis_y_right')
+      .attr('transform', `translate(${width}, 0)`);
   }, [margin, height]);
 
   const xAxis = d3.axisBottom().scale(x).tickSizeOuter([0]).tickValues(['2022-08-01', '2022-08-10', '2022-08-20', '2022-09-01', '2022-09-10', '2022-09-20']);
 
-  const yLeft = d3.scaleLinear().range([height, 0]);
-  const yAxisLeft = d3.axisLeft().scale(yLeft).tickSizeOuter([0]).ticks(5)
+  const yLeft = d3.scaleLinear()
+    .range([height, 0]);
+  const yAxisLeft = d3.axisLeft()
+    .scale(yLeft)
+    .tickSizeOuter([0])
+    .ticks(5)
     .tickFormat(val => ((val !== 0 && val > 1000) ? `${(val / 1000).toLocaleString()}k` : ''));
-  const yRight = d3.scaleLinear().range([height, 0]);
-  const yAxisRight = d3.axisRight().scale(yRight).tickSizeOuter([0]).ticks(5)
+  const yRight = d3.scaleLinear()
+    .range([height, 0]);
+  const yAxisRight = d3.axisRight()
+    .scale(yRight)
+    .tickSizeOuter([0])
+    .ticks(5)
     .tickFormat(val => ((val !== 0 && val > 1000) ? `${(val / 1000).toLocaleString()}k` : ''));
   // eslint-disable-next-line
   const updateData = useCallback((selected_series, update) => {
@@ -158,7 +167,8 @@ function LineBarChart({
   }, [appID, axisStatic, duration, g, height, margin, x, xAxis, yAxisLeft, yAxisRight, yLeft, yRight]);
 
   useEffect(() => {
-    const svg = d3.select(chartRef.current).append('svg');
+    const svg = d3.select(chartRef.current)
+      .append('svg');
     const container_g = svg.append('g')
       .attr('transform', `translate(${margin.left},${margin.top})`);
     container_g.append('g')

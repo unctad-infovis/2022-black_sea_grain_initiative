@@ -7,11 +7,12 @@ import * as d3 from 'd3';
 
 // Load helpers.
 import CSVtoJSON from './helpers/CSVtoJSON.js';
-import LineChart from './helpers/LineChart.jsx';
+import slideToggle from './helpers/slideToggle.js';
+
 import TreeMapChart from './helpers/TreeMapChart.jsx';
 import DonutChart from './helpers/DonutChart.jsx';
 import LineBarChart from './helpers/LineBarChart.jsx';
-import slideToggle from './helpers/slideToggle.js';
+import LineChart from './helpers/LineChart.jsx';
 
 const appID = '#app-root-2022-black_sea_grain_initiative';
 
@@ -293,6 +294,7 @@ function App() {
             </h4>
             <div className="toggle_features_container"><button type="button" onClick={(event) => toggleCountryCountryStatus(event)}>{(countryCountryStatus === false) ? 'See per country' : 'Return'}</button></div>
             <div className="country_status_wrapper">
+              <div className="instruction extra">Choose a destination of interest</div>
               {totalPerCountryStatus && (<DonutChart category="CountryStatus" commodityValue={commodityValue} countryValue={countryValue} countryStatusValue={countryStatusValue} idx="5" series={totalPerCountryStatus} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setCountryStatusValue={setCountryStatusValue} setDuration={setDuration} />)}
             </div>
             <div className="countries_wrapper" style={{ height: 0, opacity: 0, visibility: 'hidden' }}>

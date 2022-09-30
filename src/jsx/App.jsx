@@ -117,7 +117,12 @@ function App() {
     const data_file = (window.location.href.includes('unctad.org')) ? '/sites/default/files/data-file/2022-black_sea_grain_initiative.csv' : './assets/data/data - data.csv';
     try {
       fetch(data_file, { method: 'GET' })
-        .then(response => response.text())
+        .then((response) => {
+          if (!response.ok) {
+            throw Error(response.statusText);
+          }
+          return response.text();
+        })
         .then(body => {
           const json_data = CSVtoJSON(body);
           setData(json_data);

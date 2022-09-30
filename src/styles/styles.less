@@ -17,8 +17,9 @@
   h4 {
     font-weight: 400;
     .highlight {
-      font-weight: 700;
       color: #009edb;
+      font-weight: 700;
+      text-transform: uppercase;
     }
   }
   .header_container_outer {
@@ -95,6 +96,7 @@
             color: #fff;
             cursor: pointer;
             font-size: 14px;
+            font-weight: 300;
             margin: 0 2px;
             padding: 5px 7px;
             user-select: none;
@@ -220,6 +222,7 @@
                 color: #fff;
                 cursor: pointer;
                 font-size: 14px;
+                font-weight: 300;
                 margin: 0 2px;
                 padding: 5px 7px;
                 user-select: none;
@@ -238,6 +241,8 @@
             }
           }
         }
+        .product_treemap_wrapper,
+        .product_donut_wrapper,
         .country_status_wrapper,
         .countries_wrapper {
           transition: 0.5s opacity;
@@ -332,7 +337,9 @@
           .axis_y_left,
           .axis_y_right,
           .axis_x {
-            font-size: 12px;
+            color: rgba(0, 0, 0, 0.8);
+            font-size: 13px;
+            font-weight: 300;
           }
           .bar {
             cursor: pointer;
@@ -356,7 +363,7 @@
           .line_value {
             fill: #000;
             font-size: 18px;
-            font-weight: bold;
+            font-weight: 300;
             opacity: 0;
             position: relative;
             text-anchor: middle;
@@ -384,10 +391,12 @@
           }
           .treemap_text {
             fill: #333;
+            font-weight: 300;
             pointer-events: none;
           }
           .treemap_val {
             fill: #333;
+            font-weight: 300;
             pointer-events: none;
           }
           .pie_chart {
@@ -401,7 +410,10 @@
             }
           }
           .pie_text {
-            fill: #333;
+            fill: #000;
+            font-size: 18px;
+            font-weight: 300;
+            paint-order: stroke;
             pointer-events: none;
             text-anchor: middle;
           }

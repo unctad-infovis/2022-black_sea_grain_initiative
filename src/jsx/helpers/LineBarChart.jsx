@@ -41,7 +41,11 @@ function LineBarChart({
       .attr('transform', `translate(${width}, 0)`);
   }, [margin, height]);
 
-  const xAxis = d3.axisBottom().scale(x).tickSizeOuter([0]).tickValues(['2022-08-01', '2022-08-10', '2022-08-20', '2022-09-01', '2022-09-10', '2022-09-20']);
+  const xAxis = d3.axisBottom().scale(x).tickSizeOuter([0]).tickValues(['2022-08-01', '2022-08-10', '2022-08-20', '2022-09-01', '2022-09-10', '2022-09-20'])
+    .tickFormat(d => {
+      const date = new Date(`${d} 12:00:00 GMT`);
+      return (`${date.toLocaleString('default', { day: 'numeric' })} ${date.toLocaleString('default', { month: 'short' }).slice(0, 3)} ${date.toLocaleString('default', { year: 'numeric' })}`);
+    });
 
   const yLeft = d3.scaleLinear()
     .range([height, 0]);

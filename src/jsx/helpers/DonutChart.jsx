@@ -82,10 +82,10 @@ function DonutChart({
       .data(pie(data))
       .join('text')
       .attr('class', 'pie_text')
-      .text((d) => d.data.name)
-      .attr('transform', (d) => `translate(${d3.arc().innerRadius(65).outerRadius(radius).centroid(d)})`)
+      .html((d) => `<tspan>${d.data.name.split(' ')[0]}</tspan> ${d.data.name.split(' ')[1] ? (`<tspan dy="1.2em" dx="-4.5em">${d.data.name.split(' ')[1]}</span>`) : ''}`)
+      .attr('transform', (d) => `translate(${d3.arc().innerRadius(70).outerRadius(radius).centroid(d)})`)
       .attr('font-size', (d) => `${Math.min(((Math.log2(d.data.value) / Math.log2(max)) ** 4) * 20, 20)}px`)
-      .attr('font-size', '20px');
+      .style('font-family', 'Roboto');
   }, [category, colors, max, series, setCommodityValue, setCountryValue, setCountryStatusValue, setDuration]);
 
   useEffect(() => {

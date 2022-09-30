@@ -212,20 +212,20 @@ function App() {
 
   const toggleCountryCountryStatus = () => {
     if (countryCountryStatus === false) {
-      document.querySelectorAll('.countries_wrapper')[0].style.height = 'auto';
-      document.querySelectorAll('.countries_wrapper')[0].style.opacity = 1;
-      document.querySelectorAll('.countries_wrapper')[0].style.visibility = 'visible';
-      document.querySelectorAll('.country_status_wrapper')[0].style.height = 0;
-      document.querySelectorAll('.country_status_wrapper')[0].style.opacity = 0;
-      document.querySelectorAll('.country_status_wrapper')[0].style.visibility = 'hidden';
+      document.querySelectorAll('.countries_wrapper, .product_treemap_wrapper').forEach(el => { el.style.height = 'auto'; });
+      document.querySelectorAll('.countries_wrapper, .product_treemap_wrapper').forEach(el => { el.style.opacity = 1; });
+      document.querySelectorAll('.countries_wrapper, .product_treemap_wrapper').forEach(el => { el.style.visibility = 'visible'; });
+      document.querySelectorAll('.country_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.height = 0; });
+      document.querySelectorAll('.country_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.opacity = 0; });
+      document.querySelectorAll('.country_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.visibility = 'hidden'; });
       setCountryStatusValue(false);
     } else {
-      document.querySelectorAll('.countries_wrapper')[0].style.height = 0;
-      document.querySelectorAll('.countries_wrapper')[0].style.opacity = 0;
-      document.querySelectorAll('.countries_wrapper')[0].style.visibility = 'hidden';
-      document.querySelectorAll('.country_status_wrapper')[0].style.height = 'auto';
-      document.querySelectorAll('.country_status_wrapper')[0].style.opacity = 1;
-      document.querySelectorAll('.country_status_wrapper')[0].style.visibility = 'visible';
+      document.querySelectorAll('.countries_wrapper, .product_treemap_wrapper').forEach(el => { el.style.height = 0; });
+      document.querySelectorAll('.countries_wrapper, .product_treemap_wrapper').forEach(el => { el.style.opacity = 0; });
+      document.querySelectorAll('.countries_wrapper, .product_treemap_wrapper').forEach(el => { el.style.visibility = 'hidden'; });
+      document.querySelectorAll('.country_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.height = 'auto'; });
+      document.querySelectorAll('.country_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.opacity = 1; });
+      document.querySelectorAll('.country_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.visibility = 'visible'; });
       setCountryValue(false);
     }
     setCountryCountryStatus((countryCountryStatus === false));
@@ -235,8 +235,7 @@ function App() {
     <div className="app">
       { /* Banner container */ }
       <h2>
-        Black Sea Grain Initiative
-        {' '}
+        {'Black Sea Grain Initiative '}
         <span className="highlight">in numbers</span>
       </h2>
       { /* Banner container */ }
@@ -265,12 +264,15 @@ function App() {
           <div className="column column_1">
             <h4>
               <span className="highlight">What</span>
-              {' '}
-              are the main products carried?
+              {' are the main products carried?'}
             </h4>
             <div className="instruction extra">Choose a commodity of interest</div>
-            {totalPerProduct && (<DonutChart category="Commodity" commodityValue={commodityValue} countryValue={countryValue} countryStatusValue={countryStatusValue} idx="5" series={totalPerProduct} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setCountryStatusValue={setCountryStatusValue} setDuration={setDuration} />)}
-            <div style={{ display: 'none' }}>{totalPerProduct && (<TreeMapChart category="Commodity" commodityValue={commodityValue} countryValue={countryValue} idx="2" series={totalPerProduct} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setDuration={setDuration} />)}</div>
+            <div className="product_donut_wrapper">
+              {totalPerProduct && (<DonutChart category="Commodity" commodityValue={commodityValue} countryValue={countryValue} countryStatusValue={countryStatusValue} idx="5" series={totalPerProduct} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setCountryStatusValue={setCountryStatusValue} setDuration={setDuration} />)}
+            </div>
+            <div className="product_treemap_wrapper" style={{ height: 0, opacity: 0, visibility: 'hidden' }}>
+              {totalPerProduct && (<TreeMapChart category="Commodity" commodityValue={commodityValue} countryValue={countryValue} idx="2" series={totalPerProduct} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setDuration={setDuration} />)}
+            </div>
             <div className="list_container_toggle"><button onClick={() => slideToggle(document.querySelectorAll('.list_container_commodity')[0])} type="button">Show other products</button></div>
             <div className="list_container list_container_commodity">
               <table>
@@ -294,8 +296,7 @@ function App() {
           <div className="column column_2">
             <h4>
               <span className="highlight">Where</span>
-              {' '}
-              has the cargo gone to?
+              {' has the cargo gone to?'}
             </h4>
             <div className="toggle_features_container"><button type="button" onClick={(event) => toggleCountryCountryStatus(event)}>{(countryCountryStatus === false) ? 'See per country' : 'Return'}</button></div>
             <div className="country_status_wrapper">

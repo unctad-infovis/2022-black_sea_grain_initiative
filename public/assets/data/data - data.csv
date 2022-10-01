@@ -1,5 +1,5 @@
 #,Vessel name,IMO,Departure port,Country,Commodity,Tonnage,Departure,Inspection cleared,Country status
-1,RAZONI,9086526,Odesa,TBD and Türkiye,Corn,26527,01-Aug-22,03-Aug-22,Other
+1,RAZONI,9086526,Odesa,TBD and Türkiye,Corn,26527,01-Aug-22,03-Aug-22,
 2,NAVI STAR,9590979,Odesa,Ireland,Corn,33000,05-Aug-22,06-Aug-22,Developed country
 3,ROJEN,9754927,Chornomorsk,Italy,Corn,13041,05-Aug-22,07-Aug-22,Developed country
 4,POLARNET,9758961,Chornomorsk,Türkiye,Corn,12000,05-Aug-22,07-Aug-22,Developing country
@@ -18,7 +18,7 @@
 17,OSPREY S,9300843,Chornomorsk,Türkiye,Corn,11500,16-Aug-22,18-Aug-22,Developing country
 18,BONITA,9231286,Yuzhny/Pivdennyi,Republic of Korea,Corn,60000,16-Aug-22,18-Aug-22,Developed country
 19,RAMUS,9318400,Chornomorsk,Türkiye,Wheat,6161,16-Aug-22,19-Aug-22,Developing country
-20,BRAVE COMMANDER,9136931,Yuzhny/Pivdennyi,Djibouti,Wheat,23300,16-Aug-22,21-Aug-22,Developing country
+20,BRAVE COMMANDER,9136931,Yuzhny/Pivdennyi,Ethiopia,Wheat,23300,16-Aug-22,21-Aug-22,Developing country
 21,PETREL S,9363883,Chornomorsk,The Netherlands,Sunflower meal,18500,17-Aug-22,19-Aug-22,Developed country
 22,SARA,9259020,Odesa,Türkiye,Corn,8000,17-Aug-22,19-Aug-22,Developing country
 23,EFE,9558763,Odesa,Türkiye,Sunflower oil,7250,17-Aug-22,19-Aug-22,Developing country
@@ -148,7 +148,8 @@
 133,T-MED,9163142,Yuzhny/Pivdennyi,Türkiye,Wheat,5500,14-Sep-22,19-Sep-22,Developing country
 134,INCE AKDENIZ,9456460,Yuzhny/Pivdennyi,Bangladesh,Wheat,55000,14-Sep-22,22-Sep-22,Developing country
 135,GLORY DINA,9464522,Chornomorsk,Türkiye,Wheat,27000,14-Sep-22,18-Sep-22,Developing country
-136,CENK CAR,8611984,Chornomorsk,Türkiye,Mixed,257,14-Sep-22,18-Sep-22,Developing country
+136,CENK CAR,8611984,Chornomorsk,Türkiye,Sunflower seed,180,14-Sep-22,18-Sep-22,Developing country
+136,CENK CAR,8611984,Chornomorsk,Türkiye,Sunflower meal,68,14-Sep-22,18-Sep-22,Developing country
 137,ASTRA CENTAURUS,9611802,Chornomorsk,Spain,Wheat,55000,15-Sep-22,20-Sep-22,Developed country
 138,DERG,9393060,Chornomorsk,The Netherlands,Sunflower oil,9600,15-Sep-22,20-Sep-22,Developed country
 139,EIDER S,9364784,Yuzhny/Pivdennyi,Spain,Corn,50855,15-Sep-22,TBD,Developed country
@@ -166,9 +167,9 @@
 149,OCTOPUS,9518634,Yuzhny/Pivdennyi,Romania,Corn,6500,16-Sep-22,28-Sep-22,Developing country
 150,BARONESS,9588407,Chornomorsk,Italy,Wheat,30900,17-Sep-22,26-Sep-22,Developed country
 151,GOZO,9109964,Odesa,Spain,Wheat,26000,17-Sep-22,TBD,Developed country
-152,HORUS,9635690,Chornomorsk,China,Sunflower meal,53012,17-Sep-22,TBD,Developing country
-152,HORUS,9635690,Chornomorsk,China,Barley,9694,17-Sep-22,TBD,Developing country
-153,IKARIA ANGEL,9194397,Chornomorsk,Djibouti,Wheat,30000,17-Sep-22,21-Sep-22,Developing country
+152,HORUS,9635690,Chornomorsk,China,Sunflower meal,53012,17-Sep-22,29-Sep-22,Developing country
+152,HORUS,9635690,Chornomorsk,China,Barley,9694,17-Sep-22,29-Sep-22,Developing country
+153,IKARIA ANGEL,9194397,Chornomorsk,Ethiopia,Wheat,30000,17-Sep-22,21-Sep-22,Developing country
 154,PACIFIC ROSE,9299460,Yuzhny/Pivdennyi,Italy,Soya beans,20000,17-Sep-22,28-Sep-22,Developed country
 154,PACIFIC ROSE,9299460,Yuzhny/Pivdennyi,Italy,Corn,5105,17-Sep-22,28-Sep-22,Developed country
 155,VELVET ROSE,9281968,Chornomorsk,China,Sunflower meal,29350,17-Sep-22,26-Sep-22,Developing country
@@ -177,13 +178,13 @@
 158,CPT.AHMAD II,9031430,Chornomorsk,Türkiye,Wheat,4030,18-Sep-22,TBD,Developing country
 159,GENOA,9805659,Chornomorsk,Portugal,Canola,22000,18-Sep-22,23-Sep-22,Developed country
 159,GENOA,9805659,Chornomorsk,France,Canola,29256,18-Sep-22,23-Sep-22,Developed country
-160,KAFKAM ETLER,9001112,Chornomorsk,Türkiye,Corn,2413,18-Sep-22,TBD,Developing country
+160,KAFKAM ETLER,9001112,Chornomorsk,Türkiye,Corn,2413,18-Sep-22,29-Sep-22,Developing country
 161,KAUNAS,8311924,Chornomorsk,Türkiye,Corn,525,18-Sep-22,24-Sep-22,Developing country
 162,RUBYMAR,9138898,Odesa,Egypt,Corn,29600,18-Sep-22,27-Sep-22,Developing country
-163,SK FRIENDSHIP,8909446,Chornomorsk,Türkiye,Wheat,6900,18-Sep-22,TBD,Developing country
+163,SK FRIENDSHIP,8909446,Chornomorsk,Türkiye,Wheat,6900,18-Sep-22,29-Sep-22,Developing country
 164,AKSON SARA,9475739,Yuzhny/Pivdennyi,Italy,Corn,30700,19-Sep-22,TBD,Developed country
-165,ARCTURUS,9221334,Yuzhny/Pivdennyi,Spain,Wheat,69080,19-Sep-22,TBD,Developed country
-166,ESENCE,7827342,Chornomorsk,Türkiye,Wheat,3000,19-Sep-22,TBD,Developing country
+165,ARCTURUS,9221334,Yuzhny/Pivdennyi,Spain,Wheat,69080,19-Sep-22,29-Sep-22,Developed country
+166,ESENCE,7827342,Chornomorsk,Türkiye,Wheat,3000,19-Sep-22,29-Sep-22,Developing country
 167,FULMAR S,9370082,Odesa,Italy,Sunflower meal,4400,19-Sep-22,26-Sep-22,Developed country
 167,FULMAR S,9370082,Odesa,Italy,Rapeseed meal,3400,19-Sep-22,26-Sep-22,Developed country
 168,GULMAR,9146962,Odesa,Spain,Wheat,16300,19-Sep-22,26-Sep-22,Developed country
@@ -237,7 +238,7 @@
 209,SAXONA,9371024,Chornomorsk,Greece,Corn,5000,24-Sep-22,TBD,Developed country
 210,ASPASIA LUCK,9223485,Yuzhny/Pivdennyi,Spain,Corn,63029,25-Sep-22,TBD,Developed country
 211,ATA-2,9387669,Yuzhny/Pivdennyi,Italy,Corn,5960,25-Sep-22,TBD,Developed country
-212,BLUE STAR,8421705,Chornomorsk,Türkiye,Mixed,2000,25-Sep-22,TBD,Developing country
+212,BLUE STAR,8421705,Chornomorsk,Türkiye,Mixed bran,2000,25-Sep-22,TBD,Developing country
 213,CHIOS FREEDOM,9680255,Odesa,The Netherlands,Rapeseed,32700,25-Sep-22,TBD,Developed country
 214,CORNELIA,9216597,Chornomorsk,Tunisia,Wheat,23500,25-Sep-22,TBD,Developing country
 215,HERMES,9071052,Chornomorsk,Greece,Wheat,5029,25-Sep-22,TBD,Developed country
@@ -267,3 +268,6 @@
 236,ADAM A,9114543,Yuzhny/Pivdennyi,Türkiye,Wheat,27700,29-Sep-22,TBD,Developing country
 237,NAVIN KESTREL,9381811,Chornomorsk,Türkiye,Sunflower meal,5250,29-Sep-22,TBD,Developing country
 238,PATRONUS,9320324,Chornomorsk,Tunisia,Wheat,27500,29-Sep-22,TBD,Developing country
+239,BESIKTAS ICELAND,9395367,Odesa,Türkiye,Sunflower oil,6600,30-Sep-22,TBD,Developing country
+240,BLUE ONE,9585651,Chornomorsk,Italy,Corn,32300,30-Sep-22,TBD,Developed country
+241,ELEANORA,9211107,Yuzhny/Pivdennyi,Italy,Corn,6300,30-Sep-22,TBD,Developed country

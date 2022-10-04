@@ -11,7 +11,7 @@ import CountUp from 'react-countup';
 import * as d3 from 'd3';
 
 // Load helpers.
-import debounce from './Debounce.js';
+import debounce from './helpers/Debounce.js';
 
 function LineBarChart({
   // eslint-disable-next-line

@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/styles.less';
 
-// https://www.npmjs.com/package/react-countup
-import CountUp from 'react-countup';
+// https://d3js.org/
 import * as d3 from 'd3';
 
 // Load helpers.
-import CSVtoJSON from './helpers/CSVtoJSON.js';
-import slideToggle from './helpers/slideToggle.js';
+import slideToggle from './helpers/SlideToggle.js';
+import easingFn from './helpers/EasingFn.js';
+import getData from './helpers/GetData.js';
 
-import TreeMapChart from './helpers/TreeMapChart.jsx';
-import DonutChart from './helpers/DonutChart.jsx';
-import LineBarChart from './helpers/LineBarChart.jsx';
-import LineChart from './helpers/LineChart.jsx';
+import Banner from './Banner.jsx';
+import TreeMapChart from './TreeMapChart.jsx';
+import DonutChart from './DonutChart.jsx';
+import LineBarChart from './LineBarChart.jsx';
 
 const appID = '#app-root-2022-black_sea_grain_initiative';
 
@@ -114,27 +114,13 @@ function App() {
   };
 
   useEffect(() => {
-    const data_file = (window.location.href.includes('unctad.org')) ? '/sites/default/files/data-file/2022-black_sea_grain_initiative.csv' : './assets/data/data - data.csv';
-    try {
-      fetch(data_file, { method: 'GET' })
-        .then((response) => {
-          if (!response.ok) {
-            throw Error(response.statusText);
-          }
-          return response.text();
-        })
-        .then(body => {
-          const json_data = CSVtoJSON(body);
-          setData(json_data);
-          setCommodities([...new Set(json_data.map(el => el.Commodity))].sort());
-          setCountries([...new Set(json_data.map(el => el.Country))].sort());
-          setDates(dateRange(new Date(json_data[0].Departure), daysBetween(new Date(json_data[json_data.length - 1].Departure), new Date(json_data[0].Departure))).reduce((a, v) => ({ ...a, [v]: [v, 0] }), {}));
-          setUpdated(new Date(json_data[json_data.length - 1].Departure));
-        });
-    } catch (error) {
-      console.error(error);
-    }
-
+    getData().then(json_data => {
+      setData(json_data);
+      setCommodities([...new Set(json_data.map(el => el.Commodity))].sort());
+      setCountries([...new Set(json_data.map(el => el.Country))].sort());
+      setDates(dateRange(new Date(json_data[0].Departure), daysBetween(new Date(json_data[json_data.length - 1].Departure), new Date(json_data[0].Departure))).reduce((a, v) => ({ ...a, [v]: [v, 0] }), {}));
+      setUpdated(new Date(json_data[json_data.length - 1].Departure));
+    });
     // eslint-disable-next-line no-unused-expressions,func-names
     !(function () {
       // eslint-disable-next-line no-restricted-syntax,no-void,guard-for-in
@@ -195,8 +181,6 @@ function App() {
       }, [])));
     }
   }, [data, dates]);
-  // eslint-disable-next-line
-  const easingFn = (t, b, c, d) => c * ((t = t / d - 1) * t * t + 1) + b;
 
   const toggleFeatures = () => {
     if (features === false) {
@@ -234,21 +218,7 @@ function App() {
   return (
     <div className="app">
       { /* Banner container */ }
-      <h2>
-        {'Black Sea Grain Initiative '}
-        <span className="highlight">in numbers</span>
-      </h2>
-      { /* Banner container */ }
-      <div className="header_container_outer">
-        <div className="header_container">
-          <h3><CountUp easingFn={easingFn} end={totalTonnage} duration={4} separator="," useEasing /></h3>
-          <h4>Total metric tons carried</h4>
-          {(data) && (<LineChart appID={appID} idx="0" series={defineData().map(el => el[2])} />)}
-          <h3><CountUp easingFn={easingFn} end={totalShips} duration={4} separator="," useEasing /></h3>
-          <h4>Vessels departed</h4>
-          <h5>{(updated) && `As of ${updated.getDate()}  ${updated.toLocaleString('default', { month: 'long' })} ${updated.getFullYear()} ` }</h5>
-        </div>
-      </div>
+      <Banner standAlone={false} totalTonnage={totalTonnage} totalShips={totalShips} updated={updated} />
       { /* Visualisations container */ }
       <div className="visualisations_container">
         <div className="vis_row vis_row_1">
@@ -332,7 +302,7 @@ function App() {
       { /* Table container */ }
       <div className="table_container">
         <h3>Browse the data</h3>
-        <iframe title="Vessel movements - Outbound voyages" aria-label="Table" id="datawrapper-chart-MUWoW" src="https://datawrapper.dwcdn.net/MUWoW/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="931"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+        <iframe title="Vessel movements - Outbound voyages" aria-label="Table" id="datawrapper-chart-MUWoW" src="https://datawrapper.dwcdn.net/MUWoW/2/" scrolling="no" frameBorder="0" style={{ width: 0, minWidth: '100% !important', border: 'none' }} height="931" />
       </div>
       <noscript>Your browser does not support JavaScript!</noscript>
     </div>

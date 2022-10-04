@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 // Load helpers.
 import * as d3 from 'd3';
-import debounce from './Debounce.js';
+import debounce from './helpers/Debounce.js';
 
 // https://d3js.org/
 

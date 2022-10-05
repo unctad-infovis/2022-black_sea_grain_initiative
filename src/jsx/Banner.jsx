@@ -30,10 +30,15 @@ function Banner({
   }, [standAlone, totalShips, totalTonnage, updated]);
   return (
     <>
-      <h2>
-        {'Black Sea Grain Initiative '}
-        <span className="highlight">in numbers</span>
-      </h2>
+      <div className="heading_container">
+        <h2>
+          {'Black Sea Grain Initiative '}
+          <span className="highlight">in numbers</span>
+        </h2>
+        <h4>On 22 July, the United Nations, the Russian Federation, Türkiye and Ukraine agreed the Black Sea Grain Initiative, at a signing ceremony in Istanbul.</h4>
+        <h4>The initiative was set up to resume Ukranian grain exports via the Black Sea amid the ongoing war. The UN plan, which also paves the way for Russian food and fertilizer to reach global markets, is helping to stabilize spiralling food prices worldwide and prevent a food crisis that could affect millions of people around the globe.</h4>
+        <h4>This dashboard presents up-to-date statistics on what has been shipped under the initiative, how much has reached world markets, and how global prices of food and fertilizers have evolved.</h4>
+      </div>
       <div className="header_container_outer">
         <div className="header_container">
           <h3><CountUp easingFn={easingFn} end={totalTonnageLocal} duration={4} separator="," useEasing /></h3>

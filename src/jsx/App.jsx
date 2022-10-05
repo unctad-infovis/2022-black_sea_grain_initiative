@@ -217,6 +217,10 @@ function App() {
 
   return (
     <div className="app">
+      <h2>
+        {'Black Sea Grain Initiative '}
+        <span className="highlight">in numbers</span>
+      </h2>
       { /* Banner container */ }
       <Banner standAlone={false} totalTonnage={totalTonnage} totalShips={totalShips} updated={updated} />
       { /* Visualisations container */ }

@@ -28,16 +28,16 @@ function TreeMapChart({
   const prevWidth = useRef();
 
   useEffect(() => {
-    document.querySelectorAll('.treemap_rect_Commodity').forEach(el => el.classList.remove('selected'));
+    chartRef.current.querySelectorAll('.treemap_rect_Commodity').forEach(el => el.classList.remove('selected'));
     if (commodityValue !== false) {
-      document.querySelectorAll(`.treemap_rect_Commodity_${commodityValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
+      chartRef.current.querySelectorAll(`.treemap_rect_Commodity_${commodityValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
     }
   }, [commodityValue]);
 
   useEffect(() => {
-    document.querySelectorAll('.treemap_rect_Destionation').forEach(el => el.classList.remove('selected'));
+    chartRef.current.querySelectorAll('.treemap_rect_Destionation').forEach(el => el.classList.remove('selected'));
     if (destinationValue !== false) {
-      document.querySelectorAll(`.treemap_rect_Destionation_${destinationValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
+      chartRef.current.querySelectorAll(`.treemap_rect_Destionation_${destinationValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
     }
   }, [destinationValue]);
 
@@ -122,9 +122,7 @@ function TreeMapChart({
   window.addEventListener('resize', debounce(resizeContent, 150));
 
   return (
-    <div>
-      <div className={`dashboard_chart chart_${idx}`} ref={chartRef} />
-    </div>
+    <div className={`dashboard_chart chart_${idx}`} ref={chartRef} />
   );
 }
 

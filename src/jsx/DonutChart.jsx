@@ -26,23 +26,23 @@ function DonutChart({
   const prevWidth = useRef();
 
   useEffect(() => {
-    document.querySelectorAll('.pie_chart_Commodity').forEach(el => el.classList.remove('selected'));
+    chartRef.current.querySelectorAll('.pie_chart_Commodity').forEach(el => el.classList.remove('selected'));
     if (commodityValue !== false) {
-      document.querySelectorAll(`.pie_chart_Commodity_${commodityValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
+      chartRef.current.querySelectorAll(`.pie_chart_Commodity_${commodityValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
     }
   }, [commodityValue]);
 
   useEffect(() => {
-    document.querySelectorAll('.pie_chart_Destination').forEach(el => el.classList.remove('selected'));
+    chartRef.current.querySelectorAll('.pie_chart_Destination').forEach(el => el.classList.remove('selected'));
     if (destinationValue !== false) {
-      document.querySelectorAll(`.pie_chart_Destination_${destinationValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
+      chartRef.current.querySelectorAll(`.pie_chart_Destination_${destinationValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
     }
   }, [destinationValue]);
 
   useEffect(() => {
-    document.querySelectorAll('.pie_chart_DestinationStatus').forEach(el => el.classList.remove('selected'));
+    chartRef.current.querySelectorAll('.pie_chart_DestinationStatus').forEach(el => el.classList.remove('selected'));
     if (destinationStatusValue !== false) {
-      document.querySelectorAll(`.pie_chart_DestinationStatus_${destinationStatusValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
+      chartRef.current.querySelectorAll(`.pie_chart_DestinationStatus_${destinationStatusValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
     }
   }, [destinationStatusValue]);
 
@@ -122,9 +122,7 @@ function DonutChart({
   window.addEventListener('resize', debounce(resizeContent, 150));
 
   return (
-    <div>
-      <div className={`dashboard_chart chart_${idx}`} ref={chartRef} />
-    </div>
+    <div className={`dashboard_chart chart_${idx}`} ref={chartRef} />
   );
 }
 

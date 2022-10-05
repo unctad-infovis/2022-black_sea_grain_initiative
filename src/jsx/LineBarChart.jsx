@@ -219,7 +219,7 @@ function LineBarChart({
   };
 
   return (
-    <div>
+    <>
       <div className="legend_container extra">
         <div className="left">
           <div className="bar_legend_container">
@@ -290,7 +290,7 @@ function LineBarChart({
           <button type="button" className={`remove ${destinationValue && 'enabled'}`} value={false} onClick={(event) => selectionChange(event, 'Destination')}>⨯</button>
         </span>
       </div>
-    </div>
+    </>
   );
 }
 

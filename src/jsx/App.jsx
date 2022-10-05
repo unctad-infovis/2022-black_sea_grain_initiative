@@ -24,21 +24,21 @@ function App() {
 
   const [commodities, setCommodities] = useState([]);
   const [commodityValue, setCommodityValue] = useState(false);
-  const [countries, setCountries] = useState([]);
-  const [countryValue, setCountryValue] = useState(false);
-  const [countryStatusValue, setCountryStatusValue] = useState(false);
+  const [destinations, setDestinatinons] = useState([]);
+  const [destinationValue, setDestinationValue] = useState(false);
+  const [destinationStatusValue, setDestinationStatusValue] = useState(false);
   const [duration, setDuration] = useState(0);
   const [features, setFeatures] = useState(false);
-  const [countryCountryStatus, setCountryCountryStatus] = useState(false);
+  const [destinationDestinationStatus, setDestinationDestinationStatus] = useState(false);
   const [topCommodities, setTopCommodities] = useState([]);
   const [topCommoditiesFull, setTopCommoditiesFull] = useState([]);
-  const [topCountries, setTopCountries] = useState([]);
-  const [topCountriesFull, setTopCountriesFull] = useState([]);
+  const [topDestinatinons, setTopDestinatinons] = useState([]);
+  const [topDestinatinonsFull, setTopDestinatinonsFull] = useState([]);
   const [updated, setUpdated] = useState(false);
 
   const [totalPerProduct, setTotalPerProduct] = useState(false);
-  const [totalPerCountry, setTotalPerCountry] = useState(false);
-  const [totalPerCountryStatus, setTotalPerCountryStatus] = useState(false);
+  const [totalPerDestination, setTotalPerDestination] = useState(false);
+  const [totalPerDestinationStatus, setTotalPerDestinationStatus] = useState(false);
   const [dates, setDates] = useState({});
 
   // Helper functions.
@@ -50,7 +50,7 @@ function App() {
 
   const defineData = () => {
     const output = [];
-    if (commodityValue === false && countryValue === false && countryStatusValue === false) {
+    if (commodityValue === false && destinationValue === false && destinationStatusValue === false) {
       Object.values({
         ...structuredClone(dates),
         ...data.reduce((acc, it) => {
@@ -66,23 +66,23 @@ function App() {
       Object.values({
         ...structuredClone(dates),
         ...data.filter(a => {
-          if (commodityValue !== false && countryValue !== false) {
-            if (commodityValue === 'Other' && countryValue === 'Other') {
-              return !topCommodities.includes(a.Commodity) && !topCountries.includes(a.Country);
+          if (commodityValue !== false && destinationValue !== false) {
+            if (commodityValue === 'Other' && destinationValue === 'Other') {
+              return !topCommodities.includes(a.Commodity) && !topDestinatinons.includes(a.Destination);
             }
             if (commodityValue === 'Other') {
-              return !topCommodities.includes(a.Commodity) && a.Country === countryValue;
+              return !topCommodities.includes(a.Commodity) && a.Destination === destinationValue;
             }
-            if (countryValue === 'Other') {
-              return !topCommodities.includes(a.Country) && a.Commodity === commodityValue;
+            if (destinationValue === 'Other') {
+              return !topCommodities.includes(a.Destination) && a.Commodity === commodityValue;
             }
-            return a.Commodity === commodityValue && a.Country === countryValue;
+            return a.Commodity === commodityValue && a.Destination === destinationValue;
           }
-          if (commodityValue !== false && countryStatusValue !== false) {
+          if (commodityValue !== false && destinationStatusValue !== false) {
             if (commodityValue === 'Other') {
-              return !topCommodities.includes(a.Commodity) && a['Country status'] === countryStatusValue;
+              return !topCommodities.includes(a.Commodity) && a.development_status === destinationStatusValue;
             }
-            return a.Commodity === commodityValue && a['Country status'] === countryStatusValue;
+            return a.Commodity === commodityValue && a.development_status === destinationStatusValue;
           }
           if (commodityValue !== false) {
             if (commodityValue === 'Other') {
@@ -90,14 +90,14 @@ function App() {
             }
             return a.Commodity === commodityValue;
           }
-          if (countryValue !== false) {
-            if (countryValue === 'Other') {
-              return !topCountries.includes(a.Country);
+          if (destinationValue !== false) {
+            if (destinationValue === 'Other') {
+              return !topDestinatinons.includes(a.Destination);
             }
-            return a.Country === countryValue;
+            return a.Destination === destinationValue;
           }
-          if (countryStatusValue !== false) {
-            return a['Country status'] === countryStatusValue;
+          if (destinationStatusValue !== false) {
+            return a.development_status === destinationStatusValue;
           }
           return true;
         }).reduce((acc, it) => {
@@ -117,7 +117,7 @@ function App() {
     getData().then(json_data => {
       setData(json_data);
       setCommodities([...new Set(json_data.map(el => el.Commodity))].sort());
-      setCountries([...new Set(json_data.map(el => el.Country))].sort());
+      setDestinatinons([...new Set(json_data.map(el => el.Destination))].sort());
       setDates(dateRange(new Date(json_data[0].Departure), daysBetween(new Date(json_data[json_data.length - 1].Departure), new Date(json_data[0].Departure))).reduce((a, v) => ({ ...a, [v]: [v, 0] }), {}));
       setUpdated(new Date(json_data[json_data.length - 1].Departure));
     });
@@ -131,7 +131,7 @@ function App() {
   useEffect(() => {
     if (data !== false) {
       setTotalTonnage(data.reduce((acc, it) => acc + parseFloat(it.Tonnage), 0));
-      setTotalShips(new Set(data.map(el => el['#'])).size);
+      setTotalShips(new Set(data.map(el => el['IMO-Vessel name'])).size);
 
       // Total daily per commodity.
       const top_commodities_full = [];
@@ -152,28 +152,28 @@ function App() {
       setTopCommoditiesFull(top_commodities_full);
       setTopCommodities(top_commodities);
 
-      // Total daily per country.
-      const top_countries_full = [];
-      const top_countries = [];
-      setTotalPerCountry(Object.values(Object.values(data.reduce((acc, it) => {
-        acc[it.Country] = [it.Country, (acc[it.Country]?.[1] || 0) + parseFloat(it.Tonnage)];
+      // Total daily per destination.
+      const top_destinations_full = [];
+      const top_destinations = [];
+      setTotalPerDestination(Object.values(Object.values(data.reduce((acc, it) => {
+        acc[it.Destination] = [it.Destination, (acc[it.Destination]?.[1] || 0) + parseFloat(it.Tonnage)];
         return acc;
       }, {})).sort((a, b) => b[1] - a[1]).reduce((acc, it, i) => {
         if (i >= 5) {
-          top_countries_full.push({ name: it[0], parent: 'Origin', value: (acc[0]?.value || 0) + parseFloat(it[1]) });
+          top_destinations_full.push({ name: it[0], parent: 'Origin', value: (acc[0]?.value || 0) + parseFloat(it[1]) });
           acc.Other = { name: 'Other', parent: 'Origin', value: (acc.Other?.value || 0) + parseFloat(it[1]) };
         } else {
-          top_countries.push(it[0]);
+          top_destinations.push(it[0]);
           acc[it[0]] = { name: it[0], parent: 'Origin', value: (acc[0]?.value || 0) + parseFloat(it[1]) };
         }
         return acc;
       }, [])));
-      setTopCountriesFull(top_countries_full);
-      setTopCountries(top_countries);
+      setTopDestinatinonsFull(top_destinations_full);
+      setTopDestinatinons(top_destinations);
 
-      // Total daily per country status.
-      setTotalPerCountryStatus(Object.values(Object.values(data.reduce((acc, it) => {
-        acc[it['Country status']] = [it['Country status'], (acc[it['Country status']]?.[1] || 0) + parseFloat(it.Tonnage)];
+      // Total daily per destination status.
+      setTotalPerDestinationStatus(Object.values(Object.values(data.reduce((acc, it) => {
+        acc[it.development_status] = [it.development_status, (acc[it.development_status]?.[1] || 0) + parseFloat(it.Tonnage)];
         return acc;
       }, {})).sort((a, b) => b[1] - a[1]).reduce((acc, it) => {
         acc[it[0]] = { name: it[0], parent: 'Origin', value: (acc[0]?.value || 0) + parseFloat(it[1]) };
@@ -189,30 +189,30 @@ function App() {
     } else {
       document.querySelectorAll('.extra').forEach(el => el.classList.remove('enabled'));
       setCommodityValue(false);
-      setCountryValue(false);
+      setDestinationValue(false);
     }
     setFeatures(features === false);
   };
 
-  const toggleCountryCountryStatus = () => {
-    if (countryCountryStatus === false) {
-      document.querySelectorAll('.countries_wrapper, .product_treemap_wrapper').forEach(el => { el.style.height = 'auto'; });
-      document.querySelectorAll('.countries_wrapper, .product_treemap_wrapper').forEach(el => { el.style.opacity = 1; });
-      document.querySelectorAll('.countries_wrapper, .product_treemap_wrapper').forEach(el => { el.style.visibility = 'visible'; });
-      document.querySelectorAll('.country_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.height = 0; });
-      document.querySelectorAll('.country_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.opacity = 0; });
-      document.querySelectorAll('.country_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.visibility = 'hidden'; });
-      setCountryStatusValue(false);
+  const toggleDestinationDestinationStatus = () => {
+    if (destinationDestinationStatus === false) {
+      document.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.height = 'auto'; });
+      document.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.opacity = 1; });
+      document.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.visibility = 'visible'; });
+      document.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.height = 0; });
+      document.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.opacity = 0; });
+      document.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.visibility = 'hidden'; });
+      setDestinationStatusValue(false);
     } else {
-      document.querySelectorAll('.countries_wrapper, .product_treemap_wrapper').forEach(el => { el.style.height = 0; });
-      document.querySelectorAll('.countries_wrapper, .product_treemap_wrapper').forEach(el => { el.style.opacity = 0; });
-      document.querySelectorAll('.countries_wrapper, .product_treemap_wrapper').forEach(el => { el.style.visibility = 'hidden'; });
-      document.querySelectorAll('.country_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.height = 'auto'; });
-      document.querySelectorAll('.country_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.opacity = 1; });
-      document.querySelectorAll('.country_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.visibility = 'visible'; });
-      setCountryValue(false);
+      document.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.height = 0; });
+      document.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.opacity = 0; });
+      document.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.visibility = 'hidden'; });
+      document.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.height = 'auto'; });
+      document.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.opacity = 1; });
+      document.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.visibility = 'visible'; });
+      setDestinationValue(false);
     }
-    setCountryCountryStatus((countryCountryStatus === false));
+    setDestinationDestinationStatus((destinationDestinationStatus === false));
   };
 
   return (
@@ -228,7 +228,7 @@ function App() {
             {' '}
             has been shipped daily?
           </h3>
-          {(data) && (<LineBarChart appID={appID} commodities={commodities} commodityValue={commodityValue} countries={countries} countryValue={countryValue} countryStatusValue={countryStatusValue} features={features} defineData={defineData} duration={duration} easingFn={easingFn} idx="1" setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setDuration={setDuration} />)}
+          {(data) && (<LineBarChart appID={appID} commodities={commodities} commodityValue={commodityValue} destinations={destinations} destinationValue={destinationValue} destinationStatusValue={destinationStatusValue} features={features} defineData={defineData} duration={duration} easingFn={easingFn} idx="1" setCommodityValue={setCommodityValue} setDestinationValue={setDestinationValue} setDuration={setDuration} />)}
         </div>
         <div className="vis_row vis_row_2">
           <div className="column column_1">
@@ -238,10 +238,10 @@ function App() {
             </h4>
             <div className="instruction extra">Choose a commodity of interest</div>
             <div className="product_donut_wrapper">
-              {totalPerProduct && (<DonutChart category="Commodity" commodityValue={commodityValue} countryValue={countryValue} countryStatusValue={countryStatusValue} idx="5" series={totalPerProduct} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setCountryStatusValue={setCountryStatusValue} setDuration={setDuration} />)}
+              {totalPerProduct && (<DonutChart category="Commodity" commodityValue={commodityValue} destinationValue={destinationValue} destinationStatusValue={destinationStatusValue} idx="5" series={totalPerProduct} setCommodityValue={setCommodityValue} setDestinationValue={setDestinationValue} setDestinationStatusValue={setDestinationStatusValue} setDuration={setDuration} />)}
             </div>
             <div className="product_treemap_wrapper" style={{ height: 0, opacity: 0, visibility: 'hidden' }}>
-              {totalPerProduct && (<TreeMapChart category="Commodity" commodityValue={commodityValue} countryValue={countryValue} idx="2" series={totalPerProduct} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setDuration={setDuration} />)}
+              {totalPerProduct && (<TreeMapChart category="Commodity" commodityValue={commodityValue} destinationValue={destinationValue} idx="2" series={totalPerProduct} setCommodityValue={setCommodityValue} setDestinationValue={setDestinationValue} setDuration={setDuration} />)}
             </div>
             <div className="list_container_toggle"><button onClick={() => slideToggle(document.querySelectorAll('.list_container_commodity')[0])} type="button">Show other products</button></div>
             <div className="list_container list_container_commodity">
@@ -268,16 +268,16 @@ function App() {
               <span className="highlight">Where</span>
               {' has the cargo gone to?'}
             </h4>
-            <div className="toggle_features_container"><button type="button" onClick={(event) => toggleCountryCountryStatus(event)}>{(countryCountryStatus === false) ? 'See per country' : 'Return'}</button></div>
-            <div className="country_status_wrapper">
+            <div className="toggle_features_container"><button type="button" onClick={(event) => toggleDestinationDestinationStatus(event)}>{(destinationDestinationStatus === false) ? 'See per destination' : 'Return'}</button></div>
+            <div className="destination_status_wrapper">
               <div className="instruction extra">Choose a destination of interest</div>
-              {totalPerCountryStatus && (<DonutChart category="CountryStatus" commodityValue={commodityValue} countryValue={countryValue} countryStatusValue={countryStatusValue} idx="5" series={totalPerCountryStatus} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setCountryStatusValue={setCountryStatusValue} setDuration={setDuration} />)}
+              {totalPerDestinationStatus && (<DonutChart category="DestinationStatus" commodityValue={commodityValue} destinationValue={destinationValue} destinationStatusValue={destinationStatusValue} idx="5" series={totalPerDestinationStatus} setCommodityValue={setCommodityValue} setDestinationValue={setDestinationValue} setDestinationStatusValue={setDestinationStatusValue} setDuration={setDuration} />)}
             </div>
-            <div className="countries_wrapper" style={{ height: 0, opacity: 0, visibility: 'hidden' }}>
+            <div className="destinations_wrapper" style={{ height: 0, opacity: 0, visibility: 'hidden' }}>
               <div className="instruction extra">Choose a destination of interest</div>
-              {totalPerCountry && (<TreeMapChart category="Country" commodityValue={commodityValue} countryValue={countryValue} idx="3" series={totalPerCountry} setCommodityValue={setCommodityValue} setCountryValue={setCountryValue} setDuration={setDuration} />)}
-              <div className="list_container_toggle"><button onClick={() => slideToggle(document.querySelectorAll('.list_container_country')[0])} type="button">Show other destinations</button></div>
-              <div className="list_container list_container_country">
+              {totalPerDestination && (<TreeMapChart category="Destination" commodityValue={commodityValue} destinationValue={destinationValue} idx="3" series={totalPerDestination} setCommodityValue={setCommodityValue} setDestinationValue={setDestinationValue} setDuration={setDuration} />)}
+              <div className="list_container_toggle"><button onClick={() => slideToggle(document.querySelectorAll('.list_container_destination')[0])} type="button">Show other destinations</button></div>
+              <div className="list_container list_container_destination">
                 <table>
                   <thead>
                     <tr>
@@ -286,9 +286,9 @@ function App() {
                     </tr>
                   </thead>
                   <tbody>
-                    {topCountriesFull && topCountriesFull.map(el => (
-                      <tr key={el.name} className={(el.name === countryValue) ? 'selected' : ''}>
-                        <td><button onClick={() => { setCountryValue((el.name === countryValue) ? false : el.name); setDuration(1000); }} type="button">{el.name}</button></td>
+                    {topDestinatinonsFull && topDestinatinonsFull.map(el => (
+                      <tr key={el.name} className={(el.name === destinationValue) ? 'selected' : ''}>
+                        <td><button onClick={() => { setDestinationValue((el.name === destinationValue) ? false : el.name); setDuration(1000); }} type="button">{el.name}</button></td>
                         <td>{el.value.toLocaleString()}</td>
                       </tr>
                     ))}
@@ -301,7 +301,6 @@ function App() {
       </div>
       { /* Table container */ }
       <div className="table_container">
-        <h3>Browse the data</h3>
         <iframe title="Vessel movements - Outbound voyages" aria-label="Table" id="datawrapper-chart-MUWoW" src="https://datawrapper.dwcdn.net/MUWoW/2/" scrolling="no" frameBorder="0" style={{ width: 0, minWidth: '100% !important', border: 'none' }} height="931" />
       </div>
       <noscript>Your browser does not support JavaScript!</noscript>

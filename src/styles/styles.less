@@ -1,17 +1,21 @@
 //@import url('https://fonts.googleapis.com/css?family=Roboto+Serif:600.css');
 
 @import 'colors.less';
-
+#app-root-2022-black_sea_grain_initiative .app {
+  background-color: #e9e9e9;
+}
 #app-root-2022-black_sea_grain_initiative_banner,
 #app-root-2022-black_sea_grain_initiative .app {
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: auto auto;
   padding-top: 20px;
-  background-color: #e9e9e9;
   h2 {
     text-align: center;
     font-size: 36px;
     margin: 0 0 20px 0;
+    &:after {
+      display: none;
+    }
   }
   h2,
   h3,
@@ -244,8 +248,8 @@
         }
         .product_treemap_wrapper,
         .product_donut_wrapper,
-        .country_status_wrapper,
-        .countries_wrapper {
+        .destination_status_wrapper,
+        .destinations_wrapper {
           transition: 0.5s opacity;
         }
         .list_container_toggle {

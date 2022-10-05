@@ -12,15 +12,18 @@ import debounce from './helpers/Debounce.js';
 // https://d3js.org/
 
 function DonutChart({
-  category, commodityValue, countryValue, countryStatusValue, idx, setCommodityValue, setCountryValue, setCountryStatusValue, setDuration, series
+  category, commodityValue, destinationValue, destinationStatusValue, idx, setCommodityValue, setDestinationValue, setDestinationStatusValue, setDuration, series
 }) {
   series.columns = ['name', 'parent', 'value'];
-  const chartRef = useRef(null);
   const [chartRefWidth, setChartRefWidth] = useState(0);
-  const prevWidth = useRef();
-  const max = (Math.max(...series.map(d => ((d.name === 'Other') ? 0 : d.value))));
+
+  const chartRef = useRef(null);
+
   const colors = useMemo(() => ['#009edb', '#72bf44', '#f58220', '#a05fb4', '#ffc800', '#aea29a'], []);
+
   const margin = 6;
+  const max = (Math.max(...series.map(d => ((d.name === 'Other') ? 0 : d.value))));
+  const prevWidth = useRef();
 
   useEffect(() => {
     document.querySelectorAll('.pie_chart_Commodity').forEach(el => el.classList.remove('selected'));
@@ -30,18 +33,20 @@ function DonutChart({
   }, [commodityValue]);
 
   useEffect(() => {
-    document.querySelectorAll('.pie_chart_Country').forEach(el => el.classList.remove('selected'));
-    if (countryValue !== false) {
-      document.querySelectorAll(`.pie_chart_Country_${countryValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
+    document.querySelectorAll('.pie_chart_Destination').forEach(el => el.classList.remove('selected'));
+    if (destinationValue !== false) {
+      document.querySelectorAll(`.pie_chart_Destination_${destinationValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
     }
-  }, [countryValue]);
+  }, [destinationValue]);
 
   useEffect(() => {
-    document.querySelectorAll('.pie_chart_CountryStatus').forEach(el => el.classList.remove('selected'));
-    if (countryStatusValue !== false) {
-      document.querySelectorAll(`.pie_chart_CountryStatus_${countryStatusValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
+    document.querySelectorAll('.pie_chart_DestinationStatus').forEach(el => el.classList.remove('selected'));
+    if (destinationStatusValue !== false) {
+      document.querySelectorAll(`.pie_chart_DestinationStatus_${destinationStatusValue.replaceAll(' ', '_')}`)?.[0]?.classList.add('selected');
     }
-  }, [countryStatusValue]);
+  }, [destinationStatusValue]);
+
+  const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1);
 
   const createChart = useCallback((svg, width_container) => {
     const width = width_container - margin;
@@ -70,10 +75,10 @@ function DonutChart({
       .on('click', (event, d) => {
         if (category === 'Commodity') {
           setCommodityValue(([...event.target.classList].includes('selected')) ? false : d.data.name);
-        } else if (category === 'Country') {
-          setCountryValue(([...event.target.classList].includes('selected')) ? false : d.data.name);
+        } else if (category === 'Destination') {
+          setDestinationValue(([...event.target.classList].includes('selected')) ? false : d.data.name);
         } else {
-          setCountryStatusValue(([...event.target.classList].includes('selected')) ? false : d.data.name);
+          setDestinationStatusValue(([...event.target.classList].includes('selected')) ? false : d.data.name);
         }
         setDuration(1000);
       });
@@ -82,11 +87,11 @@ function DonutChart({
       .data(pie(data))
       .join('text')
       .attr('class', 'pie_text')
-      .html((d) => `<tspan>${d.data.name.split(' ')[0]}</tspan> ${d.data.name.split(' ')[1] ? (`<tspan dy="1.2em" dx="-4.5em">${d.data.name.split(' ')[1]}</span>`) : ''}`)
+      .html((d) => `<tspan>${capitalizeFirstLetter(d.data.name.split(' ')[0])}</tspan> ${d.data.name.split(' ')[1] ? (`<tspan dy="1.2em" dx="-4.5em">${capitalizeFirstLetter(d.data.name.split(' ')[1])}</span>`) : ''}`)
       .attr('transform', (d) => `translate(${d3.arc().innerRadius(70).outerRadius(radius).centroid(d)})`)
       .attr('font-size', (d) => `${Math.min(((Math.log2(d.data.value) / Math.log2(max)) ** 4) * 20, 20)}px`)
       .style('font-family', 'Roboto');
-  }, [category, colors, max, series, setCommodityValue, setCountryValue, setCountryStatusValue, setDuration]);
+  }, [category, colors, max, series, setCommodityValue, setDestinationValue, setDestinationStatusValue, setDuration]);
 
   useEffect(() => {
     const svg = d3.select(chartRef.current)
@@ -126,13 +131,13 @@ function DonutChart({
 DonutChart.propTypes = {
   category: PropTypes.string.isRequired,
   commodityValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
-  countryValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
-  countryStatusValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
+  destinationValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
+  destinationStatusValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
   idx: PropTypes.string.isRequired,
   series: PropTypes.instanceOf(Array).isRequired,
   setCommodityValue: PropTypes.instanceOf(Function).isRequired,
-  setCountryValue: PropTypes.instanceOf(Function).isRequired,
-  setCountryStatusValue: PropTypes.instanceOf(Function).isRequired,
+  setDestinationValue: PropTypes.instanceOf(Function).isRequired,
+  setDestinationStatusValue: PropTypes.instanceOf(Function).isRequired,
   setDuration: PropTypes.instanceOf(Function).isRequired
 };
 

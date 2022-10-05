@@ -15,17 +15,18 @@ import debounce from './helpers/Debounce.js';
 
 function LineBarChart({
   // eslint-disable-next-line
-  appID, commodities, commodityValue, countries, countryValue, countryStatusValue, easingFn, features, defineData, duration, idx, setCommodityValue, setCountryValue, setDuration
+  appID, commodities, commodityValue, destinations, destinationValue, destinationStatusValue, easingFn, features, defineData, duration, idx, setCommodityValue, setDestinationValue, setDuration
 }) {
-  const chartRef = useRef(null);
+  const [axisStatic, setAxisStatic] = useState(false);
+  const [chartRefWidth, setChartRefWidth] = useState(0);
   const [g, setG] = useState(false);
   const [total, setTotal] = useState(0);
-  const [chartRefWidth, setChartRefWidth] = useState(0);
-  const prevCountRef = useRef();
-  const prevWidth = useRef();
-  const [axisStatic, setAxisStatic] = useState(false);
+
+  const chartRef = useRef(null);
   const maxAxisLeft = useRef();
   const maxAxisRight = useRef();
+  const prevCountRef = useRef();
+  const prevWidth = useRef();
 
   const margin = useMemo(() => ({
     bottom: 30, left: 40, right: 50, top: 40
@@ -183,7 +184,7 @@ function LineBarChart({
       updateData(defineData(), true);
       setDuration(1000);
     }
-  }, [commodityValue, countryValue, countryStatusValue, defineData, duration, g, setDuration, updateData]);
+  }, [commodityValue, destinationValue, destinationStatusValue, defineData, duration, g, setDuration, updateData]);
 
   useEffect(() => {
     prevCountRef.current = total;
@@ -211,8 +212,8 @@ function LineBarChart({
   const selectionChange = (event, type) => {
     if (type === 'Commodity') {
       setCommodityValue((event.target.value === 'false') ? false : event.target.value);
-    } else if (type === 'Country') {
-      setCountryValue((event.target.value === 'false') ? false : event.target.value);
+    } else if (type === 'Destination') {
+      setDestinationValue((event.target.value === 'false') ? false : event.target.value);
     }
     updateData(defineData());
   };
@@ -240,10 +241,10 @@ function LineBarChart({
               <span className="value_legend">{commodityValue}</span>
             </div>
             )}
-            {countryValue && (
+            {destinationValue && (
             <div>
               <span className="type_legend">Destination</span>
-              <span className="value_legend">{countryValue}</span>
+              <span className="value_legend">{destinationValue}</span>
             </div>
             )}
           </div>
@@ -275,18 +276,18 @@ function LineBarChart({
         </span>
         <span className="selection_destination">
           <span className="selection_label">Destination</span>
-          <select onChange={(event) => selectionChange(event, 'Country')} value={countryValue}>
+          <select onChange={(event) => selectionChange(event, 'Destination')} value={destinationValue}>
             <option value={false}>All destinations</option>
             <option disabled>– – – </option>
             {
-              countries && countries.map(el => (
+              destinations && destinations.map(el => (
                 <option key={el} value={el}>{el}</option>
               ))
             }
             <option disabled>– – – </option>
             <option value="Other">Other than top six</option>
           </select>
-          <button type="button" className={`remove ${countryValue && 'enabled'}`} value={false} onClick={(event) => selectionChange(event, 'Country')}>⨯</button>
+          <button type="button" className={`remove ${destinationValue && 'enabled'}`} value={false} onClick={(event) => selectionChange(event, 'Destination')}>⨯</button>
         </span>
       </div>
     </div>
@@ -297,16 +298,16 @@ LineBarChart.propTypes = {
   appID: PropTypes.string.isRequired,
   commodities: PropTypes.instanceOf(Array).isRequired,
   commodityValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
-  countries: PropTypes.instanceOf(Array).isRequired,
-  countryValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
-  countryStatusValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
+  destinations: PropTypes.instanceOf(Array).isRequired,
+  destinationValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
+  destinationStatusValue: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
   defineData: PropTypes.instanceOf(Function).isRequired,
   duration: PropTypes.number.isRequired,
   easingFn: PropTypes.instanceOf(Function).isRequired,
   features: PropTypes.bool.isRequired,
   idx: PropTypes.string.isRequired,
   setCommodityValue: PropTypes.instanceOf(Function).isRequired,
-  setCountryValue: PropTypes.instanceOf(Function).isRequired,
+  setDestinationValue: PropTypes.instanceOf(Function).isRequired,
   setDuration: PropTypes.instanceOf(Function).isRequired
 };
 

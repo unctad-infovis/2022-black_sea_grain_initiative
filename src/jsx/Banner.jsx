@@ -19,7 +19,7 @@ function Banner({
     if (standAlone === true) {
       getData().then(json_data => {
         setTotalTonnageLocal((json_data.reduce((acc, it) => acc + parseFloat(it.Tonnage), 0)));
-        setTotalShipsLocal((new Set(json_data.map(el => el['#'])).size));
+        setTotalShipsLocal((new Set(json_data.map(el => el['IMO-Vessel name'])).size));
         setUpdatedLocal(new Date(json_data[json_data.length - 1].Departure));
       });
     } else {

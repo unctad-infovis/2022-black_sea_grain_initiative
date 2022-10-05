@@ -29,15 +29,21 @@ function Banner({
     }
   }, [standAlone, totalShips, totalTonnage, updated]);
   return (
-    <div className="header_container_outer">
-      <div className="header_container">
-        <h3><CountUp easingFn={easingFn} end={totalTonnageLocal} duration={4} separator="," useEasing /></h3>
-        <h4>Total metric tons carried</h4>
-        <h3><CountUp easingFn={easingFn} end={totalShipsLocal} duration={4} separator="," useEasing /></h3>
-        <h4>Vessels departed</h4>
-        <h5>{(updatedLocal) && `As of ${updatedLocal.getDate()}  ${updatedLocal.toLocaleString('default', { month: 'long' })} ${updatedLocal.getFullYear()} ` }</h5>
+    <>
+      <h2>
+        {'Black Sea Grain Initiative '}
+        <span className="highlight">in numbers</span>
+      </h2>
+      <div className="header_container_outer">
+        <div className="header_container">
+          <h3><CountUp easingFn={easingFn} end={totalTonnageLocal} duration={4} separator="," useEasing /></h3>
+          <h4>Total metric tons carried</h4>
+          <h3><CountUp easingFn={easingFn} end={totalShipsLocal} duration={4} separator="," useEasing /></h3>
+          <h4>Vessels departed</h4>
+          <div className="updated_container"><h5>{(updatedLocal) && `As of ${updatedLocal.getDate()}  ${updatedLocal.toLocaleString('default', { month: 'long' })} ${updatedLocal.getFullYear()} ` }</h5></div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

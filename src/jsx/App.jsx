@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../styles/styles.less';
 
 // https://d3js.org/
@@ -40,6 +40,8 @@ function App() {
   const [totalPerDestination, setTotalPerDestination] = useState(false);
   const [totalPerDestinationStatus, setTotalPerDestinationStatus] = useState(false);
   const [dates, setDates] = useState({});
+
+  const appRef = useRef();
 
   // Helper functions.
   const daysBetween = (date_1, date_2) => Math.ceil((date_1.getTime() - date_2.getTime()) / (1000 * 3600 * 24) + 1);
@@ -124,7 +126,7 @@ function App() {
     // eslint-disable-next-line no-unused-expressions,func-names
     !(function () {
       // eslint-disable-next-line no-restricted-syntax,no-void,guard-for-in
-      window.addEventListener('message', ((e) => { if (void 0 !== e.data['datawrapper-height']) { const t = document.querySelectorAll(`${appID} iframe`); for (const a in e.data['datawrapper-height']) for (let r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source)t[r].style.height = `${e.data['datawrapper-height'][a]}px`; } } }));
+      window.addEventListener('message', ((e) => { if (void 0 !== e.data['datawrapper-height']) { const t = appRef.current.querySelectorAll(`${appID} iframe`); for (const a in e.data['datawrapper-height']) for (let r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source)t[r].style.height = `${e.data['datawrapper-height'][a]}px`; } } }));
     }());
   }, []);
 
@@ -184,10 +186,10 @@ function App() {
 
   const toggleFeatures = () => {
     if (features === false) {
-      document.querySelectorAll('.extra').forEach(el => el.classList.add('enabled'));
+      appRef.current.querySelectorAll('.extra').forEach(el => el.classList.add('enabled'));
       d3.select('path.extra.line').attr('class', 'line extra enabled');
     } else {
-      document.querySelectorAll('.extra').forEach(el => el.classList.remove('enabled'));
+      appRef.current.querySelectorAll('.extra').forEach(el => el.classList.remove('enabled'));
       setCommodityValue(false);
       setDestinationValue(false);
     }
@@ -196,31 +198,27 @@ function App() {
 
   const toggleDestinationDestinationStatus = () => {
     if (destinationDestinationStatus === false) {
-      document.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.height = 'auto'; });
-      document.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.opacity = 1; });
-      document.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.visibility = 'visible'; });
-      document.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.height = 0; });
-      document.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.opacity = 0; });
-      document.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.visibility = 'hidden'; });
+      appRef.current.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.height = 'auto'; });
+      appRef.current.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.opacity = 1; });
+      appRef.current.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.visibility = 'visible'; });
+      appRef.current.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.height = 0; });
+      appRef.current.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.opacity = 0; });
+      appRef.current.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.visibility = 'hidden'; });
       setDestinationStatusValue(false);
     } else {
-      document.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.height = 0; });
-      document.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.opacity = 0; });
-      document.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.visibility = 'hidden'; });
-      document.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.height = 'auto'; });
-      document.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.opacity = 1; });
-      document.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.visibility = 'visible'; });
+      appRef.current.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.height = 0; });
+      appRef.current.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.opacity = 0; });
+      appRef.current.querySelectorAll('.destinations_wrapper, .product_treemap_wrapper').forEach(el => { el.style.visibility = 'hidden'; });
+      appRef.current.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.height = 'auto'; });
+      appRef.current.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.opacity = 1; });
+      appRef.current.querySelectorAll('.destination_status_wrapper, .product_donut_wrapper').forEach(el => { el.style.visibility = 'visible'; });
       setDestinationValue(false);
     }
     setDestinationDestinationStatus((destinationDestinationStatus === false));
   };
 
   return (
-    <div className="app">
-      <h2>
-        {'Black Sea Grain Initiative '}
-        <span className="highlight">in numbers</span>
-      </h2>
+    <div className="app" ref={appRef}>
       { /* Banner container */ }
       <Banner standAlone={false} totalTonnage={totalTonnage} totalShips={totalShips} updated={updated} />
       { /* Visualisations container */ }
@@ -247,7 +245,7 @@ function App() {
             <div className="product_treemap_wrapper" style={{ height: 0, opacity: 0, visibility: 'hidden' }}>
               {totalPerProduct && (<TreeMapChart category="Commodity" commodityValue={commodityValue} destinationValue={destinationValue} idx="2" series={totalPerProduct} setCommodityValue={setCommodityValue} setDestinationValue={setDestinationValue} setDuration={setDuration} />)}
             </div>
-            <div className="list_container_toggle"><button onClick={() => slideToggle(document.querySelectorAll('.list_container_commodity')[0])} type="button">Show other products</button></div>
+            <div className="list_container_toggle"><button onClick={() => slideToggle(appRef.current.querySelectorAll('.list_container_commodity')[0])} type="button">Show other products</button></div>
             <div className="list_container list_container_commodity">
               <table>
                 <thead>
@@ -280,7 +278,7 @@ function App() {
             <div className="destinations_wrapper" style={{ height: 0, opacity: 0, visibility: 'hidden' }}>
               <div className="instruction extra">Choose a destination of interest</div>
               {totalPerDestination && (<TreeMapChart category="Destination" commodityValue={commodityValue} destinationValue={destinationValue} idx="3" series={totalPerDestination} setCommodityValue={setCommodityValue} setDestinationValue={setDestinationValue} setDuration={setDuration} />)}
-              <div className="list_container_toggle"><button onClick={() => slideToggle(document.querySelectorAll('.list_container_destination')[0])} type="button">Show other destinations</button></div>
+              <div className="list_container_toggle"><button onClick={() => slideToggle(appRef.current.querySelectorAll('.list_container_destination')[0])} type="button">Show other destinations</button></div>
               <div className="list_container list_container_destination">
                 <table>
                   <thead>

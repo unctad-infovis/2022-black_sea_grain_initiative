@@ -41,11 +41,13 @@ function Banner({
       </div>
       <div className="header_container_outer">
         <div className="header_container">
-          <h3><CountUp easingFn={easingFn} end={totalTonnageLocal} duration={4} separator="," useEasing /></h3>
-          <h4>Total tonnes carried</h4>
-          <h3><CountUp easingFn={easingFn} end={totalShipsLocal} duration={4} separator="," useEasing /></h3>
-          <h4>Vessels departed</h4>
-          <div className="updated_container"><h5>{(updatedLocal) && `As of ${updatedLocal.getDate()}  ${updatedLocal.toLocaleString('default', { month: 'long' })} ${updatedLocal.getFullYear()} ` }</h5></div>
+          <div className="heading_content">
+            <h3><CountUp easingFn={easingFn} end={totalTonnageLocal} duration={4} separator="," useEasing /></h3>
+            <h4>Total tonnes carried</h4>
+            <h3><CountUp easingFn={easingFn} end={totalShipsLocal} duration={4} separator="," useEasing /></h3>
+            <h4>Vessels departed</h4>
+            <div className="updated_container"><h5>{(updatedLocal) && `As of ${updatedLocal.getDate()}  ${updatedLocal.toLocaleString('default', { month: 'long' })} ${updatedLocal.getFullYear()} ` }</h5></div>
+          </div>
         </div>
       </div>
     </>

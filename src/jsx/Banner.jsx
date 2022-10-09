@@ -16,7 +16,9 @@ function Banner({
   const [updatedLocal, setUpdatedLocal] = useState(new Date());
 
   useEffect(() => {
-    document.querySelector('.page-header span').innerHTML = 'Black Sea Grain Initiative <span class="highlight">in numbers</span>';
+    if (document.querySelector('.page-header span') !== null) {
+      document.querySelector('.page-header span').innerHTML = 'Black Sea Grain Initiative <span class="highlight">in numbers</span>';
+    }
   }, []);
   useEffect(() => {
     if (standAlone === true) {

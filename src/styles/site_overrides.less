@@ -1,6 +1,21 @@
 body {
-  .page-header {
-    display: none;
+  h1.page-header {
+    font-weight: 700;
+    margin: auto auto 20px auto;
+    max-width: 600px;
+    text-align: center;
+    &:after {
+      display: none;
+    }
+    span.highlight {
+      color: #009edb !important;
+      font-weight: 700 !important;
+    }
+  }
+  h2.noblue {
+    &:after {
+      display: none !important;
+    }
   }
   .full-width .full-width-row {
     padding: 0 !important;

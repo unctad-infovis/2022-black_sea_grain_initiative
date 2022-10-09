@@ -219,6 +219,12 @@ function App() {
 
   return (
     <div className="app" ref={appRef}>
+      <div className="heading_container">
+        <h2>
+          {'Black Sea Grain Initiative '}
+          <span className="highlight">in numbers</span>
+        </h2>
+      </div>
       { /* Banner container */ }
       <Banner standAlone={false} totalTonnage={totalTonnage} totalShips={totalShips} updated={updated} />
       { /* Visualisations container */ }

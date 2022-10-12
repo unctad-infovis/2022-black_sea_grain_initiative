@@ -3,7 +3,14 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 
 import App from './jsx/App.jsx';
+import AppV2 from './jsx/AppV2.jsx';
 import Banner from './jsx/Banner.jsx';
+
+const containerv2 = document.getElementById('app-root-2022-black_sea_grain_initiative_v2');
+if (containerv2) {
+  const root = createRoot(containerv2);
+  root.render(<AppV2 />);
+}
 
 const container = document.getElementById('app-root-2022-black_sea_grain_initiative');
 if (container) {

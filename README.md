@@ -6,6 +6,11 @@
 
 * [UN/JCC](https://www.un.org/en/black-sea-grain-initiative/vessel-movements)
 
+## Resources
+
+* [UN: The Black Sea Grain Initiative](https://www.un.org/black-sea-grain-initiative)
+* [UNCTAD: The Black Sea Grain Initiative: What it is, and why it’s important for the world](https://unctad.org/news/black-sea-grain-initiative-what-it-and-why-its-important-world)
+
 ## Rights of usage
 
 Contact Teemo Tebest.

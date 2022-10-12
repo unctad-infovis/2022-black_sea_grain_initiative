@@ -1,0 +1,68 @@
+#app-root-2022-black_sea_grain_initiative_v2 .app {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  @import 'colors.less';
+  @import 'banner.less';
+  @import 'stamp.less';
+  .content_container {
+    margin-top: -20px;
+    padding: 40px 0;
+    background-color: #eee;
+    .content_wrapper {
+      position: relative;
+      background-color: #fff;
+      align-items: top;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.8);
+      margin: auto auto 40px auto;
+      max-width: 600px;
+      padding: 20px 20px 0.1px 20px;
+      &.wide {
+        max-width: 800px;
+      }
+      .flex {
+        display: flex;
+        gap: 20px;
+        .content {
+          &.chart {
+            width: 60%;
+          }
+          &.text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            width: 40%;
+          }
+        }
+      }
+      .content {
+        box-sizing: border-box;
+        h3 {
+          font-size: 30px;
+          font-weight: 700;
+          margin: 0 0 20px 0;
+          .highlight {
+            display: inline;
+            color: #009edb;
+          }
+        }
+        h4 {
+          font-weight: 700;
+          font-size: 20px;
+          margin: 0 0 20px 0;
+        }
+        p {
+          margin: 0 0 20px 0;
+        }
+        iframe {
+          border: none;
+          margin-bottom: 20px;
+          min-width: 100% !important;
+          width: 0;
+          &.bar_chart {
+            height: 350px !important;
+          }
+        }
+      }
+    }
+  }
+}

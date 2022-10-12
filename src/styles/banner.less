@@ -1,0 +1,83 @@
+.heading_container {
+  h2 {
+    font-size: 36px;
+    font-weight: 400;
+    margin: auto auto 20px auto;
+    max-width: 600px;
+    text-align: center;
+    &:after {
+      display: none;
+    }
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 24px;
+    margin: auto auto 20px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+}
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  .highlight {
+    color: #009edb;
+    font-weight: 700;
+    // text-transform: uppercase;
+  }
+}
+.header_container_outer {
+  background-color: #009edb;
+  margin-bottom: 20px;
+  .header_container {
+    background-image: url("https://storage.unctad.org/2022-black_sea_grain_initiative/assets/img/2022-black_sea_grain_initiative_banner.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin: auto auto;
+    max-width: 969px;
+    position: relative;
+    text-align: center;
+    .heading_content {
+      padding-top: 30px;
+      h3 {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 700;
+        margin: 0 0 0 0;
+      }
+      h4 {
+        color: #fff;
+        font-size: 20px;
+        margin: 0 0 5px 0;
+      }
+    }
+    .updated_container {
+      width: 100%;
+      bottom: 5px;
+      position: absolute;
+      h5 {
+        display: inline-block;
+        color: #000;
+        padding: 5px 7px;
+        background-color: #d7d4d4;
+      }
+    }
+    .dashboard_chart {
+      margin: auto auto;
+      width: 200px;
+      svg {
+        display: none;
+        width: 160px;
+        height: 42px;
+        .line_container {
+          fill: none;
+          stroke-width: 3;
+          stroke: #fff;
+        }
+      }
+    }
+  }
+}

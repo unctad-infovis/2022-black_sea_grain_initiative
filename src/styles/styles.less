@@ -1,4 +1,5 @@
-//@import url('https://fonts.googleapis.com/css?family=Roboto+Serif:600.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:500.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700.css');
 
 @import 'colors.less';
 @import 'site_overrides.less';
@@ -14,6 +15,7 @@
   @import 'banner.less';
   .visualisations_container {
     .vis_row {
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
       margin: auto auto 20px auto;
       max-width: 900px;
       .instruction {
@@ -39,7 +41,6 @@
             cursor: pointer;
             font-size: 14px;
             font-weight: 300;
-            margin: 0 2px;
             padding: 5px 7px;
             user-select: none;
             &:hover {
@@ -48,9 +49,9 @@
           }
         }
         h3 {
-          text-align: center;
           font-size: 30px;
           margin: 0;
+          text-align: center;
         }
         .legend_container {
           .left {
@@ -137,6 +138,7 @@
             width: calc(50% - 10px);
           }
         }
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
         .column {
           background-color: #fff;
           box-sizing: border-box;
@@ -165,7 +167,6 @@
                 cursor: pointer;
                 font-size: 14px;
                 font-weight: 300;
-                margin: 0 2px;
                 padding: 5px 7px;
                 user-select: none;
                 &:hover {
@@ -279,9 +280,10 @@
           .axis_y_left,
           .axis_y_right,
           .axis_x {
-            color: rgba(0, 0, 0, 0.8);
-            font-size: 13px;
-            font-weight: 300;
+            font-family: 'Roboto Condensed';
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
           }
           .bar {
             cursor: pointer;
@@ -333,11 +335,14 @@
           }
           .treemap_text {
             fill: #333;
-            font-weight: 300;
+            font-family: 'Roboto Condensed';
+            font-size: 16px;
+            font-weight: 700;
             pointer-events: none;
           }
           .treemap_val {
             fill: #333;
+            font-family: 'Roboto Condensed';
             font-weight: 300;
             pointer-events: none;
           }
@@ -352,9 +357,10 @@
             }
           }
           .pie_text {
-            fill: #000;
-            font-size: 18px;
-            font-weight: 300;
+            fill: #333;
+            font-family: 'Roboto Condensed';
+            font-size: 16px;
+            font-weight: 700;
             paint-order: stroke;
             pointer-events: none;
             text-anchor: middle;
@@ -408,6 +414,7 @@
   }
   .table_container {
     background-color: #fff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     box-sizing: border-box;
     margin: auto auto;
     max-width: 900px;

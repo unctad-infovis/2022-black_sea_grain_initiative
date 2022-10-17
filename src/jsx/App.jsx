@@ -133,7 +133,7 @@ function App() {
   useEffect(() => {
     if (data !== false) {
       setTotalTonnage(data.reduce((acc, it) => acc + parseFloat(it.Tonnage), 0));
-      setTotalShips(new Set(data.map(el => el['IMO-Vessel name'])).size);
+      setTotalShips(new Set(data.map(el => el['Outbound Sequence'])).size);
 
       // Total daily per commodity.
       const top_commodities_full = [];

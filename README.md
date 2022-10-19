@@ -11,7 +11,7 @@
 * [UN: The Black Sea Grain Initiative](https://www.un.org/black-sea-grain-initiative)
 * [UNCTAD: The Black Sea Grain Initiative: What it is, and why it’s important for the world](https://unctad.org/news/black-sea-grain-initiative-what-it-and-why-its-important-world)
 
-## Visualisation
+## Datawrapper visualisation embed codes
 
 Datawrapper visualisations
 
@@ -22,7 +22,8 @@ Datawrapper visualisations
 
 **Responsive iframe**
 ```
-<iframe title="Vessel movement – Outbound voyages" aria-label="Table" id="datawrapper-chart-MUWoW" src="https://datawrapper.dwcdn.net/MUWoW/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="2867"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>```
+<iframe title="Vessel movement – Outbound voyages" aria-label="Table" id="datawrapper-chart-MUWoW" src="https://datawrapper.dwcdn.net/MUWoW/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="2867"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+```
 
 **Normal iframe**
 ```
@@ -36,7 +37,8 @@ Datawrapper visualisations
 
 **Responsive iframe**
 ```
-<iframe title="How much has been shipped weekly?" aria-label="Column Chart" id="datawrapper-chart-HSkS3" src="https://datawrapper.dwcdn.net/HSkS3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="500"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>```
+<iframe title="How much has been shipped weekly?" aria-label="Column Chart" id="datawrapper-chart-HSkS3" src="https://datawrapper.dwcdn.net/HSkS3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="500"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+```
 
 **Normal iframe**
 ```
@@ -50,7 +52,8 @@ Datawrapper visualisations
 
 **Responsive iframe**
 ```
-<iframe title="How much has been shipped daily?" aria-label="Column Chart" id="datawrapper-chart-kWqCl" src="https://datawrapper.dwcdn.net/kWqCl/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>```
+<iframe title="How much has been shipped daily?" aria-label="Column Chart" id="datawrapper-chart-kWqCl" src="https://datawrapper.dwcdn.net/kWqCl/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+```
 
 **Normal iframe**
 ```
@@ -64,7 +67,8 @@ Datawrapper visualisations
 
 **Responsive iframe**
 ```
-<iframe title="What has been shipped?" aria-label="Donut Chart" id="datawrapper-chart-h4sMD" src="https://datawrapper.dwcdn.net/h4sMD/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="530"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>```
+<iframe title="What has been shipped?" aria-label="Donut Chart" id="datawrapper-chart-h4sMD" src="https://datawrapper.dwcdn.net/h4sMD/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="530"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+```
 
 **Normal iframe**
 ```
@@ -78,7 +82,8 @@ Datawrapper visualisations
 
 **Responsive iframe**
 ```
-<iframe title="Where has cargo gone?" aria-label="Donut Chart" id="datawrapper-chart-oJTUC" src="https://datawrapper.dwcdn.net/oJTUC/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="534"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>```
+<iframe title="Where has cargo gone?" aria-label="Donut Chart" id="datawrapper-chart-oJTUC" src="https://datawrapper.dwcdn.net/oJTUC/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="534"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+```
 
 **Normal iframe**
 ```
@@ -109,7 +114,8 @@ Datawrapper visualisations
 
 **Responsive iframe**
 ```
-<iframe title="Food Price Index" aria-label="Interactive line chart" id="datawrapper-chart-ZfGo4" src="https://datawrapper.dwcdn.net/ZfGo4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>```
+<iframe title="Food Price Index" aria-label="Interactive line chart" id="datawrapper-chart-ZfGo4" src="https://datawrapper.dwcdn.net/ZfGo4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+```
 
 **Normal iframe**
 ```

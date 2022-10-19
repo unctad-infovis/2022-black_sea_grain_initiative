@@ -15,6 +15,8 @@
 
 Datawrapper visualisations
 
+----
+
 ### Table
 
 * [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=214450323)

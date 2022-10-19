@@ -117,6 +117,8 @@ Datawrapper visualisations
 <iframe title="Where has the cargo gone?" aria-label="Donut Chart" id="datawrapper-chart-PbmkK" src="https://datawrapper.dwcdn.net/PbmkK/" scrolling="no" frameborder="0" style="border: none;" width="433" height="483"></iframe>
 ```
 
+---- 
+
 ### FAO Food Price Index 
 
 * [Data](https://storage.unctad.org/2022-ukraine_brief_3_dashboard/assets/data/fao_food_price_index.csv)
@@ -131,6 +133,8 @@ Datawrapper visualisations
 ```
 <iframe title="Food Price Index" aria-label="Interactive line chart" id="datawrapper-chart-ZfGo4" src="https://datawrapper.dwcdn.net/ZfGo4/" scrolling="no" frameborder="0" style="border: none;" width="760" height="450"></iframe>
 ```
+
+---- 
 
 ## Rights of usage
 

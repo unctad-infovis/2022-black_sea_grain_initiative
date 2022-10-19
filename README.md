@@ -30,6 +30,8 @@ Datawrapper visualisations
 <iframe title="Vessel movement – Outbound voyages" aria-label="Table" id="datawrapper-chart-MUWoW" src="https://datawrapper.dwcdn.net/MUWoW/" scrolling="no" frameborder="0" style="border: none;" width="1350" height="2867"></iframe>
 ```
 
+-- 
+
 ### Per Week
 
 * [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=1783277736)
@@ -44,6 +46,8 @@ Datawrapper visualisations
 ```
 <iframe title="How much has been shipped weekly?" aria-label="Column Chart" id="datawrapper-chart-HSkS3" src="https://datawrapper.dwcdn.net/HSkS3/" scrolling="no" frameborder="0" style="border: none;" width="1300" height="500"></iframe>
 ```
+
+-- 
 
 ### Per Day
 
@@ -60,6 +64,8 @@ Datawrapper visualisations
 <iframe title="How much has been shipped daily?" aria-label="Column Chart" id="datawrapper-chart-kWqCl" src="https://datawrapper.dwcdn.net/kWqCl/" scrolling="no" frameborder="0" style="border: none;" width="1300" height="400"></iframe>
 ```
 
+-- 
+
 ### Per Commodity 
 
 * [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=885317691)
@@ -75,6 +81,8 @@ Datawrapper visualisations
 <iframe title="What has been shipped?" aria-label="Donut Chart" id="datawrapper-chart-h4sMD" src="https://datawrapper.dwcdn.net/h4sMD/" scrolling="no" frameborder="0" style="border: none;" width="433" height="530"></iframe>
 ```
 
+-- 
+
 ### Per Development Status 
 
 * [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=6708272)
@@ -89,6 +97,8 @@ Datawrapper visualisations
 ```
 <iframe title="Where has cargo gone?" aria-label="Donut Chart" id="datawrapper-chart-oJTUC" src="https://datawrapper.dwcdn.net/oJTUC/" scrolling="no" frameborder="0" style="border: none;" width="433" height="534"></iframe>
 ```
+
+-- 
 
 ### World Bank Income Classification
 

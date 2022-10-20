@@ -1,10 +1,10 @@
-## Datawrapper visualisation embed codes
+# Datawrapper visualisation embed codes
 
 Datawrapper visualisations
 
 ----
 
-### Table
+## Table
 
 * [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=214450323)
 * [Vis](https://datawrapper.dwcdn.net/MUWoW/)
@@ -21,7 +21,7 @@ Datawrapper visualisations
 
 ----
 
-### Per Week
+## Per Week
 
 * [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=1783277736)
 * [Vis](https://datawrapper.dwcdn.net/HSkS3/)
@@ -38,7 +38,7 @@ Datawrapper visualisations
 
 ----
 
-### Per Day
+## Per Day
 
 * [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=1559247793)
 * [Vis](https://datawrapper.dwcdn.net/kWqCl/)
@@ -55,7 +55,7 @@ Datawrapper visualisations
 
 ----
 
-### Per Commodity 
+## Per Commodity 
 
 * [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=885317691)
 * [Vis](https://datawrapper.dwcdn.net/h4sMD/)
@@ -72,7 +72,7 @@ Datawrapper visualisations
 
 ----
 
-### Per Development Status 
+## Per Development Status 
 
 * [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=6708272)
 * [Vis](https://datawrapper.dwcdn.net/oJTUC/)
@@ -89,7 +89,7 @@ Datawrapper visualisations
 
 ---- 
 
-### World Bank Income Classification
+## World Bank Income Classification
 
 * [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=490192415)
 * [Vis](https://datawrapper.dwcdn.net/PbmkK/)
@@ -106,7 +106,7 @@ Datawrapper visualisations
 
 ---- 
 
-### FAO Food Price Index 
+## FAO Food Price Index 
 
 * [Data](https://storage.unctad.org/2022-ukraine_brief_3_dashboard/assets/data/fao_food_price_index.csv)
 * [Vis](https://datawrapper.dwcdn.net/ZfGo4/)

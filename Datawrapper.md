@@ -1,6 +1,6 @@
-# Datawrapper visualisation embed codes
+# Datawrapper embed codes
 
-Datawrapper visualisations
+Datawrapper visualisations and embed codes
 
 ## Table
 

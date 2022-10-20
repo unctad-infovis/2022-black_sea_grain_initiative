@@ -4,8 +4,8 @@ Datawrapper visualisations
 
 ## Table
 
-* [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=214450323)
-* [Vis](https://datawrapper.dwcdn.net/MUWoW/)
+* [Data file url](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=214450323)
+* [Visualisation preview](https://datawrapper.dwcdn.net/MUWoW/)
 
 **Responsive iframe**
 ```
@@ -19,8 +19,8 @@ Datawrapper visualisations
 
 ## Per Week
 
-* [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=1783277736)
-* [Vis](https://datawrapper.dwcdn.net/HSkS3/)
+* [Data file url](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=1783277736)
+* [Visualisation preview](https://datawrapper.dwcdn.net/HSkS3/)
 
 **Responsive iframe**
 ```
@@ -34,8 +34,8 @@ Datawrapper visualisations
 
 ## Per Day
 
-* [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=1559247793)
-* [Vis](https://datawrapper.dwcdn.net/kWqCl/)
+* [Data file url](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=1559247793)
+* [Visualisation preview](https://datawrapper.dwcdn.net/kWqCl/)
 
 **Responsive iframe**
 ```
@@ -49,8 +49,8 @@ Datawrapper visualisations
 
 ## Per Commodity 
 
-* [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=885317691)
-* [Vis](https://datawrapper.dwcdn.net/h4sMD/)
+* [Data file url](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=885317691)
+* [Visualisation preview](https://datawrapper.dwcdn.net/h4sMD/)
 
 **Responsive iframe**
 ```
@@ -64,8 +64,8 @@ Datawrapper visualisations
 
 ## Per Development Status 
 
-* [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=6708272)
-* [Vis](https://datawrapper.dwcdn.net/oJTUC/)
+* [Data file url](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=6708272)
+* [Visualisation preview](https://datawrapper.dwcdn.net/oJTUC/)
 
 **Responsive iframe**
 ```
@@ -80,8 +80,8 @@ Datawrapper visualisations
 
 ## World Bank Income Classification
 
-* [Data](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=490192415)
-* [Vis](https://datawrapper.dwcdn.net/PbmkK/)
+* [Data file url](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=490192415)
+* [Visualisation preview](https://datawrapper.dwcdn.net/PbmkK/)
 
 **Responsive iframe**
 ```
@@ -96,8 +96,8 @@ Datawrapper visualisations
 
 ## FAO Food Price Index 
 
-* [Data](https://storage.unctad.org/2022-ukraine_brief_3_dashboard/assets/data/fao_food_price_index.csv)
-* [Vis](https://datawrapper.dwcdn.net/ZfGo4/)
+* [Data file url](https://storage.unctad.org/2022-ukraine_brief_3_dashboard/assets/data/fao_food_price_index.csv)
+* [Visualisation preview](https://datawrapper.dwcdn.net/ZfGo4/)
 
 **Responsive iframe**
 ```

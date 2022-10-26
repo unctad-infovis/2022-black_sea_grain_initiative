@@ -109,3 +109,20 @@ Datawrapper visualisations and embed codes
 <iframe title="How much has been shipped weekly?" aria-label="Column Chart" id="datawrapper-chart-HSkS3" src="https://datawrapper.dwcdn.net/HSkS3/" scrolling="no" frameborder="0" style="border: none;" width="1300" height="500"></iframe>
 ```
 
+
+## Totals
+
+* [Data file url](https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub?output=csv&gid=300288809)
+* [Visualisation preview](https://datawrapper.dwcdn.net/tAz3t/)
+
+**Responsive iframe**
+```
+<iframe title="Total" aria-label="Table" id="datawrapper-chart-tAz3t" src="https://datawrapper.dwcdn.net/tAz3t/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="103"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+```
+
+**Normal iframe**
+```
+<iframe title="Total" aria-label="Table" id="datawrapper-chart-tAz3t" src="https://datawrapper.dwcdn.net/tAz3t/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="103"></iframe>
+```
+

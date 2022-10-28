@@ -116,8 +116,7 @@ Datawrapper visualisations and embed codes
 
 **Responsive iframe**
 ```
-<iframe title="Total" aria-label="Table" id="datawrapper-chart-tAz3t" src="https://datawrapper.dwcdn.net/tAz3t" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="103">Loading...</iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+<iframe title="Total" aria-label="Table" id="datawrapper-chart-tAz3t" src="https://datawrapper.dwcdn.net/tAz3t" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="103">Loading...</iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
 ```
 
 **Normal iframe**
@@ -132,8 +131,7 @@ Datawrapper visualisations and embed codes
 
 **Responsive iframe**
 ```
-<iframe title="Cargo destinations" aria-label="Column Chart" id="datawrapper-chart-qC3c3" src="https://datawrapper.dwcdn.net/qC3c3" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="992">Loading...</iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
+<iframe title="Cargo destinations" aria-label="Column Chart" id="datawrapper-chart-qC3c3" src="https://datawrapper.dwcdn.net/qC3c3" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="992">Loading...</iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
 ```
 
 **Normal iframe**

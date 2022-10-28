@@ -9,12 +9,12 @@ Datawrapper visualisations and embed codes
 
 **Responsive iframe**
 ```
-<iframe title="Vessel movement – Outbound voyages" aria-label="Table" id="datawrapper-chart-MUWoW" src="https://datawrapper.dwcdn.net/MUWoW/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="2867"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+<iframe title="Vessel movement – Outbound voyages" aria-label="Table" id="datawrapper-chart-MUWoW" src="https://datawrapper.dwcdn.net/MUWoW/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="2867">Loading...</iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
 ```
 
 **Normal iframe**
 ```
-<iframe title="Vessel movement – Outbound voyages" aria-label="Table" id="datawrapper-chart-MUWoW" src="https://datawrapper.dwcdn.net/MUWoW/" scrolling="no" frameborder="0" style="border: none;" width="1350" height="2867"></iframe>
+<iframe title="Vessel movement – Outbound voyages" aria-label="Table" id="datawrapper-chart-MUWoW" src="https://datawrapper.dwcdn.net/MUWoW/" scrolling="no" frameborder="0" style="border: none;" width="1350" height="2867">Loading...</iframe>
 ```
 
 ## Per Day
@@ -24,12 +24,12 @@ Datawrapper visualisations and embed codes
 
 **Responsive iframe**
 ```
-<iframe title="How much has been shipped daily?" aria-label="Column Chart" id="datawrapper-chart-kWqCl" src="https://datawrapper.dwcdn.net/kWqCl/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+<iframe title="How much has been shipped daily?" aria-label="Column Chart" id="datawrapper-chart-kWqCl" src="https://datawrapper.dwcdn.net/kWqCl/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400">Loading...</iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
 ```
 
 **Normal iframe**
 ```
-<iframe title="How much has been shipped daily?" aria-label="Column Chart" id="datawrapper-chart-kWqCl" src="https://datawrapper.dwcdn.net/kWqCl/" scrolling="no" frameborder="0" style="border: none;" width="1300" height="400"></iframe>
+<iframe title="How much has been shipped daily?" aria-label="Column Chart" id="datawrapper-chart-kWqCl" src="https://datawrapper.dwcdn.net/kWqCl/" scrolling="no" frameborder="0" style="border: none;" width="1300" height="400">Loading...</iframe>
 ```
 
 ## Per Commodity 
@@ -39,12 +39,12 @@ Datawrapper visualisations and embed codes
 
 **Responsive iframe**
 ```
-<iframe title="What has been shipped?" aria-label="Donut Chart" id="datawrapper-chart-h4sMD" src="https://datawrapper.dwcdn.net/h4sMD/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="530"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+<iframe title="What has been shipped?" aria-label="Donut Chart" id="datawrapper-chart-h4sMD" src="https://datawrapper.dwcdn.net/h4sMD/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="530">Loading...</iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
 ```
 
 **Normal iframe**
 ```
-<iframe title="What has been shipped?" aria-label="Donut Chart" id="datawrapper-chart-h4sMD" src="https://datawrapper.dwcdn.net/h4sMD/" scrolling="no" frameborder="0" style="border: none;" width="433" height="530"></iframe>
+<iframe title="What has been shipped?" aria-label="Donut Chart" id="datawrapper-chart-h4sMD" src="https://datawrapper.dwcdn.net/h4sMD/" scrolling="no" frameborder="0" style="border: none;" width="433" height="530">Loading...</iframe>
 ```
 
 ## Per Development Status 
@@ -54,12 +54,12 @@ Datawrapper visualisations and embed codes
 
 **Responsive iframe**
 ```
-<iframe title="Where has cargo gone?" aria-label="Donut Chart" id="datawrapper-chart-oJTUC" src="https://datawrapper.dwcdn.net/oJTUC/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="534"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+<iframe title="Where has cargo gone?" aria-label="Donut Chart" id="datawrapper-chart-oJTUC" src="https://datawrapper.dwcdn.net/oJTUC/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="534">Loading...</iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
 ```
 
 **Normal iframe**
 ```
-<iframe title="Where has cargo gone?" aria-label="Donut Chart" id="datawrapper-chart-oJTUC" src="https://datawrapper.dwcdn.net/oJTUC/" scrolling="no" frameborder="0" style="border: none;" width="433" height="534"></iframe>
+<iframe title="Where has cargo gone?" aria-label="Donut Chart" id="datawrapper-chart-oJTUC" src="https://datawrapper.dwcdn.net/oJTUC/" scrolling="no" frameborder="0" style="border: none;" width="433" height="534">Loading...</iframe>
 ```
 
 
@@ -70,12 +70,12 @@ Datawrapper visualisations and embed codes
 
 **Responsive iframe**
 ```
-<iframe title="Where has the cargo gone?" aria-label="Donut Chart" id="datawrapper-chart-PbmkK" src="https://datawrapper.dwcdn.net/PbmkK/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="483"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+<iframe title="Where has the cargo gone?" aria-label="Donut Chart" id="datawrapper-chart-PbmkK" src="https://datawrapper.dwcdn.net/PbmkK/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="483">Loading...</iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
 ```
 
 **Normal iframe**
 ```
-<iframe title="Where has the cargo gone?" aria-label="Donut Chart" id="datawrapper-chart-PbmkK" src="https://datawrapper.dwcdn.net/PbmkK/" scrolling="no" frameborder="0" style="border: none;" width="433" height="483"></iframe>
+<iframe title="Where has the cargo gone?" aria-label="Donut Chart" id="datawrapper-chart-PbmkK" src="https://datawrapper.dwcdn.net/PbmkK/" scrolling="no" frameborder="0" style="border: none;" width="433" height="483">Loading...</iframe>
 ```
 
 
@@ -86,12 +86,12 @@ Datawrapper visualisations and embed codes
 
 **Responsive iframe**
 ```
-<iframe title="Food Price Index" aria-label="Interactive line chart" id="datawrapper-chart-ZfGo4" src="https://datawrapper.dwcdn.net/ZfGo4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+<iframe title="Food Price Index" aria-label="Interactive line chart" id="datawrapper-chart-ZfGo4" src="https://datawrapper.dwcdn.net/ZfGo4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="450">Loading...</iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
 ```
 
 **Normal iframe**
 ```
-<iframe title="Food Price Index" aria-label="Interactive line chart" id="datawrapper-chart-ZfGo4" src="https://datawrapper.dwcdn.net/ZfGo4/" scrolling="no" frameborder="0" style="border: none;" width="760" height="450"></iframe>
+<iframe title="Food Price Index" aria-label="Interactive line chart" id="datawrapper-chart-ZfGo4" src="https://datawrapper.dwcdn.net/ZfGo4/" scrolling="no" frameborder="0" style="border: none;" width="760" height="450">Loading...</iframe>
 ```
 
 ## Per Week
@@ -101,12 +101,12 @@ Datawrapper visualisations and embed codes
 
 **Responsive iframe**
 ```
-<iframe title="How much has been shipped weekly?" aria-label="Column Chart" id="datawrapper-chart-HSkS3" src="https://datawrapper.dwcdn.net/HSkS3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="500"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+<iframe title="How much has been shipped weekly?" aria-label="Column Chart" id="datawrapper-chart-HSkS3" src="https://datawrapper.dwcdn.net/HSkS3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="500">Loading...</iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
 ```
 
 **Normal iframe**
 ```
-<iframe title="How much has been shipped weekly?" aria-label="Column Chart" id="datawrapper-chart-HSkS3" src="https://datawrapper.dwcdn.net/HSkS3/" scrolling="no" frameborder="0" style="border: none;" width="1300" height="500"></iframe>
+<iframe title="How much has been shipped weekly?" aria-label="Column Chart" id="datawrapper-chart-HSkS3" src="https://datawrapper.dwcdn.net/HSkS3/" scrolling="no" frameborder="0" style="border: none;" width="1300" height="500">Loading...</iframe>
 ```
 
 ## Totals
@@ -116,13 +116,13 @@ Datawrapper visualisations and embed codes
 
 **Responsive iframe**
 ```
-<iframe title="Total" aria-label="Table" id="datawrapper-chart-tAz3t" src="https://datawrapper.dwcdn.net/tAz3t/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="103"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+<iframe title="Total" aria-label="Table" id="datawrapper-chart-tAz3t" src="https://datawrapper.dwcdn.net/tAz3t" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="103">Loading...</iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
 ```
 
 **Normal iframe**
 ```
-<iframe title="Total" aria-label="Table" id="datawrapper-chart-tAz3t" src="https://datawrapper.dwcdn.net/tAz3t/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="103"></iframe>
+<iframe title="Total" aria-label="Table" id="datawrapper-chart-tAz3t" src="https://datawrapper.dwcdn.net/tAz3t" scrolling="no" frameborder="0" style="border: none;" width="600" height="103">Loading...</iframe>
 ```
 
 ## Per country
@@ -132,12 +132,12 @@ Datawrapper visualisations and embed codes
 
 **Responsive iframe**
 ```
-<iframe title="Cargo destinations" aria-label="Column Chart" id="datawrapper-chart-qC3c3" src="https://datawrapper.dwcdn.net/qC3c3/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="992"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+<iframe title="Cargo destinations" aria-label="Column Chart" id="datawrapper-chart-qC3c3" src="https://datawrapper.dwcdn.net/qC3c3" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="992">Loading...</iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
 ```
 
 **Normal iframe**
 ```
-<iframe title="Cargo destinations" aria-label="Column Chart" id="datawrapper-chart-qC3c3" src="https://datawrapper.dwcdn.net/qC3c3/1/" scrolling="no" frameborder="0" style="border: none;" width="1300" height="992"></iframe>
+<iframe title="Cargo destinations" aria-label="Column Chart" id="datawrapper-chart-qC3c3" src="https://datawrapper.dwcdn.net/qC3c3" scrolling="no" frameborder="0" style="border: none;" width="1300" height="992">Loading...</iframe>
 ```
 

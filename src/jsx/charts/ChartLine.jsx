@@ -103,13 +103,31 @@ function LineChart({
           fill: '#000',
           markerEnd: 'custom-shape',
           points: [{
-            x: 64,
-            y: 465,
+            x: 62,
+            y: 475,
             xAxis: 0,
             yAxis: 0
           }, {
             x: 66.5,
-            y: 420,
+            y: 423.5,
+            xAxis: 0,
+            yAxis: 0
+          }],
+          stroke: '#000',
+          strokeWidth: 3,
+          type: 'path',
+          width: 10
+        }, {
+          fill: '#000',
+          markerEnd: 'custom-shape',
+          points: [{
+            x: 62,
+            y: 475,
+            xAxis: 0,
+            yAxis: 0
+          }, {
+            x: 67,
+            y: 330,
             xAxis: 0,
             yAxis: 0
           }],
@@ -267,11 +285,9 @@ function LineChart({
         useHTML: true
       },
       plotOptions: {
-        series: {
-          states: {
-            hover: {
-              enabled: false
-            }
+        arearange: {
+          animation: {
+            duration: 3000,
           }
         },
         line: {

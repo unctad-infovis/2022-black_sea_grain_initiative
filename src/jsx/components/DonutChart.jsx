@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 // Load helpers.
 import * as d3 from 'd3';
-import debounce from './helpers/Debounce.js';
+import debounce from '../helpers/Debounce.js';
 
 // https://d3js.org/
 
@@ -16,7 +16,6 @@ function DonutChart({
 }) {
   series.columns = ['name', 'parent', 'value'];
   const [chartRefWidth, setChartRefWidth] = useState(0);
-
   const chartRef = useRef(null);
 
   const colors = useMemo(() => ['#009edb', '#72bf44', '#f58220', '#a05fb4', '#ffc800', '#aea29a'], []);

@@ -9,9 +9,8 @@ const getData = () => fetch((window.location.href.includes('unctad.org')) ? 'htt
     return response.text();
   })
   .then(body => CSVtoJSON(body).map(el => {
-    const regextractDestination = (/:(..):/).exec(el.Destination)[1];
-    el.country_code = regextractDestination;
-    el.Destination = el.Destination.replace(/(:..:)/g, '');
+    el.Destination = el.Country;
+    el.Departure = el['Departure date'];
     return el;
   }));
 

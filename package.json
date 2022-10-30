@@ -7,9 +7,10 @@
     "build": "webpack --config webpack.prod.js",
     "login": "az login --service-principal -u $AZURE_USER -p $AZURE_PW --tenant $AZURE_TENANT",
     "push": "git push && git push unctad main",
+    "update_data": "wget https://docs.google.com/spreadsheets/d/e/2PACX-1vR83uOYV3GLbZzh877Tq-sH38LxewXlDikB9Q7BSBIhCdZOow1dmlmA8uDrp3uu6y1RCTDvPr8KL35E/pub\\?output\\=csv\\&gid\\=133609367 -qO ./assets/data/JCC\\ data\\ -\\ data.csv",
     "start": "webpack serve --open --config webpack.dev.js",
     "sync-gh-pages": "git subtree push --prefix public origin gh-pages",
-    "sync-prod":"azcopy copy \"public/*\" \"https://${AZURE_STORAGE_NAME}.blob.core.windows.net/\\$web/${npm_package_name}/\" --include-path 'js;css;assets' --recursive --exclude-pattern '.DS_Store'"
+    "sync-prod": "azcopy copy \"public/*\" \"https://${AZURE_STORAGE_NAME}.blob.core.windows.net/\\$web/${npm_package_name}/\" --include-path 'js;css;assets' --recursive --exclude-pattern '.DS_Store'"
   },
   "keywords": [],
   "author": "",
@@ -43,7 +44,12 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
+    "csv-transpose": "^1.2.0",
     "d3": "^7.6.1",
-    "react-countup": "^6.3.1"
+    "highcharts": "^10.2.1",
+    "highcharts-regression": "^2.2.0",
+    "intersection-observer": "^0.12.2",
+    "react-countup": "^6.3.1",
+    "react-is-visible": "^1.2.0"
   }
 }

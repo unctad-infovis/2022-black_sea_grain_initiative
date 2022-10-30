@@ -1,4 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, {
+  useState, useEffect, useRef, useCallback
+} from 'react';
 import '../styles/styles.less';
 
 // https://d3js.org/
@@ -9,18 +11,22 @@ import slideToggle from './helpers/SlideToggle.js';
 import easingFn from './helpers/EasingFn.js';
 import getData from './helpers/GetData.js';
 
-import Banner from './Banner.jsx';
-import TreeMapChart from './TreeMapChart.jsx';
-import DonutChart from './DonutChart.jsx';
-import LineBarChart from './LineBarChart.jsx';
+import Banner from './components/Banner.jsx';
+import TreeMapChart from './components/TreeMapChart.jsx';
+import DonutChart from './components/DonutChart.jsx';
+import LineBarChart from './components/LineBarChart.jsx';
+import Figure3 from './components/Figure3.jsx';
+import Figure7 from './components/Figure7.jsx';
+import Figure9 from './components/Figure9.jsx';
+import Figure10 from './components/Figure10.jsx';
 
 const appID = '#app-root-2022-black_sea_grain_initiative';
 
 function App() {
   // Data states.
   const [data, setData] = useState(false);
-  const [totalTonnage, setTotalTonnage] = useState(0);
-  const [totalShips, setTotalShips] = useState(0);
+  const [totalTonnage, setTotalTonnage] = useState(false);
+  // const [totalShips, setTotalShips] = useState(0);
 
   const [commodities, setCommodities] = useState([]);
   const [commodityValue, setCommodityValue] = useState(false);
@@ -50,7 +56,7 @@ function App() {
     return [...Array(num_of_days).keys()].map(i => new Date(start_dateInMs + i * (24 * 60 * 60 * 1000)).toISOString().slice(0, 10));
   };
 
-  const defineData = () => {
+  const defineData = useCallback(() => {
     const output = [];
     if (commodityValue === false && destinationValue === false && destinationStatusValue === false) {
       Object.values({
@@ -82,9 +88,9 @@ function App() {
           }
           if (commodityValue !== false && destinationStatusValue !== false) {
             if (commodityValue === 'Other') {
-              return !topCommodities.includes(a.Commodity) && a.development_status === destinationStatusValue;
+              return !topCommodities.includes(a.Commodity) && a['Development Status'] === destinationStatusValue;
             }
-            return a.Commodity === commodityValue && a.development_status === destinationStatusValue;
+            return a.Commodity === commodityValue && a['Development Status'] === destinationStatusValue;
           }
           if (commodityValue !== false) {
             if (commodityValue === 'Other') {
@@ -99,7 +105,7 @@ function App() {
             return a.Destination === destinationValue;
           }
           if (destinationStatusValue !== false) {
-            return a.development_status === destinationStatusValue;
+            return a['Development Status'] === destinationStatusValue;
           }
           return true;
         }).reduce((acc, it) => {
@@ -113,10 +119,11 @@ function App() {
       }, []);
     }
     return output;
-  };
+  }, [commodityValue, data, dates, destinationStatusValue, destinationValue, topCommodities, topDestinatinons]);
 
   useEffect(() => {
     getData().then(json_data => {
+      json_data.sort((a, b) => new Date(a.Departure) - new Date(b.Departure));
       setData(json_data);
       setCommodities([...new Set(json_data.map(el => el.Commodity))].sort());
       setDestinatinons([...new Set(json_data.map(el => el.Destination))].sort());
@@ -133,7 +140,7 @@ function App() {
   useEffect(() => {
     if (data !== false) {
       setTotalTonnage(data.reduce((acc, it) => acc + parseFloat(it.Tonnage), 0));
-      setTotalShips(new Set(data.map(el => el['Outbound Sequence'])).size);
+      // setTotalShips(new Set(data.map(el => el['Outbound Sequence'])).size);
 
       // Total daily per commodity.
       const top_commodities_full = [];
@@ -175,7 +182,7 @@ function App() {
 
       // Total daily per destination status.
       setTotalPerDestinationStatus(Object.values(Object.values(data.reduce((acc, it) => {
-        acc[it.development_status] = [it.development_status, (acc[it.development_status]?.[1] || 0) + parseFloat(it.Tonnage)];
+        acc[it['Development Status']] = [it['Development Status'], (acc[it['Development Status']]?.[1] || 0) + parseFloat(it.Tonnage)];
         return acc;
       }, {})).sort((a, b) => b[1] - a[1]).reduce((acc, it) => {
         acc[it[0]] = { name: it[0], parent: 'Origin', value: (acc[0]?.value || 0) + parseFloat(it[1]) };
@@ -226,9 +233,22 @@ function App() {
         </h2>
       </div>
       { /* Banner container */ }
-      <Banner standAlone={false} totalTonnage={totalTonnage} totalShips={totalShips} updated={updated} />
+      {(data && totalTonnage && updated) && <Banner appID={appID} defineData={defineData} standAlone={false} totalTonnage={totalTonnage} updated={updated} />}
+
       { /* Visualisations container */ }
       <div className="visualisations_container">
+        <div className="vis_row">
+          <Figure3 />
+        </div>
+        <div className="vis_row">
+          <Figure7 />
+        </div>
+        <div className="vis_row">
+          <Figure9 />
+        </div>
+        <div className="vis_row">
+          <Figure10 />
+        </div>
         <div className="vis_row vis_row_1">
           <div className="toggle_features_container"><button type="button" onClick={(event) => toggleFeatures(event)}>{(features === false) ? 'Play with the data' : 'Hide features'}</button></div>
           <h3>

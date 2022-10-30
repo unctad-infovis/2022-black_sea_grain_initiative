@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/styles_v2.less';
 
-import Banner from './Banner.jsx';
+import Banner from './components/Banner.jsx';
 
 function AppDatawrapper() {
   const appRef = useRef();

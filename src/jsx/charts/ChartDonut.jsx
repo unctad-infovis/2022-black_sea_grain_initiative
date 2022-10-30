@@ -223,12 +223,11 @@ function DonutChart({
         },
         pie: {
           animation: {
-            duration: 0,
+            duration: 3000,
           },
-          innerSize: 200,
+          innerSize: '60%',
           cursor: 'pointer',
           dataLabels: {
-
             enabled: labels,
             formatter() {
               // eslint-disable-next-line react/no-this-in-sfc
@@ -237,7 +236,7 @@ function DonutChart({
             position: 'center',
             style: {
               fontFamily: 'Roboto',
-              fontSize: '14px',
+              fontSize: '18px',
               textAnchor: 'middle',
               fontWeight: 400,
               textAlign: 'center',
@@ -386,7 +385,7 @@ function DonutChart({
     if (isVisible === true) {
       setTimeout(() => {
         createChart();
-      }, 300);
+      }, 5000);
     }
   }, [createChart, isVisible]);
 

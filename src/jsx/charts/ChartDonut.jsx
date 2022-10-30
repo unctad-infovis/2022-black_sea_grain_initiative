@@ -385,7 +385,7 @@ function DonutChart({
     if (isVisible === true) {
       setTimeout(() => {
         createChart();
-      }, 5000);
+      }, 300);
     }
   }, [createChart, isVisible]);
 

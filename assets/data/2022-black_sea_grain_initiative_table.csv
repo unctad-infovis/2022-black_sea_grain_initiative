@@ -1,363 +1,456 @@
-Outbound Sequence,Departure,Inspection,Departure port,Destination,Tonnage,Commodity,IMO-Vessel name,development_status,wb_income_classification
-1,2022-08-01,2022-08-03,Odesa,:tr: Türkiye,26527,Corn,9086526-RAZONI,developing,Upper middle income
-2,2022-08-05,2022-08-06,Odesa,:ie: Ireland,33000,Corn,9590979-NAVI STAR,developed,High income
-3,2022-08-05,2022-08-07,Chornomorsk,:it: Italy,13041,Corn,9754927-ROJEN,developed,High income
-4,2022-08-05,2022-08-07,Chornomorsk,:tr: Türkiye,12000,Corn,9758961-POLARNET,developing,Upper middle income
-5,2022-08-07,2022-08-09,Chornomorsk,:ir: Iran,66084,Corn,9288473-GLORY,developing,Lower middle income
-6,2022-08-07,2022-08-09,Chornomorsk,:cn: China,45000,Sunflower meal,9361213-STAR HELENA,developing,Upper middle income
-7,2022-08-07,2022-08-09,Odesa,:tr: Türkiye,44000,Corn,9301196-RIVA WIND,developing,Upper middle income
-8,2022-08-07,2022-08-10,Chornomorsk,:it: Italy,6000,Sunflower oil,9736690-MUSTAFA NECATI,developed,High income
-9,2022-08-08,2022-08-10,Chornomorsk,:tr: Türkiye,48459,Corn,9592733-ARIZONA,developing,Upper middle income
-10,2022-08-08,2022-08-10,Yuzhny/Pivdennyi,:it: Italy,11000,Soya beans,9497000-SACURA,developed,High income
-11,2022-08-09,2022-08-11,Chornomorsk,:kr: Republic of Korea,64720,Corn,9296248-OCEAN LION,developed,High income
-12,2022-08-09,2022-08-13,Chornomorsk,:tr: Türkiye,5300,Sunflower meal,9550852-RAHMI YAGCI,developing,Upper middle income
-13,2022-08-12,2022-08-14,Yuzhny/Pivdennyi,:ir: Iran,60150,Corn,9328936-STAR LAURA,developing,Lower middle income
-14,2022-08-12,2022-08-15,Chornomorsk,:tr: Türkiye,3050,Wheat,8133578-SORMOVSKIY 121,developing,Upper middle income
-15,2022-08-13,2022-08-15,Chornomorsk,:tr: Türkiye,12000,Corn,9370082-FULMAR S,developing,Upper middle income
-16,2022-08-13,2022-08-16,Chornomorsk,:tr: Türkiye,2914,Sunflower seed,9400588-THOE,developing,Upper middle income
-17,2022-08-16,2022-08-18,Chornomorsk,:tr: Türkiye,11500,Corn,9300843-OSPREY S,developing,Upper middle income
-18,2022-08-16,2022-08-18,Yuzhny/Pivdennyi,:kr: Republic of Korea,60000,Corn,9231286-BONITA,developed,High income
-19,2022-08-16,2022-08-19,Chornomorsk,:tr: Türkiye,6161,Wheat,9318400-RAMUS,developing,Upper middle income
-20,2022-08-16,2022-08-21,Yuzhny/Pivdennyi,:et: Ethiopia,23300,Wheat,9136931-BRAVE COMMANDER,developing,Low income
-21,2022-08-17,2022-08-19,Chornomorsk,:nl: The Netherlands,18500,Sunflower meal,9363883-PETREL S,developed,High income
-22,2022-08-17,2022-08-19,Odesa,:tr: Türkiye,8000,Corn,9259020-SARA,developing,Upper middle income
-23,2022-08-17,2022-08-19,Odesa,:tr: Türkiye,7250,Sunflower oil,9558763-EFE,developing,Upper middle income
-24,2022-08-18,2022-08-19,Chornomorsk,:ro: Romania,9111,Wheat,9133757-PROPUS,developed,High income
-25,2022-08-18,2022-08-22,Chornomorsk,:ro: Romania,27982,Corn,8914697-I MARIA,developed,High income
-26,2022-08-20,2022-08-22,Chornomorsk,:it: Italy,6300,Sunflower oil,9633549-ZUMRUT ANA,developed,High income
-27,2022-08-20,2022-08-22,Chornomorsk,:tr: Türkiye,25000,Wheat,9086320-OCEAN S,developing,Upper middle income
-28,2022-08-21,2022-08-23,Chornomorsk,:tr: Türkiye,5000,Sunflower oil,9407213-FILYOZ,developing,Upper middle income
-29,2022-08-21,2022-08-23,Chornomorsk,:kr: Republic of Korea,14000,Sugar beet pellet,9608415-DA LIANG,developed,High income
-30,2022-08-21,2022-08-23,Yuzhny/Pivdennyi,:tr: Türkiye,4300,Sunflower oil,9317676-FOYLE,developing,Upper middle income
-31,2022-08-21,2022-08-24,Odesa,:tr: Türkiye,11000,Wheat,8000836-KUBROSLI Y,developing,Upper middle income
-32,2022-08-22,2022-08-24,Chornomorsk,:gr: Greece,5300,Corn,9206669-MARANTA,developed,High income
-33,2022-08-22,2022-08-24,Chornomorsk,:eg: Egypt,25500,Wheat,9159062-GREAT ARSENAL,developing,Lower middle income
-34,2022-08-23,2022-08-25,Chornomorsk,:tr: Türkiye,2437,Corn,9001112-KAFKAM ETLER,developing,Upper middle income
-35,2022-08-24,2022-08-26,Odesa,:lb: Lebanon,16500,Corn,9151400-GANOSAYA,developing,Lower middle income
-36,2022-08-24,2022-08-26,Odesa,:nl: The Netherlands,29600,Rapeseed,9567477-ZHE HAI 505,developed,High income
-37,2022-08-25,2022-08-27,Odesa,:il: Israel,6000,Soya beans,9381952-BELLIS,developed,High income
-38,2022-08-25,2022-08-27,Yuzhny/Pivdennyi,:de: Germany,58510,Corn,9276169-ASCANIOS,developed,High income
-39,2022-08-25,2022-08-27,Odesa,:tr: Türkiye,11000,Wheat,8107000-MOHAMAD Y,developing,Upper middle income
-40,2022-08-26,2022-08-28,Chornomorsk,:in: India,19100,Sunflower oil,9410131-AVIVA,developing,Lower middle income
-41,2022-08-26,2022-08-28,Chornomorsk,:sd: Sudan,65340,Wheat,9153056-SEAEAGLE,developing,Low income
-42,2022-08-26,2022-08-29,Chornomorsk,:tr: Türkiye,3700,Peas,9379117-ZELEK STAR,developing,Upper middle income
-43,2022-08-26,2022-08-29,Chornomorsk,:eg: Egypt,45000,Corn,9223174-PRETTY LADY,developing,Lower middle income
-44,2022-08-27,2022-08-29,Chornomorsk,:fr: France,14750,Rapeseed,9243253-ADNAN TORLAK,developed,High income
-45,2022-08-27,2022-08-29,Yuzhny/Pivdennyi,:tr: Türkiye,5900,Sunflower oil,8920282-ORIS SOFI,developing,Upper middle income
-46,2022-08-27,2022-09-01,Chornomorsk,:eg: Egypt,44000,Corn,9317145-S BREEZE,developing,Lower middle income
-47,2022-08-28,2022-08-31,Chornomorsk,:cn: China,49500,Barley,9434747-SSI INVINCIBLE II,developing,Upper middle income
-48,2022-08-28,2022-08-31,Odesa,:es: Spain,27000,Barley,9310604-DS SOFIE BULKER,developed,High income
-49,2022-08-28,2022-08-31,Yuzhny/Pivdennyi,:it: Italy,39494,Corn,9279367-SILVER LADY,developed,High income
-50,2022-08-28,2022-08-31,Yuzhny/Pivdennyi,:ro: Romania,27500,Corn,9550424-MELINA,developed,High income
-51,2022-08-28,2022-09-01,Odesa,:eg: Egypt,33000,Wheat,9468229-FPMC B 201,developing,Lower middle income
-52,2022-08-28,2022-09-02,Odesa,:nl: The Netherlands,30000,Corn,9228382-AEOLOS,developed,High income
-53,2022-08-29,2022-09-01,Odesa,:eg: Egypt,11000,Corn,9606493-ASH BALTIC,developing,Lower middle income
-54,2022-08-29,2022-09-01,Odesa,:ro: Romania,24485,Corn,9086318-PEACE M,developed,High income
-55,2022-08-29,2022-09-04,Chornomorsk,:tr: Türkiye,3800,Wheat,8926121-ANASTASIA,developing,Upper middle income
-56,2022-08-30,2022-09-01,Chornomorsk,:es: Spain,64215,Corn,9213820-SEAJOY,developed,High income
-57,2022-08-30,2022-09-01,Chornomorsk,:tr: Türkiye,3236,Corn,9376282-SAFFET AGA,developing,Upper middle income
-58,2022-08-30,2022-09-01,Odesa,:es: Spain,33000,Corn,9545510-MICHALIS,developed,High income
-59,2022-08-30,2022-09-03,Chornomorsk,:it: Italy,30274,Corn,9303431-LADY ZEHMA,developed,High income
-60,2022-08-30,2022-09-03,Yuzhny/Pivdennyi,:ye: Yemen,37500,Wheat,9236092-KARTERIA,developing,Low income
-61,2022-08-30,2022-09-04,Odesa,:it: Italy,15000,Wheat,9000314-SIMAS,developed,High income
-62,2022-08-31,2022-09-05,Yuzhny/Pivdennyi,:es: Spain,27000,Corn,9550278-LADY AILLAR,developed,High income
-63,2022-08-31,2022-09-05,Yuzhny/Pivdennyi,:nl: The Netherlands,74500,Corn,9581239-MARAN ASTRONOMER,developed,High income
-64,2022-09-01,2022-09-04,Odesa,:tr: Türkiye,25850,Corn,8914726-DAYTONA DYNAMIC,developing,Upper middle income
-65,2022-09-01,2022-09-04,Chornomorsk,:tr: Türkiye,5500,Corn,9545467-HAZAR S,developing,Upper middle income
-66,2022-09-01,2022-09-05,Odesa,:tr: Türkiye,27000,Corn,9444912-HELGA,developing,Upper middle income
-67,2022-09-01,2022-09-05,Chornomorsk,:tr: Türkiye,8560,Corn,9198381-ENEIDA,developing,Upper middle income
-67,2022-09-01,2022-09-05,Chornomorsk,:tr: Türkiye,35470,Wheat,9198381-ENEIDA,developing,Upper middle income
-68,2022-09-01,2022-09-07,Yuzhny/Pivdennyi,:so: Somalia,28500,Wheat,9224867-MASSA J,developing,Low income
-69,2022-09-02,2022-09-07,Chornomorsk,:fr: France,7000,Rapeseed,9540039-CANGA STAR,developed,High income
-70,2022-09-02,2022-09-05,Chornomorsk,:ro: Romania,12500,Sunflower oil,9284647-MAVKA,developed,High income
-71,2022-09-02,2022-09-05,Chornomorsk,:tr: Türkiye,8500,Wheat,8408650-SPRING,developing,Upper middle income
-72,2022-09-02,2022-09-05,Chornomorsk,:in: India,21000,Sunflower oil,9274678-KATSUYAMA,developing,Lower middle income
-73,2022-09-02,2022-09-06,Odesa,:il: Israel,30300,Corn,9363285-STELLA GS,developed,High income
-74,2022-09-02,2022-09-05,Yuzhny/Pivdennyi,:bg: Bulgaria,9835,Sunflower meal,9370082-FULMAR S,developed,Upper middle income
-75,2022-09-03,2022-09-07,Odesa,:tr: Türkiye,6600,Wheat,9259020-SARA,developing,Upper middle income
-76,2022-09-04,2022-09-07,Chornomorsk,:gr: Greece,6117,Wheat,9008110-LADY EVA,developed,High income
-77,2022-09-04,2022-09-06,Yuzhny/Pivdennyi,:in: India,42000,Sunflower oil,9401025-CANOPUS,developing,Lower middle income
-78,2022-09-04,2022-09-06,Yuzhny/Pivdennyi,:nl: The Netherlands,31098,Rapeseed,9486427-SEA DOLPHIN C,developed,High income
-79,2022-09-04,2022-09-09,Chornomorsk,:tr: Türkiye,2070,Peas,8218380-SEALOCK,developing,Upper middle income
-80,2022-09-04,2022-09-09,Odesa,:tr: Türkiye,6600,Sunflower oil,9575292-MUBARIZ IBRAHIMOV,developing,Upper middle income
-81,2022-09-04,2022-09-07,Yuzhny/Pivdennyi,:es: Spain,56500,Corn,9699892-MAINA,developed,High income
-82,2022-09-04,2022-09-07,Chornomorsk,:tr: Türkiye,6450,Sunflower oil,9575307-GEN. POLAD HASHIMOV,developing,Upper middle income
-83,2022-09-04,2022-09-09,Chornomorsk,:eg: Egypt,31400,Wheat,9400916-BC CALLISTO,developing,Lower middle income
-84,2022-09-04,2022-09-07,Yuzhny/Pivdennyi,:tr: Türkiye,7800,Sunflower oil,9462299-MRC LINA,developing,Upper middle income
-85,2022-09-04,2022-09-07,Yuzhny/Pivdennyi,:it: Italy,20500,Corn,9149732-LADY PERLA,developed,High income
-86,2022-09-04,2022-09-09,Chornomorsk,:tr: Türkiye,3000,Wheat,8227783-AFANASIY MATYSHENKO,developing,Upper middle income
-87,2022-09-04,2022-09-09,Yuzhny/Pivdennyi,:cn: China,62340,Corn,9711937-NORD VIRGO,developing,Upper middle income
-88,2022-09-05,2022-09-10,Yuzhny/Pivdennyi,:tr: Türkiye,13500,Wheat,8915299-GOLDEN YARA,developing,Upper middle income
-89,2022-09-05,2022-09-10,Chornomorsk,:eg: Egypt,30000,Corn,9000302-MY MERAY,developing,Lower middle income
-90,2022-09-05,2022-09-10,Odesa,:tr: Türkiye,5750,Corn,7352476-BARON,developing,Upper middle income
-91,2022-09-06,2022-09-11,Odesa,:tr: Türkiye,27500,Wheat,9590967-IRMGARD,developing,Upper middle income
-91,2022-09-06,2022-09-11,Odesa,:tr: Türkiye,7179,Corn,9590967-IRMGARD,developing,Upper middle income
-92,2022-09-06,2022-09-11,Chornomorsk,:eg: Egypt,11091,Corn,9132507-QUEEN SARA,developing,Lower middle income
-93,2022-09-06,2022-09-12,Chornomorsk,:il: Israel,4510,Sunflower meal,9119907-ORIS PRINCESS,developed,High income
-94,2022-09-06,2022-09-10,Odesa,:tr: Türkiye,26500,Wheat,9111371-NEW LEVANT,developing,Upper middle income
-95,2022-09-06,2022-09-10,Yuzhny/Pivdennyi,:it: Italy,5800,Sunflower oil,9000613-VITIS,developed,High income
-96,2022-09-06,2022-09-10,Yuzhny/Pivdennyi,:gr: Greece,4862,Corn,8919831-OCMIS ADVENTURE,developed,High income
-97,2022-09-07,2022-09-12,Yuzhny/Pivdennyi,:es: Spain,8640,Sunflower meal,9174268-SEAGUARDIAN,developed,High income
-97,2022-09-07,2022-09-12,Yuzhny/Pivdennyi,:es: Spain,34071,Barley,9174268-SEAGUARDIAN,developed,High income
-97,2022-09-07,2022-09-12,Yuzhny/Pivdennyi,:es: Spain,20095,Wheat,9174268-SEAGUARDIAN,developed,High income
-98,2022-09-07,2022-09-22,Odesa,:ke: Kenya,51400,Wheat,9407483-SUPER HENRY,developing,Lower middle income
-99,2022-09-07,2022-09-11,Chornomorsk,:tr: Türkiye,5200,Sunflower oil,9327310-ELIANA,developing,Upper middle income
-100,2022-09-07,2022-09-12,Chornomorsk,:tr: Türkiye,2472,Soya beans,9005895-KAPTAN CEVDET,developing,Upper middle income
-101,2022-09-08,2022-09-12,Odesa,:tr: Türkiye,9531,Corn,9109861-JASMIN QUEEN,developing,Upper middle income
-102,2022-09-08,2022-09-12,Chornomorsk,:tr: Türkiye,9300,Wheat,8914087-CAPTAIN ADAM 1,developing,Upper middle income
-103,2022-09-08,2022-09-12,Chornomorsk,:tr: Türkiye,8200,Sunflower seed,9118238-DIGNITY,developing,Upper middle income
-104,2022-09-08,2022-09-12,Odesa,:tr: Türkiye,4410,Sunflower oil,9407213-FILYOZ,developing,Upper middle income
-105,2022-09-08,2022-09-12,Odesa,:it: Italy,10000,Wheat,9449388-SANTANA,developed,High income
-106,2022-09-09,2022-09-14,Chornomorsk,:cn: China,30000,Barley,9491264-KIRAN AMERICA,developing,Upper middle income
-106,2022-09-09,2022-09-14,Chornomorsk,:cn: China,20000,Corn,9491264-KIRAN AMERICA,developing,Upper middle income
-107,2022-09-09,2022-09-13,Yuzhny/Pivdennyi,:eg: Egypt,33000,Corn,9278911-SUPER BAYERN,developing,Lower middle income
-108,2022-09-09,2022-09-13,Chornomorsk,:ro: Romania,4700,Rapeseed,9148518-SEVIL,developed,High income
-109,2022-09-10,2022-09-16,Odesa,:es: Spain,32794,Corn,9663104-EAUBONNE,developed,High income
-109,2022-09-10,2022-09-16,Odesa,:es: Spain,13853,Wheat,9663104-EAUBONNE,developed,High income
-109,2022-09-10,2022-09-16,Odesa,:es: Spain,10853,Barley,9663104-EAUBONNE,developed,High income
-110,2022-09-10,2022-09-14,Yuzhny/Pivdennyi,:gr: Greece,6000,Corn,9037305-LUCKY,developed,High income
-110,2022-09-10,2022-09-14,Yuzhny/Pivdennyi,:gr: Greece,4400,Barley,9037305-LUCKY,developed,High income
-111,2022-09-10,2022-09-13,Chornomorsk,:it: Italy,6000,Wheat,9008067-PRINCESS AMNAH,developed,High income
-112,2022-09-10,2022-09-13,Chornomorsk,:eg: Egypt,10700,Corn,9246920-A-LINE,developing,Lower middle income
-113,2022-09-10,2022-09-14,Odesa,:it: Italy,5600,Sunflower seed,9171383-LADY SHAM,developed,High income
-114,2022-09-11,2022-09-15,Chornomorsk,:gr: Greece,6500,Corn,9286815-BRIZA,developed,High income
-115,2022-09-11,2022-09-16,Chornomorsk,:tr: Türkiye,6600,Sunflower oil,9575333-MAGNOLIA,developing,Upper middle income
-116,2022-09-11,2022-09-15,Chornomorsk,:nl: The Netherlands,40220,Rapeseed,9275323-S-BRILLIANT,developed,High income
-117,2022-09-12,2022-09-16,Chornomorsk,:tr: Türkiye,2800,Wheat bran pellets,9368182-AHMET CAN,developing,Upper middle income
-118,2022-09-12,2022-09-17,Chornomorsk,:lb: Lebanon,6857,Corn,9152844-SALLY M,developing,Lower middle income
-119,2022-09-12,2022-09-17,Chornomorsk,:es: Spain,27500,Wheat,9691591-NORD STARK,developed,High income
-120,2022-09-12,2022-09-15,Odesa,:tr: Türkiye,3026,Sunflower oil,8920282-ORIS SOFI,developing,Upper middle income
-120,2022-09-12,2022-09-15,Odesa,:lb: Lebanon,2973,Sunflower oil,8920282-ORIS SOFI,developing,Lower middle income
-121,2022-09-12,2022-09-16,Yuzhny/Pivdennyi,:it: Italy,23500,Wheat,9615028-HADAR,developed,High income
-121,2022-09-12,2022-09-16,Yuzhny/Pivdennyi,:it: Italy,3500,Corn,9615028-HADAR,developed,High income
-122,2022-09-12,2022-09-17,Yuzhny/Pivdennyi,:in: India,43500,Sunflower oil,9278519-WIN SINO,developing,Lower middle income
-123,2022-09-13,2022-09-18,Odesa,:es: Spain,29000,Wheat,9456551-SUPER SAKA,developed,High income
-123,2022-09-13,2022-09-18,Odesa,:es: Spain,21000,Corn,9456551-SUPER SAKA,developed,High income
-124,2022-09-13,2022-09-18,Yuzhny/Pivdennyi,:il: Israel,64951,Corn,9296250-YASA TEAM,developed,High income
-125,2022-09-13,2022-09-18,Odesa,:tr: Türkiye,8500,Corn,9133757-PROPUS,developing,Upper middle income
-126,2022-09-13,2022-09-17,Odesa,:es: Spain,18000,Wheat,9228241-FANARIA,developed,High income
-127,2022-09-13,2022-09-18,Odesa,:tr: Türkiye,3300,Soya beans,9376282-SAFFET AGA,developing,Upper middle income
-128,2022-09-13,2022-09-18,Yuzhny/Pivdennyi,:tr: Türkiye,6300,Sunflower oil,9519614-ATA OCEAN,developing,Upper middle income
-129,2022-09-13,2022-09-18,Chornomorsk,:tr: Türkiye,492,Corn,8311912-GREIFSWALD,developing,Upper middle income
-130,2022-09-14,2022-09-22,Odesa,:it: Italy,18100,Corn,9171541-TAMREY S,developed,High income
-130,2022-09-14,2022-09-22,Odesa,:it: Italy,5500,Soya beans,9171541-TAMREY S,developed,High income
-130,2022-09-14,2022-09-22,Odesa,:it: Italy,5400,Wheat,9171541-TAMREY S,developed,High income
-131,2022-09-14,2022-09-18,Odesa,:it: Italy,5300,Soya beans,9206669-MARANTA,developed,High income
-132,2022-09-14,2022-09-19,Yuzhny/Pivdennyi,:es: Spain,56800,Corn,9221592-CPT DIMITRIOS S,developed,High income
-132,2022-09-14,2022-09-19,Yuzhny/Pivdennyi,:es: Spain,8543,Barley,9221592-CPT DIMITRIOS S,developed,High income
-133,2022-09-14,2022-09-19,Yuzhny/Pivdennyi,:tr: Türkiye,5500,Wheat,9163142-T-MED,developing,Upper middle income
-134,2022-09-14,2022-09-22,Yuzhny/Pivdennyi,:bd: Bangladesh,55000,Wheat,9456460-INCE AKDENIZ,developing,Lower middle income
-135,2022-09-14,2022-09-18,Chornomorsk,:tr: Türkiye,27000,Wheat,9464522-GLORY DINA,developing,Upper middle income
-136,2022-09-14,2022-09-18,Chornomorsk,:tr: Türkiye,180,Sunflower seed,8611984-CENK CAR,developing,Upper middle income
-136,2022-09-14,2022-09-18,Chornomorsk,:tr: Türkiye,68,Sunflower meal,8611984-CENK CAR,developing,Upper middle income
-137,2022-09-15,2022-09-20,Chornomorsk,:es: Spain,55000,Wheat,9611802-ASTRA CENTAURUS,developed,High income
-138,2022-09-15,2022-09-20,Chornomorsk,:nl: The Netherlands,9600,Sunflower oil,9393060-DERG,developed,High income
-139,2022-09-15,2022-09-30,Yuzhny/Pivdennyi,:es: Spain,50855,Corn,9364784-EIDER S,developed,High income
-140,2022-09-15,2022-09-20,Odesa,:ly: Libya,11000,Corn,9154268-KAN 2,developing,Upper middle income
-140,2022-09-15,2022-09-20,Odesa,:ly: Libya,2981,Barley,9154268-KAN 2,developing,Upper middle income
-141,2022-09-15,2022-09-20,Odesa,:it: Italy,5750,Sunflower oil,9334301-LARA S,developed,High income
-142,2022-09-15,2022-09-22,Chornomorsk,:tn: Tunisia,7800,Wheat,8806905-MAHER,developing,Lower middle income
-143,2022-09-15,2022-09-20,Chornomorsk,:be: Belgium,30000,Rapeseed,9460289-NORAH,developed,High income
-144,2022-09-15,2022-09-22,Odesa,:tr: Türkiye,26000,Corn,9244037-VALERIO,developing,Upper middle income
-145,2022-09-16,2022-09-26,Chornomorsk,:ro: Romania,8500,Rapeseed,8919788-ANNABELLA,developed,High income
-146,2022-09-16,2022-09-24,Odesa,:de: Germany,47200,Rapeseed,9455650-BREEZE,developed,High income
-147,2022-09-16,2022-09-23,Odesa,:eg: Egypt,6400,Soya beans,9045704-CS CIHAN,developing,Lower middle income
-148,2022-09-16,2022-09-24,Yuzhny/Pivdennyi,:gr: Greece,4258,Barley,9543328-NAVIN VULTURE,developed,High income
-148,2022-09-16,2022-09-24,Yuzhny/Pivdennyi,:gr: Greece,2026,Corn,9543328-NAVIN VULTURE,developed,High income
-149,2022-09-16,2022-09-28,Yuzhny/Pivdennyi,:ro: Romania,6500,Corn,9518634-OCTOPUS,developed,High income
-150,2022-09-17,2022-09-26,Chornomorsk,:it: Italy,30900,Wheat,9588407-BARONESS,developed,High income
-151,2022-09-17,2022-09-29,Odesa,:es: Spain,26000,Wheat,9109964-GOZO,developed,High income
-152,2022-09-17,2022-09-29,Chornomorsk,:cn: China,53012,Sunflower meal,9635690-HORUS,developing,Upper middle income
-152,2022-09-17,2022-09-29,Chornomorsk,:cn: China,9694,Barley,9635690-HORUS,developing,Upper middle income
-153,2022-09-17,2022-09-21,Chornomorsk,:et: Ethiopia,29459,Wheat,9194397-IKARIA ANGEL,developing,Low income
-153,2022-09-17,2022-09-21,Chornomorsk,:dj: Djibouti,541,Wheat,9194397-IKARIA ANGEL,developing,Lower middle income
-154,2022-09-17,2022-09-28,Yuzhny/Pivdennyi,:it: Italy,20000,Soya beans,9299460-PACIFIC ROSE,developed,High income
-154,2022-09-17,2022-09-28,Yuzhny/Pivdennyi,:it: Italy,5105,Corn,9299460-PACIFIC ROSE,developed,High income
-155,2022-09-17,2022-09-26,Chornomorsk,:cn: China,29350,Sunflower meal,9281968-VELVET ROSE,developing,Upper middle income
-156,2022-09-18,2022-09-27,Odesa,:tr: Türkiye,8750,Barley,9387621-ADELHEID BR,developing,Upper middle income
-157,2022-09-18,2022-09-25,Chornomorsk,:ro: Romania,32900,Corn,9595371-BELLA JUDI,developed,High income
-158,2022-09-18,2022-10-02,Chornomorsk,:tr: Türkiye,4030,Wheat,9031430-CPT.AHMAD II,developing,Upper middle income
-159,2022-09-18,2022-09-23,Chornomorsk,:pt: Portugal,22000,Canola,9805659-GENOA,developed,High income
-159,2022-09-18,2022-09-23,Chornomorsk,:fr: France,29256,Canola,9805659-GENOA,developed,High income
-160,2022-09-18,2022-09-29,Chornomorsk,:tr: Türkiye,2413,Corn,9001112-KAFKAM ETLER,developing,Upper middle income
-161,2022-09-18,2022-09-24,Chornomorsk,:tr: Türkiye,525,Corn,8311924-KAUNAS,developing,Upper middle income
-162,2022-09-18,2022-09-27,Odesa,:eg: Egypt,29600,Corn,9138898-RUBYMAR,developing,Lower middle income
-163,2022-09-18,2022-09-29,Chornomorsk,:tr: Türkiye,6900,Wheat,8909446-SK FRIENDSHIP,developing,Upper middle income
-164,2022-09-19,2022-09-30,Yuzhny/Pivdennyi,:it: Italy,30700,Corn,9475739-AKSON SARA,developed,High income
-165,2022-09-19,2022-09-29,Yuzhny/Pivdennyi,:es: Spain,69080,Wheat,9221334-ARCTURUS,developed,High income
-166,2022-09-19,2022-09-29,Chornomorsk,:tr: Türkiye,3000,Wheat,7827342-ESENCE,developing,Upper middle income
-167,2022-09-19,2022-09-26,Odesa,:it: Italy,4400,Sunflower meal,9370082-FULMAR S,developed,High income
-167,2022-09-19,2022-09-26,Odesa,:it: Italy,3400,Rapeseed meal,9370082-FULMAR S,developed,High income
-168,2022-09-19,2022-09-26,Odesa,:es: Spain,16300,Wheat,9146962-GULMAR,developed,High income
-168,2022-09-19,2022-09-26,Odesa,:es: Spain,17350,Corn,9146962-GULMAR,developed,High income
-168,2022-09-19,2022-09-26,Odesa,:es: Spain,8350,Barley,9146962-GULMAR,developed,High income
-169,2022-09-19,2022-09-30,Yuzhny/Pivdennyi,:cn: China,60000,Sunflower meal,9737591-TOMAHAWK,developing,Upper middle income
-170,2022-09-20,2022-10-02,Chornomorsk,:es: Spain,18150,Sunflower seed,9450832-APHRODITE M,developed,High income
-171,2022-09-20,2022-10-04,Odesa,:tr: Türkiye,4950,Soya beans,8324751-NIZAR,developing,Upper middle income
-172,2022-09-20,2022-10-02,Chornomorsk,:tr: Türkiye,8100,Wheat,9175822-NORAN,developing,Upper middle income
-173,2022-09-20,2022-09-30,Chornomorsk,:nl: The Netherlands,27100,Corn,9615030-NYMPHI,developed,High income
-174,2022-09-20,2022-09-30,Chornomorsk,:de: Germany,48750,Corn,9325350-PAULINE,developed,High income
-175,2022-09-20,2022-09-28,Odesa,:tr: Türkiye,4400,Soya beans,9005857-PGE RAIN,developing,Upper middle income
-176,2022-09-20,2022-09-30,Odesa,:it: Italy,9751,Wheat,9017628-RIDER,developed,High income
-177,2022-09-20,2022-09-28,Odesa,:bd: Bangladesh,46500,Wheat,9250579-SSI PRIDE,developing,Lower middle income
-178,2022-09-20,2022-10-10,Odesa,:it: Italy,33000,Corn,9498432-TINA S,developed,High income
-179,2022-09-21,2022-10-01,Yuzhny/Pivdennyi,:nl: The Netherlands,32493,Rapeseed,9481960-BRIGHT STAR,developed,High income
-180,2022-09-21,2022-10-08,Chornomorsk,:tr: Türkiye,90,Sunflower seed,7382366-CENK M,developing,Upper middle income
-181,2022-09-21,2022-10-01,Odesa,:it: Italy,26250,Corn,9255189-DS MANATEE,developed,High income
-182,2022-09-21,2022-10-01,Yuzhny/Pivdennyi,:cn: China,40000,Sunflower oil,9283784-LEONORA VICTORY,developing,Upper middle income
-182,2022-09-21,2022-10-01,Yuzhny/Pivdennyi,:my: Malaysia,4000,Sunflower oil,9283784-LEONORA VICTORY,developing,Upper middle income
-183,2022-09-21,2022-10-01,Yuzhny/Pivdennyi,:es: Spain,27500,Wheat,9322748-MED ISLAND,developed,High income
-184,2022-09-21,2022-10-01,Odesa,:es: Spain,6000,Wheat,9604782-SEA INSPIRATION,developed,High income
-184,2022-09-21,2022-10-01,Odesa,:es: Spain,11000,Barley,9604782-SEA INSPIRATION,developed,High income
-184,2022-09-21,2022-10-01,Odesa,:es: Spain,10100,Corn,9604782-SEA INSPIRATION,developed,High income
-185,2022-09-21,2022-10-06,Chornomorsk,:tr: Türkiye,2950,Sunflower meal,9033713-SWIMMER,developing,Upper middle income
-186,2022-09-22,2022-10-03,Yuzhny/Pivdennyi,:eg: Egypt,3100,Sunflower oil,9808742-ALSU,developing,Lower middle income
-187,2022-09-22,2022-10-04,Odesa,:tr: Türkiye,4500,Barley,9412311-ANT,developing,Upper middle income
-188,2022-09-22,2022-09-28,Odesa,:af: Afghanistan,30000,Wheat,9426855-BC VANESSA,developing,Low income
-189,2022-09-22,2022-10-10,Chornomorsk,:es: Spain,50220,Corn,9235854-ELLIE M,developed,High income
-190,2022-09-22,2022-10-03,Odesa,:tr: Türkiye,11000,Wheat,8107000-MOHAMAD Y,developing,Upper middle income
-191,2022-09-22,2022-10-02,Odesa,:tr: Türkiye,3500,Sunflower oil,9179488-ORIS MARINE,developing,Upper middle income
-192,2022-09-23,2022-10-06,Yuzhny/Pivdennyi,:fr: France,10252,Sunflower meal,9118252-FORTUNA,developed,High income
-193,2022-09-23,2022-10-10,Yuzhny/Pivdennyi,:nl: The Netherlands,31039,Corn,9496173-GEM STAR,developed,High income
-194,2022-09-23,2022-10-04,Chornomorsk,:tr: Türkiye,3860,Sunflower oil,9280196-GUDENA,developing,Upper middle income
-195,2022-09-23,TBD,Chornomorsk,:it: Italy,27000,Corn,9196395-LADY AYANA,developed,High income
-196,2022-09-23,2022-10-04,Yuzhny/Pivdennyi,:ro: Romania,11950,Sunflower oil,9284647-MAVKA,developed,High income
-197,2022-09-23,2022-10-06,Chornomorsk,:tr: Türkiye,4450,Sunflower meal,8418265-MERRY M,developing,Upper middle income
-198,2022-09-23,2022-10-03,Chornomorsk,:bd: Bangladesh,57311,Wheat,9663099-MO GAN SHAN,developing,Lower middle income
-199,2022-09-23,2022-10-04,Chornomorsk,:tr: Türkiye,3700,Peas,8003814-NIL DEMIR,developing,Upper middle income
-200,2022-09-23,2022-10-03,Chornomorsk,:tr: Türkiye,5150,Soya beans,8004806-OLMA,developing,Upper middle income
-201,2022-09-23,2022-10-09,Chornomorsk,:it: Italy,33000,Corn,8202525-SEA DOVE,developed,High income
-202,2022-09-23,2022-10-06,Chornomorsk,:bg: Bulgaria,10000,Sunflower meal,9145229-TZAREVICH,developed,Upper middle income
-203,2022-09-23,2022-10-03,Odesa,:tr: Türkiye,8200,Wheat,8027573-ZEKO Y,developing,Upper middle income
-204,2022-09-24,2022-10-07,Chornomorsk,:tr: Türkiye,7700,Soya beans,8884555-BAHAR K,developing,Upper middle income
-205,2022-09-24,TBD,Odesa,:tr: Türkiye,6600,Wheat,8609175-DANO,developing,Upper middle income
-206,2022-09-24,2022-10-05,Odesa,:es: Spain,10650,Barley,9310604-DS SOFIE BULKER,developed,High income
-206,2022-09-24,2022-10-05,Odesa,:es: Spain,6200,Corn,9310604-DS SOFIE BULKER,developed,High income
-206,2022-09-24,2022-10-05,Odesa,:es: Spain,10950,Wheat,9310604-DS SOFIE BULKER,developed,High income
-207,2022-09-24,2022-10-09,Odesa,:ly: Libya,15000,Barley,9151400-GANOSAYA,developing,Upper middle income
-208,2022-09-24,2022-10-05,Odesa,:it: Italy,6000,Sunflower oil,9575292-MUBARIZ IBRAHIMOV,developed,High income
-209,2022-09-24,2022-10-05,Chornomorsk,:gr: Greece,5000,Corn,9371024-SAXONA,developed,High income
-210,2022-09-25,2022-10-09,Yuzhny/Pivdennyi,:es: Spain,63029,Corn,9223485-ASPASIA LUCK,developed,High income
-211,2022-09-25,TBD,Yuzhny/Pivdennyi,:it: Italy,5960,Corn,9387669-ATA-2,developed,High income
-212,2022-09-25,2022-10-09,Chornomorsk,:tr: Türkiye,2000,Mixed bran,8421705-BLUE STAR,developing,Upper middle income
-213,2022-09-25,2022-10-08,Odesa,:nl: The Netherlands,32700,Rapeseed,9680255-CHIOS FREEDOM,developed,High income
-214,2022-09-25,TBD,Chornomorsk,:tn: Tunisia,23500,Wheat,9216597-CORNELIA,developing,Lower middle income
-215,2022-09-25,2022-10-08,Chornomorsk,:gr: Greece,5029,Wheat,9071052-HERMES,developed,High income
-216,2022-09-25,2022-10-08,Odesa,:ge: Georgia,6000,Soya beans,9536301-MOONLIGHT,developing,Upper middle income
-217,2022-09-25,2022-10-09,Chornomorsk,:be: Belgium,39763,Rapeseed,9574004-STELLAR LADY,developed,High income
-218,2022-09-25,2022-10-07,Chornomorsk,:dz: Algeria,31500,Wheat,9542831-SUPER MARTINELLI,developing,Lower middle income
-219,2022-09-26,2022-10-11,Yuzhny/Pivdennyi,:nl: The Netherlands,46130,Corn,9236092-KARTERIA,developed,High income
-220,2022-09-26,2022-10-09,Odesa,:tr: Türkiye,7250,Sunflower oil,9431056-MAINLAND,developing,Upper middle income
-221,2022-09-26,2022-10-10,Odesa,:tr: Türkiye,28193,Corn,9191034-NEW FAITH,developing,Upper middle income
-222,2022-09-26,2022-10-10,Odesa,:es: Spain,6600,Sunflower oil,9344344-USICHEM,developed,High income
-223,2022-09-27,2022-10-11,Odesa,:es: Spain,11000,Wheat,9639907-CHIOS SUNRISE,developed,High income
-223,2022-09-27,2022-10-11,Odesa,:es: Spain,42600,Corn,9639907-CHIOS SUNRISE,developed,High income
-224,2022-09-27,TBD,Yuzhny/Pivdennyi,:kr: Republic of Korea,60000,Corn,9567154-IRENE MADIAS,developed,High income
-225,2022-09-27,TBD,Yuzhny/Pivdennyi,:bg: Bulgaria,8800,Sunflower pellets,9217797-LEADER M,developed,Upper middle income
-226,2022-09-27,TBD,Yuzhny/Pivdennyi,:es: Spain,66000,Barley,9703241-MARAN EXCELLENCE,developed,High income
-226,2022-09-27,TBD,Yuzhny/Pivdennyi,:es: Spain,32600,Wheat,9703241-MARAN EXCELLENCE,developed,High income
-226,2022-09-27,TBD,Yuzhny/Pivdennyi,:es: Spain,16000,Corn,9703241-MARAN EXCELLENCE,developed,High income
-227,2022-09-27,TBD,Chornomorsk,:fr: France,30350,Rapeseed,9545508-NAZENIN,developed,High income
-228,2022-09-27,TBD,Chornomorsk,:tr: Türkiye,17325,Wheat,9282948-NIMET TORLAK,developing,Upper middle income
-229,2022-09-27,2022-10-11,Odesa,:tn: Tunisia,27250,Wheat,9573921-NORD VIND,developing,Lower middle income
-230,2022-09-27,2022-10-11,Odesa,:ro: Romania,24718,Corn,9086318-PEACE M,developed,High income
-231,2022-09-27,2022-10-05,Odesa,:tr: Türkiye,8000,Soya beans,9259020-SARA,developing,Upper middle income
-232,2022-09-28,TBD,Yuzhny/Pivdennyi,:ly: Libya,32400,Corn,9300910-ALMERAY,developing,Upper middle income
-233,2022-09-28,TBD,Chornomorsk,:ro: Romania,26000,Corn,8914726-DAYTONA DYNAMIC,developed,High income
-234,2022-09-28,TBD,Chornomorsk,:it: Italy,5350,Sunflower meal,9353022-FREZYA S,developed,High income
-235,2022-09-28,TBD,Chornomorsk,:bd: Bangladesh,51175,Wheat,9488970-MAGNUM FORTUNE,developing,Lower middle income
-236,2022-09-29,TBD,Yuzhny/Pivdennyi,:tr: Türkiye,27700,Wheat,9114543-ADAM A,developing,Upper middle income
-237,2022-09-29,TBD,Chornomorsk,:tr: Türkiye,5250,Sunflower meal,9381811-NAVIN KESTREL,developing,Upper middle income
-238,2022-09-29,TBD,Chornomorsk,:tn: Tunisia,27500,Wheat,9320324-PATRONUS,developing,Lower middle income
-239,2022-09-30,TBD,Odesa,:tr: Türkiye,6600,Sunflower oil,9395367-BESIKTAS ICELAND,developing,Upper middle income
-240,2022-09-30,TBD,Chornomorsk,:it: Italy,32300,Corn,9585651-BLUE ONE,developed,High income
-241,2022-09-30,TBD,Yuzhny/Pivdennyi,:it: Italy,6300,Corn,9211107-ELEANORA,developed,High income
-242,2022-10-01,TBD,Yuzhny/Pivdennyi,:gr: Greece,3200,Wheat,9368182-AHMET CAN,developed,High income
-243,2022-10-01,TBD,Chornomorsk,:it: Italy,27500,Corn,9181728-FORTUNE EXPRESS,developed,High income
-244,2022-10-01,TBD,Yuzhny/Pivdennyi,:es: Spain,50800,Wheat,9233882-IASOS,developed,High income
-245,2022-10-01,TBD,Yuzhny/Pivdennyi,:fr: France,13200,Sunflower meal,9354052-LADY DIVINA,developed,High income
-246,2022-10-01,TBD,Chornomorsk,:in: India,25000,Sunflower oil,9358307-PS DREAM,developing,Lower middle income
-247,2022-10-01,TBD,Odesa,:ly: Libya,29000,Barley,9303376-QUEEN LILA,developing,Upper middle income
-248,2022-10-01,TBD,Odesa,:es: Spain,25000,Wheat,9674933-STELLINA,developed,High income
-249,2022-10-02,TBD,Yuzhny/Pivdennyi,:es: Spain,24000,Wheat,9487598-BC RAEDA,developed,High income
-250,2022-10-02,TBD,Chornomorsk,:tn: Tunisia,10000,Wheat,9100530-DOGA K,developing,Lower middle income
-251,2022-10-02,TBD,Chornomorsk,:es: Spain,32700,Corn,9498315-LILA II,developed,High income
-252,2022-10-02,TBD,Odesa,:it: Italy,22923,Wheat,9197117-RIZABEY,developed,High income
-253,2022-10-02,TBD,Odesa,:es: Spain,26500,Wheat,9110315-SANN TRO,developed,High income
-254,2022-10-03,TBD,Odesa,:pt: Portugal,33000,Corn,9468229-FPMC B 201,developed,High income
-255,2022-10-03,TBD,Yuzhny/Pivdennyi,:nl: The Netherlands,33274,Corn,9450844-KALLIOPI S,developed,High income
-256,2022-10-03,TBD,Odesa,:pt: Portugal,18716,Corn,9545510-MICHALIS,developed,High income
-256,2022-10-03,TBD,Odesa,:pt: Portugal,7757,Wheat,9545510-MICHALIS,developed,High income
-256,2022-10-03,TBD,Odesa,:pt: Portugal,6834,Barley,9545510-MICHALIS,developed,High income
-257,2022-10-03,TBD,Yuzhny/Pivdennyi,:it: Italy,6600,Wheat,9492933-NAVIN FALCON,developed,High income
-258,2022-10-03,TBD,Yuzhny/Pivdennyi,:tr: Türkiye,25500,Wheat,9159050-NEW VICTORY,developing,Upper middle income
-259,2022-10-03,TBD,Chornomorsk,:tr: Türkiye,3100,Corn,9376282-SAFFET AGA,developing,Upper middle income
-260,2022-10-03,TBD,Chornomorsk,:eg: Egypt,8000,Corn,8408650-SPRING,developing,Lower middle income
-261,2022-10-04,TBD,Chornomorsk,:eg: Egypt,31290,Corn,9583897-ARGO 1,developing,Lower middle income
-262,2022-10-04,TBD,Chornomorsk,:tr: Türkiye,5500,Soya beans,7352476-BARON,developing,Upper middle income
-263,2022-10-04,TBD,Chornomorsk,:dz: Algeria,30450,Wheat,9400916-BC CALLISTO,developing,Lower middle income
-264,2022-10-04,TBD,Yuzhny/Pivdennyi,:nl: The Netherlands,30000,Corn,9595852-CHRYSSA K,developed,High income
-264,2022-10-04,TBD,Yuzhny/Pivdennyi,:de: Germany,38000,Corn,9595852-CHRYSSA K,developed,High income
-265,2022-10-04,TBD,Odesa,:tr: Türkiye,2750,Barley,8332100-INANDI,developing,Upper middle income
-266,2022-10-04,TBD,Chornomorsk,:gb: United Kingdom,41650,Rapeseed,9223174-PRETTY LADY,developed,High income
-267,2022-10-04,TBD,Odesa,:tr: Türkiye,3000,Corn,7510884-SAM,developing,Upper middle income
-268,2022-10-04,TBD,Chornomorsk,:es: Spain,33860,Corn,9655224-SSI RELIANCE,developed,High income
-269,2022-10-05,TBD,Odesa,:it: Italy,6600,Soya beans,9286815-BRIZA,developed,High income
-270,2022-10-05,TBD,Yuzhny/Pivdennyi,:tr: Türkiye,7700,Sunflower oil,9462299-MRC LINA,developing,Upper middle income
-271,2022-10-05,TBD,Yuzhny/Pivdennyi,:cn: China,60000,Sunflower meal,9481489-NEW EXPLORER,developing,Upper middle income
-272,2022-10-06,TBD,Chornomorsk,:tr: Türkiye,3700,Wheat,8926121-ANASTASIA,developing,Upper middle income
-273,2022-10-06,TBD,Chornomorsk,:ro: Romania,33000,Corn,9329423-FALCON S,developed,High income
-274,2022-10-06,TBD,Yuzhny/Pivdennyi,:tr: Türkiye,6500,Peas,9136852-HASAN G,developing,Upper middle income
-275,2022-10-06,TBD,Chornomorsk,:tr: Türkiye,6600,Sunflower oil,9575333-MAGNOLIA,developing,Upper middle income
-276,2022-10-06,TBD,Yuzhny/Pivdennyi,:tr: Türkiye,6300,Sunflower oil,9148570-MERA,developing,Upper middle income
-277,2022-10-06,TBD,Chornomorsk,:tr: Türkiye,4950,Wheat,7929619-SEA STAR,developing,Upper middle income
-278,2022-10-06,TBD,Chornomorsk,:il: Israel,27200,Corn,9364849-SERENITY IBTIHAJ,developed,High income
-279,2022-10-06,TBD,Chornomorsk,:es: Spain,49100,Wheat,9279367-SILVER LADY,developed,High income
-280,2022-10-06,TBD,Yuzhny/Pivdennyi,:gr: Greece,4300,Wheat,9041124-UMIT G,developed,High income
-281,2022-10-06,TBD,Odesa,:tr: Türkiye,7800,Barley,9381938-WHITE STAR,developing,Upper middle income
-282,2022-10-06,TBD,Odesa,:dz: Algeria,28500,Wheat,9567477-ZHE HAI 505,developing,Lower middle income
-283,2022-10-07,TBD,Yuzhny/Pivdennyi,:gr: Greece,3300,Corn,9349978-BURAK DEVAL,developed,High income
-283,2022-10-07,TBD,Yuzhny/Pivdennyi,:gr: Greece,3300,Wheat,9349978-BURAK DEVAL,developed,High income
-284,2022-10-07,TBD,Odesa,:tr: Türkiye,20000,Corn,9149732-LADY PERLA,developing,Upper middle income
-285,2022-10-07,TBD,Chornomorsk,:so: Somalia,30000,Wheat,9258349-NEW ISLAND,developing,Low income
-286,2022-10-08,TBD,Chornomorsk,:in: India,15000,Sunflower oil,9402823-CHEM HERO,developing,Lower middle income
-287,2022-10-08,TBD,Yuzhny/Pivdennyi,:vn: Viet Nam,60000,Wheat,9490117-CORNELIA M,developing,Lower middle income
-288,2022-10-08,TBD,Chornomorsk,:tr: Türkiye,32859,Corn,9198381-ENEIDA,developing,Upper middle income
-288,2022-10-08,TBD,Chornomorsk,:tr: Türkiye,9511,Wheat,9198381-ENEIDA,developing,Upper middle income
-289,2022-10-08,TBD,Odesa,:gr: Greece,5666,Corn,9008110-LADY EVA,developed,High income
-290,2022-10-08,TBD,Chornomorsk,:tr: Türkiye,5050,Wheat,9559169-LAURUS,developing,Upper middle income
-291,2022-10-08,TBD,Odesa,:tr: Türkiye,6000,Sunflower oil,8920282-ORIS SOFI,developing,Upper middle income
-292,2022-10-08,TBD,Odesa,:id: Indonesia,32600,Wheat,9563407-SHAMAN WISDOM,developing,Lower middle income
-293,2022-10-09,TBD,Yuzhny/Pivdennyi,:lb: Lebanon,6600,Wheat,7915307-ALI A,developing,Lower middle income
-294,2022-10-09,TBD,Yuzhny/Pivdennyi,:id: Indonesia,71155,Wheat,9717694-ARGONAUT,developing,Lower middle income
-295,2022-10-09,TBD,Odesa,:es: Spain,5019,Sunflower oil,9369928-BOYNE,developed,High income
-296,2022-10-09,TBD,Odesa,:dz: Algeria,6050,Wheat,9437854-CKR ZEYNEP,developing,Lower middle income
-297,2022-10-09,TBD,Yuzhny/Pivdennyi,:es: Spain,6240,Sunflower oil,9217333-HIRA V,developed,High income
-298,2022-10-09,TBD,Chornomorsk,:it: Italy,33400,Corn,9580091-MERCURIUS,developed,High income
-299,2022-10-09,TBD,Chornomorsk,:il: Israel,4050,Sunflower meal,9119907-ORIS PRINCESS,developed,High income
-300,2022-10-09,TBD,Odesa,:it: Italy,18700,Wheat,9104811-SAKAR,developed,High income
-301,2022-10-09,TBD,Chornomorsk,:it: Italy,60000,Corn,9860037-STAR SAPPHIRE,developed,High income
-302,2022-10-09,TBD,Chornomorsk,:it: Italy,6000,Sunflower seed,9001148-WAEL K,developed,High income
-303,2022-10-10,TBD,Odesa,:tr: Türkiye,19000,Wheat,9164809-BASEL ATHENA,developing,Upper middle income
-304,2022-10-10,TBD,Chornomorsk,:tr: Türkiye,3400,Soya beans,9003770-BLUE SHARK,developing,Upper middle income
-305,2022-10-10,TBD,Chornomorsk,:il: Israel,5550,Rapeseed meal,9204348-EKMEN TRANS,developed,High income
-306,2022-10-10,TBD,Odesa,:tr: Türkiye,7200,Wheat,9190987-ISLANDER A,developing,Upper middle income
-307,2022-10-10,TBD,Yuzhny/Pivdennyi,:tr: Türkiye,2500,Barley,7726990-JAGUAR,developing,Upper middle income
-308,2022-10-10,TBD,Yuzhny/Pivdennyi,:eg: Egypt,7600,Soya beans,9045601-MEHMET BEY,developing,Lower middle income
-309,2022-10-10,TBD,Chornomorsk,:tr: Türkiye,10500,Corn,9010060-TAJ,developing,Upper middle income
-310,2022-10-11,TBD,Yuzhny/Pivdennyi,:tr: Türkiye,9350,Sunflower oil,9175767-ERDEK,developing,Upper middle income
-311,2022-10-11,TBD,Chornomorsk,:it: Italy,6000,Corn,9545467-HAZAR S,developed,High income
-312,2022-10-11,TBD,Chornomorsk,:es: Spain,27390,Wheat,9668295-INCE EVRENYE,developed,High income
-313,2022-10-11,TBD,Odesa,:tr: Türkiye,24000,Wheat,9427574-LUCKY TRADER,developing,Upper middle income
-314,2022-10-11,TBD,Chornomorsk,:id: Indonesia,51742,Wheat,9488968-MAGNUM POWER,developing,Lower middle income
-315,2022-10-11,TBD,Yuzhny/Pivdennyi,:it: Italy,26380,Corn,9550424-MELINA,developed,High income
-316,2022-10-11,TBD,Chornomorsk,:tn: Tunisia,30000,Corn,9261011-SEA PEARL J,developing,Lower middle income
-317,2022-10-12,TBD,Chornomorsk,:in: India,42000,Sunflower oil,9258600-AGNES VICTORY,developing,Lower middle income
-318,2022-10-12,TBD,Yuzhny/Pivdennyi,:fr: France,5700,Sunflower seed,9103013-EGE BEY,developed,High income
-319,2022-10-12,TBD,Odesa,:gr: Greece,6200,Rapeseed meal,8517293-ELIF S,developed,High income
-320,2022-10-12,TBD,Odesa,:tr: Türkiye,27499,Wheat,9159062-GREAT ARSENAL,developing,Upper middle income
-321,2022-10-12,TBD,Chornomorsk,:tr: Türkiye,9500,Rapeseed,9109861-JASMIN QUEEN,developing,Upper middle income
-322,2022-10-12,TBD,Odesa,:eg: Egypt,11500,Soya beans,9132480-KLC ERCIYES,developing,Lower middle income
-323,2022-10-12,TBD,Odesa,:it: Italy,7560,Corn,9037305-LUCKY,developed,High income
-324,2022-10-12,TBD,Chornomorsk,:es: Spain,27100,Corn,9132662-LUGANO,developed,High income
-325,2022-10-12,TBD,Chornomorsk,:lb: Lebanon,13400,Corn,9000314-SIMAS,developing,Lower middle income
+#,Vessel name,IMO,Departure port,Country,Commodity,Tonnage,Departure date,Inspection cleared,Flag code,Development Status,World Bank Income Classification,Departure week,Departure Month
+,CAPTAIN ADAM 1,8914087,Chornomorsk,Italy,Soy beans,6600,10/29/2022,,:it:,developed,High income,44,October
+,MONTARA,9234202,Odesa,Türkiye,Corn,3200,10/29/2022,,:tr:,developing,Upper middle income,44,October
+,ST SOFIA,9799630,Odesa,Spain,Corn,45000,10/29/2022,,:es:,developed,High income,44,October
+,ST SOFIA,9799630,Odesa,Spain,Barley,11000,10/29/2022,,:es:,developed,High income,44,October
+,RUBYMAR,9138898,Yuzhny/Pivdennyi,Türkiye,Corn,29600,10/29/2022,,:tr:,developing,Upper middle income,44,October
+1,RAZONI,9086526,Odesa,Mixed,Corn,26527,8/1/2022,8/3/2022,:tr:,developing,Upper middle income,32,August
+2,NAVI STAR,9590979,Odesa,Ireland,Corn,33000,8/5/2022,8/6/2022,:ie:,developed,High income,32,August
+3,ROJEN,9754927,Chornomorsk,Italy,Corn,13041,8/5/2022,8/7/2022,:it:,developed,High income,32,August
+4,POLARNET,9758961,Chornomorsk,Türkiye,Corn,12000,8/5/2022,8/7/2022,:tr:,developing,Upper middle income,32,August
+5,GLORY,9288473,Chornomorsk,Iran,Corn,66084,8/7/2022,8/9/2022,:ir:,developing,Lower middle income,32,August
+6,STAR HELENA,9361213,Chornomorsk,China,Sunflower meal,45000,8/7/2022,8/9/2022,:cn:,developing,Upper middle income,32,August
+7,RIVA WIND,9301196,Odesa,Türkiye,Corn,44000,8/7/2022,8/9/2022,:tr:,developing,Upper middle income,32,August
+8,MUSTAFA NECATI,9736690,Chornomorsk,Italy,Sunflower oil,6000,8/7/2022,8/10/2022,:it:,developed,High income,32,August
+9,ARIZONA,9592733,Chornomorsk,Türkiye,Corn,48459,8/8/2022,8/10/2022,:tr:,developing,Upper middle income,33,August
+10,SACURA,9497000,Yuzhny/Pivdennyi,Italy,Soya beans,11000,8/8/2022,8/10/2022,:it:,developed,High income,33,August
+11,OCEAN LION,9296248,Chornomorsk,Republic of Korea,Corn,64720,8/9/2022,8/11/2022,:kr:,developed,High income,33,August
+12,RAHMI YAGCI,9550852,Chornomorsk,Türkiye,Sunflower meal,5300,8/9/2022,8/13/2022,:tr:,developing,Upper middle income,33,August
+13,STAR LAURA,9328936,Yuzhny/Pivdennyi,Iran,Corn,60150,8/12/2022,8/14/2022,:ir:,developing,Lower middle income,33,August
+14,SORMOVSKIY 121,8133578,Chornomorsk,Türkiye,Wheat,3050,8/12/2022,8/15/2022,:tr:,developing,Upper middle income,33,August
+15,FULMAR S,9370082,Chornomorsk,Türkiye,Corn,12000,8/13/2022,8/15/2022,:tr:,developing,Upper middle income,33,August
+16,THOE,9400588,Chornomorsk,Türkiye,Sunflower seed,2914,8/13/2022,8/16/2022,:tr:,developing,Upper middle income,33,August
+17,OSPREY S,9300843,Chornomorsk,Türkiye,Corn,11500,8/16/2022,8/18/2022,:tr:,developing,Upper middle income,34,August
+18,BONITA,9231286,Yuzhny/Pivdennyi,Republic of Korea,Corn,60000,8/16/2022,8/18/2022,:kr:,developed,High income,34,August
+19,RAMUS,9318400,Chornomorsk,Türkiye,Wheat,6161,8/16/2022,8/19/2022,:tr:,developing,Upper middle income,34,August
+20,BRAVE COMMANDER,9136931,Yuzhny/Pivdennyi,Ethiopia,Wheat,23300,8/16/2022,8/21/2022,:et:,developing,Low income,34,August
+21,PETREL S,9363883,Chornomorsk,The Netherlands,Sunflower meal,18500,8/17/2022,8/19/2022,:nl:,developed,High income,34,August
+22,SARA,9259020,Odesa,Türkiye,Corn,8000,8/17/2022,8/19/2022,:tr:,developing,Upper middle income,34,August
+23,EFE,9558763,Odesa,Türkiye,Sunflower oil,7250,8/17/2022,8/19/2022,:tr:,developing,Upper middle income,34,August
+24,PROPUS,9133757,Chornomorsk,Romania,Wheat,9111,8/18/2022,8/19/2022,:ro:,developed,High income,34,August
+25,I MARIA,8914697,Chornomorsk,Romania,Corn,27982,8/18/2022,8/22/2022,:ro:,developed,High income,34,August
+26,ZUMRUT ANA,9633549,Chornomorsk,Italy,Sunflower oil,6300,8/20/2022,8/22/2022,:it:,developed,High income,34,August
+27,OCEAN S,9086320,Chornomorsk,Türkiye,Wheat,25000,8/20/2022,8/22/2022,:tr:,developing,Upper middle income,34,August
+28,FILYOZ,9407213,Chornomorsk,Türkiye,Sunflower oil,5000,8/21/2022,8/23/2022,:tr:,developing,Upper middle income,34,August
+29,DA LIANG,9608415,Chornomorsk,Republic of Korea,Sugar beet pellet,14000,8/21/2022,8/23/2022,:kr:,developed,High income,34,August
+30,FOYLE,9317676,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,4300,8/21/2022,8/23/2022,:tr:,developing,Upper middle income,34,August
+31,KUBROSLI Y,8000836,Odesa,Türkiye,Wheat,11000,8/21/2022,8/24/2022,:tr:,developing,Upper middle income,34,August
+32,MARANTA,9206669,Chornomorsk,Greece,Corn,5300,8/22/2022,8/24/2022,:gr:,developed,High income,35,August
+33,GREAT ARSENAL,9159062,Chornomorsk,Egypt,Wheat,25500,8/22/2022,8/24/2022,:eg:,developing,Lower middle income,35,August
+34,KAFKAM ETLER,9001112,Chornomorsk,Türkiye,Corn,2437,8/23/2022,8/25/2022,:tr:,developing,Upper middle income,35,August
+35,GANOSAYA,9151400,Odesa,Lebanon,Corn,16500,8/24/2022,8/26/2022,:lb:,developing,Lower middle income,35,August
+36,ZHE HAI 505,9567477,Odesa,The Netherlands,Rapeseed,29600,8/24/2022,8/26/2022,:nl:,developed,High income,35,August
+37,BELLIS,9381952,Odesa,Israel,Soya beans,6000,8/25/2022,8/27/2022,:il:,developed,High income,35,August
+38,ASCANIOS,9276169,Yuzhny/Pivdennyi,Germany,Corn,58510,8/25/2022,8/27/2022,:de:,developed,High income,35,August
+39,MOHAMAD Y,8107000,Odesa,Türkiye,Wheat,11000,8/25/2022,8/27/2022,:tr:,developing,Upper middle income,35,August
+40,AVIVA,9410131,Chornomorsk,India,Sunflower oil,19100,8/26/2022,8/28/2022,:in:,developing,Lower middle income,35,August
+41,SEAEAGLE,9153056,Chornomorsk,Sudan,Wheat,65340,8/26/2022,8/28/2022,:sd:,developing,Low income,35,August
+42,ZELEK STAR,9379117,Chornomorsk,Türkiye,Peas,3700,8/26/2022,8/29/2022,:tr:,developing,Upper middle income,35,August
+43,PRETTY LADY,9223174,Chornomorsk,Egypt,Corn,45000,8/26/2022,8/29/2022,:eg:,developing,Lower middle income,35,August
+44,ADNAN TORLAK,9243253,Chornomorsk,France,Rapeseed,14750,8/27/2022,8/29/2022,:fr:,developed,High income,35,August
+45,ORIS SOFI,8920282,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,5900,8/27/2022,8/29/2022,:tr:,developing,Upper middle income,35,August
+46,S BREEZE,9317145,Chornomorsk,Egypt,Corn,44000,8/27/2022,9/1/2022,:eg:,developing,Lower middle income,35,August
+47,SSI INVINCIBLE II,9434747,Chornomorsk,China,Barley,49500,8/28/2022,8/31/2022,:cn:,developing,Upper middle income,35,August
+48,DS SOFIE BULKER,9310604,Odesa,Spain,Barley,27000,8/28/2022,8/31/2022,:es:,developed,High income,35,August
+49,SILVER LADY,9279367,Yuzhny/Pivdennyi,Italy,Corn,39494,8/28/2022,8/31/2022,:it:,developed,High income,35,August
+50,MELINA,9550424,Yuzhny/Pivdennyi,Romania,Corn,27500,8/28/2022,8/31/2022,:ro:,developed,High income,35,August
+51,FPMC B 201 ,9468229,Odesa,Egypt,Wheat,33000,8/28/2022,9/1/2022,:eg:,developing,Lower middle income,35,August
+52,AEOLOS,9228382,Odesa,The Netherlands,Corn,30000,8/28/2022,9/2/2022,:nl:,developed,High income,35,August
+53,ASH BALTIC,9606493,Odesa,Egypt,Corn,11000,8/29/2022,9/1/2022,:eg:,developing,Lower middle income,36,August
+54,PEACE M,9086318,Odesa,Romania,Corn,24485,8/29/2022,9/1/2022,:ro:,developed,High income,36,August
+55,ANASTASIA,8926121,Chornomorsk,Türkiye,Wheat,3800,8/29/2022,9/4/2022,:tr:,developing,Upper middle income,36,August
+56,SEAJOY,9213820,Chornomorsk,Spain,Corn,64215,8/30/2022,9/1/2022,:es:,developed,High income,36,August
+57,SAFFET AGA,9376282,Chornomorsk,Türkiye,Corn,3236,8/30/2022,9/1/2022,:tr:,developing,Upper middle income,36,August
+58,MICHALIS,9545510,Odesa,Spain,Corn,33000,8/30/2022,9/1/2022,:es:,developed,High income,36,August
+59,LADY ZEHMA,9303431,Chornomorsk,Italy,Corn,30274,8/30/2022,9/3/2022,:it:,developed,High income,36,August
+60,KARTERIA,9236092,Yuzhny/Pivdennyi,Yemen,Wheat,37500,8/30/2022,9/3/2022,:ye:,developing,Low income,36,August
+61,SIMAS,9000314,Odesa,Italy,Wheat,15000,8/30/2022,9/4/2022,:it:,developed,High income,36,August
+62,LADY AILLAR,9550278,Yuzhny/Pivdennyi,Spain,Corn,27000,8/31/2022,9/5/2022,:es:,developed,High income,36,August
+63,MARAN ASTRONOMER,9581239,Yuzhny/Pivdennyi,The Netherlands,Corn,74500,8/31/2022,9/5/2022,:nl:,developed,High income,36,August
+64,DAYTONA DYNAMIC,8914726,Odesa,Türkiye,Corn,25850,9/1/2022,9/4/2022,:tr:,developing,Upper middle income,36,September
+65,HAZAR S,9545467,Chornomorsk,Türkiye,Corn,5500,9/1/2022,9/4/2022,:tr:,developing,Upper middle income,36,September
+66,HELGA,9444912,Odesa,Türkiye,Corn,27000,9/1/2022,9/5/2022,:tr:,developing,Upper middle income,36,September
+67,ENEIDA,9198381,Chornomorsk,Türkiye,Corn,8560,9/1/2022,9/5/2022,:tr:,developing,Upper middle income,36,September
+67,ENEIDA,9198381,Chornomorsk,Türkiye,Wheat,35470,9/1/2022,9/5/2022,:tr:,developing,Upper middle income,36,September
+68,MASSA J,9224867,Yuzhny/Pivdennyi,Somalia,Wheat,28500,9/1/2022,9/7/2022,:so:,developing,Low income,36,September
+69,CANGA STAR,9540039,Chornomorsk,France,Rapeseed,7000,9/2/2022,9/7/2022,:fr:,developed,High income,36,September
+70,MAVKA,9284647,Chornomorsk,Romania,Sunflower oil,12500,9/2/2022,9/5/2022,:ro:,developed,High income,36,September
+71,SPRING,8408650,Chornomorsk,Türkiye,Wheat,8500,9/2/2022,9/5/2022,:tr:,developing,Upper middle income,36,September
+72,KATSUYAMA,9274678,Chornomorsk,India,Sunflower oil,21000,9/2/2022,9/5/2022,:in:,developing,Lower middle income,36,September
+73,STELLA GS,9363285,Odesa,Israel,Corn,30300,9/2/2022,9/6/2022,:il:,developed,High income,36,September
+74,FULMAR S,9370082,Yuzhny/Pivdennyi,Bulgaria,Sunflower meal,9835,9/2/2022,9/5/2022,:bg:,developed,Upper middle income,36,September
+75,SARA,9259020,Odesa,Türkiye,Wheat,6600,9/3/2022,9/7/2022,:tr:,developing,Upper middle income,36,September
+76,LADY EVA,9008110,Chornomorsk,Greece,Wheat,6117,9/4/2022,9/7/2022,:gr:,developed,High income,36,September
+77,CANOPUS,9401025,Yuzhny/Pivdennyi,India,Sunflower oil,42000,9/4/2022,9/6/2022,:in:,developing,Lower middle income,36,September
+78,SEA DOLPHIN C,9486427,Yuzhny/Pivdennyi,The Netherlands,Rapeseed,31098,9/4/2022,9/6/2022,:nl:,developed,High income,36,September
+79,SEALOCK,8218380,Chornomorsk,Türkiye,Peas,2070,9/4/2022,9/9/2022,:tr:,developing,Upper middle income,36,September
+80,MUBARIZ IBRAHIMOV,9575292,Odesa,Türkiye,Sunflower oil,6600,9/4/2022,9/9/2022,:tr:,developing,Upper middle income,36,September
+81,MAINA,9699892,Yuzhny/Pivdennyi,Spain,Corn,56500,9/4/2022,9/7/2022,:es:,developed,High income,36,September
+82,GEN. POLAD HASHIMOV,9575307,Chornomorsk,Türkiye,Sunflower oil,6450,9/4/2022,9/7/2022,:tr:,developing,Upper middle income,36,September
+83,BC CALLISTO,9400916,Chornomorsk,Egypt,Wheat,31400,9/4/2022,9/9/2022,:eg:,developing,Lower middle income,36,September
+84,MRC LINA,9462299,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,7800,9/4/2022,9/7/2022,:tr:,developing,Upper middle income,36,September
+85,LADY PERLA,9149732,Yuzhny/Pivdennyi,Italy,Corn,20500,9/4/2022,9/7/2022,:it:,developed,High income,36,September
+86,AFANASIY MATYSHENKO,8227783,Chornomorsk,Türkiye,Wheat,3000,9/4/2022,9/9/2022,:tr:,developing,Upper middle income,36,September
+87,NORD VIRGO,9711937,Yuzhny/Pivdennyi,China,Corn,62340,9/4/2022,9/9/2022,:cn:,developing,Upper middle income,36,September
+88,GOLDEN YARA,8915299,Yuzhny/Pivdennyi,Türkiye,Wheat,13500,9/5/2022,9/10/2022,:tr:,developing,Upper middle income,37,September
+89,MY MERAY,9000302,Chornomorsk,Egypt,Corn,30000,9/5/2022,9/10/2022,:eg:,developing,Lower middle income,37,September
+90,BARON,7352476,Odesa,Türkiye,Corn,5750,9/5/2022,9/10/2022,:tr:,developing,Upper middle income,37,September
+91,IRMGARD,9590967,Odesa,Türkiye,Wheat,27500,9/6/2022,9/11/2022,:tr:,developing,Upper middle income,37,September
+91,IRMGARD,9590967,Odesa,Türkiye,Corn,7179,9/6/2022,9/11/2022,:tr:,developing,Upper middle income,37,September
+92,QUEEN SARA,9132507,Chornomorsk,Egypt,Corn,11091,9/6/2022,9/11/2022,:eg:,developing,Lower middle income,37,September
+93,ORIS PRINCESS,9119907,Chornomorsk,Israel,Sunflower meal,4510,9/6/2022,9/12/2022,:il:,developed,High income,37,September
+94,NEW LEVANT,9111371,Odesa,Türkiye,Wheat,26500,9/6/2022,9/10/2022,:tr:,developing,Upper middle income,37,September
+95,VITIS,9000613,Yuzhny/Pivdennyi,Italy,Sunflower oil,5800,9/6/2022,9/10/2022,:it:,developed,High income,37,September
+96,OCMIS ADVENTURE,8919831,Yuzhny/Pivdennyi,Greece,Corn,4862,9/6/2022,9/10/2022,:gr:,developed,High income,37,September
+97,SEAGUARDIAN ,9174268,Yuzhny/Pivdennyi,Spain,Sunflower meal,8640,9/7/2022,9/12/2022,:es:,developed,High income,37,September
+97,SEAGUARDIAN ,9174268,Yuzhny/Pivdennyi,Spain,Barley,34071,9/7/2022,9/12/2022,:es:,developed,High income,37,September
+97,SEAGUARDIAN ,9174268,Yuzhny/Pivdennyi,Spain,Wheat,20095,9/7/2022,9/12/2022,:es:,developed,High income,37,September
+98,SUPER HENRY,9407483,Odesa,Kenya,Wheat,51400,9/7/2022,9/22/2022,:ke:,developing,Lower middle income,37,September
+99,ELIANA,9327310,Chornomorsk,Türkiye,Sunflower oil,5200,9/7/2022,9/11/2022,:tr:,developing,Upper middle income,37,September
+100,KAPTAN CEVDET,9005895,Chornomorsk,Türkiye,Soya beans,2472,9/7/2022,9/12/2022,:tr:,developing,Upper middle income,37,September
+101,JASMIN QUEEN,9109861,Odesa,Türkiye,Corn,9531,9/8/2022,9/12/2022,:tr:,developing,Upper middle income,37,September
+102,CAPTAIN ADAM 1,8914087,Chornomorsk,Türkiye,Wheat,9300,9/8/2022,9/12/2022,:tr:,developing,Upper middle income,37,September
+103,DIGNITY,9118238,Chornomorsk,Türkiye,Sunflower seed,8200,9/8/2022,9/12/2022,:tr:,developing,Upper middle income,37,September
+104,FILYOZ,9407213,Odesa,Türkiye,Sunflower oil,4410,9/8/2022,9/12/2022,:tr:,developing,Upper middle income,37,September
+105,SANTANA,9449388,Odesa,Italy,Wheat,10000,9/8/2022,9/12/2022,:it:,developed,High income,37,September
+106,KIRAN AMERICA,9491264,Chornomorsk,China,Barley,30000,9/9/2022,9/14/2022,:cn:,developing,Upper middle income,37,September
+106,KIRAN AMERICA,9491264,Chornomorsk,China,Corn,20000,9/9/2022,9/14/2022,:cn:,developing,Upper middle income,37,September
+107,SUPER BAYERN,9278911,Yuzhny/Pivdennyi,Egypt,Corn,33000,9/9/2022,9/13/2022,:eg:,developing,Lower middle income,37,September
+108,SEVIL,9148518,Chornomorsk,Romania,Rapeseed,4700,9/9/2022,9/13/2022,:ro:,developed,High income,37,September
+109,EAUBONNE,9663104,Odesa,Spain,Corn,32794,9/10/2022,9/16/2022,:es:,developed,High income,37,September
+109,EAUBONNE,9663104,Odesa,Spain,Wheat,13853,9/10/2022,9/16/2022,:es:,developed,High income,37,September
+109,EAUBONNE,9663104,Odesa,Spain,Barley,10853,9/10/2022,9/16/2022,:es:,developed,High income,37,September
+110,LUCKY,9037305,Yuzhny/Pivdennyi,Greece,Corn,6000,9/10/2022,9/14/2022,:gr:,developed,High income,37,September
+110,LUCKY,9037305,Yuzhny/Pivdennyi,Greece,Barley,4400,9/10/2022,9/14/2022,:gr:,developed,High income,37,September
+111,PRINCESS AMNAH,9008067,Chornomorsk,Italy,Wheat,6000,9/10/2022,9/13/2022,:it:,developed,High income,37,September
+112,A LINE,9246920,Chornomorsk,Egypt,Corn,10700,9/10/2022,9/13/2022,:eg:,developing,Lower middle income,37,September
+113,LADY SHAM,9171383,Odesa,Italy,Sunflower seed,5600,9/10/2022,9/14/2022,:it:,developed,High income,37,September
+114,BRIZA,9286815,Chornomorsk,Greece,Corn,6500,9/11/2022,9/15/2022,:gr:,developed,High income,37,September
+115,MAGNOLIA,9575333,Chornomorsk,Türkiye,Sunflower oil,6600,9/11/2022,9/16/2022,:tr:,developing,Upper middle income,37,September
+116,S-BRILLIANT,9275323,Chornomorsk,The Netherlands,Rapeseed,40220,9/11/2022,9/15/2022,:nl:,developed,High income,37,September
+117,AHMET CAN,9368182,Chornomorsk,Türkiye,Wheat bran pellets,2800,9/12/2022,9/16/2022,:tr:,developing,Upper middle income,38,September
+118,SALLY M,9152844,Chornomorsk,Lebanon,Corn,6857,9/12/2022,9/17/2022,:lb:,developing,Lower middle income,38,September
+119,NORD STARK,9691591,Chornomorsk,Spain,Wheat,27500,9/12/2022,9/17/2022,:es:,developed,High income,38,September
+120,ORIS SOFI,8920282,Odesa,Türkiye,Sunflower oil,3026,9/12/2022,9/15/2022,:tr:,developing,Upper middle income,38,September
+120,ORIS SOFI,8920282,Odesa,Lebanon,Sunflower oil,2973,9/12/2022,9/15/2022,:lb:,developing,Lower middle income,38,September
+121,HADAR,9615028,Yuzhny/Pivdennyi,Italy,Wheat,23500,9/12/2022,9/16/2022,:it:,developed,High income,38,September
+121,HADAR,9615028,Yuzhny/Pivdennyi,Italy,Corn,3500,9/12/2022,9/16/2022,:it:,developed,High income,38,September
+122,WIN SINO,9278519,Yuzhny/Pivdennyi,India,Sunflower oil,43500,9/12/2022,9/17/2022,:in:,developing,Lower middle income,38,September
+123,SUPER SAKA,9456551,Odesa,Spain,Wheat,29000,9/13/2022,9/18/2022,:es:,developed,High income,38,September
+123,SUPER SAKA,9456551,Odesa,Spain,Corn,21000,9/13/2022,9/18/2022,:es:,developed,High income,38,September
+124,YASA TEAM,9296250,Yuzhny/Pivdennyi,Israel,Corn,64951,9/13/2022,9/18/2022,:il:,developed,High income,38,September
+125,PROPUS,9133757,Odesa,Türkiye,Corn,8500,9/13/2022,9/18/2022,:tr:,developing,Upper middle income,38,September
+126,FANARIA,9228241,Odesa,Spain,Wheat,18000,9/13/2022,9/17/2022,:es:,developed,High income,38,September
+127,SAFFET AGA,9376282,Odesa,Türkiye,Soya beans,3300,9/13/2022,9/18/2022,:tr:,developing,Upper middle income,38,September
+128,ATA OCEAN,9519614,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,6300,9/13/2022,9/18/2022,:tr:,developing,Upper middle income,38,September
+129,GREIFSWALD,8311912,Chornomorsk,Türkiye,Corn,492,9/13/2022,9/18/2022,:tr:,developing,Upper middle income,38,September
+130,TAMREY S,9171541,Odesa,Italy,Corn,18100,9/14/2022,9/22/2022,:it:,developed,High income,38,September
+130,TAMREY S,9171541,Odesa,Italy,Soya beans,5500,9/14/2022,9/22/2022,:it:,developed,High income,38,September
+130,TAMREY S,9171541,Odesa,Italy,Wheat,5400,9/14/2022,9/22/2022,:it:,developed,High income,38,September
+131,MARANTA,9206669,Odesa,Italy,Soya beans,5300,9/14/2022,9/18/2022,:it:,developed,High income,38,September
+132,CPT DIMITRIOS S,9221592,Yuzhny/Pivdennyi,Spain,Corn,56800,9/14/2022,9/19/2022,:es:,developed,High income,38,September
+132,CPT DIMITRIOS S,9221592,Yuzhny/Pivdennyi,Spain,Barley,8543,9/14/2022,9/19/2022,:es:,developed,High income,38,September
+133,T-MED,9163142,Yuzhny/Pivdennyi,Türkiye,Wheat,5500,9/14/2022,9/19/2022,:tr:,developing,Upper middle income,38,September
+134,INCE AKDENIZ,9456460,Yuzhny/Pivdennyi,Bangladesh,Wheat,55000,9/14/2022,9/22/2022,:bd:,developing,Lower middle income,38,September
+135,GLORY DINA,9464522,Chornomorsk,Türkiye,Wheat,27000,9/14/2022,9/18/2022,:tr:,developing,Upper middle income,38,September
+136,CENK CAR,8611984,Chornomorsk,Türkiye,Sunflower seed,180,9/14/2022,9/18/2022,:tr:,developing,Upper middle income,38,September
+136,CENK CAR,8611984,Chornomorsk,Türkiye,Sunflower meal,68,9/14/2022,9/18/2022,:tr:,developing,Upper middle income,38,September
+137,ASTRA CENTAURUS,9611802,Chornomorsk,Spain,Wheat,55000,9/15/2022,9/20/2022,:es:,developed,High income,38,September
+138,DERG,9393060,Chornomorsk,The Netherlands,Sunflower oil,9600,9/15/2022,9/20/2022,:nl:,developed,High income,38,September
+139,EIDER S,9364784,Yuzhny/Pivdennyi,Spain,Corn,50855,9/15/2022,9/30/2022,:es:,developed,High income,38,September
+140,KAN 2,9154268,Odesa,Libya,Corn,11000,9/15/2022,9/20/2022,:ly:,developing,Upper middle income,38,September
+140,KAN 2,9154268,Odesa,Libya,Barley,2981,9/15/2022,9/20/2022,:ly:,developing,Upper middle income,38,September
+141,LARA S,9334301,Odesa,Italy,Sunflower oil,5750,9/15/2022,9/20/2022,:it:,developed,High income,38,September
+142,MAHER,8806905,Chornomorsk,Tunisia,Wheat,7800,9/15/2022,9/22/2022,:tn:,developing,Lower middle income,38,September
+143,NORAH,9460289,Chornomorsk,Belgium,Rapeseed,30000,9/15/2022,9/20/2022,:be:,developed,High income,38,September
+144,VALERIO,9244037,Odesa,Türkiye,Corn,26000,9/15/2022,9/22/2022,:tr:,developing,Upper middle income,38,September
+145,ANNABELLA,8919788,Chornomorsk,Romania,Rapeseed,8500,9/16/2022,9/26/2022,:ro:,developed,High income,38,September
+146,BREEZE,9455650,Odesa,Germany,Rapeseed,47200,9/16/2022,9/24/2022,:de:,developed,High income,38,September
+147,CS CIHAN,9045704,Odesa,Egypt,Soya beans,6400,9/16/2022,9/23/2022,:eg:,developing,Lower middle income,38,September
+148,NAVIN VULTURE,9543328,Yuzhny/Pivdennyi,Greece,Barley,4258,9/16/2022,9/24/2022,:gr:,developed,High income,38,September
+148,NAVIN VULTURE,9543328,Yuzhny/Pivdennyi,Greece,Corn,2026,9/16/2022,9/24/2022,:gr:,developed,High income,38,September
+149,OCTOPUS,9518634,Yuzhny/Pivdennyi,Romania,Corn,6500,9/16/2022,9/28/2022,:ro:,developed,High income,38,September
+150,BARONESS,9588407,Chornomorsk,Italy,Wheat,30900,9/17/2022,9/26/2022,:it:,developed,High income,38,September
+151,GOZO,9109964,Odesa,Spain,Wheat,26000,9/17/2022,9/29/2022,:es:,developed,High income,38,September
+152,HORUS,9635690,Chornomorsk,China,Sunflower meal,53012,9/17/2022,9/29/2022,:cn:,developing,Upper middle income,38,September
+152,HORUS,9635690,Chornomorsk,China,Barley,9694,9/17/2022,9/29/2022,:cn:,developing,Upper middle income,38,September
+153,IKARIA ANGEL,9194397,Chornomorsk,Ethiopia,Wheat,29459,9/17/2022,9/21/2022,:et:,developing,Low income,38,September
+153,IKARIA ANGEL,9194397,Chornomorsk,Djibouti,Wheat,541,9/17/2022,9/21/2022,:dj:,developing,Lower middle income,38,September
+154,PACIFIC ROSE,9299460,Yuzhny/Pivdennyi,Italy,Soya beans,20000,9/17/2022,9/28/2022,:it:,developed,High income,38,September
+154,PACIFIC ROSE,9299460,Yuzhny/Pivdennyi,Italy,Corn,5105,9/17/2022,9/28/2022,:it:,developed,High income,38,September
+155,VELVET ROSE,9281968,Chornomorsk,China,Sunflower meal,29350,9/17/2022,9/26/2022,:cn:,developing,Upper middle income,38,September
+156,ADELHEID BR,9387621,Odesa,Türkiye,Barley,8750,9/18/2022,9/27/2022,:tr:,developing,Upper middle income,38,September
+157,BELLA JUDI,9595371,Chornomorsk,Romania,Corn,32900,9/18/2022,9/25/2022,:ro:,developed,High income,38,September
+158,CPT.AHMAD II,9031430,Chornomorsk,Türkiye,Wheat,4030,9/18/2022,10/2/2022,:tr:,developing,Upper middle income,38,September
+159,GENOA,9805659,Chornomorsk,Portugal,Canola,22000,9/18/2022,9/23/2022,:pt:,developed,High income,38,September
+159,GENOA,9805659,Chornomorsk,France,Canola,29256,9/18/2022,9/23/2022,:fr:,developed,High income,38,September
+160,KAFKAM ETLER,9001112,Chornomorsk,Türkiye,Corn,2413,9/18/2022,9/29/2022,:tr:,developing,Upper middle income,38,September
+161,KAUNAS,8311924,Chornomorsk,Türkiye,Corn,525,9/18/2022,9/24/2022,:tr:,developing,Upper middle income,38,September
+162,RUBYMAR,9138898,Odesa,Egypt,Corn,29600,9/18/2022,9/27/2022,:eg:,developing,Lower middle income,38,September
+163,SK FRIENDSHIP,8909446,Chornomorsk,Türkiye,Wheat,6900,9/18/2022,9/29/2022,:tr:,developing,Upper middle income,38,September
+164,AKSON SARA,9475739,Yuzhny/Pivdennyi,Italy,Corn,30700,9/19/2022,9/30/2022,:it:,developed,High income,39,September
+165,ARCTURUS,9221334,Yuzhny/Pivdennyi,Spain,Wheat,69080,9/19/2022,9/29/2022,:es:,developed,High income,39,September
+166,ESENCE,7827342,Chornomorsk,Türkiye,Wheat,3000,9/19/2022,9/29/2022,:tr:,developing,Upper middle income,39,September
+167,FULMAR S,9370082,Odesa,Italy,Sunflower meal,4400,9/19/2022,9/26/2022,:it:,developed,High income,39,September
+167,FULMAR S,9370082,Odesa,Italy,Rapeseed meal,3400,9/19/2022,9/26/2022,:it:,developed,High income,39,September
+168,GULMAR,9146962,Odesa,Spain,Wheat,16300,9/19/2022,9/26/2022,:es:,developed,High income,39,September
+168,GULMAR,9146962,Odesa,Spain,Corn,17350,9/19/2022,9/26/2022,:es:,developed,High income,39,September
+168,GULMAR,9146962,Odesa,Spain,Barley,8350,9/19/2022,9/26/2022,:es:,developed,High income,39,September
+169,TOMAHAWK,9737591,Yuzhny/Pivdennyi,China,Sunflower meal,60000,9/19/2022,9/30/2022,:cn:,developing,Upper middle income,39,September
+170,APHRODITE M,9450832,Chornomorsk,Spain,Sunflower seed,18150,9/20/2022,10/2/2022,:es:,developed,High income,39,September
+171,NIZAR,8324751,Odesa,Türkiye,Soya beans,4950,9/20/2022,10/4/2022,:tr:,developing,Upper middle income,39,September
+172,NORAN,9175822,Chornomorsk,Türkiye,Wheat,8100,9/20/2022,10/2/2022,:tr:,developing,Upper middle income,39,September
+173,NYMPHI,9615030,Chornomorsk,The Netherlands,Corn,27100,9/20/2022,9/30/2022,:nl:,developed,High income,39,September
+174,PAULINE,9325350,Chornomorsk,Germany,Corn,48750,9/20/2022,9/30/2022,:de:,developed,High income,39,September
+175,PGE RAIN,9005857,Odesa,Türkiye,Soya beans,4400,9/20/2022,9/28/2022,:tr:,developing,Upper middle income,39,September
+176,RIDER,9017628,Odesa,Italy,Wheat,9751,9/20/2022,9/30/2022,:it:,developed,High income,39,September
+177,SSI PRIDE,9250579,Odesa,Bangladesh,Wheat,46500,9/20/2022,9/28/2022,:bd:,developing,Lower middle income,39,September
+178,TINA S,9498432,Odesa,Italy,Corn,33000,9/20/2022,10/10/2022,:it:,developed,High income,39,September
+179,BRIGHT STAR,9481960,Yuzhny/Pivdennyi,The Netherlands,Rapeseed,32493,9/21/2022,10/1/2022,:nl:,developed,High income,39,September
+180,CENK M,7382366,Chornomorsk,Türkiye,Sunflower seed,90,9/21/2022,10/8/2022,:tr:,developing,Upper middle income,39,September
+181,DS MANATEE,9255189,Odesa,Italy,Corn,26250,9/21/2022,10/1/2022,:it:,developed,High income,39,September
+182,LEONORA VICTORY,9283784,Yuzhny/Pivdennyi,China,Sunflower oil,40000,9/21/2022,10/1/2022,:cn:,developing,Upper middle income,39,September
+182,LEONORA VICTORY,9283784,Yuzhny/Pivdennyi,Malaysia,Sunflower oil,4000,9/21/2022,10/1/2022,:my:,developing,Upper middle income,39,September
+183,MED ISLAND,9322748,Yuzhny/Pivdennyi,Spain,Wheat,27500,9/21/2022,10/1/2022,:es:,developed,High income,39,September
+184,SEA INSPIRATION,9604782,Odesa,Spain,Wheat,6000,9/21/2022,10/1/2022,:es:,developed,High income,39,September
+184,SEA INSPIRATION,9604782,Odesa,Spain,Barley,11000,9/21/2022,10/1/2022,:es:,developed,High income,39,September
+184,SEA INSPIRATION,9604782,Odesa,Spain,Corn,10100,9/21/2022,10/1/2022,:es:,developed,High income,39,September
+185,SWIMMER,9033713,Chornomorsk,Türkiye,Sunflower meal,2950,9/21/2022,10/6/2022,:tr:,developing,Upper middle income,39,September
+186,ALSU,9808742,Yuzhny/Pivdennyi,Egypt,Sunflower oil,3100,9/22/2022,10/3/2022,:eg:,developing,Lower middle income,39,September
+187,ANT,9412311,Odesa,Türkiye,Barley,4500,9/22/2022,10/4/2022,:tr:,developing,Upper middle income,39,September
+188,BC VANESSA,9426855,Odesa,Afghanistan,Wheat,30000,9/22/2022,9/28/2022,:af:,developing,Low income,39,September
+189,ELLIE M,9235854,Chornomorsk,Spain,Corn,50220,9/22/2022,10/10/2022,:es:,developed,High income,39,September
+190,MOHAMAD Y,8107000,Odesa,Türkiye,Wheat,11000,9/22/2022,10/3/2022,:tr:,developing,Upper middle income,39,September
+191,ORIS MARINE,9179488,Odesa,Türkiye,Sunflower oil,3500,9/22/2022,10/2/2022,:tr:,developing,Upper middle income,39,September
+192,FORTUNA,9118252,Yuzhny/Pivdennyi,France,Sunflower meal,10252,9/23/2022,10/6/2022,:fr:,developed,High income,39,September
+193,GEM STAR,9496173,Yuzhny/Pivdennyi,The Netherlands,Corn,31039,9/23/2022,10/10/2022,:nl:,developed,High income,39,September
+194,GUDENA,9280196,Chornomorsk,Türkiye,Sunflower oil,3860,9/23/2022,10/4/2022,:tr:,developing,Upper middle income,39,September
+195,LADY AYANA,9196395,Chornomorsk,Italy,Corn,27000,9/23/2022,10/14/2022,:it:,developed,High income,39,September
+196,MAVKA,9284647,Yuzhny/Pivdennyi,Romania,Sunflower oil,11950,9/23/2022,10/4/2022,:ro:,developed,High income,39,September
+197,MERRY M,8418265,Chornomorsk,Türkiye,Sunflower meal,4450,9/23/2022,10/6/2022,:tr:,developing,Upper middle income,39,September
+198,MO GAN SHAN,9663099,Chornomorsk,Bangladesh,Wheat,57311,9/23/2022,10/3/2022,:bd:,developing,Lower middle income,39,September
+199,NIL DEMIR,8003814,Chornomorsk,Türkiye,Peas,3700,9/23/2022,10/4/2022,:tr:,developing,Upper middle income,39,September
+200,OLMA,8004806,Chornomorsk,Türkiye,Soya beans,5150,9/23/2022,10/3/2022,:tr:,developing,Upper middle income,39,September
+201,SEA DOVE,8202525,Chornomorsk,Italy,Corn,33000,9/23/2022,10/9/2022,:it:,developed,High income,39,September
+202,TZAREVICH,9145229,Chornomorsk,Bulgaria,Sunflower meal,10000,9/23/2022,10/6/2022,:bg:,developed,Upper middle income,39,September
+203,ZEKO Y,8027573,Odesa,Türkiye,Wheat,8200,9/23/2022,10/3/2022,:tr:,developing,Upper middle income,39,September
+204,BAHAR K,8884555,Chornomorsk,Türkiye,Soya beans,7700,9/24/2022,10/7/2022,:tr:,developing,Upper middle income,39,September
+205,DANO,8609175,Odesa,Türkiye,Wheat,6600,9/24/2022,10/14/2022,:tr:,developing,Upper middle income,39,September
+206,DS SOFIE BULKER,9310604,Odesa,Spain,Barley,10650,9/24/2022,10/5/2022,:es:,developed,High income,39,September
+206,DS SOFIE BULKER,9310604,Odesa,Spain,Corn,6200,9/24/2022,10/5/2022,:es:,developed,High income,39,September
+206,DS SOFIE BULKER,9310604,Odesa,Spain,Wheat,10950,9/24/2022,10/5/2022,:es:,developed,High income,39,September
+207,GANOSAYA,9151400,Odesa,Libya,Barley,15000,9/24/2022,10/9/2022,:ly:,developing,Upper middle income,39,September
+208,MUBARIZ IBRAHIMOV,9575292,Odesa,Italy,Sunflower oil,6000,9/24/2022,10/5/2022,:it:,developed,High income,39,September
+209,SAXONA,9371024,Chornomorsk,Greece,Corn,5000,9/24/2022,10/5/2022,:gr:,developed,High income,39,September
+210,ASPASIA LUCK,9223485,Yuzhny/Pivdennyi,Spain,Corn,63029,9/25/2022,10/9/2022,:es:,developed,High income,39,September
+211,ATA-2,9387669,Yuzhny/Pivdennyi,Italy,Corn,5960,9/25/2022,10/13/2022,:it:,developed,High income,39,September
+212,BLUE STAR,8421705,Chornomorsk,Türkiye,Mixed bran,2000,9/25/2022,10/9/2022,:tr:,developing,Upper middle income,39,September
+213,CHIOS FREEDOM,9680255,Odesa,The Netherlands,Rapeseed,32700,9/25/2022,10/8/2022,:nl:,developed,High income,39,September
+214,CORNELIA,9216597,Chornomorsk,Tunisia,Wheat,23500,9/25/2022,10/14/2022,:tn:,developing,Lower middle income,39,September
+215,HERMES,9071052,Chornomorsk,Greece,Wheat,5029,9/25/2022,10/8/2022,:gr:,developed,High income,39,September
+216,MOONLIGHT,9536301,Odesa,Georgia,Soya beans,6000,9/25/2022,10/8/2022,:ge:,developing,Upper middle income,39,September
+217,STELLAR LADY,9574004,Chornomorsk,Belgium,Rapeseed,39763,9/25/2022,10/9/2022,:be:,developed,High income,39,September
+218,SUPER MARTINELLI,9542831,Chornomorsk,Algeria,Wheat,31500,9/25/2022,10/7/2022,:dz:,developing,Lower middle income,39,September
+219,KARTERIA,9236092,Yuzhny/Pivdennyi,The Netherlands,Corn,46130,9/26/2022,10/11/2022,:nl:,developed,High income,40,September
+220,MAINLAND,9431056,Odesa,Türkiye,Sunflower oil,7250,9/26/2022,10/9/2022,:tr:,developing,Upper middle income,40,September
+221,NEW FAITH,9191034,Odesa,Türkiye,Corn,28193,9/26/2022,10/10/2022,:tr:,developing,Upper middle income,40,September
+222,USICHEM,9344344,Odesa,Spain,Sunflower oil,6600,9/26/2022,10/10/2022,:es:,developed,High income,40,September
+223,CHIOS SUNRISE,9639907,Odesa,Spain,Wheat,11000,9/27/2022,10/11/2022,:es:,developed,High income,40,September
+223,CHIOS SUNRISE,9639907,Odesa,Spain,Corn,42600,9/27/2022,10/11/2022,:es:,developed,High income,40,September
+224,IRENE MADIAS,9567154,Yuzhny/Pivdennyi,Republic of Korea,Corn,60000,9/27/2022,10/14/2022,:kr:,developed,High income,40,September
+225,LEADER M,9217797,Yuzhny/Pivdennyi,Bulgaria,Sunflower pellets,8800,9/27/2022,10/14/2022,:bg:,developed,Upper middle income,40,September
+226,MARAN EXCELLENCE,9703241,Yuzhny/Pivdennyi,Spain,Barley,66000,9/27/2022,10/13/2022,:es:,developed,High income,40,September
+226,MARAN EXCELLENCE,9703241,Yuzhny/Pivdennyi,Spain,Wheat,32600,9/27/2022,10/13/2022,:es:,developed,High income,40,September
+226,MARAN EXCELLENCE,9703241,Yuzhny/Pivdennyi,Spain,Corn,16000,9/27/2022,10/13/2022,:es:,developed,High income,40,September
+227,NAZENIN,9545508,Chornomorsk,France,Rapeseed,30350,9/27/2022,10/14/2022,:fr:,developed,High income,40,September
+228,NIMET TORLAK,9282948,Chornomorsk,Türkiye,Wheat,17325,9/27/2022,10/12/2022,:tr:,developing,Upper middle income,40,September
+229,NORD VIND,9573921,Odesa,Tunisia,Wheat,27250,9/27/2022,10/11/2022,:tn:,developing,Lower middle income,40,September
+230,PEACE M,9086318,Odesa,Romania,Corn,24718,9/27/2022,10/11/2022,:ro:,developed,High income,40,September
+231,SARA,9259020,Odesa,Türkiye,Soya beans,8000,9/27/2022,10/5/2022,:tr:,developing,Upper middle income,40,September
+232,ALMERAY,9300910,Yuzhny/Pivdennyi,Libya,Corn,32400,9/28/2022,10/14/2022,:ly:,developing,Upper middle income,40,September
+233,DAYTONA DYNAMIC,8914726,Chornomorsk,Romania,Corn,26000,9/28/2022,10/14/2022,:ro:,developed,High income,40,September
+234,FREZYA S,9353022,Chornomorsk,Italy,Sunflower meal,5350,9/28/2022,10/12/2022,:it:,developed,High income,40,September
+235,MAGNUM FORTUNE,9488970,Chornomorsk,Bangladesh,Wheat,51175,9/28/2022,10/17/2022,:bd:,developing,Lower middle income,40,September
+236,ADAM A,9114543,Yuzhny/Pivdennyi,Türkiye,Wheat,27700,9/29/2022,10/17/2022,:tr:,developing,Upper middle income,40,September
+237,NAVIN KESTREL,9381811,Chornomorsk,Türkiye,Sunflower meal,5250,9/29/2022,10/17/2022,:tr:,developing,Upper middle income,40,September
+238,PATRONUS,9320324,Chornomorsk,Tunisia,Wheat,27500,9/29/2022,10/22/2022,:tn:,developing,Lower middle income,40,September
+239,BESIKTAS ICELAND,9395367,Odesa,Türkiye,Sunflower oil,6600,9/30/2022,10/15/2022,:tr:,developing,Upper middle income,40,September
+240,BLUE ONE,9585651,Chornomorsk,Italy,Corn,32300,9/30/2022,10/23/2022,:it:,developed,High income,40,September
+241,ELEANORA,9211107,Yuzhny/Pivdennyi,Italy,Corn,6300,9/30/2022,10/17/2022,:it:,developed,High income,40,September
+242,AHMET CAN,9368182,Yuzhny/Pivdennyi,Greece,Wheat,3200,10/1/2022,10/20/2022,:gr:,developed,High income,40,October
+243,FORTUNE EXPRESS,9181728,Chornomorsk,Italy,Corn,27500,10/1/2022,10/18/2022,:it:,developed,High income,40,October
+244,IASOS,9233882,Yuzhny/Pivdennyi,Spain,Wheat,50800,10/1/2022,10/19/2022,:es:,developed,High income,40,October
+245,LADY DIVINA,9354052,Yuzhny/Pivdennyi,France,Sunflower meal,13200,10/1/2022,10/18/2022,:fr:,developed,High income,40,October
+246,PS DREAM,9358307,Chornomorsk,India,Sunflower oil,25000,10/1/2022,10/15/2022,:in:,developing,Lower middle income,40,October
+247,QUEEN LILA,9303376,Odesa,Libya,Barley,29000,10/1/2022,10/24/2022,:ly:,developing,Upper middle income,40,October
+248,STELLINA,9674933,Odesa,Spain,Wheat,25000,10/1/2022,10/16/2022,:es:,developed,High income,40,October
+249,BC RAEDA,9487598,Yuzhny/Pivdennyi,Spain,Wheat,24000,10/2/2022,10/18/2022,:es:,developed,High income,40,October
+250,DOGA K,9100530,Chornomorsk,Tunisia,Wheat,10000,10/2/2022,10/17/2022,:tn:,developing,Lower middle income,40,October
+251,LILA II,9498315,Chornomorsk,Spain,Corn,32700,10/2/2022,10/23/2022,:es:,developed,High income,40,October
+252,RIZABEY,9197117,Odesa,Italy,Wheat,22923,10/2/2022,10/18/2022,:it:,developed,High income,40,October
+253,SANN TRO,9110315,Odesa,Spain,Wheat,26500,10/2/2022,10/19/2022,:es:,developed,High income,40,October
+254,FPMC B 201 ,9468229,Odesa,Spain,Corn,33000,10/3/2022,10/18/2022,:es:,developed,High income,41,October
+255,KALLIOPI S,9450844,Yuzhny/Pivdennyi,The Netherlands,Corn,33274,10/3/2022,10/23/2022,:nl:,developed,High income,41,October
+256,MICHALIS,9545510,Odesa,Portugal,Corn,18716,10/3/2022,10/19/2022,:pt:,developed,High income,41,October
+256,MICHALIS,9545510,Odesa,Portugal,Wheat,7757,10/3/2022,,:pt:,developed,High income,41,October
+256,MICHALIS,9545510,Odesa,Portugal,Barley,6834,10/3/2022,,:pt:,developed,High income,41,October
+257,NAVIN FALCON,9492933,Yuzhny/Pivdennyi,Italy,Wheat,6600,10/3/2022,10/23/2022,:it:,developed,High income,41,October
+258,NEW VICTORY,9159050,Yuzhny/Pivdennyi,Türkiye,Wheat,25500,10/3/2022,10/25/2022,:tr:,developing,Upper middle income,41,October
+259,SAFFET AGA,9376282,Chornomorsk,Türkiye,Corn,3100,10/3/2022,10/21/2022,:tr:,developing,Upper middle income,41,October
+260,SPRING,8408650,Chornomorsk,Egypt,Corn,8000,10/3/2022,10/21/2022,:eg:,developing,Lower middle income,41,October
+261,ARGO 1,9583897,Chornomorsk,Egypt,Corn,31290,10/4/2022,10/27/2022,:eg:,developing,Lower middle income,41,October
+262,BARON,7352476,Chornomorsk,Türkiye,Soya beans,5500,10/4/2022,10/23/2022,:tr:,developing,Upper middle income,41,October
+263,BC CALLISTO,9400916,Chornomorsk,Algeria,Wheat,30450,10/4/2022,10/20/2022,:dz:,developing,Lower middle income,41,October
+264,CHRYSSA K ,9595852,Yuzhny/Pivdennyi,The Netherlands,Corn,30000,10/4/2022,10/20/2022,:nl:,developed,High income,41,October
+264,CHRYSSA K ,9595852,Yuzhny/Pivdennyi,Germany,Corn,38000,10/4/2022,10/20/2022,:de:,developed,High income,41,October
+265,INANDI,8332100,Odesa,Türkiye,Barley,2750,10/4/2022,10/21/2022,:tr:,developing,Upper middle income,41,October
+266,PRETTY LADY,9223174,Chornomorsk,United Kingdom,Rapeseed,41650,10/4/2022,10/20/2022,:gb:,developed,High income,41,October
+267,SAM,7510884,Odesa,Türkiye,Corn,3000,10/4/2022,10/25/2022,:tr:,developing,Upper middle income,41,October
+268,SSI RELIANCE,9655224,Chornomorsk,Spain,Corn,33860,10/4/2022,10/23/2022,:es:,developed,High income,41,October
+269,BRIZA,9286815,Odesa,Italy,Soya beans,6600,10/5/2022,10/21/2022,:it:,developed,High income,41,October
+270,MRC LINA,9462299,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,7700,10/5/2022,,:tr:,developing,Upper middle income,41,October
+271,NEW EXPLORER,9481489,Yuzhny/Pivdennyi,China,Sunflower meal,60000,10/5/2022,10/23/2022,:cn:,developing,Upper middle income,41,October
+272,ANASTASIA,8926121,Chornomorsk,Türkiye,Wheat,3700,10/6/2022,10/27/2022,:tr:,developing,Upper middle income,41,October
+273,FALCON S,9329423,Chornomorsk,Romania,Corn,33000,10/6/2022,,:ro:,developed,High income,41,October
+274,HASAN G,9136852,Yuzhny/Pivdennyi,Türkiye,Peas,6500,10/6/2022,,:tr:,developing,Upper middle income,41,October
+275,MAGNOLIA,9575333,Chornomorsk,Türkiye,Sunflower oil,6600,10/6/2022,10/16/2022,:tr:,developing,Upper middle income,41,October
+276,MERA,9148570,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,6300,10/6/2022,10/16/2022,:tr:,developing,Upper middle income,41,October
+277,SEA STAR,7929619,Chornomorsk,Türkiye,Wheat,4950,10/6/2022,10/28/2022,:tr:,developing,Upper middle income,41,October
+278,SERENITY IBTIHAJ,9364849,Chornomorsk,Israel,Corn,27200,10/6/2022,,:il:,developed,High income,41,October
+279,SILVER LADY,9279367,Chornomorsk,Spain,Wheat,49100,10/6/2022,10/22/2022,:es:,developed,High income,41,October
+280,UMIT G,9041124,Yuzhny/Pivdennyi,Greece,Wheat,4300,10/6/2022,,:gr:,developed,High income,41,October
+281,WHITE STAR,9381938,Odesa,Türkiye,Barley,7800,10/6/2022,,:tr:,developing,Upper middle income,41,October
+282,ZHE HAI 505,9567477,Odesa,Algeria,Wheat,28500,10/6/2022,,:dz:,developing,Lower middle income,41,October
+283,BURAK DEVAL,9349978,Yuzhny/Pivdennyi,Greece,Corn,3300,10/7/2022,,:gr:,developed,High income,41,October
+283,BURAK DEVAL,9349978,Yuzhny/Pivdennyi,Greece,Wheat,3300,10/7/2022,,:gr:,developed,High income,41,October
+284,LADY PERLA,9149732,Odesa,Türkiye,Corn,20000,10/7/2022,10/28/2022,:tr:,developing,Upper middle income,41,October
+285,NEW ISLAND,9258349,Chornomorsk,Ethiopia,Wheat,30000,10/7/2022,10/13/2022,:et:,developing,Low income,41,October
+286,CHEM HERO,9402823,Chornomorsk,India,Sunflower oil,15000,10/8/2022,10/16/2022,:in:,developing,Lower middle income,41,October
+287,CORNELIA M,9490117,Yuzhny/Pivdennyi,Viet Nam,Wheat,60000,10/8/2022,,:vn:,developing,Lower middle income,41,October
+288,ENEIDA,9198381,Chornomorsk,Türkiye,Corn,32859,10/8/2022,10/28/2022,:tr:,developing,Upper middle income,41,October
+288,ENEIDA,9198381,Chornomorsk,Türkiye,Wheat,9511,10/8/2022,,:tr:,developing,Upper middle income,41,October
+289,LADY EVA,9008110,Odesa,Greece,Corn,5666,10/8/2022,,:gr:,developed,High income,41,October
+290,LAURUS,9559169,Chornomorsk,Türkiye,Wheat,5050,10/8/2022,,:tr:,developing,Upper middle income,41,October
+291,ORIS SOFI,8920282,Odesa,Türkiye,Sunflower oil,6000,10/8/2022,10/16/2022,:tr:,developing,Upper middle income,41,October
+292,SHAMAN WISDOM,9563407,Odesa,Indonesia,Wheat,32600,10/8/2022,,:id:,developing,Lower middle income,41,October
+293,ALI A,7915307,Yuzhny/Pivdennyi,Lebanon,Wheat,6600,10/9/2022,,:lb:,developing,Lower middle income,41,October
+294,ARGONAUT,9717694,Yuzhny/Pivdennyi,Indonesia,Wheat,71155,10/9/2022,,:id:,developing,Lower middle income,41,October
+295,BOYNE,9369928,Odesa,Spain,Sunflower oil,5019,10/9/2022,,:es:,developed,High income,41,October
+296,CKR ZEYNEP,9437854,Odesa,Algeria,Wheat,6050,10/9/2022,,:dz:,developing,Lower middle income,41,October
+297,HIRA V,9217333,Yuzhny/Pivdennyi,Spain,Sunflower oil,6240,10/9/2022,10/15/2022,:es:,developed,High income,41,October
+298,MERCURIUS,9580091,Chornomorsk,Italy,Corn,33400,10/9/2022,,:it:,developed,High income,41,October
+299,ORIS PRINCESS,9119907,Chornomorsk,Israel,Sunflower meal,4050,10/9/2022,,:il:,developed,High income,41,October
+300,SAKAR,9104811,Odesa,Italy,Wheat,18700,10/9/2022,,:it:,developed,High income,41,October
+301,STAR SAPPHIRE,9860037,Chornomorsk,Italy,Corn,60000,10/9/2022,10/28/2022,:it:,developed,High income,41,October
+302,WAEL K,9001148,Chornomorsk,Italy,Sunflower seed,6000,10/9/2022,,:it:,developed,High income,41,October
+303,BASEL ATHENA,9164809,Odesa,Türkiye,Wheat,19000,10/10/2022,10/28/2022,:tr:,developing,Upper middle income,42,October
+304,BLUE SHARK,9003770,Chornomorsk,Türkiye,Soya beans,3400,10/10/2022,,:tr:,developing,Upper middle income,42,October
+305,EKMEN TRANS,9204348,Chornomorsk,Israel,Rapeseed meal,5550,10/10/2022,,:il:,developed,High income,42,October
+306,ISLANDER A,9190987,Odesa,Türkiye,Wheat,7200,10/10/2022,10/28/2022,:tr:,developing,Upper middle income,42,October
+307,JAGUAR,7726990,Yuzhny/Pivdennyi,Türkiye,Barley,2500,10/10/2022,,:tr:,developing,Upper middle income,42,October
+308,MEHMET BEY,9045601,Yuzhny/Pivdennyi,Egypt,Soya beans,7600,10/10/2022,,:eg:,developing,Lower middle income,42,October
+309,TAJ,9010060,Chornomorsk,Türkiye,Corn,10500,10/10/2022,,:tr:,developing,Upper middle income,42,October
+310,ERDEK,9175767,Yuzhny/Pivdennyi,Djibouti,Sunflower oil,6200,10/11/2022,10/26/2022,:dj:,developing,Lower middle income,42,October
+310,ERDEK,9175767,Yuzhny/Pivdennyi,Oman,Sunflower oil,3150,10/11/2022,,:om:,developing,High income,42,October
+311,HAZAR S,9545467,Chornomorsk,Italy,Corn,6000,10/11/2022,,:it:,developed,High income,42,October
+312,INCE EVRENYE,9668295,Chornomorsk,Spain,Wheat,27390,10/11/2022,,:es:,developed,High income,42,October
+313,LUCKY TRADER,9427574,Odesa,Türkiye,Wheat,24000,10/11/2022,10/25/2022,:tr:,developing,Upper middle income,42,October
+314,MAGNUM POWER,9488968,Chornomorsk,Indonesia,Wheat,51742,10/11/2022,,:id:,developing,Lower middle income,42,October
+315,MELINA,9550424,Yuzhny/Pivdennyi,Italy,Corn,26380,10/11/2022,,:it:,developed,High income,42,October
+316,SEA PEARL J,9261011,Chornomorsk,Tunisia,Corn,30000,10/11/2022,10/26/2022,:tn:,developing,Lower middle income,42,October
+317,AGNES VICTORY,9258600,Chornomorsk,India,Sunflower oil,42000,10/12/2022,10/16/2022,:in:,developing,Lower middle income,42,October
+318,EGE BEY,9103013,Yuzhny/Pivdennyi,France,Sunflower seed,5700,10/12/2022,,:fr:,developed,High income,42,October
+319,ELIF S,8517293,Odesa,Greece,Rapeseed meal,6200,10/12/2022,,:gr:,developed,High income,42,October
+320,GREAT ARSENAL,9159062,Odesa,Türkiye,Wheat,27499,10/12/2022,10/27/2022,:tr:,developing,Upper middle income,42,October
+321,JASMIN QUEEN,9109861,Chornomorsk,Türkiye,Rapeseed,9500,10/12/2022,,:tr:,developing,Upper middle income,42,October
+322,KLC ERCIYES,9132480,Odesa,Egypt,Soya beans,11500,10/12/2022,,:eg:,developing,Lower middle income,42,October
+323,LUCKY,9037305,Odesa,Italy,Corn,7560,10/12/2022,,:it:,developed,High income,42,October
+324,LUGANO,9132662,Chornomorsk,Spain,Corn,27100,10/12/2022,10/26/2022,:es:,developed,High income,42,October
+325,SIMAS,9000314,Chornomorsk,Lebanon,Corn,13400,10/12/2022,,:lb:,developing,Lower middle income,42,October
+326,AK HAMZA,9338125,Yuzhny/Pivdennyi,Lebanon,Corn,7000,10/13/2022,10/27/2022,:lb:,developing,Lower middle income,42,October
+327,DIGNITY,9118238,Odesa,Türkiye,Corn,14000,10/13/2022,,:tr:,developing,Upper middle income,42,October
+328,IRMGARD,9590967,Yuzhny/Pivdennyi,Germany,Rapeseed,30817,10/13/2022,,:de:,developed,High income,42,October
+329,MARLEN,9430179,Yuzhny/Pivdennyi,Iraq,Sunflower oil,33000,10/13/2022,,:iq:,developing,Upper middle income,42,October
+330,WEI HE,9601091,Chornomorsk,China,Sunflower meal,62860,10/13/2022,10/27/2022,:cn:,developing,Upper middle income,42,October
+331,YAF S,9437787,Chornomorsk,Türkiye,Wheat,5828,10/13/2022,,:tr:,developing,Upper middle income,42,October
+332,SANITA S,9237888,Odesa,Spain,Corn,43500,10/14/2022,,:es:,developed,High income,42,October
+333,SEA LUCK,9194464,Chornomorsk,Algeria,Wheat,13500,10/14/2022,,:dz:,developing,Lower middle income,42,October
+334,SUPER ARSENAL,9316933,Odesa,Tunisia,Wheat,27500,10/14/2022,,:tn:,developing,Lower middle income,42,October
+335,BARON,9394210,Yuzhny/Pivdennyi,Greece,Wheat,5000,10/15/2022,,:gr:,developed,High income,42,October
+336,BEATRICE,9430818,Yuzhny/Pivdennyi,Belgium,Corn,35000,10/15/2022,,:be:,developed,High income,42,October
+337,GOLDEN SHARK,9151383,Odesa,Türkiye,Barley,15800,10/15/2022,,:tr:,developing,Upper middle income,42,October
+338,LADY ELA,9511442,Odesa,Türkiye,Sunflower oil,7250,10/15/2022,,:tr:,developing,Upper middle income,42,October
+339,MRC HATICE ANA,9536935,Odesa,Bulgaria,Sunflower oil,5801,10/15/2022,,:bg:,developed,Upper middle income,42,October
+340,NEW LEVANT,9111371,Odesa,Türkiye,Corn,25000,10/15/2022,,:tr:,developing,Upper middle income,42,October
+341,QUEEN SARA,9132507,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,7400,10/15/2022,,:tr:,developing,Upper middle income,42,October
+342,EAUBONNE,9663104,Odesa,Kenya,Wheat,53376,10/16/2022,,:ke:,developing,Lower middle income,42,October
+343,HELGA,9444912,Chornomorsk,France,Sunflower seed,15469,10/16/2022,,:fr:,developed,High income,42,October
+344,LARA S,9334301,Chornomorsk,Italy,Sunflower oil,5750,10/16/2022,,:it:,developed,High income,42,October
+345,OMICRON CREST,9304203,Yuzhny/Pivdennyi,China,Corn,47185,10/16/2022,,:cn:,developing,Upper middle income,42,October
+345,OMICRON CREST,9304203,Yuzhny/Pivdennyi,China,Sunflower meal,17815,10/16/2022,,:cn:,developing,Upper middle income,42,October
+346,ADMIRAL,8408648,Odesa,Türkiye,Barley,7300,10/17/2022,,:tr:,developing,Upper middle income,43,October
+347,CHOLA TREASURE,9244817,Chornomorsk,Pakistan,Rapeseed,61815,10/17/2022,,:pk:,developing,Lower middle income,43,October
+348,GEN. POLAD HASHIMOV,9575307,Chornomorsk,Italy,Sunflower oil,4000,10/17/2022,,:it:,developed,High income,43,October
+348,GEN. POLAD HASHIMOV,9575307,Chornomorsk,Tunisia,Soya oil,2200,10/17/2022,,:tn:,developing,Lower middle income,43,October
+349,GLOBAL AGLAIA,9737149,Yuzhny/Pivdennyi,France,Sunflower seed,22000,10/17/2022,,:fr:,developed,High income,43,October
+350,NEW LIBERTY,9221645,Odesa,Libya,Barley,25000,10/17/2022,,:ly:,developing,Upper middle income,43,October
+351,ESENCE,7827342,Odesa,Türkiye,Wheat,3000,10/18/2022,,:tr:,developing,Upper middle income,43,October
+352,HASAN,9016179,Chornomorsk,Türkiye,Soya beans,6000,10/18/2022,,:tr:,developing,Upper middle income,43,October
+353,MASTRO MITROS,9228071,Odesa,Israel,Wheat,33000,10/18/2022,,:il:,developed,High income,43,October
+354,MATRIX,9454125,Chornomorsk,Türkiye,Wheat,7000,10/18/2022,,:tr:,developing,Upper middle income,43,October
+355,ALMIRANTE STORNI,9497452,Chornomorsk,China,Sunflower meal,21500,10/19/2022,,:cn:,developing,Upper middle income,43,October
+356,CS CALVINA,9542532,Chornomorsk,The Netherlands,Corn,33000,10/19/2022,,:nl:,developed,High income,43,October
+357,DAYTONA H,8520836,Yuzhny/Pivdennyi,Lebanon,Corn,10700,10/19/2022,,:lb:,developing,Lower middle income,43,October
+358,DENSA DEFNE,9297204,Yuzhny/Pivdennyi,United Kingdom,Sunflower oil,6600,10/19/2022,,:gb:,developed,High income,43,October
+359,KEMAL KURU,9418080,Odesa,Türkiye,Sunflower seed,3000,10/19/2022,,:tr:,developing,Upper middle income,43,October
+360,KUBROSLI Y,8000836,Yuzhny/Pivdennyi,Türkiye,Peas,11000,10/19/2022,,:tr:,developing,Upper middle income,43,October
+361,ATLANTIS ALMERIA,9508093,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,5500,10/20/2022,,:tr:,developing,Upper middle income,43,October
+362,ARIS T,9343895,Yuzhny/Pivdennyi,Spain,Corn,52733,10/20/2022,,:es:,developed,High income,43,October
+362,ARIS T,9343895,Yuzhny/Pivdennyi,Spain,Sunflower meal,23267,10/20/2022,,:es:,developed,High income,43,October
+363,XIN SHUN,9252199,Odesa,EU,Rapeseed,60000,10/20/2022,,:eu:,developed,High income,43,October
+364,ALPHA,9489041,Chornomorsk,China,Corn,66000,10/21/2022,,:cn:,developing,Upper middle income,43,October
+365,DEMA,9416446,Chornomorsk,Italy,Corn,32800,10/21/2022,,:it:,developed,High income,43,October
+366,MILLAC,7208716,Chornomorsk,Türkiye,Wheat,6000,10/21/2022,,:tr:,developing,Upper middle income,43,October
+367,MRC MINA,9464285,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,6700,10/21/2022,,:tr:,developing,Upper middle income,43,October
+368,SWORD LION,9136785,Odesa,Italy,Corn,26000,10/21/2022,,:it:,developed,High income,43,October
+369,YASA VENUS,9848118,Yuzhny/Pivdennyi,Bangladesh,Wheat,59055,10/21/2022,,:bd:,developing,Lower middle income,43,October
+370,BELLA JUDI,9595371,Chornomorsk,Libya,Corn,33100,10/22/2022,,:ly:,developing,Upper middle income,43,October
+371,ISLAND BAY,7528790,Chornomorsk,Greece,Corn,5460,10/22/2022,,:gr:,developed,High income,43,October
+372,PROFESSOR B,8401523,Chornomorsk,Türkiye,Barley,12000,10/22/2022,,:tr:,developing,Upper middle income,43,October
+373,SUMMER LADY,9184938,Chornomorsk,France,Rapeseed,55457,10/22/2022,,:fr:,developed,High income,43,October
+374,I.B. MAMMADZADEH,9736688,Odesa,Türkiye,Sunflower oil,6200,10/23/2022,,:tr:,developing,Upper middle income,43,October
+375,LADY LITEL,9571428,Odesa,Spain,Corn,17800,10/23/2022,,:es:,developed,High income,43,October
+375,LADY LITEL,9571428,Odesa,Spain,Wheat,8000,10/23/2022,,:es:,developed,High income,43,October
+375,LADY LITEL,9571428,Odesa,Spain,Barley,6300,10/23/2022,,:es:,developed,High income,43,October
+376,MAGPIE S,9188922,Odesa,Italy,Soya beans,8400,10/23/2022,,:it:,developed,High income,43,October
+377,PANGEO ,9467873,Chornomorsk,Yemen,Wheat,30000,10/23/2022,,:ye:,developing,Low income,43,October
+377,PANGEO ,9467873,Chornomorsk,Afghanistan,Wheat,10000,10/23/2022,,:af:,developing,Low income,43,October
+378,TORC,9544683,Yuzhny/Pivdennyi,Türkiye,Sunflower oil,12600,10/23/2022,,:tr:,developing,Upper middle income,43,October
+379,VALERIO,9244037,Odesa,Spain,Wheat,25000,10/23/2022,,:es:,developed,High income,43,October
+380,BSL CALYPSO,9191448,Yuzhny/Pivdennyi,EU,Corn,23500,10/24/2022,,:eu:,developed,High income,44,October
+381,C FAITH,9575163,Odesa,Viet Nam,Wheat,56789,10/24/2022,,:vn:,developing,Lower middle income,44,October
+382,FLAG LAMA,9474711,Yuzhny/Pivdennyi,China,Sunflower meal,34430,10/24/2022,,:cn:,developing,Upper middle income,44,October
+382,FLAG LAMA,9474711,Yuzhny/Pivdennyi,China,Corn,30672,10/24/2022,,:cn:,developing,Upper middle income,44,October
+383,MBC DAISY,9609902,Chornomorsk,Algeria,Wheat,14270,10/24/2022,,:dz:,developing,Lower middle income,44,October
+384,CAPTAIN J. NEOFOTISTOS,9617430,Yuzhny/Pivdennyi,Spain,Wheat,68000,10/25/2022,,:es:,developed,High income,44,October
+385,CAPTAIN V. MADIAS,9617351,Chornomorsk,China,Corn,63650,10/25/2022,,:cn:,developing,Upper middle income,44,October
+386,KAPTAN ARIF BAYRAKTAR,9449560,Chornomorsk,The Netherlands,Corn,50000,10/25/2022,,:nl:,developed,High income,44,October
+387,PEARL T,9264166,Chornomorsk,Romania,Sunflower oil,4000,10/25/2022,,:ro:,developed,High income,44,October
+388,REGIUS,9737113,Odesa,EU,Rapeseed,30000,10/25/2022,,:eu:,developed,High income,44,October
+389,SAHIN 1,9111761,Yuzhny/Pivdennyi,Greece,Wheat,2900,10/25/2022,,:gr:,developed,High income,44,October
+390,ZUMRUT ANA,9633549,Yuzhny/Pivdennyi,Spain,Sunflower oil,6300,10/25/2022,,:es:,developed,High income,44,October
+391,A LINE,9246920,Odesa,Türkiye,Wheat,10903,10/27/2022,,:tr:,developing,Upper middle income,44,October
+392,ADIL IBRAHIMLI,9575319,Chornomorsk,Italy,Sunflower oil,6630,10/27/2022,,:it:,developed,High income,44,October
+393,AHMET AGAOGLU,9082001,Yuzhny/Pivdennyi,Greece,Wheat,4060,10/27/2022,,:gr:,developed,High income,44,October
+394,INOI,9400928,Chornomorsk,Spain,Mixed,31000,10/27/2022,,:es:,developed,High income,44,October
+395,NESA,8409654,Chornomorsk,Türkiye,Peas,2300,10/27/2022,,:tr:,developing,Upper middle income,44,October
+396,ORIS JUL,9116084,Chornomorsk,Israel,Sunflower meal,5750,10/27/2022,,:il:,developed,High income,44,October
+397,PRINCESS MANISSA,9084217,Yuzhny/Pivdennyi,Türkiye,Corn,21000,10/27/2022,,:tr:,developing,Upper middle income,44,October
+398,SEVIL,9148518,Chornomorsk,Türkiye,Soy beans,5000,10/27/2022,,:tr:,developing,Upper middle income,44,October
+399,STELLA GS,9363285,Chornomorsk,Tunisia,Corn,30698,10/27/2022,,:tn:,developing,Lower middle income,44,October
+400,ASL TIA,9573713,Chornomorsk,China,Sunflower meal,39000,10/28/2022,,:cn:,developing,Upper middle income,44,October
+401,KAVO PERDIKA,9584889,Yuzhny/Pivdennyi,Israel,Corn,54160,10/28/2022,,:il:,developed,High income,44,October
+402,LINA,9117868,Chornomorsk,Egypt,Corn,25000,10/28/2022,,:eg:,developing,Lower middle income,44,October
+403,RISING EAGLE,9073672,Odesa,Egypt,Wheat,25000,10/28/2022,,:eg:,developing,Lower middle income,44,October
+404,SUPER BAYERN,9278911,Chornomorsk,Italy,Corn,33000,10/28/2022,,:it:,developed,High income,44,October
+405,ZANTE,9727168,Chornomorsk,Belgium,Rapeseed,47270,10/28/2022,,:be:,developed,High income,44,October

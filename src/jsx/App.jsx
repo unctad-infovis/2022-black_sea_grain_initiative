@@ -16,6 +16,7 @@ import TreeMapChart from './components/TreeMapChart.jsx';
 import DonutChart from './components/DonutChart.jsx';
 import LineBarChart from './components/LineBarChart.jsx';
 import Figure3 from './components/Figure3.jsx';
+import Figure6 from './components/Figure6.jsx';
 import Figure7 from './components/Figure7.jsx';
 import Figure9 from './components/Figure9.jsx';
 import Figure10 from './components/Figure10.jsx';
@@ -248,6 +249,9 @@ function App() {
         </div>
         <div className="vis_row">
           <Figure10 />
+        </div>
+        <div className="vis_row">
+          <Figure6 />
         </div>
         <div className="vis_row vis_row_1">
           <div className="toggle_features_container"><button type="button" onClick={(event) => toggleFeatures(event)}>{(features === false) ? 'Play with the data' : 'Hide features'}</button></div>

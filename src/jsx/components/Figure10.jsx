@@ -38,9 +38,10 @@ function Figure10() {
       {dataFigure && (
       <ChartLine
         allow_decimals={false}
+        annotations
         data={dataFigure}
         data_decimals={0}
-        export_title_margin={50}
+        export_title_margin={20}
         idx="10"
         labels={false}
         show_first_label

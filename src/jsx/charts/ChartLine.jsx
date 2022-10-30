@@ -6,7 +6,8 @@ import Highcharts from 'highcharts';
 import highchartsAccessibility from 'highcharts/modules/accessibility';
 import highchartsExporting from 'highcharts/modules/exporting';
 import highchartsExportData from 'highcharts/modules/export-data';
-import highchartsAreaRange from 'highcharts/highcharts-more';
+import highchartsAnnotations from 'highcharts/modules/annotations';
+import highchartsMore from 'highcharts/highcharts-more';
 import highchartsRegression from 'highcharts-regression';
 
 // https://www.npmjs.com/package/react-is-visible
@@ -20,7 +21,8 @@ highchartsAccessibility(Highcharts);
 highchartsRegression(Highcharts);
 highchartsExporting(Highcharts);
 highchartsExportData(Highcharts);
-highchartsAreaRange(Highcharts);
+highchartsMore(Highcharts);
+highchartsAnnotations(Highcharts);
 
 Highcharts.setOptions({
   lang: {
@@ -48,7 +50,7 @@ Highcharts.SVGRenderer.prototype.symbols.download = (x, y, w, h) => {
 };
 
 function LineChart({
-  allow_decimals, data, data_decimals, export_title_margin, idx, labels, line_width, note, suffix, show_first_label, show_only_first_and_last_labels, source, subtitle, tick_interval, tick_interval_y, title, xlabel, x_labels_month_year, ymax, ymin, ystep
+  allow_decimals, annotations, data, data_decimals, export_title_margin, idx, labels, line_width, note, show_first_label, show_only_first_and_last_labels, source, subtitle, suffix, tick_interval, tick_interval_y, title, xlabel, x_labels_month_year, ymax, ymin, ystep
 }) {
   const chartRef = useRef();
   const isVisible = useIsVisible(chartRef, { once: true });
@@ -56,11 +58,74 @@ function LineChart({
   const chartHeight = 600;
   const createChart = useCallback(() => {
     Highcharts.chart(`chartIdx${idx}`, {
+      defs: {
+        marker0: {
+          tagName: 'marker',
+          children: [{
+            tagName: 'path',
+            d: 'M 0 0 V 4 L 3 2 Z'
+          }],
+          attributes: {
+            id: 'custom-shape',
+            markerWidth: 6,
+            fill: '#000',
+            markerHeight: 4,
+            refX: 0.1,
+            refY: 2
+          }
+        }
+      },
+      annotations: [{
+        draggable: '',
+        labelOptions: {
+          x: 0,
+          y: -30
+        },
+        labels: [{
+          backgroundColor: 'transparent',
+          borderWidth: 0,
+          point: {
+            x: 66.5,
+            y: 425,
+            xAxis: 0,
+            yAxis: 0
+          },
+          style: {
+            color: '#000',
+            fontFamily: 'Roboto',
+            fontSize: '20px',
+            fontWeight: 700,
+            textOutline: '3px solid #fff'
+          },
+          text: 'Prices going up again',
+        }],
+        shapes: [{
+          fill: '#000',
+          markerEnd: 'custom-shape',
+          points: [{
+            x: 64,
+            y: 465,
+            xAxis: 0,
+            yAxis: 0
+          }, {
+            x: 66.5,
+            y: 420,
+            xAxis: 0,
+            yAxis: 0
+          }],
+          stroke: '#000',
+          strokeWidth: 3,
+          type: 'path',
+          width: 10
+        }],
+        visible: annotations
+      }],
       caption: {
         align: 'left',
         margin: 15,
         style: {
           color: 'rgba(0, 0, 0, 0.8)',
+          fontFamily: 'Roboto',
           fontSize: '14px'
         },
         text: `<em>Source:</em> ${source} ${note ? (`<br /><em>Note:</em> <span>${note}</span>`) : ''}`,
@@ -109,7 +174,8 @@ function LineChart({
                 fill: '#0077b8',
                 stroke: 'transparent',
                 style: {
-                  color: '#fff'
+                  color: '#fff',
+                  fontFamily: 'Roboto',
                 }
               }
             },
@@ -383,7 +449,7 @@ function LineChart({
       }
     });
     chartRef.current.querySelector(`#chartIdx${idx}`).style.opacity = 1;
-  }, [allow_decimals, data, data_decimals, export_title_margin, idx, labels, line_width, note, suffix, show_first_label, show_only_first_and_last_labels, source, subtitle, tick_interval, tick_interval_y, title, xlabel, x_labels_month_year, ymax, ymin, ystep]);
+  }, [allow_decimals, annotations, data, data_decimals, export_title_margin, idx, labels, line_width, note, show_first_label, show_only_first_and_last_labels, source, subtitle, suffix, tick_interval, tick_interval_y, title, xlabel, x_labels_month_year, ymax, ymin, ystep]);
 
   useEffect(() => {
     if (isVisible === true) {
@@ -405,6 +471,7 @@ function LineChart({
 
 LineChart.propTypes = {
   allow_decimals: PropTypes.bool,
+  annotations: PropTypes.bool,
   data: PropTypes.instanceOf(Array).isRequired,
   data_decimals: PropTypes.number.isRequired,
   export_title_margin: PropTypes.number,
@@ -429,6 +496,7 @@ LineChart.propTypes = {
 
 LineChart.defaultProps = {
   allow_decimals: true,
+  annotations: false,
   export_title_margin: 0,
   labels: true,
   line_width: 5,

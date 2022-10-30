@@ -183,7 +183,22 @@ function LineChart({
         text: title
       },
       tooltip: {
-        enabled: false
+        backgroundColor: '#fff',
+        borderColor: '#ccc',
+        borderRadius: 0,
+        borderWidth: 1,
+        crosshairs: true,
+        formatter() {
+          // eslint-disable-next-line react/no-this-in-sfc
+          const values = this.points.filter(point => point.series.userOptions.isRegressionLine !== true && point.series.name !== '').map(point => [point.series.name.split(' (')[0], point.y, point.color]);
+          const rows = [];
+          rows.push(values.map(point => `<div style="color: ${point[2]}"><span class="tooltip_label">${(point[0]) ? `${point[0]}: ` : ''}</span><span class="tooltip_value">${roundNr(point[1], data_decimals)}${suffix}</span></div>`).join(''));
+          // eslint-disable-next-line react/no-this-in-sfc
+          return `<div class="tooltip_container"><h3 class="tooltip_header">${xlabel} ${this.x}</h3>${rows}</div>`;
+        },
+        shadow: false,
+        shared: true,
+        useHTML: true
       },
       plotOptions: {
         series: {

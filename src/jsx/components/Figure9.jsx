@@ -12,8 +12,8 @@ function Figure9() {
 
   const cleanData = (data) => (data.map(el => ({
     data: Object.values(el).map(val => parseFloat(val)).filter((val, j) => !Number.isNaN(val) && j !== 0),
-    labels: Object.keys(el).filter(val => val !== 'date'),
-    name: el.date,
+    labels: Object.keys(el).filter(val => val !== 'date').map(val => (`${new Date(val).toLocaleString([], { month: 'short' })} ${(new Date(val)).getFullYear()}`)),
+    name: 'Food price Index',
     zIndex: 2
   })));
 

@@ -12,7 +12,7 @@ function Figure10() {
 
   const cleanData = (data) => (data.map(el => ({
     data: Object.values(el).map(val => parseFloat(val)).filter((val, j) => !Number.isNaN(val) && j !== 0),
-    labels: Object.keys(el).map(val => val.split('M')[0]).filter(val => val !== 'date'),
+    labels: Object.keys(el).filter(val => val !== 'date').map(val => (`${new Date(`${val.split('M')[0]}-${val.split('M')[1]}-01`).toLocaleString([], { month: 'short' })} ${(new Date(`${val.split('M')[0]}-${val.split('M')[1]}-01`)).getFullYear()}`)),
     name: el.date,
     zIndex: 2
   })));
@@ -51,7 +51,7 @@ function Figure10() {
         tick_interval_y={50}
         ymin={0}
         title="However, uncertainty about the renewal of the Initiative is sending prices of grain up again"
-        x_labels_year
+        x_labels_month_year
         xlabel=""
       />
       )}

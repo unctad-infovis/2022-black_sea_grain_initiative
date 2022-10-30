@@ -14,34 +14,38 @@
   padding-top: 20px;
   @import 'banner.less';
   .visualisations_container {
-    .chart {
-      font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
-      min-height: 440px;
-      width: 100%;
-      .tooltip_container {
-        .tooltip_header {
-          color: #000;
-          font-size: 20px;
-          line-height: 22px;
-          text-align: left;
-          margin: 0 0 5px 0;
-        }
-        .tooltip_label {
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 22px;
-        }
-        .tooltip_value {
-          font-size: 18px;
-          font-weight: 700;
-          line-height: 22px;
-        }
-      }
-    }
     .vis_row {
       box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
       margin: auto auto 20px auto;
       max-width: 900px;
+      .chart_container {
+        background-color: #fff;
+        padding: 10px 20px 10px 20px;
+        .chart {
+          font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+          min-height: 440px;
+          width: 100%;
+          .tooltip_container {
+            .tooltip_header {
+              color: #000;
+              font-size: 20px;
+              line-height: 22px;
+              text-align: left;
+              margin: 0 0 5px 0;
+            }
+            .tooltip_label {
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 22px;
+            }
+            .tooltip_value {
+              font-size: 18px;
+              font-weight: 700;
+              line-height: 22px;
+            }
+          }
+        }
+      }
       .instruction {
         color: #333;
         font-size: 13px;

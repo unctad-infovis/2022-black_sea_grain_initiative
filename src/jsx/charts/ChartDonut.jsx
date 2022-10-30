@@ -68,50 +68,52 @@ function DonutChart({
       chart: {
         events: {
           render() {
-            // eslint-disable-next-line react/no-this-in-sfc
-            const left = this.plotWidth / 2 + this.plotLeft;
-            // eslint-disable-next-line react/no-this-in-sfc
-            const top = this.plotHeight / 2 + this.plotTop;
-            // eslint-disable-next-line react/no-this-in-sfc
-            if (!this.textLabel) {
+            setTimeout(() => {
               // eslint-disable-next-line react/no-this-in-sfc
-              this.textLabel = this.renderer
-                .text('Tonnes', left, top, true)
-                .attr({
-                  align: 'center',
-                })
-                .css({
-                  color: '#000',
-                  fontSize: '22px',
-                  fontWeight: 700,
-                })
-                .add();
-            }
-            // eslint-disable-next-line react/no-this-in-sfc
-            this.textLabel.attr({
-              x: left,
-              y: top
-            });
-            // eslint-disable-next-line react/no-this-in-sfc
-            if (!this.textValue) {
+              const left = this.plotWidth / 2 + this.plotLeft;
               // eslint-disable-next-line react/no-this-in-sfc
-              this.textValue = this.renderer
-                .text(data[0].data.reduce((acc, val) => acc + val.y, 0).toLocaleString(), left, top + 30, true)
-                .attr({
-                  align: 'center'
-                })
-                .css({
-                  color: '#000',
-                  fontSize: '24px',
-                  fontWeight: 400,
-                })
-                .add();
-            }
-            // eslint-disable-next-line react/no-this-in-sfc
-            this.textValue.attr({
-              x: left,
-              y: top + 30
-            });
+              const top = this.plotHeight / 2 + this.plotTop;
+              // eslint-disable-next-line react/no-this-in-sfc
+              if (!this.textLabel) {
+                // eslint-disable-next-line react/no-this-in-sfc
+                this.textLabel = this.renderer
+                  .text('Tonnes', left, top, true)
+                  .attr({
+                    align: 'center',
+                  })
+                  .css({
+                    color: '#000',
+                    fontSize: '22px',
+                    fontWeight: 700,
+                  })
+                  .add();
+              }
+              // eslint-disable-next-line react/no-this-in-sfc
+              this.textLabel.attr({
+                x: left,
+                y: top
+              });
+              // eslint-disable-next-line react/no-this-in-sfc
+              if (!this.textValue) {
+                // eslint-disable-next-line react/no-this-in-sfc
+                this.textValue = this.renderer
+                  .text(data[0].data.reduce((acc, val) => acc + val.y, 0).toLocaleString(), left, top + 30, true)
+                  .attr({
+                    align: 'center'
+                  })
+                  .css({
+                    color: '#000',
+                    fontSize: '24px',
+                    fontWeight: 400,
+                  })
+                  .add();
+              }
+              // eslint-disable-next-line react/no-this-in-sfc
+              this.textValue.attr({
+                x: left,
+                y: top + 30
+              });
+            }, 3200);
           },
           load() {
             // eslint-disable-next-line react/no-this-in-sfc
@@ -225,7 +227,7 @@ function DonutChart({
           animation: {
             duration: 3000,
           },
-          innerSize: '60%',
+          innerSize: '50%',
           cursor: 'pointer',
           dataLabels: {
             enabled: labels,

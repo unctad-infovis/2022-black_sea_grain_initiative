@@ -91,7 +91,7 @@ function DonutChart({
               // eslint-disable-next-line react/no-this-in-sfc
               this.textLabel.attr({
                 x: left,
-                y: top
+                y: top - 20
               });
               // eslint-disable-next-line react/no-this-in-sfc
               if (!this.textValue) {
@@ -111,7 +111,27 @@ function DonutChart({
               // eslint-disable-next-line react/no-this-in-sfc
               this.textValue.attr({
                 x: left,
-                y: top + 30
+                y: top + 15
+              });
+              // eslint-disable-next-line react/no-this-in-sfc
+              if (!this.textMeta) {
+                // eslint-disable-next-line react/no-this-in-sfc
+                this.textMeta = this.renderer
+                  .text('Wheat', left, top, true)
+                  .attr({
+                    align: 'center',
+                  })
+                  .css({
+                    color: '#000',
+                    fontSize: '22px',
+                    fontWeight: 700,
+                  })
+                  .add();
+              }
+              // eslint-disable-next-line react/no-this-in-sfc
+              this.textMeta.attr({
+                x: left,
+                y: top + 45
               });
             }, 3200);
           },

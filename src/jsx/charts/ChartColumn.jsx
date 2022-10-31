@@ -246,6 +246,7 @@ function ColumnChart({
           from: -0.5,
           to: 2.5,
           label: {
+            align: 'left',
             style: {
               color: 'rgba(0, 0, 0, 0.8)',
               fontFamily: 'Roboto',
@@ -255,12 +256,14 @@ function ColumnChart({
             },
             rotation: 0,
             text: '46% of annual<br />procurement',
+            x: 5,
             y: 20
           }
         }],
         plotLines: [{
           color: '#72bf44',
           label: {
+            align: 'left',
             style: {
               color: 'rgba(0, 0, 0, 0.8)',
               fontFamily: 'Roboto',
@@ -271,6 +274,7 @@ function ColumnChart({
             text: 'Year 2023 →',
             y: 20
           },
+          zIndex: 10,
           value: 1.5,
           width: 3
         }],

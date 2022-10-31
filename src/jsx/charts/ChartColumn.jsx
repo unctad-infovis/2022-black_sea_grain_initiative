@@ -241,6 +241,23 @@ function ColumnChart({
         lineColor: 'transparent',
         lineWidth: 0,
         opposite: false,
+        plotBands: [{
+          color: '#eee',
+          from: -0.5,
+          to: 2.5,
+          label: {
+            style: {
+              color: 'rgba(0, 0, 0, 0.8)',
+              fontFamily: 'Roboto',
+              fontSize: '16px',
+              verticalAlign: 'bottom',
+              fontWeight: 700
+            },
+            rotation: 0,
+            text: '46% of annual<br />procurement',
+            y: 20
+          }
+        }],
         plotLines: [{
           color: '#72bf44',
           label: {

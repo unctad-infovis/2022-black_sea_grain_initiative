@@ -10,7 +10,7 @@ function Figure3() {
 
   const cleanData = (data) => (data.map((el, i) => ((i === 2)
     ? {
-      data: Object.values(el).map(val => (val.split(' ').map(val1 => parseFloat(val1) / 1000000))).filter((val, j) => !Number.isNaN(val) && j !== 0),
+      data: Object.values(el).map(val => (val.split(' ').map(val1 => parseFloat(val1) / 1000000))).filter((val, j) => !Number.isNaN(val) && j !== 0 && (j !== Object.values(el).filter(val1 => val1 !== '').length)),
       labels: Object.keys(el).filter(val => val !== 'Name'),
       name: el.Name,
       color: '#eee',
@@ -22,7 +22,7 @@ function Figure3() {
       zIndex: 1
     }
     : {
-      data: Object.values(el).map(val => parseFloat(val) / 1000000).filter((val, j) => !Number.isNaN(val) && j !== 0),
+      data: Object.values(el).map(val => parseFloat(val) / 1000000).filter((val, j) => !Number.isNaN(val) && j !== 0 && !(el.Name === 'Grain cargos in 2022 (under the Black Sea Grain Initiative)' && j === Object.values(el).filter(val1 => val1 !== '').length - 1)),
       labels: Object.keys(el).filter(val => val !== 'Name'),
       name: el.Name,
       zIndex: 2

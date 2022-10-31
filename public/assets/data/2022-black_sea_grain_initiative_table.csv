@@ -1,8 +1,14 @@
 #,Vessel name,IMO,Departure port,Country,Commodity,Tonnage,Departure date,Inspection cleared,Flag code,Development Status,Development Status 2,World Bank Income Classification,Departure week,Departure Month
 ,SEALOCK,8218380,Chornomorsk,Türkiye,Peas,2050,10/30/2022,,:tr:,developing,other developing,Upper middle income,44,October
 ,SK FRIENDSHIP,8909446,Chornomorsk,Egypt,Soy beans,6600,10/30/2022,,:eg:,developing,other developing,Lower middle income,44,October
-,IKARIA ANGEL,9194397,Chornomorsk,Djibouti,Wheat,30000,10/30/2022,,:dj:,developing,least developed,Lower middle income,44,October
-1,RAZONI,9086526,Odesa,Mixed,Corn,26527,8/1/2022,8/3/2022,:tr:,developing,other developing,Upper middle income,32,August
+,ADMIRAL DE RIBAS,9106900,Yuzhny/Pivdennyi,Türkiye,Sunflower meal,2500,10/31/2022,,:tr:,developing,other developing,Upper middle income,45,October
+,MOUNT BAKER,9266918,Yuzhny/Pivdennyi,Spain,Corn,31635,10/31/2022,,:es:,developed,developed,High income,45,October
+,CARAVOS HARMONY,9595589,Chornomorsk,China,Mixed,64303,10/31/2022,,:cn:,developing,other developing,Upper middle income,44,October
+,SSI CHALLENGER,9284300,Chornomorsk,,Corn,50000,10/31/2022,,,,,,44,October
+,IKARIA ANGEL,9194397,Chornomorsk,Djibouti,Wheat,30000,10/30/2022,,:dj:,developing,least developed,Lower middle income,43,October
+,AMYNTOR,9515656,Odesa,Türkiye,Wheat,27000,10/31/2022,,:tr:,developing,other developing,Upper middle income,44,October
+,KARAMEL,9316921,Odesa,Libya,Corn,33000,10/31/2022,,:ly:,developing,other developing,Upper middle income,44,October
+1,RAZONI,9086526,Odesa,Mixed,Corn,26527,8/1/2022,8/3/2022,:tr:,developing,other developing,Upper middle income,31,August
 2,NAVI STAR,9590979,Odesa,Ireland,Corn,33000,8/5/2022,8/6/2022,:ie:,developed,developed,High income,31,August
 3,ROJEN,9754927,Chornomorsk,Italy,Corn,13041,8/5/2022,8/7/2022,:it:,developed,developed,High income,31,August
 4,POLARNET,9758961,Chornomorsk,Türkiye,Corn,12000,8/5/2022,8/7/2022,:tr:,developing,other developing,Upper middle income,31,August

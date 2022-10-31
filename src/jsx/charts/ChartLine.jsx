@@ -58,23 +58,6 @@ function LineChart({
   const chartHeight = 600;
   const createChart = useCallback(() => {
     Highcharts.chart(`chartIdx${idx}`, {
-      defs: {
-        marker0: {
-          tagName: 'marker',
-          children: [{
-            tagName: 'path',
-            d: 'M 0 0 V 4 L 3 2 Z'
-          }],
-          attributes: {
-            id: 'custom-shape',
-            markerWidth: 6,
-            fill: '#000',
-            markerHeight: 4,
-            refX: 0.1,
-            refY: 2
-          }
-        }
-      },
       annotations: [{
         draggable: '',
         labelOptions: {
@@ -86,12 +69,12 @@ function LineChart({
           borderWidth: 0,
           point: {
             x: 66.5,
-            y: 425,
             xAxis: 0,
+            y: 425,
             yAxis: 0
           },
           style: {
-            color: '#000',
+            color: '#333',
             fontFamily: 'Roboto',
             fontSize: '20px',
             fontWeight: 700,
@@ -100,38 +83,36 @@ function LineChart({
           text: 'Prices going up again',
         }],
         shapes: [{
-          fill: '#000',
-          markerEnd: 'custom-shape',
+          fill: '#333',
+          markerEnd: 'arrow-head',
           points: [{
             x: 62,
-            y: 475,
             xAxis: 0,
+            y: 475,
             yAxis: 0
           }, {
             x: 66.5,
-            y: 423.5,
             xAxis: 0,
+            y: 423.5,
             yAxis: 0
           }],
-          stroke: '#000',
           strokeWidth: 3,
           type: 'path',
           width: 10
         }, {
-          fill: '#000',
-          markerEnd: 'custom-shape',
+          fill: '#333',
+          markerEnd: 'arrow-head',
           points: [{
             x: 62,
-            y: 475,
             xAxis: 0,
+            y: 475,
             yAxis: 0
           }, {
             x: 67,
-            y: 330,
             xAxis: 0,
+            y: 330,
             yAxis: 0
           }],
-          stroke: '#000',
           strokeWidth: 3,
           type: 'path',
           width: 10
@@ -215,6 +196,23 @@ function LineChart({
       colors: ['#009edb', '#72bf44', '#a066aa', '#f58220'],
       credits: {
         enabled: false
+      },
+      defs: {
+        marker0: {
+          tagName: 'marker',
+          children: [{
+            tagName: 'path',
+            d: 'M 0 0 V 4 L 3 2 Z'
+          }],
+          attributes: {
+            id: 'arrow-head',
+            markerWidth: 6,
+            fill: '#000',
+            markerHeight: 4,
+            refX: 0.1,
+            refY: 2
+          }
+        }
       },
       exporting: {
         enabled: true,
@@ -312,8 +310,12 @@ function LineChart({
           events: {
             legendItemClick() {
               return false;
+            },
+            mouseOver() {
+              return false;
             }
           },
+          selected: true,
           lineWidth: line_width,
           marker: {
             enabled: false,

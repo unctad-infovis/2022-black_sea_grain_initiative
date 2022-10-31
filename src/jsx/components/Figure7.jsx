@@ -13,7 +13,7 @@ function Figure7() {
       y: parseInt(Object.values(el)[1], 10),
       name: el.Name,
       sliced: (el.Name === 'Developed'),
-      selected: (el.Name !== 'Developed'),
+      selected: true,
       dataLabels: {
         distance: (el.Name === 'Developed') ? -55 : (el.Name === 'Other Developing') ? 0 : -1,
         y: (el.Name === 'Developed') ? -5 : (el.Name === 'Other Developing') ? -2 : 30,

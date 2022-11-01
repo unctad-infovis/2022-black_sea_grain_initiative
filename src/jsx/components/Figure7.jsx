@@ -16,8 +16,8 @@ function Figure7() {
       selected: true,
       dataLabels: {
         distance: (el.Name === 'Developed') ? -55 : (el.Name === 'Other Developing') ? 0 : -1,
-        y: (el.Name === 'Developed') ? -5 : (el.Name === 'Other Developing') ? -2 : 30,
-        x: (el.Name === 'Developed') ? 30 : (el.Name === 'Other Developing') ? -60 : 110
+        x: (el.Name === 'Developed') ? 30 : (el.Name === 'Other Developing') ? -60 : 110,
+        y: (el.Name === 'Developed') ? -5 : (el.Name === 'Other Developing') ? -2 : 30
       }
     })),
     name: 'Wheat'

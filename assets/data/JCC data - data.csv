@@ -1,7 +1,4 @@
 #,Vessel name,IMO,Departure port,Country,Commodity,Tonnage,Departure date,Inspection cleared,Flag code,Development Status,Development Status 2,World Bank Income Classification,Departure week,Departure Month
-,RIO,9039975,Odesa,Italy,Wheat,9100,,,:it:,developed,developed,High income,,
-,SVETI DUJAM,9519638,Chornomorsk,China,Sunflower meal,31908,,,:cn:,developing,other developing,Upper middle income,,
-,RATTANA NAREE,9245055,Yuzhny/Pivdennyi,The Netherlands,Soya beans,26786,,,:nl:,developed,developed,High income,,
 1,RAZONI,9086526,Odesa,Mixed,Corn,26527,8/1/2022,8/3/2022,:tr:,developing,other developing,Upper middle income,32,August
 2,NAVI STAR,9590979,Odesa,Ireland,Corn,33000,8/5/2022,8/6/2022,:ie:,developed,developed,High income,31,August
 3,ROJEN,9754927,Chornomorsk,Italy,Corn,13041,8/5/2022,8/7/2022,:it:,developed,developed,High income,31,August

@@ -235,7 +235,6 @@ function App() {
       </div>
       { /* Banner container */ }
       {(data && totalTonnage && updated) && <Banner appID={appID} defineData={defineData} standAlone={false} totalTonnage={totalTonnage} updated={updated} />}
-
       { /* Visualisations container */ }
       <div className="visualisations_container">
         <div className="vis_row">

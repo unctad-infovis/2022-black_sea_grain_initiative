@@ -11,6 +11,7 @@ const getData = () => fetch((window.location.href.includes('unctad.org')) ? 'htt
   .then(body => CSVtoJSON(body).map(el => {
     el.Destination = el.Country;
     el.Departure = el['Departure date'];
+    el.Tonnage = el['Metric tons'];
     return el;
   }));
 

@@ -428,7 +428,7 @@ function LineChart({
             x: -10,
             y: -50
           },
-          zIndex: 10,
+          zIndex: 4,
           value: (idx === '9' ? 30.7 : 30.7),
           width: 3
         }] : [],

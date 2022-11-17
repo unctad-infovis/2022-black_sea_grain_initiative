@@ -40,7 +40,7 @@ function Banner({
         <div className="heading_content">
           <h3><CountUp easingFn={easingFn} end={totalTonnageLocal} duration={4} separator="," useEasing /></h3>
           {once && <LineChart appID={appID} series={defineData()} />}
-          <h4>Total tonnes carried</h4>
+          <h4>Total tonnes of foodstuffs carried</h4>
           <div className="updated_container"><h5>{(updatedLocal) && `As of ${updatedLocal.getDate()}  ${updatedLocal.toLocaleString('default', { month: 'long' })} ${updatedLocal.getFullYear()} ` }</h5></div>
         </div>
       </div>

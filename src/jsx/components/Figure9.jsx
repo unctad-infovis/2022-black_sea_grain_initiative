@@ -54,7 +54,6 @@ function Figure9() {
         xlabel=""
       />
       )}
-      <noscript>Your browser does not support JavaScript!</noscript>
     </div>
   );
 }

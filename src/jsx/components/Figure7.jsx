@@ -57,7 +57,6 @@ function Figure7() {
         xlabel="Week"
       />
       )}
-      <noscript>Your browser does not support JavaScript!</noscript>
     </div>
   );
 }

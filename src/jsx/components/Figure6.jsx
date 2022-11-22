@@ -48,7 +48,6 @@ function Figure6() {
         ymin={0}
       />
       )}
-      <noscript>Your browser does not support JavaScript!</noscript>
     </div>
   );
 }

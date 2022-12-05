@@ -42,7 +42,7 @@ function LineBarChart({
       .attr('transform', `translate(${width}, 0)`);
   }, [margin, height]);
 
-  const xAxis = d3.axisBottom().scale(x).tickSizeOuter([0]).tickValues(['2022-08-01', '2022-08-15', '2022-09-01', '2022-09-15', '2022-10-01', '2022-10-15', '2022-11-01', '2022-11-15'])
+  const xAxis = d3.axisBottom().scale(x).tickSizeOuter([0]).tickValues(['2022-08-01', '2022-08-15', '2022-09-01', '2022-09-15', '2022-10-01', '2022-10-15', '2022-11-01', '2022-11-15', '2022-12-01'])
     .tickFormat(d => {
       const date = new Date(`${d} 12:00:00 GMT`);
       return (`${date.toLocaleString('default', { day: 'numeric' })} ${date.toLocaleString('default', { month: 'short' }).slice(0, 3)}`);
@@ -67,7 +67,7 @@ function LineBarChart({
     setTotal(selected_series[selected_series.length - 1][2]);
     if (g && (duration > 0 || (update === true))) {
       x.domain(selected_series.map((d) => d[0]));
-      x.rangeRound([0, chartRef.current.offsetWidth - margin.left - margin.right]).padding(0.1);
+      x.range([0, chartRef.current.offsetWidth - margin.left - margin.right]).paddingInner(0.3).paddingOuter(0.3);
       g.selectAll('.axis_x')
         .call(xAxis);
 

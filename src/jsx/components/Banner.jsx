@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, memo } from 'react';
 import PropTypes from 'prop-types';
 
 // https://www.npmjs.com/package/react-countup
@@ -62,4 +62,4 @@ Banner.defaultProps = {
   updated: false
 };
 
-export default Banner;
+export default memo(Banner);

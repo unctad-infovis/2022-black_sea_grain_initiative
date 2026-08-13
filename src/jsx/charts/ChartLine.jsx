@@ -135,7 +135,7 @@ function LineChart({
         events: {
           load() {
             // eslint-disable-next-line react/no-this-in-sfc
-            this.renderer.image('https://unctad.org/sites/default/files/2022-11/unctad_logo.svg', 5, 15, 80, 100).add();
+            this.renderer.image(`${window.location.href.includes('unctad.org') ? 'https://storage.unctad.org/2022-black_sea_grain_initiative/' : './'}assets/img/unctad_logo.svg`, 5, 15, 80, 100).add();
             setTimeout(() => {
               if (show_only_first_and_last_labels === true) {
                 // eslint-disable-next-line react/no-this-in-sfc

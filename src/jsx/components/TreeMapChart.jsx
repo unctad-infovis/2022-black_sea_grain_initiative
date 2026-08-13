@@ -137,7 +137,4 @@ TreeMapChart.propTypes = {
   setDuration: PropTypes.instanceOf(Function).isRequired
 };
 
-TreeMapChart.defaultProps = {
-};
-
 export default TreeMapChart;

@@ -50,7 +50,7 @@ Highcharts.SVGRenderer.prototype.symbols.download = (x, y, w, h) => {
 };
 
 function LineChart({
-  allow_decimals, annotations, data, data_decimals, export_title_margin, idx, labels, line_width, note, show_first_label, show_only_first_and_last_labels, source, subtitle, suffix, tick_interval, tick_interval_y, title, xlabel, x_labels_month_year, ymax, ymin, ystep
+  allow_decimals = true, annotations = false, data, data_decimals, export_title_margin = 0, idx, labels = true, line_width = 5, note = false, show_first_label = true, show_only_first_and_last_labels = false, source, subtitle = false, suffix = '', tick_interval = 1, tick_interval_y = undefined, title, xlabel = '', x_labels_month_year = false, ymax = undefined, ymin = undefined, ystep = 1
 }) {
   const chartRef = useRef();
   const isVisible = useIsVisible(chartRef, { once: true });
@@ -549,26 +549,6 @@ LineChart.propTypes = {
   ymax: PropTypes.number,
   ymin: PropTypes.number,
   ystep: PropTypes.number
-};
-
-LineChart.defaultProps = {
-  allow_decimals: true,
-  annotations: false,
-  export_title_margin: 0,
-  labels: true,
-  line_width: 5,
-  note: false,
-  show_first_label: true,
-  show_only_first_and_last_labels: false,
-  subtitle: false,
-  suffix: '',
-  tick_interval: 1,
-  tick_interval_y: undefined,
-  xlabel: '',
-  x_labels_month_year: false,
-  ymax: undefined,
-  ymin: undefined,
-  ystep: 1
 };
 
 export default LineChart;

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 // https://d3js.org/
 import * as d3 from 'd3';
 
-function LineChart({ appID, idx, series }) {
+function LineChart({ appID, idx = 1, series }) {
   series = series.map(el => el[2]);
   const chartRef = useRef(null);
   const xScale = d3.scaleLinear()
@@ -54,10 +54,6 @@ LineChart.propTypes = {
   appID: PropTypes.string.isRequired,
   idx: PropTypes.number,
   series: PropTypes.instanceOf(Array).isRequired
-};
-
-LineChart.defaultProps = {
-  idx: 1
 };
 
 export default LineChart;

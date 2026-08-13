@@ -311,7 +311,4 @@ LineBarChart.propTypes = {
   setDuration: PropTypes.instanceOf(Function).isRequired
 };
 
-LineBarChart.defaultProps = {
-};
-
 export default LineBarChart;

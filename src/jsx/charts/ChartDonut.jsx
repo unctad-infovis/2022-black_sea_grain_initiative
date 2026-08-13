@@ -46,7 +46,7 @@ Highcharts.SVGRenderer.prototype.symbols.download = (x, y, w, h) => {
 };
 
 function DonutChart({
-  allow_decimals, data, data_decimals, export_title_margin, idx, labels, note, show_only_first_and_last_labels, source, subtitle, tick_interval, title, xlabel, ymax, ymin, ystep
+  allow_decimals = true, data, data_decimals, export_title_margin = 0, idx, labels = true, note = false, show_only_first_and_last_labels = false, source, subtitle = false, tick_interval = 1, title, xlabel = '', ymax = undefined, ymin = undefined, ystep = 1
 }) {
   const chartRef = useRef();
   const isVisible = useIsVisible(chartRef, { once: true });
@@ -438,20 +438,6 @@ DonutChart.propTypes = {
   ymax: PropTypes.number,
   ymin: PropTypes.number,
   ystep: PropTypes.number
-};
-
-DonutChart.defaultProps = {
-  allow_decimals: true,
-  export_title_margin: 0,
-  labels: true,
-  note: false,
-  show_only_first_and_last_labels: false,
-  subtitle: false,
-  tick_interval: 1,
-  xlabel: '',
-  ymax: undefined,
-  ymin: undefined,
-  ystep: 1
 };
 
 export default DonutChart;

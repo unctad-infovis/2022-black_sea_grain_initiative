@@ -11,7 +11,7 @@ import easingFn from '../helpers/EasingFn.js';
 import getData from '../helpers/GetData.js';
 
 function Banner({
-  appID, defineData, standAlone, totalTonnage, updated
+  appID, defineData, standAlone = true, totalTonnage = false, updated = false
 }) {
   const [totalTonnageLocal, setTotalTonnageLocal] = useState(0);
   const [updatedLocal, setUpdatedLocal] = useState(new Date());
@@ -54,12 +54,6 @@ Banner.propTypes = {
   standAlone: PropTypes.bool,
   totalTonnage: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
   updated: PropTypes.oneOfType([PropTypes.instanceOf(Date), PropTypes.bool])
-};
-
-Banner.defaultProps = {
-  standAlone: true,
-  totalTonnage: false,
-  updated: false
 };
 
 export default memo(Banner);

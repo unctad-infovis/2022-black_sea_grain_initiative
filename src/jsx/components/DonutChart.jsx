@@ -138,7 +138,4 @@ DonutChart.propTypes = {
   setDuration: PropTypes.instanceOf(Function).isRequired
 };
 
-DonutChart.defaultProps = {
-};
-
 export default DonutChart;
